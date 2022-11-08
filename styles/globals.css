@@ -1,16 +1,53 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Unblurs Lottie in Chrome */
+svg {
+    transform: unset !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Logo heading */
+#homepage-logo > svg > g > g:first-child {
+    transition-duration: 300ms;
 }
 
-* {
-  box-sizing: border-box;
+#logo > svg > g > g:first-child {
+    opacity: 0;
+}
+
+@font-face {
+  font-family: 'Hermit';
+  src: url('/fonts/Hermit-Bold.woff2') format('woff2'),
+    url('/fonts/Hermit-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
+    url('/fonts/Poppins-Regular.woff1') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('/fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }

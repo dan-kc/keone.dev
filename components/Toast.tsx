@@ -1,0 +1,124 @@
+import * as T from '@radix-ui/react-toast'
+import useToastStore from '@hooks/stores/useToastStore'
+import copy from 'copy-to-clipboard'
+import { Cross2Icon, CopyIcon } from '@radix-ui/react-icons'
+import { AnimatePresence, motion } from 'framer-motion'
+
+export const Toast = () => {
+  const open = useToastStore((state) => state.open)
+  const emailOpen = useToastStore((state) => state.emailOpen)
+  const setOpen = useToastStore((state) => state.setOpen)
+  const setEmailOpen = useToastStore((state) => state.setEmailOpen)
+  const templateOpen = useToastStore((state) => state.templateOpen)
+  const setTemplateOpen = useToastStore((state) => state.setTemplateOpen)
+  // bg-gradient-to-b from-olive-6 via-olive-7 to-olive-6
+  return (
+    <>
+      <AnimatePresence>
+        {open ? (
+          <T.Root
+            asChild
+            duration={4000}
+            open={open}
+            onOpenChange={setOpen}
+            key={1}
+            forceMount
+          >
+            <motion.div
+              initial={{ x: 400 }}
+              animate={{ x: 0 }}
+              exit={{ x: 400 }}
+              className='absolute bottom-0 right-0 border rounded-md shadow-black shadow-2xl p-4 text-sage-7 bg-sage-8 shadow-2xl '
+            >
+              <div className='flex justify-between items-center mb-3'>
+                <T.Title className='font-body text-sand-12'>
+                  If your mail app didn’t open...
+                </T.Title>
+                <T.Close className=''>
+                  <Cross2Icon className='h-7 w-7 text-sand-12' />
+                </T.Close>
+              </div>
+              <div className='flex gap-3'>
+                <T.Action
+                  className='font-heading border border-green-10 py-2 px-4 bg-green-8/40 text-green-12 rounded-md shadow-2xl '
+                  altText='Copy Email'
+                  onClick={() => {
+                    copy('daniel@keone.io')
+                    setEmailOpen(true)
+                  }}
+                >
+                  Copy Email
+                </T.Action>
+                <T.Action
+                  className='font-heading border border-blue-10 py-2 px-4 bg-blue-8/40 text-blue-12 rounded-md shadow-2xl '
+                  altText='Copy Template'
+                  onClick={() => {
+                    copy('daniel@keone.io')
+                    setTemplateOpen(true)
+                  }}
+                >
+                  Copy Template
+                </T.Action>
+              </div>
+            </motion.div>
+          </T.Root>
+        ) : null}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {emailOpen ? (
+          <T.Root
+            duration={800}
+            open={emailOpen}
+            onOpenChange={setEmailOpen}
+            forceMount
+            asChild
+            key={2}
+          >
+            <motion.div
+              initial={{ x: 400 }}
+              animate={{ x: 0 }}
+              exit={{ x: 400 }}
+              className='absolute right-0 bottom-0 -z-10 flex justify-end'
+            >
+              <div className='w-fit font-heading border border-green-9 py-2 px-4 bg-green-8 text-green-12 rounded-md shadow-2xl gap-2 flex items-center '>
+                <span className='text-olive-12'>Email Copied</span>
+                <CopyIcon className='h-5 w-5' />
+              </div>
+            </motion.div>
+          </T.Root>
+        ) : null}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {templateOpen ? (
+          <T.Root
+            duration={800}
+            open={templateOpen}
+            onOpenChange={setTemplateOpen}
+            forceMount
+            asChild
+            key={3}
+          >
+            <motion.div
+              initial={{ x: 400 }}
+              animate={{ x: 0 }}
+              exit={{ x: 400 }}
+              className='absolute right-0 bottom-0 -z-10 flex justify-end'
+            >
+              <div className='w-fit font-heading border border-blue-9 py-2 px-4 bg-blue-8 text-blue-12 rounded-md shadow-2xl gap-2 flex items-center '>
+                <span className='text-olive-12'>
+                   Template Copied
+                </span>
+                <CopyIcon className='h-5 w-5' />
+              </div>
+            </motion.div>
+          </T.Root>
+        ) : null}
+      </AnimatePresence>
+
+      <T.Viewport className='fixed bottom-0 right-0 z-50 w-[314px] mr-10 mb-10 outline-none' />
+    </>
+  )
+}
+export default Toast
