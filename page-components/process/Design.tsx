@@ -7,13 +7,13 @@ const Design = () => {
     <section className='mt-16 md:mt-20 relative'>
       <Container size={Options.Large}>
         <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-          <h2 className='text-violet-700 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
+          <h2 className='text-violet-600 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
             Design
           </h2>
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-700' bold={false}>
+              <Em inViewClassName='text-violet-600' bold={false}>
                 Step 3/9
               </Em>
             </p>
@@ -59,7 +59,7 @@ const Design = () => {
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-700' bold={false}>
+              <Em inViewClassName='text-violet-600' bold={false}>
                 Step 4/9
               </Em>
             </p>
@@ -94,7 +94,7 @@ const Design = () => {
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-700' bold={false}>
+              <Em inViewClassName='text-violet-600' bold={false}>
                 Step 5/9
               </Em>
             </p>
@@ -120,7 +120,7 @@ const Design = () => {
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-700' bold={false}>
+              <Em inViewClassName='text-violet-600' bold={false}>
                 Step 6/9
               </Em>
             </p>
@@ -156,16 +156,16 @@ const Design = () => {
           </article>
 
           <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-700'>3 Review rounds</SideLine>
+            <SideLine lineClassName='text-violet-600'>3 Review rounds</SideLine>
           </div>
 
           <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-700'>
+            <SideLine lineClassName='text-violet-600'>
               Payment following design completion
             </SideLine>
           </div>
           <div className='text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-700'>
+            <SideLine lineClassName='text-violet-600'>
               Development deposit
             </SideLine>
           </div>

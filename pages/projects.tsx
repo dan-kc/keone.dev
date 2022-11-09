@@ -31,8 +31,6 @@ const Projects = () => {
           <InProgress />
           <Scheduled />
           <Footer
-            containerClassName='to-violet-1 text-mauveDark-12'
-            headingClassName='text-magenta-6'
           />
         </main>
       </div>

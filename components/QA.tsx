@@ -91,7 +91,7 @@ export default function QA() {
       <Container size={Options.Large}>
         <Accordion.Root type='single' collapsible asChild>
           <div className='text-base md:lg lg:text-xl bg-anthracite-3 rounded-xl px-5 pt-10 md:px-8 md:pt-12 lg:px-12 lg:pt-16 shadow-2xl'>
-            <h2 className='text-pink-700 pb-8 lg:pb-14 font-heading text-5xl md:text-6xl lg:text-7xl'>
+            <h2 className='text-cyan-700 pb-8 lg:pb-14 font-heading text-5xl md:text-6xl lg:text-7xl'>
               Some questions and answers
             </h2>
             {items.map((item, index) => {
@@ -100,10 +100,7 @@ export default function QA() {
               const isLastItem = index === numberOfItems - 1
               return (
                 <Fragment key={index}>
-                  <Accordion.Item
-                    value={value}
-                    className={classNames(isLastItem ? '' : '')}
-                  >
+                  <Accordion.Item value={value}>
                     <Accordion.Header>
                       <Accordion.Trigger className='group flex w-full justify-between items-center'>
                         <span
@@ -143,7 +140,7 @@ export default function QA() {
                   {isLastItem ? null : (
                     <Separator.Root
                       decorative
-                      className='h-[0.05rem] bg-gradient-to-r from-pink-600 to-transparent'
+                      className='h-[0.05rem] bg-gradient-to-r from-anthracite-6'
                     />
                   )}
                 </Fragment>

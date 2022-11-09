@@ -5,13 +5,13 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 const Highlight: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <span className='relative inline-block text-white font-heading text-rose-700'>
+      <span className='relative inline-block text-white font-heading text-sky-500'>
         {children}
 
-        <div className='-z-10 h-[1px] w-[calc(200vw+200vh)] bg-rose-700 absolute bottom-[12.2%] -left-[100vw]' />
-        <div className='-z-10 h-[1px] w-[calc(200vw+200vh)] bg-rose-700 absolute top-[37.8%] -left-[100vw]' />
-        <div className='-z-10 h-[calc(200vw+200vh)] w-[1px] bg-rose-700 absolute top-[-100vh] left-0' />
-        <div className='-z-10 h-[calc(200vw+200vh)] w-[1px] bg-rose-700 absolute top-[-100vh] right-0' />
+        <div className='-z-10 h-[1px] w-[calc(200vw+200vh)] bg-sky-500 absolute bottom-[12.2%] -left-[100vw]' />
+        <div className='-z-10 h-[1px] w-[calc(200vw+200vh)] bg-sky-500 absolute top-[37.8%] -left-[100vw]' />
+        <div className='-z-10 h-[calc(200vw+200vh)] w-[1px] bg-sky-500 absolute top-[-100vh] left-0' />
+        <div className='-z-10 h-[calc(200vw+200vh)] w-[1px] bg-sky-500 absolute top-[-100vh] right-0' />
 
         {/* left */}
         <div

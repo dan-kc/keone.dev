@@ -34,10 +34,7 @@ export default function Home() {
           <WhyMeSection />
           <ProcessSection />
         </main>
-        <Footer
-          containerClassName='to-mintDark-1 text-sageDark-12'
-          headingClassName='text-mintDark-11'
-        />
+        <Footer />
       </div>
     </>
   )

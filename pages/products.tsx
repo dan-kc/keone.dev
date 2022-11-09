@@ -34,8 +34,6 @@ export default function Products() {
           <AdditionalServices />
         </main>
           <Footer
-            containerClassName='to-skyDark-1 text-sageDark-12'
-            headingClassName='text-blue-7'
           />
       </div>
     </>

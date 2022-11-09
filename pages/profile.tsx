@@ -32,8 +32,6 @@ export default function Profile() {
           <Skills />
         </main>
         <Footer
-          containerClassName='to-pink-3 text-sageDark-12'
-          headingClassName='text-pink-6'
         />
       </div>
     </>

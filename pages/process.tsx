@@ -31,10 +31,7 @@ const Process = () => {
           <Develop />
           <Deploy />
           <QA />
-          <Footer
-            containerClassName='text-sageDark-12'
-            headingClassName='text-pink-6'
-          />
+          <Footer />
         </main>
       </div>
     </>

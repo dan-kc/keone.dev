@@ -8,12 +8,12 @@ const Develop = () => {
         <div
           className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'
         >
-          <h2 className='text-green-700 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
+          <h2 className='text-green-500 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
             Develop
           </h2>
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-green-700' bold={false}>
+              <Em inViewClassName='text-green-500' bold={false}>
                 Step 7/9
               </Em>
             </p>
@@ -42,13 +42,13 @@ const Develop = () => {
           </article>
 
           <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-green-700'>
+            <SideLine lineClassName='text-green-500'>
               Payment following development completion
             </SideLine>
           </div>
 
           <div className='text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-green-700'>
+            <SideLine lineClassName='text-green-500'>
               Deployment & maintenance deposit
             </SideLine>
           </div>
