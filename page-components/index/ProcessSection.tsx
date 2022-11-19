@@ -14,7 +14,7 @@ const ProcessSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[50px] md:text-[75px] lg:text-[100px] text-white'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[50px] md:text-[75px] lg:text-[100px] text-white'
                 )}
               >
                 My{' '}
@@ -59,7 +59,7 @@ const ProcessSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-pink-6'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-pink-6'
                 )}
               >
                 No large upfront deposits
@@ -147,7 +147,7 @@ const ProcessSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-mintDark-11'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-mintDark-11'
                 )}
               >
                 Several rounds of review
@@ -236,7 +236,7 @@ const ProcessSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-magenta-6'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-magenta-6'
                 )}
               >
                 Live feedback
@@ -349,7 +349,7 @@ const ProcessSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-blue-7'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-blue-7'
                 )}
               >
                 A free month of maintenance
@@ -434,7 +434,7 @@ const ProcessSection = () => {
               <Link
                 mail={false}
                 href='/profile'
-                className='font-heading relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
+                className='font-heading font-extrabold relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
               >
                 <div
                   ref={ref}

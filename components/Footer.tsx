@@ -1,75 +1,49 @@
 import classNames from 'classnames'
-import Link from '@components/Link'
-import { InView } from 'react-intersection-observer'
-import Container, { Options } from '@components/Container'
+import Em from './Em'
+import Link from './Link'
+import Navbar from '@components/Navbar'
 
 interface Props {}
 
 const Footer: React.FC<Props> = () => {
   return (
-    <footer className='relative mb-10'>
-      <InView rootMargin='400% 0px -5% 0px' threshold={0.5}>
-        {({ inView, ref }) => (
-          <Container size={Options.Large}>
-            <div
-              ref={ref}
-              className='relative flex w-full flex-col items-center rounded-xl bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 shadow-2xl'
-            >
-              <h2
-                className={classNames(
-                  inView ? 'opacity-100' : 'opacity-10',
-                  'duration-1000 relative inline-block text-4xl md:text-6xl lg:text-7xl font-heading mb-4 md:mb-10 text-center'
-                )}
-              >
-                Get in touch!
-              </h2>
-              <p
-                className={classNames(
-                  inView ? 'opacity-100 delay-100' : 'opacity-10',
-                  'duration-1000 relative pt-2 px-4 text-xl md:text-3xl lg:text-4xl text-center font-body max-w-lg md:max-w-xl lg:max-w-3xl mx-auto lg:mb-10 mb-5 md:mb-8'
-                )}
-              >
-                My inbox is{' '}
-                <span
-                  className={classNames(
-                    inView ? 'delay-500' + 'text-white' : 'text-slateDark-12',
-                    'duration-1000 font-semibold'
-                  )}
-                >
-                  always open
-                </span>
-                . Feel free to shoot me a message and I{"'"}ll get back to you{' '}
-                <span
-                  className={classNames(
-                    inView ? 'delay-500' + 'text-white' : 'text-slateDark-12',
-                    'duration-1000 font-semibold'
-                  )}
-                >
-                  as soon as possible
-                </span>
-                !
-              </p>
-              <Link
-                mail
-                className={classNames(
-                  inView ? 'opacity-100 delay-200' : 'opacity-10 ',
-                  'duration-1000 font-heading relative inline-block pt-6 text-3xl md:text-4xl lg:text-6xl text-red-700'
-                )}
-              >
-                <div
-                  ref={ref}
-                  className={classNames(
-                    inView ? 'scale-x-100 delay-500' : 'scale-x-0',
-                    'absolute inline-block w-full origin-bottom-left h-0.5 lg:h-1 bottom-0 left-0 bg-red-700 duration-1000'
-                  )}
-                />
-                Say Hello
-              </Link>
-            </div>
-          </Container>
-        )}
-      </InView>
-    </footer>
+    <>
+      <footer className='relative pt-16 md:pt-20 pb-2 bg-anthracite-1'>
+        <div className='relative flex w-full flex-col items-center px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-24'>
+          <h2
+            className={classNames(
+              'duration-1000 relative inline-block text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold mb-4 md:mb-10 text-center text-rose-700'
+            )}
+          >
+            Get in touch!
+          </h2>
+          <p
+            className={classNames(
+              'duration-1000 relative pt-2 px-4 text-xl md:text-2xl lg:text-3xl text-center font-body max-w-lg md:max-w-xl lg:max-w-3xl mx-auto lg:mb-10 mb-8 md:mb-16 lg:mb-20'
+            )}
+          >
+            My inbox is{' '}
+            <Em inViewClassName='text-white' bold={true}>
+              always open
+            </Em>
+            . Feel free to shoot me a message and I{"'"}ll get back to you{' '}
+            <Em inViewClassName='text-white' bold={true}>
+              as soon as possible!
+            </Em>
+          </p>
+
+          <Link
+            mail
+            className='font-heading font-extrabold border border-2 py-2 px-4 md:py-3 md:px-7 lg:py-5 lg:px-8 mb-10 bg-rose-900/20 border-rose-700 hover:border-rose-600 text-rose-700 hover:text-rose-600 rounded-md md:rounded-lg shadow-2xl text-2xl md:text-4xl lg:text-5xl duration-100'
+          >
+            Say Hello
+          </Link>
+        </div>
+        <div className='z-20 font-display text-base'>
+          <Navbar />
+        </div>
+      </footer>
+    </>
   )
 }
 export default Footer

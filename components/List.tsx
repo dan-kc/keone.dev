@@ -5,9 +5,15 @@ interface Props {
   items: string[]
   ulClassName?: string
   inViewDashClassName?: string
+  outViewDashClassName?: string
 }
 
-const List = ({ items, ulClassName, inViewDashClassName }: Props) => {
+const List = ({
+  items,
+  ulClassName,
+  inViewDashClassName,
+  outViewDashClassName,
+}: Props) => {
   return (
     <InView rootMargin='-5% 0px -5% 0px' threshold={0.2}>
       {({ inView, ref }) => (
@@ -18,9 +24,9 @@ const List = ({ items, ulClassName, inViewDashClassName }: Props) => {
             return (
               <li className='flex' key={index}>
                 <span
-                  style={{ transitionDelay: inView ? delayTimeString : "0s" }}
+                  style={{ transitionDelay: inView ? delayTimeString : '0s' }}
                   className={classNames(
-                    inView ? inViewDashClassName : 'delay-1000',
+                    inView ? inViewDashClassName : outViewDashClassName,
                     'mr-2 duration-1000'
                   )}
                 >

@@ -1,8 +1,9 @@
 import classNames from 'classnames'
 
 export enum Options {
-  Small = 'Small',
-  Large = 'Large',
+  sm = 'sm',
+  md = 'md',
+  lg = 'lg',
 }
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -14,13 +15,16 @@ const Container: React.FC<Props> = ({ children, size }) => {
   return (
     <div
       className={classNames(
-        size === Options.Small
-          ? 'sm:max-w-[650px] md:max-w-[800px] lg:max-w-2xl xl:max-w-3xl'
+        size === Options.sm
+          ? 'sm:max-w-2xl md:max-w-3xl lg:max-w-3xl xl:max-w-4xl px-5 md:px-10'
           : '',
-        size === Options.Large
-          ? 'sm:max-w-[650px] md:max-w-[800px] lg:max-w-[950px] xl:max-w-[1200px]'
+        size === Options.md
+          ? 'sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl px-5 md:px-10'
           : '',
-        'relative px-5 md:px-10 sm:mx-auto'
+        size === Options.lg
+          ? 'max-w-3xl lg:max-w-4xl xl:max-w-5xl px-5 md:px-10'
+          : '',
+        'relative  sm:mx-auto'
       )}
     >
       {children}

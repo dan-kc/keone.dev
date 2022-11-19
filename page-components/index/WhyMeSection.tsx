@@ -14,7 +14,7 @@ const WhyMeSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-white'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
                 )}
               >
                 That's why you should work with me
@@ -24,7 +24,7 @@ const WhyMeSection = () => {
         </div>
 
         <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <p className='relative inline-block font-heading text-[40px] md:text-[60px] lg:text-[80px] text-blue-7'>
+          <p className='relative inline-block font-heading font-extrabold text-[40px] md:text-[60px] lg:text-[80px] text-blue-7'>
             I'm Performance Obsessed.
           </p>
         </div>
@@ -38,7 +38,7 @@ const WhyMeSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-white'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
                 )}
               >
                 Lighthouse report
@@ -124,7 +124,7 @@ const WhyMeSection = () => {
                   inView
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading text-[30px] md:text-[45px] lg:text-[60px] text-white'
+                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
                 )}
               >
                 Core Web Vitals
@@ -304,7 +304,7 @@ const WhyMeSection = () => {
         <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
           <p
             className={classNames(
-              'relative inline-block font-heading text-[40px] md:text-[60px] lg:text-[80px] text-magenta'
+              'relative inline-block font-heading font-extrabold text-[40px] md:text-[60px] lg:text-[80px] text-magenta'
             )}
           >
             I'm faster.
@@ -345,7 +345,7 @@ const WhyMeSection = () => {
                 <Link
                   mail={false}
                   href='/products'
-                  className='font-heading relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
+                  className='font-heading font-extrabold relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
                 >
                   <div
                     ref={ref}
@@ -360,7 +360,7 @@ const WhyMeSection = () => {
                 <Link
                   mail={false}
                   href='/products'
-                  className='font-heading relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
+                  className='font-heading font-extrabold relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
                 >
                   <div
                     ref={ref}

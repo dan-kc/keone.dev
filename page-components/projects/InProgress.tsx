@@ -1,59 +1,69 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
+import * as Separator from '@radix-ui/react-separator'
 export default () => {
   return (
-    <section className='pb-[60px] lg:pb-[80px] pt-[10px] lg:pt-5 text-slateDark-12 bg-gradient-to-b from-black via-skyDark-1 to-black'>
-      <Container size={Options.Small}>
-        <h2 className='font-heading text-white text-[38px] md:text-[44px] lg:text-[60px]'>
-          In progress
-        </h2>
-        <p className='mb-5 font-display text-blue-7'>
-          Main objective: Drive sales
-        </p>
-        <article>
-            <p className='mb-5 lg:mb-[30px]'>
-            A{' '}
-            <Em inViewClassName='text-white'>
-              sleek, eCommerce department store startup-
-            </Em>{' '}
-            selling modern art and luxury fashion. This project is in progress,
-            so more information is {' '}
-            <Em inViewClassName='text-white'>coming soon.</Em>
+      <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
+      <Container size={Options.md}>
+        <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-emerald-500 w-fit font-heading leading-tight font-extrabold leading-none text-5xl lg:text-7xl pb-2 lg:pb-3'>
+            In progress
+          </h2>
+          <p className='font-display text-base lg:text-lg text-anthracite-8 pb-8 lg:pb-14'>
+            Main objective: Drive sales
           </p>
-        </article>
+          <article className='relative'>
+            <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
+              A{' '}
+              <Em inViewClassName='text-white'>
+                sleek, eCommerce department store startup-
+              </Em>{' '}
+              selling modern art and luxury fashion. This project is in
+              progress, so more information is{' '}
+              <Em inViewClassName='text-white'>coming soon.</Em>
+            </div>
+          </article>
 
-        <article>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
-            <div className=''>
-              <h3 className='text-[22px] md:text-[25px] lg:text-[28px] font-heading text-white'>
-                Design Tooling
-              </h3>
-              <List
-                inViewDashClassName='text-blue-7'
-                ulClassName=' text-slateDark-11 text-[16px] md:text-[18px] lg:text-[20px]'
-                items={['Figma', 'FigJam']}
-              />
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14 bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
+
+          <article className='relative'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
+              <div className=''>
+                <h3 className='text-lg lg:text-2xl font-heading leading-tight font-extrabold text-white mb-1 lg:mb-2'>
+                  Design Tooling
+                </h3>
+                <List
+                  inViewDashClassName='opacity-100 text-emerald-500'
+                  outViewDashClassName='opacity-0 text-emerald-500'
+                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  items={['Figma', 'FigJam']}
+                />
+              </div>
+              <div className=''>
+                <h3 className='text-lg lg:text-2xl font-heading leading-tight font-extrabold text-white mb-1 lg:mb-2'>
+                  Development Tooling
+                </h3>
+                <List
+                  inViewDashClassName='opacity-100 text-emerald-500'
+                  outViewDashClassName='opacity-0 text-emerald-500'
+                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  items={[
+                    'Remix',
+                    'React',
+                    'Typescript',
+                    'Tailwind CSS',
+                    'Crystalize',
+                    'Redis',
+                  ]}
+                />
+              </div>
             </div>
-            <div className=''>
-              <h3 className='text-[22px] md:text-[25px] lg:text-[28px] font-heading text-white'>
-                Development Tooling
-              </h3>
-              <List
-                inViewDashClassName='text-blue-7'
-                ulClassName=' text-slateDark-11 text-[16px] md:text-[18px] lg:text-[20px]'
-                items={[
-                  'Remix',
-                  'React',
-                  'Typescript',
-                  'Tailwind CSS',
-                  'Crystalize',
-                  'Redis',
-                ]}
-              />
-            </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </Container>
     </section>
   )

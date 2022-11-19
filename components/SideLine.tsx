@@ -21,7 +21,7 @@ const SideLine = ({ children, containerClassName, lineClassName }: Props) => {
         >
           <span
             className={classNames(
-              inView ? lineClassName : '',
+              lineClassName,
               inView ? 'delay-300' : '',
               'duration-1000'
             )}

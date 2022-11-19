@@ -35,7 +35,7 @@ const AnimatedLink: React.FC<Props> = ({
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         className={classNames(
-          thick ? 'h-1' : 'h-[2px]',
+          thick ? 'h-1' : 'h-0.5',
           'absolute inline-block w-full origin-bottom-left bottom-0 left-0 duration-1000',
           underlineClassName
         )}

@@ -2,22 +2,22 @@ import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import SideLine from '@components/SideLine'
+import * as Separator from '@radix-ui/react-separator'
+
 const Design = () => {
   return (
-    <section className='mt-16 md:mt-20 relative'>
-      <Container size={Options.Large}>
+    <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
+      <Container size={Options.md}>
         <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-          <h2 className='text-violet-600 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
+          <h2 className='text-violet-500 pb-8 lg:pb-14 font-heading font-extrabold leading-none text-5xl lg:text-7xl'>
             Design
           </h2>
 
-          <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-600' bold={false}>
-                Step 3/9
-              </Em>
+          <article className='relative'>
+            <p className='font-display text-base lg:text-lg text-violet-500'>
+              Step 3/9
             </p>
-            <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Moodboard
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -56,14 +56,16 @@ const Design = () => {
               by avoiding any additional revision requests later down the line.
             </p>
           </article>
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
 
-          <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-600' bold={false}>
-                Step 4/9
-              </Em>
+          <article className='relative'>
+            <p className='font-display text-base lg:text-lg text-violet-500'>
+              Step 4/9
             </p>
-            <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Sitemap
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -91,14 +93,16 @@ const Design = () => {
               style preferences and what you envision the project to look like.
             </div>
           </article>
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
 
-          <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-600' bold={false}>
-                Step 5/9
-              </Em>
+          <article className='relative'>
+            <p className='font-display text-base lg:text-lg text-violet-500'>
+              Step 5/9
             </p>
-            <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Wireframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -117,14 +121,16 @@ const Design = () => {
               </Em>
             </p>
           </article>
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
 
           <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-violet-600' bold={false}>
-                Step 6/9
-              </Em>
+            <p className='font-display text-base lg:text-lg text-violet-500'>
+              Step 6/9
             </p>
-            <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Final designs
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -155,17 +161,18 @@ const Design = () => {
             </p>
           </article>
 
-          <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-600'>3 Review rounds</SideLine>
+          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-violet-500'>3 Review rounds</SideLine>
           </div>
 
-          <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-600'>
+          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-violet-500'>
               Payment following design completion
             </SideLine>
           </div>
-          <div className='text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-violet-600'>
+
+          <div className='text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-violet-500'>
               Development deposit
             </SideLine>
           </div>

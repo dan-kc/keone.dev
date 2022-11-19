@@ -2,24 +2,41 @@ import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import SideLine from '@components/SideLine'
+import * as AspectRatio from '@radix-ui/react-aspect-ratio'
+import Image from 'next/image'
+import * as Separator from '@radix-ui/react-separator'
+
 const Deploy = () => {
   return (
-    <section className='mt-16 md:mt-20 relative'>
-      <Container size={Options.Large}>
-        <div
-          className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'
-        >
-          <h2 className='text-indigo-700 pb-8 lg:pb-14 font-heading leading-none text-5xl md:text-6xl lg:text-7xl'>
+    <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
+      <Container size={Options.md}>
+        <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-yellow-300 pb-8 lg:pb-14 font-heading font-extrabold leading-none text-5xl lg:text-7xl'>
             Deploy & maintain
           </h2>
-
-          <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-indigo-700' bold={false}>
-                Step 8/9
-              </Em>
+          <div className='md:pr-[5%] lg:pr-[10%] xl:pr-[35%]'>
+            <AspectRatio.Root ratio={938 / 644} className='relative'>
+              <Image
+                src='/images/graphics/package-json.png'
+                alt='Code snippet'
+                fill
+                className='object-fill'
+                sizes='(max-width: 1024px) 100vw,
+              (max-width: 1536px) 70vw,
+              50vw'
+                quality={100}
+              />
+            </AspectRatio.Root>
+          </div>
+            <Separator.Root
+              decorative
+              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+            />
+          <article className='relative'>
+            <p className='font-display text-base lg:text-lg text-yellow-300'>
+              Step 8/9
             </p>
-              <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Deployment
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -69,13 +86,15 @@ const Deploy = () => {
             </div>
           </article>
 
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
           <article className='mb-14 relative'>
-            <p className='font-display text-base lg:text-lg'>
-              <Em inViewClassName='text-indigo-700' bold={false}>
-                Step 9/9
-              </Em>
+            <p className='font-display text-base lg:text-lg text-yellow-300'>
+              Step 9/9
             </p>
-              <h3 className='mb-6 text-3xl md:text-4xl lg:text-5xl font-heading text-white'>
+            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Maintenance
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -96,19 +115,18 @@ const Deploy = () => {
             </div>
           </article>
 
-          <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-indigo-700'>
-              3 Review rounds
-            </SideLine>
+          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-yellow-300'>3 Review rounds</SideLine>
           </div>
 
-          <div className='mb-14 text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-indigo-700'>
+          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-yellow-300'>
               Payment following deployment and maintenance
             </SideLine>
           </div>
-          <div className='text-xl md:text-2xl lg:text-3xl font-heading text-white'>
-            <SideLine lineClassName='text-indigo-700'>
+
+          <div className='text-2xl lg:text-3xl font-heading font-extrabold text-white'>
+            <SideLine lineClassName='text-yellow-300'>
               ...and that's that!
             </SideLine>
           </div>

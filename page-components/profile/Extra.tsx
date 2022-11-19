@@ -3,8 +3,8 @@ import Container, { Options } from '@components/Container'
 export default function Extra() {
   return (
     <section className='pb-[60px] lg:pb-[80px] pt-[10px] lg:pt-5 text-oliveDark-12 bg-black from-black via-grassDark-1 to-black'>
-      <Container size={Options.Small}>
-        <h2 className='text-yellow pb-5 font-heading text-[30px] md:text-[34px] lg:text-[42px] md:order-1'>
+      <Container size={Options.sm}>
+        <h2 className='text-yellow pb-5 font-heading font-extrabold text-[30px] md:text-[34px] lg:text-[42px] md:order-1'>
           Extra bits about me
         </h2>
         <p className=''>

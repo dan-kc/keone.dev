@@ -1,96 +1,105 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
+import * as Separator from '@radix-ui/react-separator'
 export default () => {
   return (
-    <section className='text-mauveDark-12 pb-[60px] lg:pb-[80px] bg-gradient-to-b from-black via-pink-1 to-black'>
-      <Container size={Options.Small}>
-        <h1 className='py-[60px] md:mp-[80px] font-heading text-[60px] md:text-[75px] lg:text-[90px] bg-clip-text text-transparent bg-gradient-to-r from-pink-6 to-pink-7'>
-          Take a look at what I'm working on
-        </h1>
-        <h2 className='pt-[10px] lg:pt-5 text-white font-heading text-[38px] md:text-[44px] lg:text-[60px]'>
-          keone.io
-        </h2>
-        <p className='mb-5 font-display text-pink-6'>
-          Main objective: Generate leads
-        </p>
-
-        <article>
-          <div className='bg-slateDark-2 aspect-video mb-10 lg:mb-[60px]' />
-          <p className='mb-5 lg:mb-[30px]'>
-            An{' '}
-            <Em inViewClassName='text-white'>
-              elegant, interactive personal website
-            </Em>{' '}
-            providing the user with{' '}
-            <Em inViewClassName='text-white'>
-              information surrounding my services,
-            </Em>{' '}
-            and a<Em inViewClassName='text-white'> clear contact gateway.</Em>
+    <section className='relative'>
+      <Container size={Options.md}>
+        <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-yellow-300 w-fit font-heading font-extrabold leading-none text-5xl lg:text-7xl pb-3'>
+            keone.io
+          </h2>
+          <p className='font-display text-base lg:text-lg text-anthracite-8 pb-8 lg:pb-14'>
+            Main objective: Generate leads
           </p>
-          <p className='mb-5 lg:mb-[30px]'>
-            The homepage is designed to encourage the user to scroll through an
-            animated showcase of information such that they are sufficiently{' '}
-            <Em inViewClassName='text-white'>
-              advised on how I can help them,
-            </Em>{' '}
-            before{' '}
-            <Em inViewClassName='text-white'>
-              inviting the user to get in touch.
-            </Em>
-          </p>
-          <p className='mb-5 lg:mb-[30px]'>
-            To satiate the more intrigued user, there are links to supporting
-            pages where I elaborate and once again{' '}
-            <Em inViewClassName='text-white'>invite the user to contact me.</Em>
-          </p>
-          <p className='mb-10 lg:mb-[60px]'>
-            The website is developed using{' '}
-            <Em inViewClassName='text-white'>performance best practices</Em>{' '}
-            and{' '}
-            <Em inViewClassName='text-white'>lightweight technologies</Em>{' '}
-            resulting in a{' '}
-            <Em inViewClassName='text-white'>lag-less user experience</Em>{' '}
-            and{' '}
-            <Em inViewClassName='text-white'>
-              stellar google lighthouse scores.
-            </Em>
-          </p>
-        </article>
-
-        <article>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mb-10 lg:mb-[60px]'>
-            <div className=''>
-              <h3 className='text-[22px] md:text-[25px] lg:text-[28px] font-heading text-white'>
-                Design Tooling
-              </h3>
-              <List
-                inViewDashClassName='text-pink-6'
-                ulClassName=' text-mauveDark-11 text-[16px] md:text-[18px] lg:text-[20px]'
-                items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
-              />
+          <article className='relative'>
+            <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
+              An{' '}
+              <Em inViewClassName='text-white'>
+                elegant, interactive personal website
+              </Em>{' '}
+              providing the user with{' '}
+              <Em inViewClassName='text-white'>
+                information surrounding my services,
+              </Em>{' '}
+              and a<Em inViewClassName='text-white'> clear contact gateway.</Em>
+              <br />
+              <br />
+              The homepage is designed to encourage the user to scroll through
+              an animated showcase of information such that they are
+              sufficiently{' '}
+              <Em inViewClassName='text-white'>
+                advised on how I can help them,
+              </Em>{' '}
+              before{' '}
+              <Em inViewClassName='text-white'>
+                inviting the user to get in touch.
+              </Em>
+              <br />
+              <br />
+              To satiate the more intrigued user, there are links to supporting
+              pages where I elaborate and once again{' '}
+              <Em inViewClassName='text-white'>
+                invite the user to contact me.
+              </Em>
+              The website is developed using{' '}
+              <Em inViewClassName='text-white'>performance best practices</Em>{' '}
+              and <Em inViewClassName='text-white'>lightweight technologies</Em>{' '}
+              resulting in a{' '}
+              <Em inViewClassName='text-white'>lag-less user experience</Em> and{' '}
+              <Em inViewClassName='text-white'>
+                stellar google lighthouse scores.
+              </Em>
             </div>
-            <div className=''>
-              <h3 className='text-[22px] md:text-[25px] lg:text-[28px] font-heading text-white'>
-                Development Tooling
-              </h3>
-              <List
-                inViewDashClassName='text-pink-6'
-                ulClassName=' text-mauveDark-11 text-[16px] md:text-[18px] lg:text-[20px]'
-                items={[
-                  'Next.js',
-                  'React',
-                  'Typescript',
-                  'Tailwind CSS',
-                  'Lottie',
-                ]}
-              />
+          </article>
+
+          <Separator.Root
+            decorative
+            className='h-[0.1rem] my-10 lg:my-14 bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+          />
+
+          <article className='relative'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
+              <div className=''>
+                <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  Design Tooling
+                </h3>
+                <List
+                  inViewDashClassName='opacity-100 text-yellow-300'
+                  outViewDashClassName='opacity-0 text-yellow-300'
+                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
+                />
+              </div>
+              <div className=''>
+                <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  Development Tooling
+                </h3>
+                <List
+                  inViewDashClassName='opacity-100 text-yellow-300'
+                  outViewDashClassName='opacity-0 text-yellow-300'
+                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  items={[
+                    'Next.js',
+                    'React',
+                    'Typescript',
+                    'Tailwind CSS',
+                    'Lottie',
+                  ]}
+                />
+              </div>
             </div>
-          </div>
-        </article>
-        <p>
-          <Em inViewClassName='text-white'>Deployed on Vercel.</Em>
-        </p>
+            <Separator.Root
+              decorative
+              className='h-[0.1rem] my-10 lg:my-14 bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
+            />
+            <p className=''>
+              Deployed on{' '}
+              <Em inViewClassName='text-white'>Vercel</Em>.
+            </p>
+          </article>
+        </div>
       </Container>
     </section>
   )
