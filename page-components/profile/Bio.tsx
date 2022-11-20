@@ -1,9 +1,9 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
-import * as Separator from '@radix-ui/react-separator'
 import AnimatedLink from '@components/AnimatedLink'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
+import Separator from '@components/Separator'
 
 export default function Bio() {
   return (
@@ -46,10 +46,9 @@ export default function Bio() {
                 And I <Em inViewClassName='text-white'>haven't looked back!</Em>
               </p>
             </article>
-            <Separator.Root
-              decorative
-              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-            />
+
+            <Separator className='my-10 lg:my-14' />
+
             <article className='relative'>
               <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
                 Extra bits about me
@@ -61,10 +60,9 @@ export default function Bio() {
                 you.
               </p>
             </article>
-            <Separator.Root
-              decorative
-              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-            />
+
+            <Separator className='my-10 lg:my-14' />
+
             <article className='relative'>
               <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
                 Design Skills
@@ -98,10 +96,9 @@ export default function Bio() {
                 </div>
               </div>
             </article>
-            <Separator.Root
-              decorative
-              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-            />
+
+            <Separator className='my-10 lg:my-14' />
+
             <article className='relative'>
               <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
                 Development Skills

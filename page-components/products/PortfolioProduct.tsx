@@ -1,7 +1,7 @@
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
 import List from '@components/List'
-import * as Separator from '@radix-ui/react-separator'
+import Separator from '@components/separator'
 
 const PortfolioProduct = () => {
   return (
@@ -47,10 +47,7 @@ const PortfolioProduct = () => {
             </div>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14'/>
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -73,10 +70,7 @@ const PortfolioProduct = () => {
             </p>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14'/>
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -100,10 +94,7 @@ const PortfolioProduct = () => {
             </p>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14'/>
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -121,10 +112,7 @@ const PortfolioProduct = () => {
             </p>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14'/>
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>

@@ -3,14 +3,14 @@ import Link from '@components/Link'
 import classNames from 'classnames'
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import SideLine from '@components/SideLine'
+import FadeInFromLeft from '@components/FadeInFromLeft'
 
 const ReportSection = () => {
   return (
     <>
       <section className='py-20 md:py-40 bg-anthracite-3'>
         <Container size={Options.md}>
-          <div className='pr-[calc(6.25%+10px)] md:pr-[calc(12.5%+5rem)]'>
+          <div className='pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
             <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <div
@@ -123,7 +123,7 @@ const ReportSection = () => {
           </div>
 
           <div className='mt-20 lg:mt-40'>
-            <div className='pr-[calc(6.25%+10px)] md:pr-[calc(12.5%+5rem)]'>
+            <div className='pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
               <InView rootMargin='-5% 0px -5% 0px'>
                 {({ inView, ref }) => (
                   <p
@@ -143,7 +143,7 @@ const ReportSection = () => {
                       )}
                     >
                       {' '}
-                      staggering
+                      scary!
                     </span>{' '}
                   </p>
                 )}
@@ -226,7 +226,7 @@ const ReportSection = () => {
                       'mt-5 inline-block relative duration-1000'
                     )}
                   >
-                    That same report observed that for{' '}
+                    The same report claims that for{' '}
                     <span
                       className={classNames(
                         inView ? 'delay-300 text-white' : '',
@@ -305,44 +305,21 @@ const ReportSection = () => {
           </InView>
 
           <ul className='mt-5 font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-2xl md:text-3xl lg:text-4xl'>
-            <li className='text-emerald-500'>
-              <SideLine>Increased conversion rates</SideLine>
+            <li>
+              <FadeInFromLeft className='flex gap-1 text-emerald-500'>
+                <span>-</span> Increased conversion rates
+              </FadeInFromLeft>
             </li>
-            <li className='text-yellow-300'>
-              <SideLine>Decreased bounce rates</SideLine>
+            <li>
+              <FadeInFromLeft className='flex gap-1 text-yellow-300'>
+                <span>-</span> Decreased bounce rates
+              </FadeInFromLeft>
             </li>
-            <li className='text-rose-700'>
-              <SideLine>More satisfied users</SideLine>
+            <li>
+              <FadeInFromLeft className='flex gap-1 text-rose-700'>
+                <span>-</span> More satisfied users
+              </FadeInFromLeft>
             </li>
-
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <li
-                  ref={ref}
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'text-yellowDark-11 ml-6 md:ml-8 lg:ml-11 duration-1000'
-                  )}
-                ></li>
-              )}
-            </InView>
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <li
-                  ref={ref}
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'text-rose-700 ml-6 md:ml-8 lg:ml-11 duration-1000'
-                  )}
-                >
-                  
-                </li>
-              )}
-            </InView>
           </ul>
         </Container>
       </section>

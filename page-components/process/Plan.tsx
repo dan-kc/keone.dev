@@ -1,8 +1,8 @@
 import ALink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import SideLine from '@components/SideLine'
-import * as Separator from '@radix-ui/react-separator'
+import FadeInFromLeft from '@components/FadeInFromLeft'
+import Separator from '@components/Separator'
 const Plan = () => {
   return (
     <section className='relative'>
@@ -41,10 +41,9 @@ const Plan = () => {
               </Em>
             </div>
           </article>
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14 bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+
+          <Separator className='my-10 lg:my-14'/>
+
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg text-cyan-500'>
               Step 2/9
@@ -57,9 +56,9 @@ const Plan = () => {
             </p>
           </article>
 
-          <div className='text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-cyan-500'>Design deposit</SideLine>
-          </div>
+          <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-cyan-500'>-</span> Design Deposit
+          </FadeInFromLeft>
         </div>
       </Container>
     </section>

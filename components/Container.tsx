@@ -22,7 +22,7 @@ const Container: React.FC<Props> = ({ children, size }) => {
           ? 'sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl px-5 md:px-10'
           : '',
         size === Options.lg
-          ? 'max-w-3xl lg:max-w-4xl xl:max-w-5xl px-5 md:px-10'
+          ? 'max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10'
           : '',
         'relative  sm:mx-auto'
       )}

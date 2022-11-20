@@ -1,9 +1,9 @@
 import AnimatedLink from '@components/AnimatedLink'
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import SideLine from '@components/SideLine'
+import FadeInFromLeft from '@components/FadeInFromLeft'
+import Separator from '@components/Separator'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
-import * as Separator from '@radix-ui/react-separator'
 import classNames from 'classnames'
 
 const services = [
@@ -28,6 +28,10 @@ const services = [
     heading: 'Analytics integration',
     subHeading: 'with HotJar and/or Google Analytics',
   },
+  {
+    heading: 'Custom email domiain setup',
+    subHeading: 'attach your company name to your email address',
+  },
 ]
 
 const AdditionalServices = () => {
@@ -39,27 +43,27 @@ const AdditionalServices = () => {
             <h2 className='text-yellow-300 pb-8 w-fit lg:pb-14 font-heading font-extrabold leading-none text-5xl md:text-6xl lg:text-7xl'>
               Additional Services
             </h2>
-            <ul className='font-heading font-extrabold text-white text-xl lg:text-2xl'>
+            <ul className=''>
               {services.map((service, index) => {
                 const isLast = index === services.length - 1 ? true : false
                 return (
                   <li className={classNames(isLast ? '' : 'pb-4')} key={index}>
-                    <SideLine lineClassName='text-yellow-300'>
+                    <FadeInFromLeft className='text-xl lg:text-2xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+                      <span className='text-yellow-300'>-</span>
                       <div className='ml-2'>
                         <h3 className=''>{service.heading}</h3>
-                        <p className='font-body text-anthracite-9 text-base lg:text-lg'>
+                        <p className='font-body font-normal text-anthracite-9 text-base lg:text-lg'>
                           {service.subHeading}
                         </p>
                       </div>
-                    </SideLine>
+                    </FadeInFromLeft>
                   </li>
                 )
               })}
             </ul>
-            <Separator.Root
-              decorative
-              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-            />
+
+            <Separator className='my-10 lg:my-14' />
+
             <p className='mt-4 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Of course, every website requires{' '}
               <Em inViewClassName='text-white'>

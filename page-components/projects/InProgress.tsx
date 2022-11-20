@@ -1,7 +1,7 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
-import * as Separator from '@radix-ui/react-separator'
+import Separator from '@components/Separator'
 export default () => {
   return (
       <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
@@ -25,10 +25,7 @@ export default () => {
             </div>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14 bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14'/>
 
           <article className='relative'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>

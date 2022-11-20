@@ -6,6 +6,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   mail: boolean
   href?: string
   newTab?: boolean
+  delay?: number
   linkClassName?: string
   underlineClassName?: string
   thick?: boolean
@@ -14,8 +15,9 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const AnimatedLink: React.FC<Props> = ({
   href,
-  thick = false,
+  delay,
   mail,
+  thick = false,
   newTab = false,
   linkClassName,
   underlineClassName,
@@ -28,15 +30,16 @@ const AnimatedLink: React.FC<Props> = ({
       href={href}
       {...rest}
       target={newTab ? '_blank' : '_self'}
-      rel='noopener noreferrer'
+      rel={newTab ? 'noopener' : null}
       className={classNames(linkClassName, 'relative inline-block')}
     >
       <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
+        transition={{ delay: delay, duration:1}}
         className={classNames(
           thick ? 'h-1' : 'h-0.5',
-          'absolute inline-block w-full origin-bottom-left bottom-0 left-0 duration-1000',
+          'absolute inline-block w-full origin-bottom-left bottom-0 left-0',
           underlineClassName
         )}
       ></motion.div>

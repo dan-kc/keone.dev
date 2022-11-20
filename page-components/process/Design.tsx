@@ -1,8 +1,8 @@
 import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import SideLine from '@components/SideLine'
-import * as Separator from '@radix-ui/react-separator'
+import FadeInFromLeft from '@components/FadeInFromLeft'
+import Separator from '@components/Separator'
 
 const Design = () => {
   return (
@@ -56,10 +56,8 @@ const Design = () => {
               by avoiding any additional revision requests later down the line.
             </p>
           </article>
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+
+          <Separator className='my-10 lg:my-14'/>
 
           <article className='relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -93,10 +91,8 @@ const Design = () => {
               style preferences and what you envision the project to look like.
             </div>
           </article>
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+
+          <Separator className='my-10 lg:my-14'/>
 
           <article className='relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -121,10 +117,8 @@ const Design = () => {
               </Em>
             </p>
           </article>
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+
+          <Separator className='my-10 lg:my-14'/>
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -161,21 +155,18 @@ const Design = () => {
             </p>
           </article>
 
-          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-violet-500'>3 Review rounds</SideLine>
-          </div>
+          <FadeInFromLeft className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-violet-500'>-</span> 3 Review rounds
+          </FadeInFromLeft>
 
-          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-violet-500'>
-              Payment following design completion
-            </SideLine>
-          </div>
+          <FadeInFromLeft className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-violet-500'>-</span> Payment following design
+            completion
+          </FadeInFromLeft>
 
-          <div className='text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-violet-500'>
-              Development deposit
-            </SideLine>
-          </div>
+          <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-violet-500'>-</span> Development deposit
+          </FadeInFromLeft>
         </div>
       </Container>
     </section>

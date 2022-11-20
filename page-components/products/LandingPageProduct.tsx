@@ -1,6 +1,6 @@
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import * as Separator from '@radix-ui/react-separator'
+import Separator from '@components/separator'
 
 const LandingPageProduct = () => {
   return (
@@ -27,24 +27,21 @@ const LandingPageProduct = () => {
               <Em inViewClassName='text-white'>
                 huge set of potential clients
               </Em>{' '}
-              that would otherwise be in the dark! 
+              that would otherwise be in the dark!
               <br />
               <br />
-              Single landing pages are very
-              similar to portfolios in their design and development, but they
-              may differ in terms of scope and content management. Portfolios
-              may require multiple pages or integration with a CMS such that
-              owner can update their website with new works, but{' '}
+              Single landing pages are very similar to portfolios in their
+              design and development, but they may differ in terms of scope and
+              content management. Portfolios may require multiple pages or
+              integration with a CMS such that owner can update their website
+              with new works, but{' '}
               <Em inViewClassName='text-white'>
                 for many businesses neither is necessary.
               </Em>
             </p>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>

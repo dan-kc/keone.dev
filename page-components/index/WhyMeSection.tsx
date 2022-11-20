@@ -1,381 +1,345 @@
 import { InView } from 'react-intersection-observer'
 import Link from '@components/Link'
 import classNames from 'classnames'
+import Container, { Options } from '@components/Container'
+import AnimatedLink from '@components/AnimatedLink'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
+import Em from '@components/Em'
+import FadeInFromLeft from '@components/FadeInFromLeft'
 const WhyMeSection = () => {
   return (
-    <section className='py-20 md:py-40 px-5 md:px-6 lg:px-7 bg-black text-grayDark-12'>
-      <div className='mx-auto max-w-7xl'>
-        <div className='pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <h2
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
-                )}
-              >
-                That's why you should work with me
-              </h2>
-            )}
-          </InView>
-        </div>
-
-        <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <p className='relative inline-block font-heading font-extrabold text-[40px] md:text-[60px] lg:text-[80px] text-blue-7'>
-            I'm Performance Obsessed.
-          </p>
-        </div>
-
-        <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <h3
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
-                )}
-              >
-                Lighthouse report
-              </h3>
-            )}
-          </InView>
-        </div>
-        <div className='mt-5 px-0 max-w-sm md:max-w-lg lg:max-w-2xl'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <img
-                ref={ref}
-                alt='Lighthouse Report Graphic'
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 w-full'
-                )}
-                src='/images/graphics/lighthouse-scores.svg'
-              />
-            )}
-          </InView>
-        </div>
-
-        <div className='mt-5  duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <div
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 inline-block relative'
-                )}
-              >
-                <Link
-                  mail={false}
-                  href='https://developer.chrome.com/docs/lighthouse/overview/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='relative inline-block'
+    <section className=''>
+      <Container size={Options.md}>
+        <div className='mx-auto max-w-7xl'>
+          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <p
+                  ref={ref}
+                  className={classNames(
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'
+                  )}
                 >
-                  <div
+                  That's why you need to work with me
+                  <span
                     className={classNames(
-                      inView ? 'scale-x-100 delay-300' : 'scale-x-0',
-                      'absolute inline-block w-full origin-bottom-left h-[2px] md:h-1 bottom-0 left-0 duration-500'
+                      inView ? 'delay-300 text-emerald-500' : 'text-white',
+                      'duration-1000'
                     )}
-                  />
-                  Google Lighthouse
-                </Link>{' '}
-                is a tool for measuring the{' '}
-                <span
+                  ></span>{' '}
+                </p>
+              )}
+            </InView>
+          </div>
+          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <p
+                  ref={ref}
                   className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-8xl text-white'
                   )}
                 >
-                  quality
-                </span>{' '}
-                of web pages, and I think they like{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  keone.io
-                </span>
-                .
-              </div>
-            )}
-          </InView>
-        </div>
-
-        <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <h3
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-white'
-                )}
-              >
-                Core Web Vitals
-              </h3>
-            )}
-          </InView>
-        </div>
-        <div className='mt-5 max-w-sm md:max-w-lg lg:max-w-2xl'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <img
-                alt='Core Web Vitals Graphic'
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 w-full'
-                )}
-                src='/images/graphics/core-web-vitals.svg'
-              />
-            )}
-          </InView>
-        </div>
-
-        <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <div
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 inline-block relative'
-                )}
-              >
-                <Link
-                  mail={false}
-                  href='https://web.dev/vitals/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='relative inline-block'
-                >
-                  <div
+                  I'm{' '}
+                  <span
                     className={classNames(
-                      inView ? 'scale-x-100 delay-300' : 'scale-x-0',
-                      'absolute inline-block w-full origin-bottom-left h-[2px] md:h-1 bottom-0 left-0 duration-500'
+                      inView ? 'delay-300 text-emerald-500' : 'text-white',
+                      'duration-1000'
                     )}
-                  />
-                  Core Web Vitals
-                </Link>{' '}
-                are an official{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  Google ranking factor
-                </span>
-                , but rest assured{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  you don't have to worry
-                </span>{' '}
-                about any of that when working with me.
-              </div>
-            )}
-          </InView>
-        </div>
+                  >
+                    performance obsessed
+                  </span>{' '}
+                </p>
+              )}
+            </InView>
+          </div>
 
-        <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <p
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 inline-block relative'
-                )}
-              >
-                I use the{' '}
-                <span
+          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <h3
+                  ref={ref}
                   className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'
                   )}
                 >
-                  fastest
-                </span>{' '}
-                web frameworks available and I'm always searching for{' '}
-                <span
+                  Lighthouse report:
+                </h3>
+              )}
+            </InView>
+          </div>
+          <div className='mt-5 px-0 max-w-sm md:max-w-lg lg:max-w-2xl'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <img
+                  ref={ref}
+                  alt='Lighthouse Report Graphic'
                   className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 w-full'
                   )}
-                >
-                  bleeding edge solutions
-                </span>{' '}
-                to{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  improve performance
-                </span>
-                - it's my{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  passion
-                </span>
-                .
-              </p>
-            )}
-          </InView>
-        </div>
+                  src='/images/graphics/lighthouse-scores.svg'
+                />
+              )}
+            </InView>
+          </div>
 
-        <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <p
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 inline-block relative'
-                )}
-              >
-                Even some of the biggest agencies in the world use{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  slow
-                </span>{' '}
-                and{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  dated
-                </span>{' '}
-                web frameworks because they're 'proven', despite only being
-                'proven' 5 years ago and{' '}
-                <span
-                  className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
-                  )}
-                >
-                  sluggish
-                </span>{' '}
-                today.
-              </p>
-            )}
-          </InView>
-        </div>
+          <FadeInFromLeft className='relative inline-block mt-5 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <AnimatedLink
+              mail={false}
+              href='https://developer.chrome.com/docs/lighthouse/overview/'
+              thick={false}
+              delay={0.3}
+              newTab
+              className='relative inline-block text-white'
+              underlineClassName='bg-white'
+            >
+              Google Lighthouse
+            </AnimatedLink>{' '}
+            is a tool for measuring the{' '}
+            <Em inViewClassName='delay-300 text-white'>quality</Em> of web
+            pages, and I think they like{' '}
+            <Em inViewClassName='delay-300 text-white'>keone.io</Em>.
+          </FadeInFromLeft>
 
-        <div className='mt-20 lg:mt-40 pr-[calc(6.25vw+10px)] md:pr-[calc(18.75vw+30px)]'>
-          <p
-            className={classNames(
-              'relative inline-block font-heading font-extrabold text-[40px] md:text-[60px] lg:text-[80px] text-magenta'
-            )}
-          >
-            I'm faster.
-          </p>
-        </div>
+          <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <h3 className='text-white font-heading font-extrabold leading-tight md:leading-tight lg:leading-tight text-4xl md:text-5xl lg:text-6xl'>
+              Core Web Vitals
+            </h3>
+          </FadeInFromLeft>
 
-        <div className='mt-20 lg:mt-40 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <p
-                ref={ref}
-                className={classNames(
-                  inView
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
-                  'duration-1000 inline-block relative'
-                )}
-              >
-                Work with me and you'll get a{' '}
-                <span
+          <div className='mt-5 max-w-sm md:max-w-lg lg:max-w-2xl'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <img
+                  alt='Core Web Vitals Graphic'
+                  ref={ref}
                   className={classNames(
-                    inView ? 'text-white delay-300' : '',
-                    'font-semibold duration-1000'
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 w-full'
+                  )}
+                  src='/images/graphics/core-web-vitals.svg'
+                />
+              )}
+            </InView>
+          </div>
+
+          <div className='mt-5 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <div
+                  ref={ref}
+                  className={classNames(
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 inline-block relative'
                   )}
                 >
-                  lightning fast website
-                </span>
-                . Simple.
-              </p>
-            )}
-          </InView>
-        </div>
-
-        <div className='mt-20 flex justify-end'>
-          <InView rootMargin='400% 0px -20% 0px'>
-            {({ inView, ref }) => (
-              <div className=''>
-                <Link
-                  mail={false}
-                  href='/products'
-                  className='font-heading font-extrabold relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
-                >
-                  <div
-                    ref={ref}
+                  <Link
+                    mail={false}
+                    href='https://web.dev/vitals/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='relative inline-block'
+                  >
+                    <div
+                      className={classNames(
+                        inView ? 'scale-x-100 delay-300' : 'scale-x-0',
+                        'absolute inline-block w-full origin-bottom-left h-0.5 md:h-1 bottom-0 left-0 duration-500'
+                      )}
+                    />
+                    Core Web Vitals
+                  </Link>{' '}
+                  are an official{' '}
+                  <span
                     className={classNames(
-                      inView ? 'scale-x-100' : 'scale-x-0',
-                      'absolute inline-block w-full origin-bottom-left h-1 bottom-0 left-0 bg-white duration-1000'
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
                     )}
-                  />
-                  View Products
-                </Link>
-                <br />
-                <Link
-                  mail={false}
-                  href='/products'
-                  className='font-heading font-extrabold relative inline-block text-[24px] md:text-[36px] lg:text-[48px] text-white'
-                >
-                  <div
-                    ref={ref}
+                  >
+                    Google ranking factor
+                  </span>
+                  , but rest assured{' '}
+                  <span
                     className={classNames(
-                      inView ? 'scale-x-100 delay-300' : 'scale-x-0',
-                      'absolute inline-block w-full origin-bottom-left h-1 bottom-0 left-0 bg-white duration-1000'
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
                     )}
-                  />
-                  and Prices
-                </Link>
-              </div>
-            )}
-          </InView>
+                  >
+                    you don't have to worry
+                  </span>{' '}
+                  about any of that when working with me.
+                </div>
+              )}
+            </InView>
+          </div>
+
+          <div className='mt-5 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <p
+                  ref={ref}
+                  className={classNames(
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 inline-block relative'
+                  )}
+                >
+                  I use the{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    fastest
+                  </span>{' '}
+                  web frameworks available and I'm always searching for{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    bleeding edge solutions
+                  </span>{' '}
+                  to{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    improve performance
+                  </span>
+                  - it's my{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    passion
+                  </span>
+                  .
+                </p>
+              )}
+            </InView>
+          </div>
+
+          <div className='mt-5 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <p
+                  ref={ref}
+                  className={classNames(
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 inline-block relative'
+                  )}
+                >
+                  Even some of the biggest agencies in the world use{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    slow
+                  </span>{' '}
+                  and{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    dated
+                  </span>{' '}
+                  web frameworks because they're 'proven', despite only being
+                  'proven' 5 years ago and{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    sluggish
+                  </span>{' '}
+                  today.
+                </p>
+              )}
+            </InView>
+          </div>
+
+          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <p
+              className={classNames(
+                'relative inline-block font-heading font-extrabold text-6xl md:text-7xl lg:text-8xl text-violet-500'
+              )}
+            >
+              I'm faster.
+            </p>
+          </div>
+
+          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <InView rootMargin='-5% 0px -5% 0px'>
+              {({ inView, ref }) => (
+                <p
+                  ref={ref}
+                  className={classNames(
+                    inView
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-10 -translate-x-2',
+                    'duration-1000 inline-block relative'
+                  )}
+                >
+                  Work with me and you'll get a{' '}
+                  <span
+                    className={classNames(
+                      inView ? 'text-white delay-300' : '',
+                      'font-semibold duration-1000'
+                    )}
+                  >
+                    lightning fast website
+                  </span>
+                  . Simple.
+                </p>
+              )}
+            </InView>
+          </div>
+
+          <div className='flex justify-end pt-20 bg-anthracite-1'>
+            <AnimatedLink
+              mail={false}
+              href='/profile'
+              thick={false}
+              newTab={false}
+              linkClassName='font-heading leading-tight font-extrabold text-xl md:text-2xl lg:text-3xl text-white flex gap-1 items-center'
+              underlineClassName='bg-white'
+            >
+              View products
+              <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
+            </AnimatedLink>
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

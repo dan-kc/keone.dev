@@ -1,10 +1,10 @@
 import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import SideLine from '@components/SideLine'
 import * as AspectRatio from '@radix-ui/react-aspect-ratio'
 import Image from 'next/image'
-import * as Separator from '@radix-ui/react-separator'
+import Separator from '@components/Separator'
+import FadeInFromLeft from '@components/FadeInFromLeft'
 
 const Deploy = () => {
   return (
@@ -28,10 +28,9 @@ const Deploy = () => {
               />
             </AspectRatio.Root>
           </div>
-            <Separator.Root
-              decorative
-              className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-            />
+
+          <Separator className='my-10 lg:my-14' />
+
           <article className='relative'>
             <p className='font-display text-base lg:text-lg text-yellow-300'>
               Step 8/9
@@ -86,10 +85,8 @@ const Deploy = () => {
             </div>
           </article>
 
-          <Separator.Root
-            decorative
-            className='h-[0.1rem] my-10 lg:my-14  bg-gradient-to-r from-transparent to-transparent via-anthracite-6'
-          />
+          <Separator className='my-10 lg:my-14' />
+
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg text-yellow-300'>
               Step 9/9
@@ -115,21 +112,15 @@ const Deploy = () => {
             </div>
           </article>
 
-          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-yellow-300'>3 Review rounds</SideLine>
-          </div>
+          <FadeInFromLeft className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-yellow-300'>-</span> Payment following
+            deployment and maintenance
+          </FadeInFromLeft>
 
-          <div className='mb-14 text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-yellow-300'>
-              Payment following deployment and maintenance
-            </SideLine>
-          </div>
+          <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+            <span className='text-yellow-300'>-</span> ...and that's that!{' '}
+          </FadeInFromLeft>
 
-          <div className='text-2xl lg:text-3xl font-heading font-extrabold text-white'>
-            <SideLine lineClassName='text-yellow-300'>
-              ...and that's that!
-            </SideLine>
-          </div>
         </div>
       </Container>
     </section>

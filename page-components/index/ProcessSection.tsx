@@ -3,22 +3,22 @@ import Link from '@components/Link'
 import classNames from 'classnames'
 const ProcessSection = () => {
   return (
-    <section className='p-20 md:py-40 px-5 md:px-6 lg:px-7 bg-slateDark-1 text-slateDark-12'>
+    <section className='p-20 md:py-40 px-5 md:px-6 lg:px-7 bg-anthracite-3'>
       <div className='mx-auto max-w-7xl'>
         <div>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <h2
                 ref={ref}
                 className={classNames(
                   inView
                     ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
+                    : 'opacity-10 -translate-x-2',
                   'duration-1000 relative inline-block font-heading font-extrabold text-[50px] md:text-[75px] lg:text-[100px] text-white'
                 )}
               >
                 My{' '}
-                <InView rootMargin='400% 0px -20% 0px'>
+                <InView rootMargin='-5% 0px -5% 0px'>
                   {({ inView, ref }) => (
                     <span
                       ref={ref}
@@ -32,7 +32,7 @@ const ProcessSection = () => {
                   )}
                 </InView>{' '}
                 is{' '}
-                <InView rootMargin='400% 0px -20% 0px'>
+                <InView rootMargin='-5% 0px -5% 0px'>
                   {({ inView, ref }) => (
                     <span
                       ref={ref}
@@ -51,14 +51,14 @@ const ProcessSection = () => {
         </div>
 
         <article className='mt-20 lg:mt-40'>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <h3
                 ref={ref}
                 className={classNames(
                   inView
                     ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
+                    : 'opacity-10 -translate-x-2',
                   'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-pink-6'
                 )}
               >
@@ -67,14 +67,14 @@ const ProcessSection = () => {
             )}
           </InView>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -111,14 +111,14 @@ const ProcessSection = () => {
             </InView>
           </div>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -139,14 +139,14 @@ const ProcessSection = () => {
         </article>
 
         <article className='mt-20'>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <h3
                 ref={ref}
                 className={classNames(
                   inView
                     ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
+                    : 'opacity-10 -translate-x-2',
                   'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-mintDark-11'
                 )}
               >
@@ -155,14 +155,14 @@ const ProcessSection = () => {
             )}
           </InView>
           <div className='mt-5  duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -182,14 +182,14 @@ const ProcessSection = () => {
             </InView>
           </div>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -228,14 +228,14 @@ const ProcessSection = () => {
         </article>
 
         <article className='mt-20'>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <h3
                 ref={ref}
                 className={classNames(
                   inView
                     ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
+                    : 'opacity-10 -translate-x-2',
                   'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-magenta-6'
                 )}
               >
@@ -244,14 +244,14 @@ const ProcessSection = () => {
             )}
           </InView>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <div
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -304,14 +304,14 @@ const ProcessSection = () => {
             </InView>
           </div>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -341,14 +341,14 @@ const ProcessSection = () => {
         </article>
 
         <article className='mt-20'>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <h3
                 ref={ref}
                 className={classNames(
                   inView
                     ? 'opacity-100 translate-x-0'
-                    : 'opacity-10 -translate-x-4',
+                    : 'opacity-10 -translate-x-2',
                   'duration-1000 relative inline-block font-heading font-extrabold text-[30px] md:text-[45px] lg:text-[60px] text-blue-7'
                 )}
               >
@@ -357,14 +357,14 @@ const ProcessSection = () => {
             )}
           </InView>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -392,14 +392,14 @@ const ProcessSection = () => {
             </InView>
           </div>
           <div className='mt-5 duration-[2000ms] pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
-            <InView rootMargin='400% 0px -20% 0px'>
+            <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
                 <p
                   ref={ref}
                   className={classNames(
                     inView
                       ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-4',
+                      : 'opacity-10 -translate-x-2',
                     'duration-1000 relative inline-block'
                   )}
                 >
@@ -429,7 +429,7 @@ const ProcessSection = () => {
         </article>
 
         <div className='mt-20 flex justify-end'>
-          <InView rootMargin='400% 0px -20% 0px'>
+          <InView rootMargin='-5% 0px -5% 0px'>
             {({ inView, ref }) => (
               <Link
                 mail={false}
