@@ -2,7 +2,7 @@ import CountUp from 'react-countup'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-const ProgressCircle = ({ percentage }) => {
+const ProgressCircle = ({ percentage, caption}) => {
   const draw = {
     hidden: {
       pathLength: 0,
@@ -19,46 +19,37 @@ const ProgressCircle = ({ percentage }) => {
   }
 
   const scrollRef = useRef(null)
-  const isInView = useInView(scrollRef, { margin: '0px 0px 0px 0px' })
+  const isInView = useInView(scrollRef)
 
   return (
-    <div className='w-fit relative' ref={scrollRef}>
-      <motion.svg
-        width='100'
-        height='100'
-        viewBox='0 0 100 100'
-        initial='hidden'
-        whileInView='visible'
-        // viewport={{ margin: '-5% 0px -5% 0px' }}
-      >
-        <circle cx='50' cy='50' r='40' stroke='#FFFFFF' strokeWidth={8} />
-        <motion.circle
-          className='-rotate-90 origin-center'
-          cx='50'
-          cy='50'
-          r='40'
-          fill='transparent'
-          stroke='#10b981'
-          strokeWidth={8}
-          variants={draw}
-        />
-        <text
-          className='text-emerald-500'
-          x='50%'
-          y='50%'
-          dominantBaseline='central'
-          textAnchor='middle'
-          fontSize={'1em'}
-          color='#FFFFFF'
-        ></text>
-      </motion.svg>
+    <div className='flex flex-col gap-[10px]'>
+      <div className='relative' ref={scrollRef}>
+        <motion.svg
+          className='w-[100%]'
+          viewBox='0 0 100 100'
+          initial='hidden'
+          whileInView='visible'
+        >
+          <circle cx='50' cy='50' r='40' stroke='#141417' strokeWidth={8} />
+          <motion.circle
+            className='-rotate-90 origin-center text-anthracite-8'
+            cx='50'
+            cy='50'
+            r='40'
+            fill='transparent'
+            stroke='#10b981'
+            strokeWidth={8}
+            variants={draw}
+          />
+        </motion.svg>
 
-      <CountUp
-        className='absolute text-emerald-500 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-base font-display'
-        end={isInView ? percentage : 0}
-        duration={2.3}
-        // easingFn={( t: 0.65, b: 0, c: 0.35, d: 1 )}
-      />
+        <CountUp
+          className='absolute text-emerald-500 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  font-display'
+          end={isInView ? percentage : 0}
+          duration={2.35}
+        />
+      </div>
+      <h4 className='text-center font-heading text-white font-medium text-[14px] min-[450px]:text-[24px] min-[550px]:text-[30px] sm:text-[35px] lg:text-[44px]'>{caption}</h4>
     </div>
   )
 }

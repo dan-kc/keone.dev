@@ -22,7 +22,7 @@ const WhyMeSection = () => {
           </FadeInFromLeft>
 
           <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
-            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-8xl text-white'>
+            <p className='font-heading leading-tight min-[420px]:leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl min-[420px]:text-5xl md:text-6xl lg:text-8xl text-white'>
               I'm <span className='text-emerald-500'>performance obsessed</span>{' '}
             </p>
           </div>
@@ -31,56 +31,34 @@ const WhyMeSection = () => {
             <h3 className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
               Lighthouse report:
             </h3>
-
-            <div className='mt-20 lg:mt-40 mx-auto max-w-sm md:max-w-lg lg:max-w-3xl'>
-              <img
-                alt='Lighthouse Report Graphic'
-                className='duration-1000 w-full'
-                src='/images/graphics/lighthouse-scores.svg'
-              />
-            </div>
-
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <>
-                  <CircularProgress
-                    size={100}
-                    ref={ref}
-                    value={inView ? 90 : 0.01}
-                    sx={{
-                      '& > svg > circle:nth-child(1)': {
-                        stroke: '#F1F1F1',
-                      },
-                      '& > svg > circle:nth-child(2)': {
-                        stroke: '#22c55e',
-                        fill: 'black',
-                      },
-                    }}
-                  >
-                    <CircularProgressLabel>
-                      <CountUp
-                        start={inView ? 0 : 90}
-                        end={inView ? 90 : 0}
-                        duration={0.35}
-                      />
-                    </CircularProgressLabel>
-                  </CircularProgress>
-                  <ProgressCircle percentage={95}/>
-                </>
-              )}
-            </InView>
-
-            <div className='relative inline-block mt-5'>
-              <AnimatedLink
-                href='https://developer.chrome.com/docs/lighthouse/overview/'
-                newTab
-              >
-                Google Lighthouse
-              </AnimatedLink>{' '}
-              is a tool for measuring the <Em delay={0.1}>quality</Em> of web
-              pages, and I think they like <Em delay={0.1}>keone.io</Em>.
-            </div>
           </FadeInFromLeft>
+
+          <div className='mt-20 lg:mt-40 mx-auto max-w-sm md:max-w-lg lg:max-w-3xl'>
+            <img
+              alt='Lighthouse Report Graphic'
+              className='duration-1000 w-full'
+              src='/images/graphics/lighthouse-scores.svg'
+            />
+          </div>
+
+          <div className='flex gap-3 justify-between'>
+            <ProgressCircle percentage={90} caption="Performance" />
+            <ProgressCircle percentage={94} caption="Accessibility" />
+            <ProgressCircle percentage={99} caption="Best Practices" />
+            <ProgressCircle percentage={93} caption="SEO" />
+
+          </div>
+
+          <div className='relative inline-block mt-5'>
+            <AnimatedLink
+              href='https://developer.chrome.com/docs/lighthouse/overview/'
+              newTab
+            >
+              Google Lighthouse
+            </AnimatedLink>{' '}
+            is a tool for measuring the <Em delay={0.1}>quality</Em> of web
+            pages, and I think they like <Em delay={0.1}>keone.io</Em>.
+          </div>
 
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
             <h3 className='text-white font-heading font-extrabold leading-tight md:leading-tight lg:leading-tight text-4xl md:text-5xl lg:text-6xl'>
