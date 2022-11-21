@@ -4,6 +4,7 @@ import List from '@components/List'
 import AnimatedLink from '@components/AnimatedLink'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Separator from '@components/Separator'
+import { Color } from 'styles/color-config'
 
 export default function Bio() {
   return (
@@ -73,9 +74,8 @@ export default function Bio() {
                     Software
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={[
                       'Figma',
                       'Adobe Illustrator',
@@ -88,9 +88,8 @@ export default function Bio() {
                     Expertise
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={['Bevavioural web design', 'Checkout funnels']}
                   />
                 </div>
@@ -109,9 +108,8 @@ export default function Bio() {
                     Languages
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={['Typescript / Javascript', 'HTML / CSS', 'Go']}
                   />
                 </div>
@@ -120,9 +118,8 @@ export default function Bio() {
                     Frameworks
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={['React', 'Next.js', 'Remix', 'Astro']}
                   />
                 </div>
@@ -131,9 +128,8 @@ export default function Bio() {
                     Deployment / CMS Solutions
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={[
                       'Vercel',
                       'Fly.io',
@@ -148,9 +144,8 @@ export default function Bio() {
                     Expertise
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-emerald-500'
-                    outViewDashClassName='opacity-0 text-emerald-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.emerald}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={[
                       'Super fast eCommerce storefronts',
                       'Web animations (GSAP, Lottie, Framer Motion)',

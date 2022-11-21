@@ -3,7 +3,7 @@ import Keone from '@page-components/projects/Keone'
 import InProgress from '@page-components/projects/InProgress'
 import Scheduled from '@page-components/projects/Scheduled'
 import Title from '@components/Title'
-import Highlight, { ColorOptions } from '@components/Hightlight'
+import Highlight, { Color } from '@components/Hightlight'
 
 const Projects = () => {
   return (
@@ -14,7 +14,7 @@ const Projects = () => {
       </Head>
       <main>
         <Title>
-          <Highlight color={ColorOptions.yellow}>Things</Highlight> I’m working
+          <Highlight color={Color.yellow}>Things</Highlight> I’m working
           on
         </Title>
         <Keone />

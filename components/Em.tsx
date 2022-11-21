@@ -1,27 +1,35 @@
 import classNames from 'classnames'
 import { InView } from 'react-intersection-observer'
+import { Color, generateClassName } from 'styles/color-config'
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
+  className?: string
+  color?: Color
+  delay?: number
   bold?: boolean
-  inViewClassName?: string
-  outViewClassName?: string
 }
 
 const Em: React.FC<Props> = ({
   children,
-  inViewClassName,
-  outViewClassName,
+  className,
+  color = Color.white,
+  delay = 0,
   bold = true,
 }) => {
+  const delayString = String(delay) + 's'
+  const { textColorClassName } = generateClassName(color)
+
   return (
-    <InView>
+    <InView rootMargin='-5% 0px -5% 0px'>
       {({ inView, ref }) => (
         <span
           ref={ref}
+          style={{ transitionDelay: delayString }}
           className={classNames(
-            inView ? inViewClassName : outViewClassName,
-            bold ? 'font-semibold' : '',
+            inView ? textColorClassName : null,
+            bold ? 'font-semibold' : null,
+            className,
             'duration-1000'
           )}
         >

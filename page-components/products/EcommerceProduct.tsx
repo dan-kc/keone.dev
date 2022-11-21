@@ -1,7 +1,7 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import List from '@components/List'
-import Separator from '@components/separator'
+import List, { Color } from '@components/List'
+import Separator from '@components/Separator'
 const EcommerceProduct = () => {
   return (
     <section className='relative'>
@@ -25,7 +25,7 @@ const EcommerceProduct = () => {
             </div>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -36,8 +36,7 @@ const EcommerceProduct = () => {
               <br />
               <br />
               <List
-                inViewDashClassName='opacity-100 text-violet-500'
-                outViewDashClassName='opacity-0 text-violet-500'
+                dashColor={Color.violet}
                 items={[
                   'Attract new users',
                   'Convert users into customers',
@@ -65,7 +64,7 @@ const EcommerceProduct = () => {
             </div>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -83,7 +82,7 @@ const EcommerceProduct = () => {
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -135,7 +134,7 @@ const EcommerceProduct = () => {
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>

@@ -1,7 +1,7 @@
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import List from '@components/List'
-import Separator from '@components/separator'
+import List, { Color } from '@components/List'
+import Separator from '@components/Separator'
 
 const PortfolioProduct = () => {
   return (
@@ -33,8 +33,7 @@ const PortfolioProduct = () => {
               <br />
               <br />
               <List
-                inViewDashClassName='opacity-100 text-emerald-500'
-                outViewDashClassName='opacity-0 text-emerald-500'
+                dashColor={Color.emerald}
                 items={[
                   'Attract new users',
                   'Convert users into customers',

@@ -2,6 +2,7 @@ import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
 import Separator from '@components/Separator'
+import { Color } from '@components/Hightlight'
 export default () => {
   return (
       <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
@@ -34,9 +35,8 @@ export default () => {
                   Design Tooling
                 </h3>
                 <List
-                  inViewDashClassName='opacity-100 text-emerald-500'
-                  outViewDashClassName='opacity-0 text-emerald-500'
-                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  dashColor={Color.emerald}
+                  className='text-anthracite-9 text-sm lg:text-base'
                   items={['Figma', 'FigJam']}
                 />
               </div>
@@ -45,9 +45,8 @@ export default () => {
                   Development Tooling
                 </h3>
                 <List
-                  inViewDashClassName='opacity-100 text-emerald-500'
-                  outViewDashClassName='opacity-0 text-emerald-500'
-                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  dashColor={Color.emerald}
+                  className='text-anthracite-9 text-sm lg:text-base'
                   items={[
                     'Remix',
                     'React',

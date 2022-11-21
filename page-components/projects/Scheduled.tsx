@@ -2,7 +2,8 @@ import AnimatedLink from '@components/AnimatedLink'
 import Container, { Options } from '@components/Container'
 import List from '@components/List'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
-import Separator from '@components/separator'
+import Separator from '@components/Separator'
+import { Color } from '@components/Hightlight'
 export default () => {
   return (
     <>
@@ -32,9 +33,8 @@ export default () => {
                     Design Tooling
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-violet-500'
-                    outViewDashClassName='opacity-0 text-violet-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.violet}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={['Figma', 'FigJam']}
                   />
                 </div>
@@ -43,9 +43,8 @@ export default () => {
                     Development Tooling
                   </h3>
                   <List
-                    inViewDashClassName='opacity-100 text-violet-500'
-                    outViewDashClassName='opacity-0 text-violet-500'
-                    ulClassName='text-anthracite-9 text-sm lg:text-base'
+                    dashColor={Color.violet}
+                    className='text-anthracite-9 text-sm lg:text-base'
                     items={[
                       'NextJs',
                       'React',

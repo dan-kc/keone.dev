@@ -1,4 +1,4 @@
-import ALink from '@components/AnimatedLink'
+import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import FadeInFromLeft from '@components/FadeInFromLeft'
@@ -20,9 +20,9 @@ const Plan = () => {
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Here's an{' '}
-              <ALink mail underlineClassName='bg-white'>
+              <AnimatedLink mail underlineClassName='bg-white'>
                 <Em inViewClassName='text-white'>email template</Em>
-              </ALink>{' '}
+              </AnimatedLink>{' '}
               which outlines the information that I’ll need in order to
               accurately gauge the scope of your project.
               <br />

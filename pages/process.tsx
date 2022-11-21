@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Plan from '@page-components/process/Plan'
-import Highlight, { ColorOptions } from '@components/Hightlight'
+import Highlight, { Color } from '@components/Hightlight'
 import Design from '@page-components/process/Design'
 import Develop from '@page-components/process/Develop'
 import Deploy from '@page-components/process/Deploy'
@@ -16,7 +16,7 @@ const Process = () => {
       </Head>
       <main>
         <Title>
-          Wanna see how I <Highlight color={ColorOptions.cyan}>work?</Highlight>
+          Wanna see how I <Highlight color={Color.cyan}>work?</Highlight>
         </Title>
         <Plan />
         <Design />

@@ -6,111 +6,80 @@ import AnimatedLink from '@components/AnimatedLink'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Em from '@components/Em'
 import FadeInFromLeft from '@components/FadeInFromLeft'
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/progress'
+import CountUp from 'react-countup'
+import ProgressCircle from '@components/ProgressCircle'
+
 const WhyMeSection = () => {
   return (
     <section className=''>
       <Container size={Options.md}>
         <div className='mx-auto max-w-7xl'>
+          <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
+              That's why you need to work with me
+            </p>
+          </FadeInFromLeft>
+
           <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <p
-                  ref={ref}
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'
-                  )}
-                >
-                  That's why you need to work with me
-                  <span
-                    className={classNames(
-                      inView ? 'delay-300 text-emerald-500' : 'text-white',
-                      'duration-1000'
-                    )}
-                  ></span>{' '}
-                </p>
-              )}
-            </InView>
+            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-8xl text-white'>
+              I'm <span className='text-emerald-500'>performance obsessed</span>{' '}
+            </p>
           </div>
-          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+
+          <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+            <h3 className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
+              Lighthouse report:
+            </h3>
+
+            <div className='mt-20 lg:mt-40 mx-auto max-w-sm md:max-w-lg lg:max-w-3xl'>
+              <img
+                alt='Lighthouse Report Graphic'
+                className='duration-1000 w-full'
+                src='/images/graphics/lighthouse-scores.svg'
+              />
+            </div>
+
             <InView rootMargin='-5% 0px -5% 0px'>
               {({ inView, ref }) => (
-                <p
-                  ref={ref}
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-8xl text-white'
-                  )}
-                >
-                  I'm{' '}
-                  <span
-                    className={classNames(
-                      inView ? 'delay-300 text-emerald-500' : 'text-white',
-                      'duration-1000'
-                    )}
+                <>
+                  <CircularProgress
+                    size={100}
+                    ref={ref}
+                    value={inView ? 90 : 0.01}
+                    sx={{
+                      '& > svg > circle:nth-child(1)': {
+                        stroke: '#F1F1F1',
+                      },
+                      '& > svg > circle:nth-child(2)': {
+                        stroke: '#22c55e',
+                        fill: 'black',
+                      },
+                    }}
                   >
-                    performance obsessed
-                  </span>{' '}
-                </p>
+                    <CircularProgressLabel>
+                      <CountUp
+                        start={inView ? 0 : 90}
+                        end={inView ? 90 : 0}
+                        duration={0.35}
+                      />
+                    </CircularProgressLabel>
+                  </CircularProgress>
+                  <ProgressCircle percentage={95}/>
+                </>
               )}
             </InView>
-          </div>
 
-          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <h3
-                  ref={ref}
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'duration-1000 relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'
-                  )}
-                >
-                  Lighthouse report:
-                </h3>
-              )}
-            </InView>
-          </div>
-          <div className='mt-5 px-0 max-w-sm md:max-w-lg lg:max-w-2xl'>
-            <InView rootMargin='-5% 0px -5% 0px'>
-              {({ inView, ref }) => (
-                <img
-                  ref={ref}
-                  alt='Lighthouse Report Graphic'
-                  className={classNames(
-                    inView
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-10 -translate-x-2',
-                    'duration-1000 w-full'
-                  )}
-                  src='/images/graphics/lighthouse-scores.svg'
-                />
-              )}
-            </InView>
-          </div>
-
-          <FadeInFromLeft className='relative inline-block mt-5 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
-            <AnimatedLink
-              mail={false}
-              href='https://developer.chrome.com/docs/lighthouse/overview/'
-              thick={false}
-              delay={0.3}
-              newTab
-              className='relative inline-block text-white'
-              underlineClassName='bg-white'
-            >
-              Google Lighthouse
-            </AnimatedLink>{' '}
-            is a tool for measuring the{' '}
-            <Em inViewClassName='delay-300 text-white'>quality</Em> of web
-            pages, and I think they like{' '}
-            <Em inViewClassName='delay-300 text-white'>keone.io</Em>.
+            <div className='relative inline-block mt-5'>
+              <AnimatedLink
+                href='https://developer.chrome.com/docs/lighthouse/overview/'
+                newTab
+              >
+                Google Lighthouse
+              </AnimatedLink>{' '}
+              is a tool for measuring the <Em delay={0.1}>quality</Em> of web
+              pages, and I think they like <Em delay={0.1}>keone.io</Em>.
+            </div>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>

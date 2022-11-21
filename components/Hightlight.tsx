@@ -1,34 +1,28 @@
 import classNames from 'classnames'
 
-export enum ColorOptions {
-  cyan = 'cyan',
-  emerald = 'emerald',
-  violet = 'violet',
-  yellow = 'yellow',
-}
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
-  color: ColorOptions
+  color: Color
 }
 
 const Highlight: React.FC<Props> = ({ children, color }) => {
-  let textClassName: string
+  let textColorClassName: string
   let lineClassName: string
-  if (color === ColorOptions.cyan) {
-    textClassName = 'text-cyan-500'
+  if (color === Color.cyan) {
+    textColorClassName = 'text-cyan-500'
     lineClassName = 'bg-cyan-500/30'
   }
-  if (color === ColorOptions.emerald) {
-    textClassName = 'text-emerald-500'
+  if (color === Color.emerald) {
+    textColorClassName = 'text-emerald-500'
     lineClassName = 'bg-emerald-500/30'
   }
-  if (color === ColorOptions.violet) {
-    textClassName = 'text-violet-500'
+  if (color === Color.violet) {
+    textColorClassName = 'text-violet-500'
     lineClassName = 'bg-violet-500/30'
   }
-  if (color === ColorOptions.yellow) {
-    textClassName = 'text-yellow-300'
+  if (color === Color.yellow) {
+    textColorClassName = 'text-yellow-300'
     lineClassName = 'bg-yellow-300/30'
   }
 
@@ -36,7 +30,7 @@ const Highlight: React.FC<Props> = ({ children, color }) => {
     <>
       <span
         className={classNames(
-          textClassName,
+          textColorClassName,
           'relative inline-block text-white'
         )}
       >

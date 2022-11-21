@@ -1,6 +1,6 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import List from '@components/List'
+import List, { Color } from '@components/List'
 import Separator from '@components/Separator'
 export default () => {
   return (
@@ -63,9 +63,8 @@ export default () => {
                   Design Tooling
                 </h3>
                 <List
-                  inViewDashClassName='opacity-100 text-yellow-300'
-                  outViewDashClassName='opacity-0 text-yellow-300'
-                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  dashColor={Color.yellow}
+                  className='text-anthracite-9 text-sm lg:text-base'
                   items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
                 />
               </div>
@@ -74,9 +73,8 @@ export default () => {
                   Development Tooling
                 </h3>
                 <List
-                  inViewDashClassName='opacity-100 text-yellow-300'
-                  outViewDashClassName='opacity-0 text-yellow-300'
-                  ulClassName='text-anthracite-9 text-sm lg:text-base'
+                  dashColor={Color.yellow}
+                  className='text-anthracite-9 text-sm lg:text-base'
                   items={[
                     'Next.js',
                     'React',
