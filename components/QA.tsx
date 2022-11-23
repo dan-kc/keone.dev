@@ -133,7 +133,7 @@ export default function QA() {
                   {isLastItem ? null : (
                     <Separator.Root
                       decorative
-                      className='h-[0.1rem] bg-gradient-to-r from-anthracite-6'
+                      className='h-[1.6px] bg-gradient-to-r from-anthracite-6'
                     />
                   )}
                 </Fragment>

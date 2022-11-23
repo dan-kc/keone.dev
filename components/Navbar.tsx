@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <Container size={Options.lg}>
-      <NavigationMenu.Root className='flex justify-between items-center py-1 text-sm text-base'>
+      <NavigationMenu.Root className='flex justify-between items-center py-1 text-sm text-base z-20 font-display'>
         <Link
           aria-label='Home'
           href='/'

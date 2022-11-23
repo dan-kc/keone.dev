@@ -21,28 +21,23 @@ const Plan = () => {
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Here's an{' '}
               <AnimatedLink mail underlineClassName='bg-white'>
-                <Em inViewClassName='text-white'>email template</Em>
+                <Em>email template</Em>
               </AnimatedLink>{' '}
               which outlines the information that I’ll need in order to
               accurately gauge the scope of your project.
               <br />
               <br />
               If the email is detailed enough, I'll be able to give you a quote
-              in my <Em inViewClassName='text-white'>
-                very next email back!
-              </Em>{' '}
-              Along with suggestions for some possible features worth
-              implementing.
+              in my <Em>very next email back!</Em> Along with suggestions for
+              some possible features worth implementing.
               <br />
               <br />
               Get in touch-{' '}
-              <Em inViewClassName='text-white'>
-                I can't wait to learn all about your business!
-              </Em>
+              <Em>I can't wait to learn all about your business!</Em>
             </div>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg text-cyan-500'>

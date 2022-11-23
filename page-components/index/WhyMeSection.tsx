@@ -3,7 +3,8 @@ import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import FadeInFromLeft from '@components/FadeInFromLeft'
 import ProgressCircle from '@components/ProgressCircle'
-import { FaArrowRight } from 'react-icons/fa'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
+import ProgressBar from '@components/ProgressBar'
 
 const WhyMeSection = () => {
   return (
@@ -28,10 +29,10 @@ const WhyMeSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <div className='flex gap-3 w-full justify-between mt-5 md:mt-10'>
-            <ProgressCircle percentage={90} caption='Performance' />
+          <div className='flex gap-3 justify-between mt-5 md:mt-10'>
+            <ProgressCircle percentage={100} caption='Performance' />
             <ProgressCircle
-              percentage={94}
+              percentage={100}
               caption='Accessibility'
               delay={0.2}
             />
@@ -61,13 +62,25 @@ const WhyMeSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 max-w-sm md:max-w-lg lg:max-w-2xl'>
-            <img
-              alt='Core Web Vitals Graphic'
-              className='w-full'
-              src='/images/graphics/core-web-vitals.svg'
+          <div className='flex flex-col mt-5 md:mt-10'>
+            <ProgressBar
+              percentage={80}
+              title='Largest Contentful Paint (LCP)'
+              value={2}
+              suffix='s'
             />
-          </FadeInFromLeft>
+            <ProgressBar
+              percentage={95}
+              title='First Input Delay (FIP)'
+              value={17}
+              suffix='ms'
+            />
+            <ProgressBar
+              percentage={95}
+              title='Cumulative Layout Shift (CLS)'
+              value={0}
+            />
+          </div>
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
             <AnimatedLink href='https://web.dev/vitals/' newTab>
@@ -83,8 +96,7 @@ const WhyMeSection = () => {
               I use the <Em delay={0.1}>fastest </Em>
               web frameworks available and I'm always searching for{' '}
               <Em delay={0.1}>bleeding edge solutions </Em>
-              to <Em delay={0.1}>improve performance</Em>- it's my{' '}
-              <Em delay={0.1}>passion</Em>.
+              to <Em delay={0.1}>improve performance</Em>.
             </p>
           </FadeInFromLeft>
 
@@ -108,18 +120,18 @@ const WhyMeSection = () => {
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <p>
               Work with me and you'll get a{' '}
-              <Em delay={0.1}>lightning fast website</Em>. It's really that
+              <Em delay={0.1}>lightning fast website</Em> - It's that
               simple.
             </p>
           </FadeInFromLeft>
 
-          <div className='flex justify-end pt-20 md:pt-40 font-heading leading-tight font-extrabold text-2xl md:text-3xl lg:text-4xl'>
+          <div className='flex justify-end pt-20 md:pt-40 '>
             <AnimatedLink
               href='/products'
-              linkClassName='flex gap-1 items-center'
+              linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
             >
               View products
-              <FaArrowRight className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
+              <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
             </AnimatedLink>
           </div>
         </div>

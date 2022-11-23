@@ -3,8 +3,7 @@ import Container, { Options } from '@components/Container'
 import List from '@components/List'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Separator from '@components/Separator'
-import { Color } from '@components/Hightlight'
-import { FaArrowRight } from 'react-icons/fa'
+import { Color } from 'styles/color-config'
 export default () => {
   return (
     <>
@@ -61,12 +60,8 @@ export default () => {
 
           <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-1'>
             <AnimatedLink
-              mail={false}
               href='/process'
-              thick={false}
-              newTab={false}
-              linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl text-white flex gap-1 items-center'
-              underlineClassName='bg-white'
+              linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
             >
               View process
               <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />

@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = () => {
           </h2>
           <p className='mt-2 px-4 mx-auto mb-8 md:mb-16 lg:mb-20 text-xl md:text-2xl lg:text-3xl text-center max-w-lg md:max-w-xl lg:max-w-3xl leading-tight md:leading-tight lg:leading-tight'>
             My inbox is <Em>always open</Em>. Feel free to shoot me a message
-            and I'll get back to you <Em>as soon as possible!</Em>
+            and I&aposll get back to you <Em>as soon as possible!</Em>
           </p>
 
           <Link
@@ -24,9 +24,7 @@ const Footer: React.FC<Props> = () => {
             Say Hello
           </Link>
         </div>
-        <div className='z-20 font-display text-base'>
-          <Navbar />
-        </div>
+        <Navbar />
       </footer>
     </>
   )

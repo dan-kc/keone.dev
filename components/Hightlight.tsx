@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-
+import { Color, generateClassName } from 'styles/color-config'
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
@@ -7,22 +7,19 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const Highlight: React.FC<Props> = ({ children, color }) => {
-  let textColorClassName: string
+  const { textColorClassName } = generateClassName(color)
+
   let lineClassName: string
   if (color === Color.cyan) {
-    textColorClassName = 'text-cyan-500'
     lineClassName = 'bg-cyan-500/30'
   }
   if (color === Color.emerald) {
-    textColorClassName = 'text-emerald-500'
     lineClassName = 'bg-emerald-500/30'
   }
   if (color === Color.violet) {
-    textColorClassName = 'text-violet-500'
     lineClassName = 'bg-violet-500/30'
   }
   if (color === Color.yellow) {
-    textColorClassName = 'text-yellow-300'
     lineClassName = 'bg-yellow-300/30'
   }
 

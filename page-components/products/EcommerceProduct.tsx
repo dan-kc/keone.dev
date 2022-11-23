@@ -1,7 +1,8 @@
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
-import List, { Color } from '@components/List'
+import List from '@components/List'
 import Separator from '@components/Separator'
+import { Color } from 'styles/color-config'
 const EcommerceProduct = () => {
   return (
     <section className='relative'>
@@ -16,12 +17,9 @@ const EcommerceProduct = () => {
           <article className='relative'>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Reinvent your online business with a{' '}
-              <Em inViewClassName='text-white'>brand new eCommerce store</Em>{' '}
-              that’s designed from the ground up to{' '}
-              <Em inViewClassName='text-white'>drive sales</Em>, and is
-              developed using the <Em inViewClassName='text-white'>fastest</Em>,{' '}
-              <Em inViewClassName='text-white'>most reliable</Em> web frameworks
-              available!
+              <Em>brand new eCommerce store</Em> that’s designed from the ground
+              up to <Em>drive sales</Em>, and is developed using the{' '}
+              <Em>fastest</Em>, <Em>most reliable</Em> web frameworks available!
             </div>
           </article>
 
@@ -45,22 +43,14 @@ const EcommerceProduct = () => {
                 ]}
               />
               <br />
-              <Em inViewClassName='text-white'>
-                CRO (Conversion Rate Optimisation)
-              </Em>{' '}
-              is a crucial aspect of my design process for every page especially
-              the checkout, where I’ll use my{' '}
-              <Em inViewClassName='text-white'>
-                expertise on behavioural design
-              </Em>{' '}
-              to create a funnel that’s{' '}
-              <Em inViewClassName='text-white'>
-                bespoke to your business needs.
-              </Em>
+              <Em>CRO (Conversion Rate Optimisation)</Em> is a crucial aspect of
+              my design process for every page especially the checkout, where
+              I’ll use my <Em>expertise on behavioural design</Em> to create a
+              funnel that’s <Em>bespoke to your business needs.</Em>
               <br />
               <br />
               And don’t worry about your website being responsive,{' '}
-              <Em inViewClassName='text-white'>I design mobile first!</Em>
+              <Em>I design mobile first!</Em>
             </div>
           </article>
 
@@ -71,14 +61,10 @@ const EcommerceProduct = () => {
               Development
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              My favourite web frameworks to enable this are{' '}
-              <Em inViewClassName='text-white'> NextJs, </Em> which is used by
-              huge companies like <Em inViewClassName='text-white'>Target</Em>{' '}
-              and <Em inViewClassName='text-white'>Nike</Em>, and{' '}
-              <Em inViewClassName='text-white'>Remix</Em> which is a newer
-              technology that boasts{' '}
-              <Em inViewClassName='text-white'>even faster speeds</Em> in most
-              cases.
+              My favourite web frameworks to enable this are <Em> NextJs, </Em>{' '}
+              which is used by huge companies like <Em>Target</Em> and{' '}
+              <Em>Nike</Em>, and <Em>Remix</Em> which is a newer technology that
+              boasts <Em>even faster speeds</Em> in most cases.
             </p>
           </article>
 
@@ -89,34 +75,22 @@ const EcommerceProduct = () => {
               Content management
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              <Em inViewClassName='text-white'>Crystallise</Em> is my preferred
-              headless eCommerce solution. Not only is it{' '}
-              <Em inViewClassName='text-white'>
-                secure, versatile, and future proof;
-              </Em>{' '}
-              it also has a{' '}
-              <Em inViewClassName='text-white'>clean, intuitive UI</Em> that
-              makes updating your website with new content or adding new
-              products a{' '}
-              <Em inViewClassName='text-white'>
-                breeze for you and your team.
-              </Em>
+              <Em>Crystallise</Em> is my preferred headless eCommerce solution.
+              Not only is it <Em>secure, versatile, and future proof;</Em> it
+              also has a <Em>clean, intuitive UI</Em> that makes updating your
+              website with new content or adding new products a{' '}
+              <Em>breeze for you and your team.</Em>
               <br />
               <br />
-              <Em inViewClassName='text-white'>Crystallise</Em> also boast{' '}
-              <Em inViewClassName='text-white'>incredible value</Em> in a space
-              where other solutions can mean yearly bills of{' '}
-              <Em inViewClassName='text-white'>$24,000</Em> (Shopify Plus),{' '}
-              <Em inViewClassName='text-white'>$50,000</Em> (Elastic Path), up
-              to as much as <Em inViewClassName='text-white'>$300,000</Em>{' '}
-              (CommerceTools).
+              <Em>Crystallise</Em> also boast <Em>incredible value</Em> in a
+              space where other solutions can mean yearly bills of{' '}
+              <Em>$24,000</Em> (Shopify Plus), <Em>$50,000</Em> (Elastic Path),
+              up to as much as <Em>$300,000</Em> (CommerceTools).
               <br />
               <br />
               These solutions often come with plenty of bells and whistles, but
               for most businesses these extra features are left unused,{' '}
-              <Em inViewClassName='text-white'>
-                eating into your business’ money pot.
-              </Em>
+              <Em>eating into your business’ money pot.</Em>
               <br />
               <br />
               Keep in mind though, I’m platform agnostic. If you have an
@@ -127,10 +101,8 @@ const EcommerceProduct = () => {
               What’s more, if you have a fast approaching deadline or your
               budget is small, such that I’m not afforded enough time to develop
               on Crystallise, I’m happy to{' '}
-              <Em inViewClassName='text-white'>
-                adapt my designs to fit a Shopify template
-              </Em>{' '}
-              for use on one of their basic plans.
+              <Em>adapt my designs to fit a Shopify template</Em> for use on one
+              of their basic plans.
             </p>
           </article>
 
@@ -142,19 +114,11 @@ const EcommerceProduct = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Ecommerce stores vary massively in scope and feature set, and as
-              such, they{' '}
-              <Em inViewClassName='text-white'>vary hugely in price too.</Em> My
-              best estimate for the{' '}
-              <Em inViewClassName='text-white'>
-                design, development, deployment, and maintenance
-              </Em>{' '}
-              of a{' '}
-              <Em inViewClassName='text-white'>
-                mid featured, blazingly fast eCommerce store
-              </Em>{' '}
-              to cost around{' '}
-              <Em inViewClassName='text-white'>£18,000 - £25,000</Em> and to
-              take roughly <Em inViewClassName='text-white'>10 weeks.</Em>
+              such, they <Em>vary hugely in price too.</Em> My best estimate for
+              the <Em>design, development, deployment, and maintenance</Em> of a{' '}
+              <Em>mid featured, blazingly fast eCommerce store</Em> to cost
+              around <Em>£18,000 - £25,000</Em> and to take roughly{' '}
+              <Em>10 weeks.</Em>
             </p>
           </article>
         </div>

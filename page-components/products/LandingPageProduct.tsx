@@ -1,6 +1,6 @@
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import Separator from '@components/separator'
+import Separator from '@components/Separator'
 
 const LandingPageProduct = () => {
   return (
@@ -14,17 +14,17 @@ const LandingPageProduct = () => {
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               For businesses that operate mostly outside of the web, one web
               page is often all it takes to{' '}
-              <Em inViewClassName='text-white'>
+              <Em >
                 introduce and inform users about their products and services.
               </Em>
               <br />
               <br />
               An eye catching landing page would{' '}
-              <Em inViewClassName='text-white'>
+              <Em >
                 establish your brand’s online presence{' '}
               </Em>
               and open you up to a{' '}
-              <Em inViewClassName='text-white'>
+              <Em >
                 huge set of potential clients
               </Em>{' '}
               that would otherwise be in the dark!
@@ -35,7 +35,7 @@ const LandingPageProduct = () => {
               content management. Portfolios may require multiple pages or
               integration with a CMS such that owner can update their website
               with new works, but{' '}
-              <Em inViewClassName='text-white'>
+              <Em >
                 for many businesses neither is necessary.
               </Em>
             </p>
@@ -49,9 +49,9 @@ const LandingPageProduct = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               A landing page should range from around{' '}
-              <Em inViewClassName='text-white'>£4,800</Em> to{' '}
-              <Em inViewClassName='text-white'>£6,700</Em> and take{' '}
-              <Em inViewClassName='text-white'>roughly 6 weeks,</Em> but,
+              <Em >£4,800</Em> to{' '}
+              <Em >£6,700</Em> and take{' '}
+              <Em >roughly 6 weeks,</Em> but,
               similar to the portfolio website, price and timeframe may vary
               depending on the scope of the animations implemented.
             </p>

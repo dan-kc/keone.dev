@@ -1,8 +1,7 @@
 import classNames from 'classnames'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Color } from 'styles/color-config'
-
+import { Color, generateClassName } from 'styles/color-config'
 
 interface Props {
   items: string[]
@@ -13,21 +12,8 @@ interface Props {
 const List = ({ items, className, dashColor }: Props) => {
   const scrollRef = useRef(null)
   const isInView = useInView(scrollRef, { margin: '-5% 0px -5% 0px' })
-  let textColorClassName: string
   const length = items.length
-
-  if (dashColor === Color.cyan) {
-    textColorClassName = 'text-cyan-500'
-  }
-  if (dashColor === Color.emerald) {
-    textColorClassName = 'text-emerald-500'
-  }
-  if (dashColor === Color.violet) {
-    textColorClassName = 'text-violet-500'
-  }
-  if (dashColor === Color.yellow) {
-    textColorClassName = 'text-yellow-300'
-  }
+  const { textColorClassName } = generateClassName(dashColor)
 
   return (
     <ul ref={scrollRef} className={className}>

@@ -21,43 +21,38 @@ const Design = () => {
               Moodboard
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              First thing's first, let's define a{' '}
-              <Em inViewClassName='text-white'>design direction</Em> for your
-              website. I'll create a Moodboard where we'll be able to{' '}
-              <Em inViewClassName='text-white'>
-                easily share design inspiration with each other.
-              </Em>
+              First thing's first, let's define a <Em>design direction</Em> for
+              your website. I'll create a Moodboard where we'll be able to{' '}
+              <Em>easily share design inspiration with each other.</Em>
               <br />
               <br />
               This will instantly give you a space where you can show me any
               existing design material you may have, for example{' '}
-              <Em inViewClassName='text-white'>
+              <Em>
                 logos, colours, typography, photography, other websites that you
                 really like, or even whole other moodboards.
               </Em>{' '}
               Feel free to add
-              <Em inViewClassName='text-white'> anything!</Em>
+              <Em> anything!</Em>
               <br />
               <br />
               I'll be steadily populating the space with complimentary material,
               mainly in the form of other website designs. Just let me know what
               you like and dislike, and{' '}
-              <Em inViewClassName='text-white'>
-                I'll reflect your preferences in the future designs.
-              </Em>
+              <Em>I'll reflect your preferences in the future designs.</Em>
               <br />
               <br />
               Moodboards will often{' '}
-              <Em inViewClassName='text-white'>
+              <Em>
                 capture ideas that would otherwise be lost in translation{' '}
               </Em>
               when only describing things verbally-
-              <Em inViewClassName='text-white'> saving you time and money </Em>
+              <Em> saving you time and money </Em>
               by avoiding any additional revision requests later down the line.
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className='relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -69,9 +64,8 @@ const Design = () => {
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Shortly after receiving the Moodboard you'll also be given a
               sitemap diagram which will outline your{' '}
-              <Em inViewClassName='text-white'>website’s structure</Em> and give
-              you a bird's-eye view of the{' '}
-              <Em inViewClassName='text-white'>user journey.</Em>
+              <Em>website’s structure</Em> and give you a bird's-eye view of the{' '}
+              <Em>user journey.</Em>
               <br />
               <br />
               Better yet, you'll receive this diagram, the Moodboard and all
@@ -82,17 +76,15 @@ const Design = () => {
                 mail={false}
                 href='https://www.figma.com/figjam/'
               >
-                <Em inViewClassName='text-white'>FigJam</Em>
+                <Em>FigJam</Em>
               </AnimatedLink>{' '}
-              which makes providing{' '}
-              <Em inViewClassName='text-white'>live feedback</Em> an absolute
-              breeze. This keeps me{' '}
-              <Em inViewClassName='text-white'>constantly informed</Em> on your
-              style preferences and what you envision the project to look like.
+              which makes providing <Em>live feedback</Em> an absolute breeze.
+              This keeps me <Em>constantly informed</Em> on your style
+              preferences and what you envision the project to look like.
             </div>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className='relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -105,20 +97,17 @@ const Design = () => {
               Next, I'll give you a detailed wireframe for every page on your
               website. Wireframes are skeletal illustrations of a page’s
               interface. They communicate what content is being prioritised,
-              and, most importantly, the{' '}
-              <Em inViewClassName='text-white'>intended user behaviours.</Em>
+              and, most importantly, the <Em>intended user behaviours.</Em>
               <br />
               <br />
               Defining a good interface structure is the{' '}
-              <Em inViewClassName='text-white'> most important part </Em>
+              <Em> most important part </Em>
               of designing your website because it directly focuses on{' '}
-              <Em inViewClassName='text-white'>
-                fulfilling your business’ key objectives.
-              </Em>
+              <Em>fulfilling your business’ key objectives.</Em>
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className='mb-14 relative'>
             <p className='font-display text-base lg:text-lg text-violet-500'>
@@ -130,28 +119,19 @@ const Design = () => {
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               For the final designs I'll populate the wireframes with your
               content, like product images or text. I’ll also adapt the
-              wireframes to{' '}
-              <Em inViewClassName='text-white'>
-                reflect your style preferences{' '}
-              </Em>
+              wireframes to <Em>reflect your style preferences </Em>
               from the moodboard.
               <br />
               <br />
-              Since the goal of this stage is to{' '}
-              <Em inViewClassName='text-white'>fine-tune,</Em> we'll go through
-              a comprehensive{' '}
-              <Em inViewClassName='text-white'>3 rounds of review</Em> so that
-              we can be{' '}
-              <Em inViewClassName='text-white'>absolutely certain that</Em> the
-              designs{' '}
-              <Em inViewClassName='text-white'>meet your expectations.</Em>
+              Since the goal of this stage is to <Em>fine-tune,</Em> we'll go
+              through a comprehensive <Em>3 rounds of review</Em> so that we can
+              be <Em>absolutely certain that</Em> the designs{' '}
+              <Em>meet your expectations.</Em>
               <br />
               <br />
               Adjusting these final designs is my favourite part of the design
               process because I finally get to{' '}
-              <Em inViewClassName='text-white'>
-                fully hone in on your vision.
-              </Em>
+              <Em>fully hone in on your vision.</Em>
             </p>
           </article>
 

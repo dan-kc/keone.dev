@@ -66,23 +66,17 @@ const AdditionalServices = () => {
 
             <p className='mt-4 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Of course, every website requires{' '}
-              <Em inViewClassName='text-white'>
-                different features and considerations,
-              </Em>{' '}
-              so take my price/timeframe approximations above with a{' '}
-              <Em inViewClassName='text-white'>grain of salt.</Em> The only way
-              to know for sure is to{' '}
-              <Em inViewClassName='text-white'>contact me for a quote!</Em>
+              <Em>different features and considerations,</Em> so take my
+              price/timeframe approximations above with a{' '}
+              <Em>grain of salt.</Em> The only way to know for sure is to{' '}
+              <Em>contact me for a quote!</Em>
             </p>
           </div>
+
           <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-1'>
             <AnimatedLink
-              mail={false}
               href='/projects'
-              thick={false}
-              newTab={false}
               linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl text-white flex gap-1 items-center'
-              underlineClassName='bg-white'
             >
               View projects
               <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />

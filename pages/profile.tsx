@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Bio from '@page-components/profile/Bio'
-import Highlight, { Color } from '@components/Hightlight'
+import Highlight from '@components/Hightlight'
 import Title from '@components/Title'
+import { Color } from 'styles/color-config'
 
 export default function Profile() {
   return (
@@ -12,8 +13,8 @@ export default function Profile() {
       </Head>
       <main className='font-body text-base lg:text-lg'>
         <Title>
-          Who does this guy{' '}
-          <Highlight color={Color.emerald}>think</Highlight> he is?
+          Who does this guy <Highlight color={Color.emerald}>think</Highlight>{' '}
+          he is?
         </Title>
         <Bio />
       </main>

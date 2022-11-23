@@ -1,12 +1,9 @@
-import { InView } from 'react-intersection-observer'
-import Link from '@components/Link'
-import classNames from 'classnames'
 import AnimatedLink from '@components/AnimatedLink'
-import { FaArrowRight } from 'react-icons/fa'
 import FadeInFromLeft from '@components/FadeInFromLeft'
 import { Color } from 'styles/color-config'
 import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 const ProcessSection = () => {
   return (
@@ -61,7 +58,7 @@ const ProcessSection = () => {
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               This is where i'll be able to
-              <Em> take your suggestions onboard </Em>
+              <Em> take your suggestions on-board </Em>
               in order to keep myself informed on{' '}
               <Em> your style preferences </Em>
               so that you can be sure
@@ -83,18 +80,18 @@ const ProcessSection = () => {
               <AnimatedLink href='https://www.figma.com/figjam/' newTab>
                 FigJam
               </AnimatedLink>
-              This means you can easily{' '}
-              <Em delay={0.1}>add comments, voice notes, likes</Em>
-              or <Em delay={0.1}>dislikes</Em>
-              to my designs at <Em delay={0.1}>any time, any stage</Em>
+              . This means you can easily
+              <Em delay={0.1}> add comments, voice notes, likes </Em>
+              or<Em delay={0.1}> dislikes </Em>
+              to my designs at<Em delay={0.1}> any time, any stage </Em>
               in the design process.
             </div>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              This is <Em delay={0.1}>especially useful</Em>
-              for any <Em delay={0.1}>small revisions</Em>
+              This is<Em delay={0.1}> especially useful </Em>
+              for any<Em delay={0.1}> small revisions </Em>
               outside of the formal revision rounds.
             </p>
           </FadeInFromLeft>
@@ -103,31 +100,37 @@ const ProcessSection = () => {
         <article className='mt-20'>
           <FadeInFromLeft>
             <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-violet-500 leading-tight md:leading-tight lg:leading-tight'>
-              A free month of maintenance
+              Free maintenance
             </h3>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p className='relative inline-block'>
-              I'll be <Em delay={0.1}>sticking around</Em>
-              to make sure
-              <Em delay={0.1}>you and your team know how to use</Em>
-              every single feature of your website.
+              I'll be<Em delay={0.1}> sticking around </Em>
+              for a whole month to make sure
+              <Em delay={0.1}>
+                {' '}
+                you and your team know how to use every single feature{' '}
+              </Em>
+              of your website.
             </p>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              I'll <Em delay={0.1}>patch any bugs</Em>
-              and make sure <Em delay={0.1}>everything runs smoothly</Em>
+              I'll<Em delay={0.1}> patch any bugs </Em>
+              and make sure<Em delay={0.1}> everything runs smoothly </Em>
             </p>
           </FadeInFromLeft>
         </article>
 
-        <div className='flex justify-end pt-20 md:pt-40 font-heading leading-tight font-extrabold text-2xl md:text-3xl lg:text-4xl'>
-          <AnimatedLink href='/process' linkClassName='flex gap-1 items-center'>
+        <div className='flex justify-end pt-20 md:pt-40 '>
+          <AnimatedLink
+            href='/process'
+            linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
+          >
             View process
-            <FaArrowRight className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
+            <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
           </AnimatedLink>
         </div>
       </Container>

@@ -41,33 +41,26 @@ const Deploy = () => {
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               We’re now ready to launch the website! But just before we do, I’ll
               deploy a test version which I’ll use to{' '}
-              <Em inViewClassName='text-white'>
-                {' '}
-                guide you on how to use your website’s features,{' '}
-              </Em>
+              <Em> guide you on how to use your website’s features, </Em>
               for example where to{' '}
-              <Em inViewClassName='text-white'>
-                access the analytics, or how to add products.
-              </Em>
+              <Em>access the analytics, or how to add products.</Em>
               <br />
               <br />
               I’ll also benchmark your website using{' '}
               <AnimatedLink
                 mail={false}
-                linkClassName="font-semibold"
+                linkClassName='font-semibold'
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
                 newTab={true}
               >
-                <Em inViewClassName='text-white'>Google Lighthouse.</Em>
+                <Em>Google Lighthouse.</Em>
               </AnimatedLink>{' '}
               This is a service that audits your website for{' '}
-              <Em inViewClassName='text-white'>
-                performance, accessibility, and SEO.
-              </Em>
+              <Em>performance, accessibility, and SEO.</Em>
               <br />
               <br />
               This will give you the peace of mind that your website meets{' '}
-              <Em inViewClassName='text-white'>
+              <Em>
                 Google’s{' '}
                 <AnimatedLink
                   underlineClassName='bg-white'
@@ -79,9 +72,7 @@ const Deploy = () => {
                 </AnimatedLink>{' '}
               </Em>
               which are metrics{' '}
-              <Em inViewClassName='text-white'>
-                Google uses for indexing search results.
-              </Em>
+              <Em>Google uses for indexing search results.</Em>
             </div>
           </article>
 
@@ -96,19 +87,14 @@ const Deploy = () => {
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Once the project is deployed I’ll be{' '}
-              <Em inViewClassName='text-white'>
-                sticking around for an extra month{' '}
-              </Em>
-              to ensure that all of the features{' '}
-              <Em inViewClassName='text-white'>run smoothly.</Em>
+              <Em>sticking around for an extra month </Em>
+              to ensure that all of the features <Em>run smoothly.</Em>
               <br />
               <br />
               When your business grows and you require more features, or if you
               just want to hang onto me for a bit longer, I’m open to set up a
               monthly arrangement for me to{' '}
-              <Em inViewClassName='text-white'>
-                implement changes for you on demand.
-              </Em>
+              <Em>implement changes for you on demand.</Em>
             </div>
           </article>
 
@@ -120,7 +106,6 @@ const Deploy = () => {
           <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
             <span className='text-yellow-300'>-</span> ...and that's that!{' '}
           </FadeInFromLeft>
-
         </div>
       </Container>
     </section>

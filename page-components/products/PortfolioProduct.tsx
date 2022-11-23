@@ -1,7 +1,8 @@
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
-import List, { Color } from '@components/List'
+import List from '@components/List'
 import Separator from '@components/Separator'
+import { Color } from 'styles/color-config'
 
 const PortfolioProduct = () => {
   return (
@@ -14,21 +15,12 @@ const PortfolioProduct = () => {
           <article className='relative'>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Impress your potential clients with a{' '}
-              <Em inViewClassName='text-white'>stunning new Portfolio site</Em>{' '}
-              that’s{' '}
-              <Em inViewClassName='text-white'>
-                {' '}
-                bespoke to your artistic style,
-              </Em>{' '}
-              and that{' '}
-              <Em inViewClassName='text-white'>
-                {' '}
-                validates your status as a creative professional.
-              </Em>
+              <Em>stunning new Portfolio site</Em> that’s{' '}
+              <Em> bespoke to your artistic style,</Em> and that{' '}
+              <Em> validates your status as a creative professional.</Em>
               <br />
               <br />
-              As a creative professional your business{' '}
-              <Em inViewClassName='text-white'>IS </Em>
+              As a creative professional your business <Em>IS </Em>
               your website. It’s the place you
               <br />
               <br />
@@ -46,7 +38,7 @@ const PortfolioProduct = () => {
             </div>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
@@ -54,56 +46,43 @@ const PortfolioProduct = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Your portfolio will be designed to{' '}
-              <Em inViewClassName='text-white'>
-                generate more qualified leads
-              </Em>{' '}
-              from potential clients who are{' '}
-              <Em inViewClassName='text-white'>
-                likely to do business with you.
-              </Em>
+              <Em>generate more qualified leads</Em> from potential clients who
+              are <Em>likely to do business with you.</Em>
               <br />
-              <br />A portfolio is{' '}
-              <Em inViewClassName='text-white'>just as scientific</Em> as an
-              eCommerce store in its design, and just as important to the owner
-              for their business.
+              <br />A portfolio is <Em>just as scientific</Em> as an eCommerce
+              store in its design, and just as important to the owner for their
+              business.
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Development
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              <Em inViewClassName='text-white'>
-                HTML, CSS and vanilla Javascript
-              </Em>{' '}
-              are often perfect for projects like these, to keep the{' '}
-              <Em inViewClassName='text-white'>file size down</Em> and the{' '}
-              <Em inViewClassName='text-white'>performance high!</Em>
+              <Em>HTML, CSS and vanilla Javascript</Em> are often perfect for
+              projects like these, to keep the <Em>file size down</Em> and the{' '}
+              <Em>performance high!</Em>
               <br />
               <br />
-              I’m an expert in the animation library{' '}
-              <Em inViewClassName='text-white'>GSAP</Em> too, enabling a{' '}
-              <Em inViewClassName='text-white'>
-                beautifully animated showcase of your work{' '}
-              </Em>{' '}
-              if needs be!
+              I’m an expert in the animation library <Em>GSAP</Em> too, enabling
+              a <Em>beautifully animated showcase of your work </Em> if needs
+              be!
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Content management
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              My preferred CMS solution is{' '}
-              <Em inViewClassName='text-white'>Prismic.</Em> This is what you’ll
+              My preferred CMS solution is <Em>Prismic.</Em> This is what you’ll
               use to{' '}
-              <Em inViewClassName='text-white'>
+              <Em>
                 update your website with your latest works and keep your website
                 fresh.
               </Em>{' '}
@@ -111,17 +90,15 @@ const PortfolioProduct = () => {
             </p>
           </article>
 
-          <Separator className='my-10 lg:my-14'/>
+          <Separator className='my-10 lg:my-14' />
 
           <article className=''>
             <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
               Price / Timeframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              I estimate a portfolio to range from{' '}
-              <Em inViewClassName='text-white'>£7,500</Em> to{' '}
-              <Em inViewClassName='text-white'>£13,500</Em> and to take{' '}
-              <Em inViewClassName='text-white'>6-8 weeks</Em> depending on the
+              I estimate a portfolio to range from <Em>£7,500</Em> to{' '}
+              <Em>£13,500</Em> and to take <Em>6-8 weeks</Em> depending on the
               scope of the animations implemented.
               <br />
               <br />

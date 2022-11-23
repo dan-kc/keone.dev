@@ -38,21 +38,15 @@ const Develop = () => {
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               By this point, I’m itching to begin coding and{' '}
-              <Em inViewClassName='text-white'>
-                making your website a reality.
-              </Em>{' '}
-              This is the most time consuming step of the process, but it’s the
-              most enjoyable for me as it reminds me of my time at university
-              reading maths.
+              <Em>making your website a reality.</Em> This is the most time
+              consuming step of the process, but it’s the most enjoyable for me
+              as it reminds me of my time at university reading maths.
               <br />
-              <br />I use <Em inViewClassName='text-white'>
-                fast, modern
-              </Em> and <Em inViewClassName='text-white'>industry proven </Em>
-              web frameworks like <Em inViewClassName='text-white'> React </Em>
-              and <Em inViewClassName='text-white'>NextJs </Em>which are relied
-              upon heavily by giants like{' '}
-              <Em inViewClassName='text-white'>TikTok, Redbull </Em>
-              and<Em inViewClassName='text-white'> Nike.</Em>
+              <br />I use <Em>fast, modern</Em> and <Em>industry proven </Em>
+              web frameworks like <Em> React </Em>
+              and <Em>NextJs </Em>which are relied upon heavily by giants like{' '}
+              <Em>TikTok, Redbull </Em>
+              and<Em> Nike.</Em>
             </div>
           </article>
 

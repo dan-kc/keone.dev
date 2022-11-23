@@ -2,7 +2,7 @@ import DoubleText from '@page-components/index/DoubleText'
 import Em from '@components/Em'
 import AnimatedLink from '@components/AnimatedLink'
 import Container, { Options } from '@components/Container'
-import { FaArrowRight } from 'react-icons/fa'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 const ProfileSection = () => {
   return (
@@ -17,13 +17,13 @@ const ProfileSection = () => {
           </p>
         </div>
 
-        <div className='flex justify-end pt-20 md:pt-40 font-heading leading-tight font-extrabold text-2xl md:text-3xl lg:text-4xl'>
+        <div className='flex justify-end pt-20 md:pt-40 '>
           <AnimatedLink
             href='/profile'
-            linkClassName='flex gap-1 items-center'
+            linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
           >
-            View profile
-              <FaArrowRight className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
+            View products
+            <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
           </AnimatedLink>
         </div>
       </Container>
