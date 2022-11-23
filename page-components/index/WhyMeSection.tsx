@@ -30,18 +30,18 @@ const WhyMeSection = () => {
           </FadeInFromLeft>
 
           <div className='flex gap-3 justify-between mt-5 md:mt-10'>
-            <ProgressCircle percentage={100} caption='Performance' />
+            <ProgressCircle percentage={97} caption='Performance' />
             <ProgressCircle
               percentage={100}
               caption='Accessibility'
               delay={0.2}
             />
             <ProgressCircle
-              percentage={99}
+              percentage={100}
               caption='Best Practices'
               delay={0.4}
             />
-            <ProgressCircle percentage={93} caption='SEO' delay={0.6} />
+            <ProgressCircle percentage={91} caption='SEO' delay={0.6} />
           </div>
 
           <FadeInFromLeft className='relative inline-block mt-5 md:mt-10'>
@@ -64,13 +64,13 @@ const WhyMeSection = () => {
 
           <div className='flex flex-col mt-5 md:mt-10'>
             <ProgressBar
-              percentage={80}
+              percentage={85}
               title='Largest Contentful Paint (LCP)'
-              value={2}
+              value={1.4}
               suffix='s'
             />
             <ProgressBar
-              percentage={95}
+              percentage={90}
               title='First Input Delay (FIP)'
               value={17}
               suffix='ms'
@@ -120,8 +120,7 @@ const WhyMeSection = () => {
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <p>
               Work with me and you'll get a{' '}
-              <Em delay={0.1}>lightning fast website</Em> - It's that
-              simple.
+              <Em delay={0.1}>lightning fast website</Em> - It's that simple.
             </p>
           </FadeInFromLeft>
 

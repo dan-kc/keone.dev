@@ -44,7 +44,7 @@ const ProcessSection = () => {
         <article className='mt-20'>
           <FadeInFromLeft>
             <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-emerald-500 leading-tight md:leading-tight lg:leading-tight'>
-              Several rounds of review
+              Several review rounds
             </h3>
           </FadeInFromLeft>
 
@@ -58,7 +58,7 @@ const ProcessSection = () => {
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               This is where i'll be able to
-              <Em> take your suggestions on-board </Em>
+              <Em> take your suggestions onboard </Em>
               in order to keep myself informed on{' '}
               <Em> your style preferences </Em>
               so that you can be sure
@@ -119,7 +119,7 @@ const ProcessSection = () => {
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               I'll<Em delay={0.1}> patch any bugs </Em>
-              and make sure<Em delay={0.1}> everything runs smoothly </Em>
+              and make sure<Em delay={0.1}> everything runs smoothly</Em>.
             </p>
           </FadeInFromLeft>
         </article>

@@ -46,7 +46,7 @@ const ProgressCircle: React.FC<Props> = ({
           initial={'hidden'}
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <circle cx='50' cy='50' r='40' stroke='#141417' strokeWidth={8} />
+          <circle cx='50' cy='50' r='40' stroke='#141417' strokeWidth={6} />
           <motion.circle
             className='-rotate-90 origin-center text-anthracite-8'
             cx='50'
@@ -54,7 +54,7 @@ const ProgressCircle: React.FC<Props> = ({
             r='40'
             fill='transparent'
             stroke='#10b981'
-            strokeWidth={8}
+            strokeWidth={6}
             variants={draw}
           />
         </motion.svg>

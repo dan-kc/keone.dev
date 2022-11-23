@@ -7,7 +7,6 @@ interface Props {
   title: string
   value: number
   suffix?: string
-  delay?: number
 }
 
 const ProgressBar: React.FC<Props> = ({
@@ -15,7 +14,6 @@ const ProgressBar: React.FC<Props> = ({
   title,
   value,
   suffix = '',
-  delay = 0,
 }) => {
   const scrollRef = useRef(null)
   const isInView = useInView(scrollRef)
@@ -31,12 +29,12 @@ const ProgressBar: React.FC<Props> = ({
       ref={scrollRef}
       initial={{ opacity: 0 }}
       animate={{ opacity: isInView ? 1 : 0 }}
-      transition={{ duration: isInView ? 1.5 : 0, delay: isInView ? delay : 0 }}
-      className='flex flex-col gap-5'
+      transition={{ duration: isInView ? 1.5 : 0 }}
+      className='flex flex-col gap-2'
     >
-      <div className='flex justify-start md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-white'>
+      <div className='flex md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-white'>
         <span className='h-2 w-2 md:h-3 md:w-3 shrink-0 mt-[11px] md:mt-[1px] bg-emerald-500 rounded-full ' />
-        <div>{title}</div>
+        <div className='whitespace-nowrap'>{title}</div>
       </div>
 
       <div className='flex justify-start'>
@@ -45,7 +43,6 @@ const ProgressBar: React.FC<Props> = ({
           animate={{ width: isInView ? `${largeGreenSize}%` : '0%' }}
           transition={{
             duration: isInView ? 1.5 : 0,
-            delay: isInView ? delay : 0,
           }}
           className='pr-1'
         >
@@ -53,12 +50,12 @@ const ProgressBar: React.FC<Props> = ({
         </motion.div>
 
         <div
-          className='flex flex-col gap-1 items-center '
+          className='flex flex-col gap-1 items-center'
           style={{ width: `${pinSize}%` }}
         >
           <motion.div
             initial={{ scaleY: 0 }}
-            animate={{ scaleY: isInView ? '100%' : '0%' }}
+            animate={{ scaleY: isInView ? 1 : 0 }}
             transition={{
               duration: isInView ? 1.5 : 0,
               delay: isInView ? 0.5 : 0,
