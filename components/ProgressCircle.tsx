@@ -2,7 +2,17 @@ import CountUp from 'react-countup'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-const ProgressCircle = ({ percentage, caption}) => {
+interface Props {
+  percentage: number
+  caption: string
+  delay?: number
+}
+
+const ProgressCircle: React.FC<Props> = ({
+  percentage,
+  caption,
+  delay = 0,
+}) => {
   const draw = {
     hidden: {
       pathLength: 0,
@@ -14,7 +24,7 @@ const ProgressCircle = ({ percentage, caption}) => {
     },
     visible: {
       pathLength: percentage / 100,
-      transition: { type: 'spring', duration: 3, bounce: 0 },
+      transition: { type: 'spring', duration: 3, bounce: 0, delay: delay },
     },
   }
 
@@ -22,13 +32,19 @@ const ProgressCircle = ({ percentage, caption}) => {
   const isInView = useInView(scrollRef)
 
   return (
-    <div className='flex flex-col gap-[10px]'>
-      <div className='relative' ref={scrollRef}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: isInView ? 1.5 : 0, delay: isInView ? delay : 0 }}
+      className='flex flex-col relative w-1/5 items-center'
+      ref={scrollRef}
+    >
+      <div className='relative'>
         <motion.svg
-          className='w-[100%]'
+          className='w-full'
           viewBox='0 0 100 100'
-          initial='hidden'
-          whileInView='visible'
+          initial={'hidden'}
+          animate={isInView ? 'visible' : 'hidden'}
         >
           <circle cx='50' cy='50' r='40' stroke='#141417' strokeWidth={8} />
           <motion.circle
@@ -42,15 +58,19 @@ const ProgressCircle = ({ percentage, caption}) => {
             variants={draw}
           />
         </motion.svg>
-
-        <CountUp
-          className='absolute text-emerald-500 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  font-display'
-          end={isInView ? percentage : 0}
-          duration={2.35}
-        />
+        {isInView ? (
+          <CountUp
+            className='absolute text-emerald-500 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading font-bold text-[16px] min-[450px]:text-[24px] sm:text-[32px] lg:text-[38px]'
+            end={percentage}
+            duration={2.35}
+            delay={delay}
+          />
+        ) : null}
       </div>
-      <h4 className='text-center font-heading text-white font-medium text-[14px] min-[450px]:text-[24px] min-[550px]:text-[30px] sm:text-[35px] lg:text-[44px]'>{caption}</h4>
-    </div>
+      <h4 className='text-center font-heading text-white font-medium text-[12px] min-[450px]:text-[16px] sm:text-[22px] lg:text-3xl leading-tight min-[450px]:leading-tight sm:leading-tight lg:leading-tight'>
+        {caption}
+      </h4>
+    </motion.div>
   )
 }
 

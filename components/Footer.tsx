@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import Em from './Em'
 import Link from './Link'
 import Navbar from '@components/Navbar'
@@ -10,26 +9,12 @@ const Footer: React.FC<Props> = () => {
     <>
       <footer className='relative pt-16 md:pt-20 pb-2 bg-anthracite-1'>
         <div className='relative flex w-full flex-col items-center px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-24'>
-          <h2
-            className={classNames(
-              'duration-1000 relative inline-block text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold mb-4 md:mb-10 text-center text-rose-700'
-            )}
-          >
+          <h2 className='text-4xl md:text-6xl lg:text-8xl font-heading font-extrabold mb-4 md:mb-10 text-center text-rose-700 leading-tight md:leading-tight lg:leading-tight'>
             Get in touch!
           </h2>
-          <p
-            className={classNames(
-              'duration-1000 relative pt-2 px-4 text-xl md:text-2xl lg:text-3xl text-center font-body max-w-lg md:max-w-xl lg:max-w-3xl mx-auto lg:mb-10 mb-8 md:mb-16 lg:mb-20'
-            )}
-          >
-            My inbox is{' '}
-            <Em inViewClassName='text-white' bold={true}>
-              always open
-            </Em>
-            . Feel free to shoot me a message and I{"'"}ll get back to you{' '}
-            <Em inViewClassName='text-white' bold={true}>
-              as soon as possible!
-            </Em>
+          <p className='mt-2 px-4 mx-auto mb-8 md:mb-16 lg:mb-20 text-xl md:text-2xl lg:text-3xl text-center max-w-lg md:max-w-xl lg:max-w-3xl leading-tight md:leading-tight lg:leading-tight'>
+            My inbox is <Em>always open</Em>. Feel free to shoot me a message
+            and I'll get back to you <Em>as soon as possible!</Em>
           </p>
 
           <Link

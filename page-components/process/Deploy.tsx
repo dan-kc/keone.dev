@@ -53,8 +53,8 @@ const Deploy = () => {
               <br />
               I’ll also benchmark your website using{' '}
               <AnimatedLink
-                underlineClassName='bg-white'
                 mail={false}
+                linkClassName="font-semibold"
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
                 newTab={true}
               >

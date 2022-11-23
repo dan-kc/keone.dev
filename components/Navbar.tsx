@@ -27,9 +27,8 @@ export default function Navbar() {
       <NavigationMenu.Root className='flex justify-between items-center py-1 text-sm text-base'>
         <Link
           aria-label='Home'
-          mail={false}
           href='/'
-          className='mt-[0.4rem] md:mt-[0.36rem] w-44 lg:w-48 pointer-events-auto'
+          className='mt-[6.4px] md:mt-[5.76px] w-44 lg:w-48 pointer-events-auto'
         >
           <Lottie animationData={lottie} loop={true} />
         </Link>

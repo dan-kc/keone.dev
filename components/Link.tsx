@@ -2,7 +2,7 @@ import Link from 'next/link'
 import useToastStore from '@hooks/stores/useToastStore'
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  mail: boolean
+  mail?: boolean
   href?: string
   passHref?: boolean
   legacyBehavior?: boolean
@@ -13,11 +13,11 @@ const mailTo =
   'mailto:daniel@keone.io?subject=Services%20Enquiry&body=Hello%20Daniel%2C'
 
 const NewLink: React.FC<Props> = ({
-  mail,
+  mail = false,
   href,
-  legacyBehavior,
+  legacyBehavior = false,
   children,
-  passHref,
+  passHref = false,
   ...rest
 }) => {
   const setOpen = useToastStore((state) => state.setOpen)

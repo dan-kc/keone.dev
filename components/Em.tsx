@@ -23,18 +23,18 @@ const Em: React.FC<Props> = ({
   return (
     <InView rootMargin='-5% 0px -5% 0px'>
       {({ inView, ref }) => (
-        <span
+        <em
           ref={ref}
           style={{ transitionDelay: delayString }}
           className={classNames(
             inView ? textColorClassName : null,
             bold ? 'font-semibold' : null,
             className,
-            'duration-1000'
+            'duration-1000 not-italic'
           )}
         >
           {children}
-        </span>
+        </em>
       )}
     </InView>
   )

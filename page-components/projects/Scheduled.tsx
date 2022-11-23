@@ -4,6 +4,7 @@ import List from '@components/List'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Separator from '@components/Separator'
 import { Color } from '@components/Hightlight'
+import { FaArrowRight } from 'react-icons/fa'
 export default () => {
   return (
     <>
@@ -57,6 +58,7 @@ export default () => {
               </div>
             </article>
           </div>
+
           <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-1'>
             <AnimatedLink
               mail={false}

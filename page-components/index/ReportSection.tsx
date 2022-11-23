@@ -10,7 +10,7 @@ const ReportSection = () => {
     <>
       <section className='py-20 md:py-40 bg-anthracite-3'>
         <Container size={Options.md}>
-          <div className='pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+          <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <FadeInFromLeft className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
               According to{' '}
               <AnimatedLink
@@ -61,7 +61,7 @@ const ReportSection = () => {
           </div>
 
           <div className='mt-20 lg:mt-40'>
-            <div className='pr-[calc(6.25%+1rem)] md:pr-[calc(12.5%+5rem)]'>
+          <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
               <FadeInFromLeft>
                 <p className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
                   These numbers are
@@ -102,7 +102,7 @@ const ReportSection = () => {
 
               <FadeInFromLeft className='mt-5'>
                 <p className=''>
-                  The same report claims that for <Em>lead generating</Em> sites
+                  The report also found that for <Em>lead generating</Em> sites
                   with a form...
                 </p>
               </FadeInFromLeft>

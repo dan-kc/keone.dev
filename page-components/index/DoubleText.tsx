@@ -5,8 +5,8 @@ const DoubleText = () => {
   const scrollRef = useRef(null)
   const isInView = useInView(scrollRef, { margin: '400% 0px -70% 0px' })
   return (
-    <div className='relative font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-white leading-tight md:leading-tight lg:leading-tight sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto'>
-      <div className='relative ml-5 md:ml-10' ref={scrollRef}>
+    <div className='relative font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-white leading-tight md:leading-tight lg:leading-tight'>
+      <div className='relative' ref={scrollRef}>
         <div className='absolute top-0 left-0'>
           <p className='whitespace-nowrap'>
             <span className=''>A</span>
