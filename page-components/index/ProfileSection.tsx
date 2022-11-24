@@ -20,10 +20,10 @@ const ProfileSection = () => {
         <div className='flex justify-end pt-20 md:pt-40 '>
           <AnimatedLink
             href='/profile'
-            linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
+            linkClassName='font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl flex gap-1 items-center'
           >
             View profile
-            <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
+            <ArrowRightIcon className='w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8' />
           </AnimatedLink>
         </div>
       </Container>

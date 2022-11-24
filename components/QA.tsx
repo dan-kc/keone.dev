@@ -113,7 +113,7 @@ export default function QA() {
                         </h2>
                         <AccordionPanel
                           className={classNames(
-                            'sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16',
+                            'pt-3 lg:pt-0 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16',
                             isLastItem ? 'mb-2 md:mb-4 lg:mb-6' : ''
                           )}
                         >
