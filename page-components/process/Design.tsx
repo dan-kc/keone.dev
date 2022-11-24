@@ -8,8 +8,8 @@ const Design = () => {
   return (
     <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
       <Container size={Options.md}>
-        <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-          <h2 className='text-violet-500 pb-8 lg:pb-14 font-heading font-extrabold leading-none text-5xl lg:text-7xl'>
+        <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-violet-500 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Design
           </h2>
 
@@ -17,7 +17,7 @@ const Design = () => {
             <p className='font-display text-base lg:text-lg text-violet-500'>
               Step 3/9
             </p>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Moodboard
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -58,7 +58,7 @@ const Design = () => {
             <p className='font-display text-base lg:text-lg text-violet-500'>
               Step 4/9
             </p>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Sitemap
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -90,7 +90,7 @@ const Design = () => {
             <p className='font-display text-base lg:text-lg text-violet-500'>
               Step 5/9
             </p>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Wireframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -113,7 +113,7 @@ const Design = () => {
             <p className='font-display text-base lg:text-lg text-violet-500'>
               Step 6/9
             </p>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Final designs
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>

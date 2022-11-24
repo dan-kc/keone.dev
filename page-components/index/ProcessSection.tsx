@@ -7,7 +7,7 @@ import { ArrowRightIcon } from '@radix-ui/react-icons'
 
 const ProcessSection = () => {
   return (
-    <section className='py-20 md:py-40 bg-anthracite-3'>
+    <section className='py-20 md:py-40 bg-anthracite-4'>
       <Container size={Options.md}>
         <FadeInFromLeft>
           <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-7xl text-white'>
@@ -106,7 +106,8 @@ const ProcessSection = () => {
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p className='relative inline-block'>
-              I'll be<Em delay={0.1}> sticking around </Em>
+              After the project is deployed I'll be
+              <Em delay={0.1}> sticking around </Em>
               for a whole month to make sure
               <Em delay={0.1}>
                 {' '}

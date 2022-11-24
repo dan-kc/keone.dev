@@ -8,7 +8,7 @@ import AnimatedLink from '@components/AnimatedLink'
 const ReportSection = () => {
   return (
     <>
-      <section className='py-20 md:py-40 bg-anthracite-3'>
+      <section className='py-20 md:py-40 bg-anthracite-4'>
         <Container size={Options.md}>
           <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <FadeInFromLeft className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>

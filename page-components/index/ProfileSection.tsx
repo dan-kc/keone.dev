@@ -22,7 +22,7 @@ const ProfileSection = () => {
             href='/profile'
             linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'
           >
-            View products
+            View profile
             <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
           </AnimatedLink>
         </div>

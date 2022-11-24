@@ -54,7 +54,7 @@ export default function Sidebar() {
 
               <Dialog.Content asChild forceMount key='menu'>
                 <motion.div
-                  className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-3xl font-heading font-extrabold px-10 pt-4 pb-0 bg-anthracite-3 rounded-md'
+                  className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-3xl font-heading font-extrabold px-10 pt-4 pb-0 bg-anthracite-4 rounded-md'
                   initial={{ opacity: 0, left: '140%' }}
                   animate={{ opacity: 1, left: '50%' }}
                   exit={{ opacity: 0, left: '140%' }}

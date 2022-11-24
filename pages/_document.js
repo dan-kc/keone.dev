@@ -23,7 +23,7 @@ export default function Document() {
         className={classNames(
           outfit.variable,
           poppins.variable,
-          'font-body bg-anthracite-1 text-base lg:text-lg text-anthracite-10'
+          'font-body bg-anthracite-1 text-anthracite-10 text-lg lg:text-xl'
         )}
       >
         <div className='relative overflow-hidden'>

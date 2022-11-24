@@ -11,8 +11,8 @@ export default function Bio() {
     <>
       <section className='relative'>
         <Container size={Options.md}>
-          <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-            <h2 className='text-emerald-500 pb-8 w-fit lg:pb-14 font-heading font-extrabold leading-none text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-tight lg:leading-tight'>
+          <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+            <h2 className='text-emerald-500 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Hello,
             </h2>
             <article className='relative'>
@@ -45,7 +45,7 @@ export default function Bio() {
             <Separator className='my-10 lg:my-14' />
 
             <article className='relative'>
-              <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+              <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
                 Extra bits about me
               </h3>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
@@ -59,17 +59,17 @@ export default function Bio() {
             <Separator className='my-10 lg:my-14' />
 
             <article className='relative'>
-              <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+              <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
                 Design Skills
               </h3>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Software
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={[
                       'Figma',
                       'Adobe Illustrator',
@@ -78,12 +78,12 @@ export default function Bio() {
                   />
                 </div>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Expertise
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={['Bevavioural web design', 'Checkout funnels']}
                   />
                 </div>
@@ -93,37 +93,37 @@ export default function Bio() {
             <Separator className='my-10 lg:my-14' />
 
             <article className='relative'>
-              <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+              <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
                 Development Skills
               </h3>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Languages
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={['Typescript / Javascript', 'HTML / CSS', 'Go']}
                   />
                 </div>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Frameworks
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={['React', 'Next.js', 'Remix', 'Astro']}
                   />
                 </div>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Deployment / CMS Solutions
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={[
                       'Vercel',
                       'Fly.io',
@@ -134,12 +134,12 @@ export default function Bio() {
                   />
                 </div>
                 <div className=''>
-                  <h3 className='text-lg lg:text-2xl font-heading font-extrabold text-white mb-1 lg:mb-2'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Expertise
                   </h3>
                   <List
                     dashColor={Color.emerald}
-                    className='text-anthracite-9 text-sm lg:text-base'
+                    className='text-anthracite-9 text-base lg:text-lg'
                     items={[
                       'Super fast eCommerce storefronts',
                       'Web animations (GSAP, Lottie, Framer Motion)',

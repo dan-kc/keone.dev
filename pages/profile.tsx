@@ -11,7 +11,7 @@ export default function Profile() {
         <title>Profile | Daniel Keone Cox</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <main className='font-body text-base lg:text-lg'>
+      <main>
         <Title>
           Who does this guy <Highlight color={Color.emerald}>think</Highlight>{' '}
           he is?

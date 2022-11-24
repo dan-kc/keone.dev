@@ -75,8 +75,8 @@ export default function QA() {
     <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
       <Container size={Options.md}>
         <Accordion allowMultiple>
-          <div className='bg-anthracite-3 rounded-xl px-5 pt-10 md:px-8 md:pt-12 lg:px-12 lg:pt-16 shadow-2xl'>
-            <h2 className='text-cyan-500 pb-8 lg:pb-14 font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl'>
+          <div className='bg-anthracite-4 rounded-xl px-5 pt-10 md:px-8 md:pt-12 lg:px-12 lg:pt-16 shadow-2xl'>
+            <h2 className='text-cyan-500 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Some questions and answers
             </h2>
             {items.map((item, itemsIndex) => {

@@ -39,8 +39,8 @@ const AdditionalServices = () => {
     <>
       <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
         <Container size={Options.md}>
-          <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-            <h2 className='text-yellow-300 pb-8 w-fit lg:pb-14 font-heading font-extrabold leading-none text-5xl md:text-6xl lg:text-7xl'>
+          <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-yellow-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Additional Services
             </h2>
             <ul className=''>
@@ -48,7 +48,7 @@ const AdditionalServices = () => {
                 const isLast = index === services.length - 1 ? true : false
                 return (
                   <li className={classNames(isLast ? '' : 'pb-4')} key={index}>
-                    <FadeInFromLeft className='text-xl lg:text-2xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
+                    <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-white flex gap-1'>
                       <span className='text-yellow-300'>-</span>
                       <div className='ml-2'>
                         <h3 className=''>{service.heading}</h3>

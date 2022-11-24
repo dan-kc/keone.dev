@@ -7,11 +7,8 @@ const EcommerceProduct = () => {
   return (
     <section className='relative'>
       <Container size={Options.md}>
-        <div className='bg-anthracite-3 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-          <h2
-            className='text-violet-500 pb-8 w-fit lg:pb-14 font-heading font-extrabold leading-none max-[350px]:text-4xl text-5xl md:text-6xl lg:text-7xl '
-            style={{ hyphens: 'auto' }}
-          >
+        <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
+          <h2 className='text-violet-500 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Ecommerce Store
           </h2>
           <article className='relative'>
@@ -19,14 +16,14 @@ const EcommerceProduct = () => {
               Reinvent your online business with a{' '}
               <Em>brand new eCommerce store</Em> that’s designed from the ground
               up to <Em>drive sales</Em>, and is developed using the{' '}
-              <Em>fastest</Em>, <Em>most reliable</Em> web frameworks available!
+              <Em>fastest</Em>, <Em>most reliable</Em> web frameworks around!
             </div>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Design
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -57,7 +54,7 @@ const EcommerceProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Development
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -71,7 +68,7 @@ const EcommerceProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Content management
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -109,7 +106,7 @@ const EcommerceProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-3xl lg:text-4xl font-heading font-extrabold text-white'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
               Price / Timeframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
