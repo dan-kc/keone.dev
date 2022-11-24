@@ -12,7 +12,7 @@ const ProcessSection = () => {
         <FadeInFromLeft>
           <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-7xl text-white'>
             My process is{' '}
-            <Em color={Color.cyan} bold={false} delay={0.1}>
+            <Em color={Color.yellow} bold={false} delay={0.1}>
               designed around you
             </Em>
           </h2>
@@ -20,7 +20,7 @@ const ProcessSection = () => {
 
         <article className='mt-20 lg:mt-40'>
           <FadeInFromLeft>
-            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-rose-500 leading-tight md:leading-tight lg:leading-tight'>
+            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-rose-700 leading-tight md:leading-tight lg:leading-tight'>
               No large upfront deposits
             </h3>
           </FadeInFromLeft>

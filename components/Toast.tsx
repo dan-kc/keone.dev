@@ -18,7 +18,7 @@ export const Toast = () => {
         {open ? (
           <T.Root
             asChild
-            duration={4000}
+            duration={8000}
             open={open}
             onOpenChange={setOpen}
             key={1}
