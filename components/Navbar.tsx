@@ -53,7 +53,7 @@ export default function Navbar() {
                   className='flex flex-col justify-center mt-1'
                   key={index}
                 >
-                  <Link mail={false} href={item.href} passHref legacyBehavior>
+                  <Link href={item.href} passHref legacyBehavior>
                     <NavigationMenu.Link
                       active={isActive}
                       className={classNames(
