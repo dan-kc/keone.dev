@@ -1,6 +1,5 @@
 import useUpdateDeviceMode from '@hooks/useUpdateDeviceMode'
 import useUpdateWindowDimensions from '@hooks/useUpdateWindowDimensions'
-import Sidebar from '@components/Sidebar'
 import Link from '@components/Link'
 import Container, { Options } from '@components/Container'
 import Lottie from 'lottie-react'
@@ -8,6 +7,8 @@ import lottie from '@lib/lottie.json'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import { Bars3Icon } from '@heroicons/react/24/outline'
+import useFlyoutStore from './hooks/stores/useFlyoutStore'
 
 export const navigation = [
   { name: 'Profile', href: '/profile' },
@@ -20,6 +21,8 @@ export default function Navbar() {
   // Initialization Stuff
   useUpdateDeviceMode()
   useUpdateWindowDimensions()
+
+  const setOpen = useFlyoutStore((state) => state.setOpen)
   const router = useRouter()
 
   return (
@@ -32,7 +35,15 @@ export default function Navbar() {
         >
           <Lottie animationData={lottie} loop={true} />
         </Link>
-        <Sidebar />
+
+        <button
+          aria-label='Menu'
+          onClick={() => setOpen(true)}
+          className='md:hidden hover:scale-110 text-white transform duration-100 outline-none'
+        >
+          <Bars3Icon className='h-9 w-9' aria-hidden='true' />
+        </button>
+
         <div className='hidden md:block'>
           <NavigationMenu.List className='flex gap-2'>
             {navigation.map((item, index) => {

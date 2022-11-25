@@ -7,6 +7,7 @@ import Toast from '@components/Toast'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { Outfit, Poppins } from '@next/font/google'
+import Flyout from '@components/Flyout'
 
 export const outfit = Outfit({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useUpdateWindowDimensions()
   return (
     <ToastProvider swipeDirection='right'>
+      <Flyout />
       <Header />
       <Component {...pageProps} />
       <Footer />

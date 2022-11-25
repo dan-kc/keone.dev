@@ -21,6 +21,7 @@
     "@radix-ui/react-visually-hidden": "^1.0.1",
     "classnames": "^2.3.1",
     "copy-to-clipboard": "^3.3.2",
+    "disable-scroll": "^0.6.0",
     "framer-motion": "^7.6.1",
     "lottie-react": "^2.3.1",
     "next": "^13.0.0",
