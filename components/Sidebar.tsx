@@ -73,17 +73,23 @@ export default function Sidebar() {
                   </Dialog.Close>
                   <ul className='flex flex-col gap-2'>
                     <li className='p-1'>
-                      <Link
-                        mail={false}
-                        href='/'
-                        onClick={() => setOpen(false)}
-                        aria-label='Home'
-                        className={classNames(
-                          'text-anthracite-12 transition duration-200 p-2 underline'
-                        )}
-                      >
-                        Home
-                      </Link>
+                      {router.asPath === '/' ? (
+                        <button
+                          className='text-anthracite-12 px-2 underline'
+                          onClick={() => setOpen(false)}
+                        >
+                          Home
+                        </button>
+                      ) : (
+                        <Link
+                          mail={false}
+                          href='/'
+                          aria-label='Home'
+                          className='text-anthracite-12 p-2 underline'
+                        >
+                          Home
+                        </Link>
+                      )}
                     </li>
                     {navigation.map((item, index) => {
                       const isActive = router.asPath === item.href
