@@ -12,7 +12,7 @@ const ProcessSection = () => {
         <FadeInFromLeft>
           <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-7xl text-white'>
             My process is{' '}
-            <Em color={Color.yellow} bold={false} delay={0.1}>
+            <Em color={Color.violet} bold={false} delay={0.2}>
               designed around you
             </Em>
           </h2>
@@ -34,7 +34,7 @@ const ProcessSection = () => {
             </p>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               You will <Em>never feel locked in</Em>.
             </p>
@@ -44,25 +44,26 @@ const ProcessSection = () => {
         <article className='mt-20'>
           <FadeInFromLeft>
             <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-emerald-500 leading-tight md:leading-tight lg:leading-tight'>
-              Several review rounds
+              Multiple review rounds
             </h3>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              For the final designs we'll conduct<Em> detailed reviews </Em>
-              of my work.
+              For the final designs we'll conduct multiple{' '}
+              <Em> detailed reviews </Em> of my work.
             </p>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              This is where i'll be able to
-              <Em> take your suggestions onboard </Em>
-              in order to keep myself informed on{' '}
-              <Em> your style preferences </Em>
-              so that you can be sure
-              <Em> you're getting the website design you envisioned.</Em>
+              This is where I'll be able to{' '}
+              <Em> take your suggestions onboard </Em> in order to keep myself
+              informed on your style preferences so that you can be
+              <Em>
+                {' '}
+                100% certain you're getting the website design you envisioned.
+              </Em>
             </p>
           </FadeInFromLeft>
         </article>
@@ -80,18 +81,17 @@ const ProcessSection = () => {
               <AnimatedLink href='https://www.figma.com/figjam/' newTab>
                 FigJam
               </AnimatedLink>
-              . This means you can easily
-              <Em delay={0.1}> add comments, voice notes, likes </Em>
-              or<Em delay={0.1}> dislikes </Em>
-              to my designs at<Em delay={0.1}> any time, any stage </Em>
-              in the design process.
+              . This means you can easily{' '}
+              <Em>add comments, voice notes, likes </Em> or<Em> dislikes </Em>{' '}
+              to my designs at<Em delay={0.1}> any time</Em>, and at{' '}
+              <Em> any stage </Em> in the design process.{' '}
             </div>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              This is<Em delay={0.1}> especially useful </Em>
-              for any<Em delay={0.1}> small revisions </Em>
+              This is<Em> especially useful </Em>
+              for any<Em> small revisions </Em>
               outside of the formal revision rounds.
             </p>
           </FadeInFromLeft>
@@ -99,7 +99,7 @@ const ProcessSection = () => {
 
         <article className='mt-20'>
           <FadeInFromLeft>
-            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-violet-500 leading-tight md:leading-tight lg:leading-tight'>
+            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-cyan-500 leading-tight md:leading-tight lg:leading-tight'>
               Free maintenance
             </h3>
           </FadeInFromLeft>
@@ -107,20 +107,17 @@ const ProcessSection = () => {
           <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p className='relative inline-block'>
               After the project is deployed I'll be
-              <Em delay={0.1}> sticking around </Em>
-              for a whole month to make sure
-              <Em delay={0.1}>
-                {' '}
-                you and your team know how to use every single feature{' '}
-              </Em>
+              <Em> sticking around </Em>
+              for an extra month to make sure
+              <Em> you and your team know how to use every single feature </Em>
               of your website.
             </p>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
-              I'll<Em delay={0.1}> patch any bugs </Em>
-              and make sure<Em delay={0.1}> everything runs smoothly</Em>.
+              I'll also be<Em> patching any bugs </Em>
+              and making sure<Em> everything runs smoothly</Em>.
             </p>
           </FadeInFromLeft>
         </article>

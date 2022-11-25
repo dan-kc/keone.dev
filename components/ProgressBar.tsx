@@ -18,11 +18,14 @@ const ProgressBar: React.FC<Props> = ({
   const scrollRef = useRef(null)
   const isInView = useInView(scrollRef)
 
-  const largeGreenSize = 70
+  const largeGreenSize = 80
   const pinSize = 0.5
   const smallGreenSize = percentage - largeGreenSize - pinSize
   const smallYellowSize = (100 - percentage) / 2
   const smallRedSize = smallYellowSize
+  const total =
+    largeGreenSize + pinSize + smallGreenSize + smallRedSize + smallYellowSize
+  console.log(total)
 
   return (
     <motion.div
@@ -34,7 +37,7 @@ const ProgressBar: React.FC<Props> = ({
     >
       <div className='flex md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-white'>
         <span className='h-2 w-2 md:h-3 md:w-3 shrink-0 mt-[11px] md:mt-[1px] bg-emerald-500 rounded-full ' />
-        <div className='whitespace-nowrap'>{title}</div>
+        <div className='sm:whitespace-nowrap'>{title}</div>
       </div>
 
       <div className='flex justify-start'>

@@ -20,11 +20,11 @@ const ReportSection = () => {
               >
                 this
               </AnimatedLink>{' '}
-              <Em delay={0.3} color={Color.emerald} bold={false}>
+              <Em delay={0.2} color={Color.emerald} bold={false}>
                 Google
               </Em>{' '}
               &{' '}
-              <Em delay={0.3} color={Color.emerald} bold={false}>
+              <Em delay={0.2} color={Color.emerald} bold={false}>
                 Deloitte
               </Em>{' '}
               report...
@@ -35,37 +35,24 @@ const ReportSection = () => {
             <FadeInFromLeft className='relative'>
               <QuoteLine color={Color.emerald} />
               <p>
-                A{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  0.1 second
-                </Em>{' '}
-                improvement of mobile site speed{' '}
-                <Em color={Color.grey} delay={0.1}>
+                A <Em color={Color.grey}>0.1 second</Em> improvement of mobile
+                site speed{' '}
+                <Em color={Color.grey}>
                   increased retail site conversion rates
                 </Em>{' '}
-                by{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  8.4%
-                </Em>{' '}
-                and{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  increased average order value
-                </Em>{' '}
-                by{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  9.2%
-                </Em>
-                .
+                by <Em color={Color.grey}>8.4%</Em> and{' '}
+                <Em color={Color.grey}>increased average order value</Em> by{' '}
+                <Em color={Color.grey}>9.2%</Em>.
               </p>
             </FadeInFromLeft>
           </div>
 
           <div className='mt-20 lg:mt-40'>
-          <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
+            <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
               <FadeInFromLeft>
                 <p className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
                   These numbers are
-                  <Em color={Color.rose} bold={false} delay={0.1}>
+                  <Em color={Color.rose} bold={false} delay={0.2}>
                     {' '}
                     scary!
                   </Em>{' '}
@@ -75,7 +62,7 @@ const ReportSection = () => {
               <FadeInFromLeft className='mt-20 lg:mt-40'>
                 <p className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
                   I mean, what if your site was{' '}
-                  <Em color={Color.rose} bold={false} delay={0.1}>
+                  <Em color={Color.rose} bold={false} delay={0.2}>
                     {' '}
                     half a second
                   </Em>{' '}
@@ -92,7 +79,7 @@ const ReportSection = () => {
               <FadeInFromLeft className='mt-20 lg:mt-40'>
                 <p className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
                   It's{' '}
-                  <Em color={Color.rose} bold={false} delay={0.1}>
+                  <Em color={Color.rose} bold={false} delay={0.2}>
                     {' '}
                     even worse
                   </Em>{' '}
@@ -102,7 +89,7 @@ const ReportSection = () => {
 
               <FadeInFromLeft className='mt-5'>
                 <p className=''>
-                  The report also found that for <Em>lead generating</Em> sites
+                  The report also found that for <Em>lead generating sites </Em>
                   with a form...
                 </p>
               </FadeInFromLeft>
@@ -113,15 +100,9 @@ const ReportSection = () => {
             <FadeInFromLeft className='relative'>
               <QuoteLine color={Color.yellow} />
               <p>
-                "A site speed improvement of{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  0.1s
-                </Em>{' '}
-                observed an{' '}
-                <Em color={Color.grey} delay={0.1}>
-                  uplift of 21.6%
-                </Em>{' '}
-                from the first step of the form to the form submission"
+                "A site speed improvement of <Em color={Color.grey}>0.1s</Em>{' '}
+                observed an <Em color={Color.grey}>uplift of 21.6%</Em> from the
+                first step of the form to the form submission"
               </p>
             </FadeInFromLeft>
           </div>
@@ -136,7 +117,7 @@ const ReportSection = () => {
             </p>
           </FadeInFromLeft>
 
-          <ul className='mt-5 font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-2xl md:text-3xl lg:text-4xl'>
+          <ul className='mt-5 font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-3xl md:text-4xl lg:text-5xl flex flex-col gap-2'>
             <li>
               <FadeInFromLeft className='flex gap-1 text-emerald-500'>
                 <span>-</span> Increased conversion rates
