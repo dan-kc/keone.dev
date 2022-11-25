@@ -17,29 +17,20 @@ export default function Bio() {
             </h2>
             <article className='relative'>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
-                I’m Daniel, a mathematician from London offering services in
-                <Em> Web Design </Em>
-                and
-                <Em> Development</Em>.
-                <br />
-                <br />
+                I’m Daniel, a mathematician from London offering services in{' '}
+                <Em> Web Design </Em> and <Em> Development</Em>. <br /> <br />{' '}
                 I’ve been constantly programming ever since I began my maths
                 degree at University of Bath, and, after delving into research
                 papers on behavioural design while procrastinating my degree,
-                I’ve also become fascinated by the
-                <Em> science behind great UX/UI</Em>
-                .
-                <br />
-                <br />
-                These interests in tandem have abruptly steered my trajectory
-                away from a career in finance, to a career
-                <Em> designing and developing engaging web experiences</Em>
-                - inspiring me to spend 3 years after my degree learning the web
-                and all it’s intricacies.
-                <br />
-                <br />
-                And I <Em>haven't looked back!</Em>
-              </p>
+                I’ve also become fascinated by the{' '}
+                <Em> science behind great UX/UI</Em> . <br /> <br /> These
+                interests in tandem have abruptly steered my trajectory away
+                from a career in finance, to a career{' '}
+                <Em> designing and developing engaging web experiences</Em> -
+                inspiring me to spend 3 years after my degree learning the web
+                and all it’s intricacies. <br /> <br /> And I{' '}
+                <Em>haven't looked back!</Em>{' '}
+              </p>{' '}
             </article>
 
             <Separator className='my-10 lg:my-14' />

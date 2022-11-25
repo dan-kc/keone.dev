@@ -23,9 +23,7 @@ const ProgressBar: React.FC<Props> = ({
   const smallGreenSize = percentage - largeGreenSize - pinSize
   const smallYellowSize = (100 - percentage) / 2
   const smallRedSize = smallYellowSize
-  const total =
-    largeGreenSize + pinSize + smallGreenSize + smallRedSize + smallYellowSize
-  console.log(total)
+  // const total = largeGreenSize + pinSize + smallGreenSize + smallRedSize + smallYellowSize
 
   return (
     <motion.div

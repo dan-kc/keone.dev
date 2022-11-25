@@ -9,7 +9,6 @@ import * as Dialog from '@radix-ui/react-dialog'
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import { AnimatePresence, motion } from 'framer-motion'
-import classNames from 'classnames'
 import { Cross2Icon } from '@radix-ui/react-icons'
 
 export default function Sidebar() {
