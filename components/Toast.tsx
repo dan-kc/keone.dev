@@ -31,7 +31,7 @@ export const Toast = () => {
               className='absolute bottom-0 right-0 border rounded-md shadow-black shadow-2xl p-4 bg-anthracite-11 shadow-2xl '
             >
               <div className='flex justify-between items-center mb-3'>
-                <T.Title className='font-body text-anthracite-1' >
+                <T.Title className='font-body text-anthracite-1'>
                   If your mail app didn’t open...
                 </T.Title>
                 <T.Close className=''>
@@ -107,9 +107,7 @@ export const Toast = () => {
               className='absolute right-0 bottom-0 -z-10 flex justify-end'
             >
               <div className='w-fit font-heading font-extrabold border border-blue-9 py-2 px-4 bg-blue-8 text-blue-12 rounded-md shadow-2xl gap-2 flex items-center '>
-                <span className='text-olive-12'>
-                   Template Copied
-                </span>
+                <span className='text-olive-12'>Template Copied</span>
                 <CopyIcon className='h-5 w-5' />
               </div>
             </motion.div>

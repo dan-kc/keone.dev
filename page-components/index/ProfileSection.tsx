@@ -17,7 +17,7 @@ const ProfileSection = () => {
           </p>
         </div>
 
-        <div className='flex justify-end pt-20 md:pt-40 '>
+        <div className='flex justify-end pt-20 md:pt-40'>
           <AnimatedLink
             href='/profile'
             linkClassName='font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl flex gap-1 items-center'

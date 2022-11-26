@@ -3,6 +3,10 @@ import Em from '@components/Em'
 import Container, { Options } from '@components/Container'
 import FadeInFromLeft from '@components/FadeInFromLeft'
 import Separator from '@components/Separator'
+//             I know how businesses work and how frustrating it can be when all you want is a quote but instead you’re enduring a drawn out email back and forth that feels like it’s going nowhere- made even worse when the quoted terms in the end don’t even work for you!
+// So, in order to save you from that, I’ve prepared a brief template showing you everything that I need to know in order to give you an instant quote on timescales and pricing.
+// In fact, if you’re sufficiently detailed, I’m confident I can give you that quote you’re looking for in my very first response!
+
 const Plan = () => {
   return (
     <section className='relative'>

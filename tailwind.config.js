@@ -42,7 +42,6 @@ module.exports = {
       '7xl': '72px',
       '8xl': '96px',
       '9xl': '128px',
-
     },
     spacing: {
       px: '1px',
@@ -82,6 +81,10 @@ module.exports = {
       96: '384px',
     },
     extend: {
+      backgroundImage: {
+        'hero-texture': "url('/images/graphics/hero-texture.svg')",
+        'tile-texture': "url('/images/graphics/tile.png')",
+      },
       colors: {
         anthracite: {
           1: '#040405',

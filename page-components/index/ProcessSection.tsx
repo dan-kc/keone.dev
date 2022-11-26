@@ -25,7 +25,7 @@ const ProcessSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               All payments are taken at <Em>milestones</Em> along the project
               timeline such that <Em>you have the freedom</Em> to, at any point,{' '}
@@ -48,7 +48,7 @@ const ProcessSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p>
               For the final designs we'll conduct multiple{' '}
               <Em> detailed reviews </Em> of my work.
@@ -75,7 +75,7 @@ const ProcessSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <div className='relative inline-block'>
               All designs will be shared with you via{' '}
               <AnimatedLink href='https://www.figma.com/figjam/' newTab>
@@ -104,7 +104,7 @@ const ProcessSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
+          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
             <p className='relative inline-block'>
               After the project is deployed I'll be
               <Em> sticking around </Em>

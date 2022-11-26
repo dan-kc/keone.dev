@@ -8,7 +8,7 @@ import ProgressBar from '@components/ProgressBar'
 
 const WhyMeSection = () => {
   return (
-    <section className='my-20 lg:my-40 '>
+    <section className='my-20 lg:my-40'>
       <Container size={Options.md}>
         <div className='mx-auto max-w-7xl'>
           <FadeInFromLeft className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
@@ -44,7 +44,7 @@ const WhyMeSection = () => {
             <ProgressCircle percentage={91} caption='SEO' delay={0.6} />
           </div>
 
-          <FadeInFromLeft className='relative inline-block mt-5 md:mt-10'>
+          <FadeInFromLeft className='relative inline-block mt-8 lg:mt-9'>
             <AnimatedLink
               href='https://developer.chrome.com/docs/lighthouse/overview/'
               linkClassName='font-semibold'
@@ -82,7 +82,7 @@ const WhyMeSection = () => {
             />
           </div>
 
-          <FadeInFromLeft className='mt-5 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
+          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
             <AnimatedLink href='https://web.dev/vitals/' newTab>
               Core Web Vitals
             </AnimatedLink>{' '}
@@ -124,7 +124,7 @@ const WhyMeSection = () => {
 
           <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <p>
-              Oh, and did I mention that I'm <Em>drastically cheaper</Em> than
+              Did I mention that I'm <Em>drastically cheaper</Em> than
               agencies too?
             </p>
           </FadeInFromLeft>
