@@ -33,7 +33,7 @@ const ProgressBar: React.FC<Props> = ({
       transition={{ duration: isInView ? 1.5 : 0 }}
       className='flex flex-col gap-2'
     >
-      <div className='flex md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-white'>
+      <div className='flex md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-anthracite-12'>
         <span className='h-2 w-2 md:h-3 md:w-3 shrink-0 mt-[11px] md:mt-[1px] bg-emerald-500 rounded-full ' />
         <div className='sm:whitespace-nowrap'>{title}</div>
       </div>

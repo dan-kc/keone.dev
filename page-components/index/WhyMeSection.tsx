@@ -9,22 +9,22 @@ import ProgressBar from '@components/ProgressBar'
 const WhyMeSection = () => {
   return (
     <section className='my-20 lg:my-40'>
-      <Container size={Options.md}>
-        <div className='mx-auto max-w-7xl'>
+      <div className='px-2 md:px-0'>
+        <Container size={Options.md}>
           <FadeInFromLeft className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-white'>
+            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-anthracite-12'>
               That's why you should work with me
             </p>
           </FadeInFromLeft>
 
           <div className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <p className='font-heading text-emerald-500 leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-6xl lg:text-8xl text-white'>
-              I'm performance obsessed
+            <p className='font-heading w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-[45px] sm:text-7xl md:text-8xl lg:text-9xl'>
+              I'm performance <br /> obsessed.
             </p>
           </div>
 
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-white leading-tight md:leading-tight lg:leading-tight '>
+            <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-anthracite-12 leading-tight md:leading-tight lg:leading-tight '>
               Lighthouse scores:
             </h3>
           </FadeInFromLeft>
@@ -44,7 +44,7 @@ const WhyMeSection = () => {
             <ProgressCircle percentage={91} caption='SEO' delay={0.6} />
           </div>
 
-          <FadeInFromLeft className='relative inline-block mt-8 lg:mt-9'>
+          <FadeInFromLeft className='relative inline-block mt-8 lg:mt-9 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <AnimatedLink
               href='https://developer.chrome.com/docs/lighthouse/overview/'
               linkClassName='font-semibold'
@@ -57,7 +57,7 @@ const WhyMeSection = () => {
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <h3 className='text-white font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-tight lg:leading-tight'>
+            <h3 className='text-anthracite-12 font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-tight lg:leading-tight'>
               Core Web Vitals:
             </h3>
           </FadeInFromLeft>
@@ -110,7 +110,7 @@ const WhyMeSection = () => {
           </FadeInFromLeft>
 
           <div className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <p className='relative inline-block font-heading font-extrabold text-7xl md:text-8xl lg:text-9xl text-violet-500 leading-tight md:leading-tight lg:leading-tight'>
+            <p className='relative inline-block font-heading font-extrabold text-7xl md:text-8xl lg:text-9xl leading-tight md:leading-tight lg:leading-tight text-transparent bg-clip-text bg-gradient-to-br from-violet-600 to-violet-300'>
               I'm faster.
             </p>
           </div>
@@ -124,8 +124,8 @@ const WhyMeSection = () => {
 
           <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <p>
-              Did I mention that I'm <Em>drastically cheaper</Em> than
-              agencies too?
+              Did I mention that I'm <Em>drastically cheaper</Em> than agencies
+              too?
             </p>
           </FadeInFromLeft>
 
@@ -138,8 +138,8 @@ const WhyMeSection = () => {
               <ArrowRightIcon className='w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8' />
             </AnimatedLink>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   )
 }

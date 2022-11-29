@@ -40,7 +40,7 @@ export default function Flyout() {
       {open ? (
         <>
           <motion.div
-            className='fixed inset-0 bg-anthracite-1/90 z-40'
+            className='fixed inset-0 bg-anthracite-3/90 z-40'
             onClick={() => setOpen(false)}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ export default function Flyout() {
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-extrabold px-10 py-8  bg-anthracite-3 rounded-md'
+              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-extrabold px-10 py-8 bg-anthracite-4 rounded-md'
               initial={{ opacity: 0, left: '140%' }}
               animate={{ opacity: 1, left: '50%' }}
               exit={{ opacity: 0, left: '140%' }}

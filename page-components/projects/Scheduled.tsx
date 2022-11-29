@@ -7,13 +7,13 @@ import { Color } from 'styles/color-config'
 export default () => {
   return (
     <>
-      <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
+      <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
         <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-            <h2 className='text-violet-500 lg:pb-1 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
+          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+            <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-violet-500 to-violet-300 lg:pb-1 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Scheduled
             </h2>
-            <p className='font-display text-anthracite-8 pb-8 lg:pb-14'>
+            <p className='font-display text-anthracite-9 pb-8 lg:pb-14'>
               Main objective: Drive sales
             </p>
             <article className='relative'>
@@ -29,7 +29,7 @@ export default () => {
             <article className='relative'>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
                 <div className=''>
-                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Design Tooling
                   </h3>
                   <List
@@ -39,7 +39,7 @@ export default () => {
                   />
                 </div>
                 <div className=''>
-                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-white mb-1 lg:mb-2 leading-tight lg:leading-tight'>
+                  <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Development Tooling
                   </h3>
                   <List
@@ -58,7 +58,7 @@ export default () => {
             </article>
           </div>
 
-          <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-1'>
+          <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-3'>
             <AnimatedLink
               href='/process'
               linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'

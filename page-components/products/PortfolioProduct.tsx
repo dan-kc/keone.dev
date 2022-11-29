@@ -1,3 +1,4 @@
+import AnimatedLink from '@components/AnimatedLink'
 import Container, { Options } from '@components/Container'
 import Em from '@components/Em'
 import List from '@components/List'
@@ -6,31 +7,33 @@ import { Color } from 'styles/color-config'
 
 const PortfolioProduct = () => {
   return (
-    <section className='pt-16 md:pt-20 relative bg-anthracite-1'>
+    <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
       <Container size={Options.md}>
-        <div className='bg-anthracite-4 px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 rounded-lg shadow-2xl'>
-          <h2 className='text-emerald-500 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
+          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+          <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Portfolio
           </h2>
           <article className='relative'>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Impress your potential clients with a{' '}
               <Em>stunning new Portfolio site</Em> that’s{' '}
-              <Em> bespoke to your artistic style,</Em> and that{' '}
-              <Em> validates your status as a creative professional.</Em>
+              <Em> bespoke to your artistic style;</Em>{' '}
+              <Em> validating your status as a creative professional.</Em>
               <br />
               <br />
               As a creative professional your business <Em>IS </Em>
-              your website. It’s the place you
+              your website. It’s the place where you:
               <br />
               <br />
               <List
                 dashColor={Color.emerald}
                 items={[
-                  'Attract new users',
-                  'Convert users into customers',
-                  'Maximise sales from each customer',
-                  'Achieve any unique business requirements',
+                  'Introduce yourself to potential clients',
+                  'Show off your latest works',
+                  'Convey your personality',
+                  'Display your skills and expertise',
+                  'Express your artistic style',
+                  'Provide ways to contact you',
                 ]}
               />
               <br />
@@ -41,7 +44,7 @@ const PortfolioProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Design
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -58,25 +61,35 @@ const PortfolioProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Development
             </h3>
-            <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              <Em>HTML, CSS and vanilla Javascript</Em> are often perfect for
-              projects like these, to keep the <Em>file size down</Em> and the{' '}
-              <Em>performance high!</Em>
+            <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
+              Static site generators like{' '}
+              <AnimatedLink href='https://astro.build/' newTab>
+                Astro
+              </AnimatedLink>{' '}
+              are often perfect for projects like these, to keep the{' '}
+              <Em>file size down</Em> and the <Em>performance high!</Em>
               <br />
               <br />
-              I’m an expert in the animation library <Em>GSAP</Em> too, enabling
-              a <Em>beautifully animated showcase of your work </Em> if needs
-              be!
-            </p>
+              I’m also an expert in animation libraries{' '}
+              <AnimatedLink href='https://greensock.com/gsap/' newTab>
+                GSAP
+              </AnimatedLink>{' '}
+              and{' '}
+              <AnimatedLink href='https://www.framer.com/motion/' newTab>
+                Framer Motion
+              </AnimatedLink>
+              , enabling a<Em> beautifully animated showcase of your work </Em>{' '}
+              if needs be!
+            </div>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Content management
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
@@ -93,7 +106,7 @@ const PortfolioProduct = () => {
           <Separator className='my-10 lg:my-14' />
 
           <article className=''>
-            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight lg:leading-tight'>
+            <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Price / Timeframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>

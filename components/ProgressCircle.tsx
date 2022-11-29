@@ -67,7 +67,7 @@ const ProgressCircle: React.FC<Props> = ({
           />
         ) : null}
       </div>
-      <h4 className='text-center font-heading text-white font-medium text-[12px] min-[450px]:text-[16px] sm:text-[22px] lg:text-3xl leading-tight min-[450px]:leading-tight sm:leading-tight lg:leading-tight'>
+      <h4 className='text-center font-heading text-anthracite-12 font-medium text-[12px] min-[450px]:text-[16px] sm:text-[22px] lg:text-3xl leading-tight min-[450px]:leading-tight sm:leading-tight lg:leading-tight'>
         {caption}
       </h4>
     </motion.div>

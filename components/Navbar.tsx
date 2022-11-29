@@ -39,7 +39,7 @@ export default function Navbar() {
         <button
           aria-label='Menu'
           onClick={() => setOpen(true)}
-          className='md:hidden hover:scale-110 text-white transform duration-100 outline-none'
+          className='md:hidden hover:scale-110 text-anthracite-12 transform duration-100 outline-none'
         >
           <Bars3Icon className='h-9 w-9' aria-hidden='true' />
         </button>
@@ -60,7 +60,7 @@ export default function Navbar() {
                         isActive
                           ? ''
                           : 'border-transparent hover:border-b-anthracite-6',
-                        'border-b-2 text-white transition duration-200 p-2'
+                        'border-b-2 text-anthracite-12 transition duration-200 p-2'
                       )}
                     >
                       {item.name}
