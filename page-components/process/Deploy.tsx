@@ -10,7 +10,7 @@ const Deploy = () => {
   return (
     <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
       <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+        <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
           <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-yellow-200 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Deploy & maintain
           </h2>
@@ -39,40 +39,33 @@ const Deploy = () => {
               Deployment
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              We’re now ready to launch the website! But just before we do, I’ll
-              deploy a test version which I’ll use to{' '}
-              <Em> guide you on how to use your website’s features, </Em>
-              for example where to{' '}
-              <Em>access the analytics, or how to add products.</Em>
+              We’re now ready to launch your website!
+              <br />
+              <br />
+              But just before we do, I’ll deploy a test version which I’ll use
+              to <Em> guide you on how to use your website’s features</Em>, for
+              example <Em> where to access the analytics</Em>, or{' '}
+              <Em> how to add products.</Em>
               <br />
               <br />
               I’ll also benchmark your website using{' '}
               <AnimatedLink
-                mail={false}
-                linkClassName='font-semibold'
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
                 newTab={true}
               >
-                <Em>Google Lighthouse.</Em>
-              </AnimatedLink>{' '}
-              This is a service that audits your website for{' '}
+                Google Lighthouse
+              </AnimatedLink>
+              . This is a service that audits your website for{' '}
               <Em>performance, accessibility, and SEO.</Em>
               <br />
               <br />
-              This will give you the peace of mind that your website meets{' '}
-              <Em>
-                Google’s{' '}
-                <AnimatedLink
-                  underlineClassName='bg-white'
-                  mail={false}
-                  newTab={true}
-                  href='https://web.dev/vitals/'
-                >
-                  Core Web Vitals
-                </AnimatedLink>{' '}
-              </Em>
+              This will give you peace of mind knowing that your website has
+              good{' '}
+              <AnimatedLink newTab={true} href='https://web.dev/vitals/'>
+                Core Web Vitals
+              </AnimatedLink>{' '}
               which are metrics{' '}
-              <Em>Google uses for indexing search results.</Em>
+              <Em>Google uses for indexing search results</Em>.
             </div>
           </article>
 
@@ -88,13 +81,13 @@ const Deploy = () => {
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Once the project is deployed I’ll be{' '}
               <Em>sticking around for an extra month </Em>
-              to ensure that all of the features <Em>run smoothly.</Em>
+              to ensure that <Em> everything runs smoothly</Em>.
               <br />
               <br />
               When your business grows and you require more features, or if you
               just want to hang onto me for a bit longer, I’m open to set up a
               monthly arrangement for me to{' '}
-              <Em>implement changes for you on demand.</Em>
+              <Em>implement changes for you on demand</Em>.
             </div>
           </article>
 
@@ -104,7 +97,7 @@ const Deploy = () => {
           </FadeInFromLeft>
 
           <FadeInFromLeft className='text-2xl lg:text-3xl font-heading font-extrabold leading-tight lg:leading-tight text-anthracite-12 flex gap-1'>
-            <span className='text-yellow-300'>-</span> ...and that's that!{' '}
+            <span className='text-yellow-300'>-</span> ...and that's that!
           </FadeInFromLeft>
         </div>
       </Container>

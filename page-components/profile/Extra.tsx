@@ -3,7 +3,7 @@ import Container, { Options } from '@components/Container'
 export default function Extra() {
   return (
     <section className='pb-[60px] lg:pb-[80px] pt-[10px] lg:pt-5 text-oliveDark-12 bg-black from-black via-grassDark-1 to-black'>
-      <Container size={Options.sm}>
+      <Container size={Options.md}>
         <h2 className='text-yellow pb-5 font-heading font-extrabold text-[30px] md:text-[34px] lg:text-[42px] md:order-1'>
           Extra bits about me
         </h2>

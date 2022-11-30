@@ -8,7 +8,7 @@ const Develop = () => {
   return (
     <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
       <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+        <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
           <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Develop
           </h2>
@@ -38,9 +38,11 @@ const Develop = () => {
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               By this point, I’m itching to begin coding and{' '}
-              <Em>making your website a reality.</Em> This is the most time
-              consuming step of the process, but it’s the most enjoyable for me
-              as it reminds me of my time at university reading maths.
+              <Em>making your website a reality</Em>.<br />
+              <br />
+              This is the most time consuming step of the process, but it’s the
+              most enjoyable for me as it reminds me of my time at university
+              reading maths.
               <br />
               <br />I use <Em>fast, modern</Em> and <Em>industry proven </Em>
               web frameworks like <Em> React </Em>

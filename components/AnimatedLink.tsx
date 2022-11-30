@@ -11,7 +11,6 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   delay?: number
   thick?: boolean
   linkClassName?: string
-  underlineClassName?: string
   children: React.ReactNode
 }
 
@@ -23,7 +22,6 @@ const AnimatedLink: React.FC<Props> = ({
   thick = false,
   newTab = false,
   linkClassName,
-  underlineClassName,
   children,
   ...rest
 }) => {
@@ -49,8 +47,7 @@ const AnimatedLink: React.FC<Props> = ({
         className={classNames(
           thick ? 'h-1' : 'h-0.5',
           'absolute inline-block w-full origin-bottom-left bottom-0 left-0',
-          bgColorClassName,
-          underlineClassName
+          bgColorClassName
         )}
       />
       {children}

@@ -60,7 +60,7 @@ const EcommerceProduct = () => {
               Development
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              My favourite web frameworks to enable this are{' '}
+              My favourite web frameworks for eCommerce are{' '}
               <AnimatedLink href='https://nextjs.org/showcase' newTab>
                 {' '}
                 NextJs,{' '}
@@ -71,7 +71,7 @@ const EcommerceProduct = () => {
                 Remix
               </AnimatedLink>{' '}
               which is a newer technology that boasts{' '}
-              <Em>even faster speeds</Em> in most cases.
+              <Em>even faster speeds</Em> in many cases.
             </div>
           </article>
 
@@ -95,15 +95,18 @@ const EcommerceProduct = () => {
               <Em>breeze for you and your team.</Em>
               <br />
               <br />
-              <Em>Crystallise</Em> also boast <Em>incredible value</Em> in a
-              space where other solutions can mean yearly bills of{' '}
+              Crystallise also boast{' '}
+              <AnimatedLink href='https://crystallize.com/pricing' newTab>
+                incredible value
+              </AnimatedLink>{' '}
+              in a space where other solutions can mean yearly bills of{' '}
               <Em>$24,000</Em> (Shopify Plus), <Em>$50,000</Em> (Elastic Path),
               up to as much as <Em>$300,000</Em> (CommerceTools).
               <br />
               <br />
-              These solutions often come with plenty of bells and whistles, but
-              for most businesses these extra features are left unused,{' '}
-              <Em>eating into your business’ money pot.</Em>
+              These other solutions often come with plenty of bells and
+              whistles, but for most businesses these extra features are left
+              unused, <Em>eating into your business’ money pot.</Em>
               <br />
               <br />
               Keep in mind though, I’m platform agnostic. If you have an
@@ -127,10 +130,13 @@ const EcommerceProduct = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Ecommerce stores vary massively in scope and feature set, and as
-              such, they <Em>vary hugely in price too.</Em> My best estimate for
-              the <Em>design, development, deployment, and maintenance</Em> of a{' '}
+              such, they <Em>vary hugely in price too.</Em>
+              <br />
+              <br />
+              My best estimate for the{' '}
+              <Em>design, development, deployment, and maintenance</Em> of a{' '}
               <Em>mid featured, blazingly fast eCommerce store</Em> to cost
-              around <Em>£9,000 - £18,000</Em> and to take roughly{' '}
+              around <Em>£9,500 - £18,500</Em> and to take roughly{' '}
               <Em>9 - 14 weeks.</Em>
             </p>
           </article>

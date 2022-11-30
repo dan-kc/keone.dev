@@ -9,7 +9,7 @@ const PortfolioProduct = () => {
   return (
     <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
       <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+        <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
           <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Portfolio
           </h2>
@@ -53,14 +53,14 @@ const PortfolioProduct = () => {
               are <Em>likely to do business with you.</Em>
               <br />
               <br />A portfolio is <Em>just as scientific</Em> as an eCommerce
-              store in its design, and just as important to the owner for their
+              store in its design, and just as important to it's owner for their
               business.
             </p>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className=''>
+          <article>
             <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Development
             </h3>
@@ -80,8 +80,8 @@ const PortfolioProduct = () => {
               and{' '}
               <AnimatedLink href='https://www.framer.com/motion/' newTab>
                 Framer Motion
-              </AnimatedLink>
-              , enabling a<Em> beautifully animated showcase of your work </Em>{' '}
+              </AnimatedLink>{' '}
+              - enabling a<Em> beautifully animated showcase of your work </Em>{' '}
               if needs be!
             </div>
           </article>
@@ -92,15 +92,18 @@ const PortfolioProduct = () => {
             <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Content management
             </h3>
-            <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              My preferred CMS solution is <Em>Prismic.</Em> This is what you’ll
-              use to{' '}
+            <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
+              My preferred CMS solution is{' '}
+              <AnimatedLink href='https://prismic.io' newTab>
+                Prismic.
+              </AnimatedLink>{' '}
+              This is what you’ll use to{' '}
               <Em>
                 update your website with your latest works and keep your website
                 fresh.
               </Em>{' '}
               It has a generous free tier too!
-            </p>
+            </div>
           </article>
 
           <Separator className='my-10 lg:my-14' />

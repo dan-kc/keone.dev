@@ -6,14 +6,14 @@ import Separator from '@components/Separator'
 
 const Design = () => {
   return (
-    <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
+    <section className='pt-16 md:pt-20 bg-anthracite-3'>
       <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+        <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
           <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-violet-500 to-violet-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Design
           </h2>
 
-          <article className='relative'>
+          <article>
             <p className='font-display text-base lg:text-lg text-violet-400'>
               Step 3/9
             </p>
@@ -22,7 +22,10 @@ const Design = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               First thing's first, let's define a <Em>design direction</Em> for
-              your website. I'll create a Moodboard where we'll be able to{' '}
+              your website.
+              <br />
+              <br />
+              I'll create a Moodboard for us where we'll be able to{' '}
               <Em>easily share design inspiration with each other.</Em>
               <br />
               <br />
@@ -36,9 +39,9 @@ const Design = () => {
               <Em> anything!</Em>
               <br />
               <br />
-              I'll be steadily populating the space with complimentary material,
-              mainly in the form of other website designs. Just let me know what
-              you like and dislike, and{' '}
+              I'll be steadily populating the moodboard with complimentary
+              material, mainly in the form of other website designs. Just let me
+              know what you like and dislike, and{' '}
               <Em>I'll reflect your preferences in the future designs.</Em>
               <br />
               <br />
@@ -68,15 +71,10 @@ const Design = () => {
               <Em>user journey.</Em>
               <br />
               <br />
-              Better yet, you'll receive this diagram, the Moodboard and all
-              other design work on{' '}
-              <AnimatedLink
-                underlineClassName='bg-white'
-                newTab={true}
-                mail={false}
-                href='https://www.figma.com/figjam/'
-              >
-                <Em>FigJam</Em>
+              Better yet, you'll receive this diagram, the moodboard and all
+              other design work via{' '}
+              <AnimatedLink newTab={true} href='https://www.figma.com/figjam/'>
+                FigJam
               </AnimatedLink>{' '}
               which makes providing <Em>live feedback</Em> an absolute breeze.
               This keeps me <Em>constantly informed</Em> on your style
@@ -86,7 +84,7 @@ const Design = () => {
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className='relative'>
+          <article>
             <p className='font-display text-base lg:text-lg text-violet-400'>
               Step 5/9
             </p>
@@ -95,9 +93,12 @@ const Design = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Next, I'll give you a detailed wireframe for every page on your
-              website. Wireframes are skeletal illustrations of a page’s
-              interface. They communicate what content is being prioritised,
-              and, most importantly, the <Em>intended user behaviours.</Em>
+              website.
+              <br />
+              <br />
+              Wireframes are skeletal illustrations of a page’s interface. They
+              communicate what content is being prioritised, and, most
+              importantly, the <Em>intended user behaviours.</Em>
               <br />
               <br />
               Defining a good interface structure is the{' '}
@@ -109,7 +110,7 @@ const Design = () => {
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className='mb-14 relative'>
+          <article className='mb-14'>
             <p className='font-display text-base lg:text-lg text-violet-400'>
               Step 6/9
             </p>
@@ -123,9 +124,9 @@ const Design = () => {
               from the moodboard.
               <br />
               <br />
-              Since the goal of this stage is to <Em>fine-tune,</Em> we'll go
-              through a comprehensive <Em>3 rounds of review</Em> so that we can
-              be <Em>absolutely certain that</Em> the designs{' '}
+              Since the goal of this stage is to <Em>fine-tune</Em>, we'll
+              conduct <Em>three review rounds</Em> so you can be{' '}
+              <Em>absolutely certain </Em> that the designs{' '}
               <Em>meet your expectations.</Em>
               <br />
               <br />

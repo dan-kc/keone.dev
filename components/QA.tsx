@@ -20,16 +20,16 @@ const items: AccordionItem[] = [
     header: 'How often are we going to speak?',
     paragraphs: [
       'That’s up to you.',
-      'During the design stage I expect to communicate daily, or at least every other day; but I’m more than happy to consolidate my updates if you’d rather have me just get on with things behind the scenes.',
+      'I expect to communicate at least every other day during the design stage, but I’m happy to consolidate my updates if you’d rather me get on with things behind the scenes. ',
       'For the development stage I’ll give you weekly or bi-weekly updates on progress, for example when I finish developing the landing page, or when I finish a complicated animation, but let me know if you’d prefer more granular updates; I’ll happily adjust my communication process accordingly.',
     ],
   },
   {
     header: 'What if I don’t like the designs?',
     paragraphs: [
-      'I take this concern very seriously so I’ve structured my process to make this scenario as unlikely as possible.',
-      'I offer three review rounds for my work (agencies usually only offer one) and ample opportunities to provide live feedback via FigJam.',
-      'I also don’t lock you behind one huge deposit like most agencies do. If after all of the review rounds review you’re still unsatisfied with the designs- well you haven’t paid for any of my development, deployment or maintenance services yet, so it’s painless for you to just take the designs and leave.',
+      'I take this concern very seriously so I’ve structured my process to make this scenario as unlikely and as painless for you as possible.',
+      'I provide three review rounds for my work (most agencies only provide one) and you’re able to give me live feedback at any time via FigJam.',
+      'I also don’t lock you behind one huge deposit like most agencies do. If you’re still unhappy with the designs after all of the review rounds, well you haven’t paid for any of my development, deployment or maintenance services yet, so it’s painless for you to just take the designs and leave.',
       'No hard feelings either! My doors will remain open if you’d like to resume work later.',
     ],
   },
@@ -37,33 +37,33 @@ const items: AccordionItem[] = [
     header: 'Do you work with clients outside of the UK?',
     paragraphs: [
       'Absolutely.',
-      'I’m very flexible so I’ll always accommodate for your timezone.',
+      'I’m very flexible and more than happy to accommodate to your timezone.',
     ],
   },
   {
     header: 'I’d rather not pay in chunks, can we consolidate the payments?',
     paragraphs: [
       'Of course!',
-      'Let me know what works for you- I offer these gradual payments as a benefit to you, but I’m more than happy to do things your way.',
+      'Let me know what works best for you; I offer these gradual payments as a benefit to you, but I’m more than happy to do things your way.',
     ],
   },
   {
     header: 'I don’t need all these of steps, will you still work with me?',
     paragraphs: [
-      'Absolutely.',
-      'What’s written above is only blueprint. All businesses are different, and you may not yet be in the market for such a comprehensive service. You may just need some, not all, of the above steps. Even if you already have a website and you just need a small glitch fixed, I’m more than happy alter my process to cater to your needs. Just ask!',
+      'Absolutely. ',
+      'What’s written above is only a blueprint. I’m more than happy alter my process to cater to your specific needs.',
     ],
   },
   {
     header: 'Why should I pick you over an agency?',
     paragraphs: [
-      'I’d first like to say that agencies usually offer great, comprehensive services that may be perfect for you and your business. Who you should pick really depends on your business’ needs and budget.',
+      'First, let me say that most agencies provide excellent services that might be ideal for you and your business. Who you should go to really depends on your business’ needs and budget.',
       'I offer services in web design and development, but agencies typically offer additional services such as copywriting, content strategy, product design, and social media marketing.',
-      'Usually they take about the same amount of time to complete a project as I would- remember agencies often have multiple projects going on at once. Some of them offer clients the option to speed up the project timeframe; at a significant extra cost of course, but this results in a turnaround time that simply cannot be beaten by a single person.',
-      'That being said, for an equally polished product, I offer strikingly cheaper prices compared to agencies. Seriously, a fraction of their price.',
-      'And, unlike agencies, I don’t expect half of the total project cost up front. All payments are spread across the project timeline such that you have the freedom to, at any point, change your mind on future services or even drop out entirely.',
-      'With me you’ll also get a much more personal business relationship. I’m not ‘ABC Web Design & Development Agency’, I’m Daniel. I’m easy-going and approachable, and I’ll be with you from the start of the project to the end- no need to worry about speaking to a new person every video call.',
-      'In short, if your business has additional needs outside of web design and development, or if you have a rapidly approaching deadline, then go with an agency- else work with me. You’ll receive an equally polished product and you’ll enjoy a personal, yet professional business relationship; all at a hugely discounted rate.',
+      'Since agencies frequently have several projects running at the same time, they’re typically no faster than me in completing a project. However some agencies offer clients the expensive option to expedite the project, which results in a turnaround time that simply cannot be beaten by a single person.',
+      'Having said that, agencies and I both produce a polished final product. And for that final product, I offer strikingly cheaper prices. Seriously, a fraction of their price.',
+      'And, unlike agencies, I don’t demand half of the total project cost upfront. All payments are spread out over the course of the project, giving you the leverage to drop out at any time without penalty.',
+      'You’ll also get a much more personal business relationship with me. I’m not ‘ABC Web Design Agency’. I’m Daniel. I’m easygoing and approachable, and I’ll be with you all the way through the project. There’s no need to worry about speaking to a new person on each video call.',
+      'In short, if your business has additional needs outside of web design and development, or if you have a tight deadline, hire an agency; otherwise, hire me. You’ll get the same high-quality product while also benefiting from a much more personal business relationship, all at a hugely discounted rate.',
     ],
   },
 ]
@@ -75,7 +75,7 @@ export default function QA() {
     <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
       <Container size={Options.md}>
         <Accordion allowMultiple>
-          <div className='bg-anthracite-4 px-5 pt-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+          <div className='bg-anthracite-4 px-5 pt-9 md:px-8 md:pt-8 lg:px-12 lg:pt-12 rounded-lg shadow-2xl'>
             <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-cyan-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Some questions and answers
             </h2>

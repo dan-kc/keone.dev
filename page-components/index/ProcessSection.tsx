@@ -11,7 +11,7 @@ const ProcessSection = () => {
       <Container size={Options.md}>
         <div className='px-2 md:px-0'>
           <FadeInFromLeft>
-            <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl md:text-6xl lg:text-7xl text-anthracite-12'>
+            <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-6xl md:text-7xl lg:text-8xl text-anthracite-12'>
               My process is{' '}
               <Em color={Color.violet} bold={false} delay={0.2}>
                 designed around you

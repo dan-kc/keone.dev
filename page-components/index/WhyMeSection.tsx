@@ -12,16 +12,10 @@ const WhyMeSection = () => {
       <div className='px-2 md:px-0'>
         <Container size={Options.md}>
           <FadeInFromLeft className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-anthracite-12'>
+            <p className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-6xl md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300'>
               That's why you should work with me
             </p>
           </FadeInFromLeft>
-
-          <div className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-            <p className='font-heading w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-[45px] sm:text-7xl md:text-8xl lg:text-9xl'>
-              I'm performance <br /> obsessed.
-            </p>
-          </div>
 
           <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <h3 className='font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-anthracite-12 leading-tight md:leading-tight lg:leading-tight '>

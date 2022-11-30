@@ -28,13 +28,13 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute bottom-0 right-0 border rounded-md shadow-black shadow-2xl p-4 anthracite-3 shadow-2xl '
+              className='absolute bottom-0 right-0 rounded-md shadow-black shadow-2xl p-4 bg-anthracite-5 shadow-2xl '
             >
               <div className='flex justify-between items-center mb-3'>
-                <T.Title className='font-body text-anthracite-1'>
+                <T.Title className='font-body text-anthracite-11'>
                   If your mail app didn’t open...
                 </T.Title>
-                <T.Close className=''>
+                <T.Close>
                   <Cross2Icon className='h-7 w-7 text-anthracite-1' />
                 </T.Close>
               </div>

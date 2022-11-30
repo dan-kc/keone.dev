@@ -4,6 +4,8 @@ import List from '@components/List'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Separator from '@components/Separator'
 import { Color } from 'styles/color-config'
+import Em from '@components/Em'
+
 export default () => {
   return (
     <>
@@ -19,8 +21,10 @@ export default () => {
             <article className='relative'>
               <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
                 An eCommerce project selling made-to-order, ethically sourced
-                fashion jewelry. More info soon. I’m very excited about this
-                one!
+                fashion jewelry.
+                <br />
+                <br />
+                More info <Em>coming soon</Em>. I’m very excited about this one!
               </div>
             </article>
 
