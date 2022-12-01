@@ -89,17 +89,17 @@ const WhyMeSection = () => {
             <p>
               I use the <Em>fastest </Em>
               web frameworks available and I'm always searching for{' '}
-              <Em>bleeding edge solutions </Em>
+              <Em>bleeding-edge solutions </Em>
               to <Em>improve performance</Em>.
             </p>
           </FadeInFromLeft>
 
           <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <p>
-              Many web development agencies, even some of the biggest in the
-              world, still use <Em> slow </Em> and<Em> dated </Em> web
-              frameworks because they're 'proven', despite only being 'proven' 5
-              years ago and <Em> sluggish </Em>today.
+              Many web development agencies, including some of the world's
+              largest, continue to use <Em> slow </Em> and
+              <Em> dated </Em> web frameworks because they're 'proven', despite
+              only being 'proven' 5 years ago and <Em> sluggish </Em>today.
             </p>
           </FadeInFromLeft>
 

@@ -44,14 +44,14 @@ const items: AccordionItem[] = [
     header: 'I’d rather not pay in chunks, can we consolidate the payments?',
     paragraphs: [
       'Of course!',
-      'Let me know what works best for you; I offer these gradual payments as a benefit to you, but I’m more than happy to do things your way.',
+      'Let me know what works best for you; I offer these gradual payments as a benefit to you, but I’m happy to do things your way.',
     ],
   },
   {
     header: 'I don’t need all these of steps, will you still work with me?',
     paragraphs: [
       'Absolutely. ',
-      'What’s written above is only a blueprint. I’m more than happy alter my process to cater to your specific needs.',
+      'What’s written above is only a blueprint. I’m happy to alter my process to cater to your specific needs.',
     ],
   },
   {

@@ -12,25 +12,25 @@ const LandingPageProduct = () => {
           </h2>
           <article>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              For businesses that operate mostly outside of the web, one page is
-              often all it takes to{' '}
+              For businesses that operate primarily outside of the web, one page
+              is often all it takes to{' '}
               <Em>
-                introduce and inform users about your products and services.
+                introduce and inform users about their products and services.
               </Em>
               <br />
               <br />
-              An eye catching landing page would{' '}
+              An eye-catching landing page would{' '}
               <Em>establish your brand’s online presence </Em>
-              and open you up to a <Em>huge set of potential clients</Em> that
+              and open you up to a <Em>huge set of potential clients</Em> who
               would otherwise be left in the dark!
               <br />
               <br />
               Single landing pages are very similar to portfolios in their
               design and development, but they may differ in terms of scope and
               content management. Portfolios may require multiple pages or
-              integration with a CMS such that owner can update their website
+              integration with a CMS so that the owner can update their website
               with new works, but{' '}
-              <Em>for many businesses neither is necessary.</Em>
+              <Em>for many businesses, neither is necessary</Em>.
             </p>
           </article>
 
@@ -41,10 +41,10 @@ const LandingPageProduct = () => {
               Price / Timeframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              A landing page should cost around <Em>£4,800</Em> - <Em>£7,700</Em>{' '}
-              and take roughly <Em>5 weeks,</Em> but, similar to the portfolio
-              website, price and timeframe may vary depending on the scope of
-              the animations implemented.
+              A landing page should cost between <Em> £4,800 and £7,700 </Em>{' '}
+              and take about <Em> 5 weeks </Em> to complete; however, as with the
+              portfolio website, price and timeframe may vary depending on the
+              scope of the animations implemented.
             </p>
           </article>
         </div>

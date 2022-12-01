@@ -9,46 +9,44 @@ import { Color } from 'styles/color-config'
 export default function Bio() {
   return (
     <>
-      <section className='relative'>
+      <section>
         <Container size={Options.md}>
           <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
             <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Hello,
             </h2>
-            <article className='relative'>
+            <article>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
                 My name is Daniel.
                 <br />
                 <br />
-                I'm a mathematician from London offering services in{' '}
+                I'm a mathematician from London providing services in{' '}
                 <Em> Web Design </Em> and <Em> Development</Em>.
                 <br />
                 <br />I fell in love with programming during my maths degree at
-                University of Bath, and, after delving into some research papers
+                University of Bath, and after delving into some research papers
                 on behavioural design while procrastinating my degree, I also
-                became fascinated by the <Em>
-                  {' '}
-                  science behind great UX/UI
-                </Em>. <br /> <br /> These interests in tandem have abruptly
-                steered my trajectory away from a career in finance, to a career{' '}
-                <Em> designing and developing engaging web experiences</Em> -
-                inspiring me to spend 3 years after my degree learning the web
-                and all it’s intricacies. <br /> <br /> And I{' '}
-                <Em>haven't looked back!</Em>
+                became fascinated by the{' '}
+                <Em> science behind excellent UX/UI</Em>. <br /> <br /> These
+                interests in tandem abruptly steered my career trajectory away
+                from finance and toward
+                <Em> designing and developing engaging web experiences</Em>,
+                inspiring me to spend three years learning the web and all of
+                it’s intricacies
+                <br /> <br /> And I <Em>haven't looked back!</Em>
               </p>
             </article>
 
             <Separator className='my-10 lg:my-14' />
 
-            <article className='relative'>
+            <article>
               <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold leading-tight lg:leading-tight text-anthracite-12'>
                 Extra bits about me
               </h3>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
-                I love doing weekly, monthly and yearly challenges. Last year my
-                challenge was no meat. This year it’s no chocolate. Next year
-                it’s no deep fried food and no United Kingdom- both very bad for
-                you.
+                I love doing weekly, monthly and yearly challenges. In 2021 my
+                challenge was no meat. In 2022 it was no chocolate. In 2023 it’s
+                no deep fried food and no United Kingdom- both very bad for you.
                 <br />
                 <br />
                 I'm also a junglist, a coffee snob, and Super Smash Bros Melee
@@ -58,7 +56,7 @@ export default function Bio() {
 
             <Separator className='my-10 lg:my-14' />
 
-            <article className='relative'>
+            <article>
               <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold leading-tight lg:leading-tight text-anthracite-12'>
                 Design Skills
               </h3>
@@ -92,7 +90,7 @@ export default function Bio() {
 
             <Separator className='my-10 lg:my-14' />
 
-            <article className='relative'>
+            <article>
               <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold leading-tight lg:leading-tight text-anthracite-12'>
                 Development Skills
               </h3>

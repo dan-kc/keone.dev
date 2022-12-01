@@ -7,18 +7,18 @@ import { Color } from 'styles/color-config'
 
 const PortfolioProduct = () => {
   return (
-    <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
+    <section className='pt-16 md:pt-20 bg-anthracite-3'>
       <Container size={Options.md}>
         <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
           <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
             Portfolio
           </h2>
-          <article className='relative'>
+          <article>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Impress your potential clients with a{' '}
-              <Em>stunning new Portfolio site</Em> that’s{' '}
-              <Em> bespoke to your artistic style;</Em>{' '}
-              <Em> validating your status as a creative professional.</Em>
+              <Em>stunning new Portfolio site</Em> that’s bespoke to your
+              artistic style,{' '}
+              <Em> validating your status as a creative professional</Em>.
               <br />
               <br />
               As a creative professional your business <Em>IS </Em>
@@ -43,7 +43,7 @@ const PortfolioProduct = () => {
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className=''>
+          <article>
             <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Design
             </h3>
@@ -53,7 +53,7 @@ const PortfolioProduct = () => {
               are <Em>likely to do business with you.</Em>
               <br />
               <br />A portfolio is <Em>just as scientific</Em> as an eCommerce
-              store in its design, and just as important to it's owner for their
+              store in its design, and just as important to its owner's
               business.
             </p>
           </article>
@@ -73,54 +73,53 @@ const PortfolioProduct = () => {
               <Em>file size down</Em> and the <Em>performance high!</Em>
               <br />
               <br />
-              I’m also an expert in animation libraries{' '}
+              I’m also an expert in the animation libraries{' '}
               <AnimatedLink href='https://greensock.com/gsap/' newTab>
                 GSAP
               </AnimatedLink>{' '}
               and{' '}
               <AnimatedLink href='https://www.framer.com/motion/' newTab>
                 Framer Motion
-              </AnimatedLink>{' '}
-              - enabling a<Em> beautifully animated showcase of your work </Em>{' '}
+              </AnimatedLink>
+              , enabling a<Em> beautifully animated showcase of your work </Em>{' '}
               if needs be!
             </div>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className=''>
+          <article>
             <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Content management
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              My preferred CMS solution is{' '}
               <AnimatedLink href='https://prismic.io' newTab>
-                Prismic.
+                Prismic
               </AnimatedLink>{' '}
-              This is what you’ll use to{' '}
+              is my go-to CMS solution. You'll use this to{' '}
               <Em>
-                update your website with your latest works and keep your website
-                fresh.
-              </Em>{' '}
-              It has a generous free tier too!
+                update your website with your latest works to keep your website
+                looking fresh
+              </Em>
+              . It has a generous free tier too!
             </div>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className=''>
+          <article>
             <h3 className='mb-6 text-4xl lg:text-5xl font-heading font-extrabold text-anthracite-12 leading-tight lg:leading-tight'>
               Price / Timeframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              I estimate a portfolio to range from <Em>£7,500</Em> to{' '}
-              <Em>£13,500</Em> and to take <Em>6-8 weeks</Em> depending on the
-              scope of the animations implemented.
+              I estimate that a portfolio will cost between{' '}
+              <Em>£7,500 and £13,500</Em> and will take <Em>6-8 weeks</Em> to
+              complete, depending on the scope of the animations implemented.
               <br />
               <br />
               Beautiful animations are time consuming to make performant across
-              all browsers, devices, and screen sizes; so they are the main
-              consideration here for evaluating price and timeframe.
+              all browsers, devices, and screen sizes, so they are the primary
+              factor here in evaluating price and timeframe.
             </p>
           </article>
         </div>

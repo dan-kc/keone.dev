@@ -64,9 +64,9 @@ const AdditionalServices = () => {
           <Separator className='my-10 lg:my-14' />
 
           <div className='mt-4 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-            Of course, every website requires{' '}
-            <Em>different features and considerations,</Em> so take my price and
-            timeframe approximations with a <Em>grain of salt.</Em>
+            Of course, each website has{' '}
+            <Em> unique requirements and considerations</Em>, so take my price
+            and timeframe estimates with a <Em>grain of salt</Em>.
             <br />
             <br />
             The only way to know for sure is to{' '}

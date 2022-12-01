@@ -42,10 +42,10 @@ const Deploy = () => {
               We’re now ready to launch your website!
               <br />
               <br />
-              But just before we do, I’ll deploy a test version which I’ll use
-              to <Em> guide you on how to use your website’s features</Em>, for
-              example <Em> where to access the analytics</Em>, or{' '}
-              <Em> how to add products.</Em>
+              But just before we do, I’ll deploy a test version that I’ll use to{' '}
+              <Em> show you how to use your website’s features</Em>, for example{' '}
+              <Em> where to access the analytics</Em>, or{' '}
+              <Em> how to add new products</Em>.
               <br />
               <br />
               I’ll also benchmark your website using{' '}
@@ -64,8 +64,8 @@ const Deploy = () => {
               <AnimatedLink newTab={true} href='https://web.dev/vitals/'>
                 Core Web Vitals
               </AnimatedLink>{' '}
-              which are metrics{' '}
-              <Em>Google uses for indexing search results</Em>.
+              which are <Em> metrics used by Google to index search results</Em>
+              .
             </div>
           </article>
 
@@ -79,13 +79,13 @@ const Deploy = () => {
               Maintenance
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              Once the project is deployed I’ll be{' '}
-              <Em>sticking around for an extra month </Em>
-              to ensure that <Em> everything runs smoothly</Em>.
+              I’ll be <Em>sticking around for an extra month </Em> once the
+              project is deployed to ensure that{' '}
+              <Em> everything runs smoothly</Em>.
               <br />
               <br />
               When your business grows and you require more features, or if you
-              just want to hang onto me for a bit longer, I’m open to set up a
+              just want keep me around for a bit longer, I’m open to set up a
               monthly arrangement for me to{' '}
               <Em>implement changes for you on demand</Em>.
             </div>

@@ -18,7 +18,7 @@ export default () => {
             <p className='font-display text-anthracite-9 pb-8 lg:pb-14'>
               Main objective: Drive sales
             </p>
-            <article className='relative'>
+            <article>
               <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
                 An eCommerce project selling made-to-order, ethically sourced
                 fashion jewelry.
@@ -30,9 +30,9 @@ export default () => {
 
             <Separator className='my-10 lg:my-14' />
 
-            <article className='relative'>
+            <article>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
-                <div className=''>
+                <div>
                   <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Design Tooling
                   </h3>
@@ -42,7 +42,7 @@ export default () => {
                     items={['Figma', 'FigJam']}
                   />
                 </div>
-                <div className=''>
+                <div>
                   <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
                     Development Tooling
                   </h3>

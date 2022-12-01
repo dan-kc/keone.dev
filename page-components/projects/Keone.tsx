@@ -17,26 +17,26 @@ export default () => {
           </p>
           <article>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              A <Em>sleek, interactive personal website</Em> providing the user
-              with <Em>information surrounding me and my services</Em>.
+              A <Em>sleek, modern and interactive personal website</Em> that
+              informs users about <Em> me and my services</Em>.
               <br />
               <br />
-              The homepage is designed to encourage the user to scroll through
-              an animated showcase of information such that they are
-              sufficiently <Em>advised on how I can help them,</Em> before then{' '}
+              The homepage is designed to entice the user to scroll through an
+              animated showcase of information so that they are adequately
+              advised on <Em>how I can help them,</Em> before{' '}
               <Em>inviting the user to get in touch</Em>.
               <br />
               <br />
               To satiate the more curious user, there are links to supporting
-              pages where I elaborate on some topics, then once again{' '}
+              pages where I elaborate on some relevant topics, then once again{' '}
               <Em>provide the user with a contact option.</Em> <br />
               <br />
               The website is developed using <Em>
                 performance best practices
               </Em>{' '}
-              and <Em>lightweight technologies</Em> resulting in a{' '}
-              <Em>lag-less user experience</Em> with{' '}
-              <Em>stellar Lighthouse scores </Em>and <Em>Core Web Vitals.</Em>
+              and <Em>lightweight technologies</Em>, which results in a{' '}
+              <Em>lag-free user experience</Em> with{' '}
+              <Em>stellar Lighthouse scores </Em>and <Em>Core Web Vitals</Em>.
             </div>
           </article>
 

@@ -28,8 +28,8 @@ const ProcessSection = () => {
 
             <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
-                All payments are taken at <Em>milestones</Em> along the project
-                timeline such that <Em>you have the freedom</Em> to, at any
+                All payments are taken at <Em>milestones</Em> over the course of
+                :wa the project so that <Em>you have the freedom</Em> to, at any
                 point, <Em>change your mind</Em> on future services or even drop
                 out entirely.
               </p>
@@ -51,8 +51,8 @@ const ProcessSection = () => {
 
             <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
-                For the final designs we'll conduct multiple{' '}
-                <Em> detailed reviews </Em> of my work.
+                We'll conduct multiple <Em> detailed reviews </Em> of my work
+                for the final designs.
               </p>
             </FadeInFromLeft>
 
@@ -63,8 +63,9 @@ const ProcessSection = () => {
                 informed on your style preferences so that you can be
                 <Em>
                   {' '}
-                  100% certain you're getting the website design you envisioned.
+                  100% certain you're getting the website design you envisioned
                 </Em>
+                .
               </p>
             </FadeInFromLeft>
           </article>
@@ -78,22 +79,20 @@ const ProcessSection = () => {
 
             <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <div className='relative inline-block'>
-                All designs will be shared with you via{' '}
+                All designs will be made available to you via{' '}
                 <AnimatedLink href='https://www.figma.com/figjam/' newTab>
                   FigJam
                 </AnimatedLink>
-                . This means you can easily{' '}
-                <Em>add comments, voice notes, likes </Em> or<Em> dislikes </Em>{' '}
-                to my designs at<Em delay={0.1}> any time</Em>, and at{' '}
-                <Em> any stage </Em> in the design process.{' '}
+                . This means that you can easily{' '}
+                <Em>add comments, voice notes, likes, and dislikes </Em>to my
+                designs at <Em> any time and stage </Em> of the design process.
               </div>
             </FadeInFromLeft>
 
             <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
-                This is<Em> especially useful </Em>
-                for any<Em> small revisions </Em>
-                outside of the formal revision rounds.
+                This is especially useful for minor revisions made outside of
+                formal revision rounds.
               </p>
             </FadeInFromLeft>
           </article>
@@ -107,21 +106,18 @@ const ProcessSection = () => {
 
             <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p className='relative inline-block'>
-                After the project is deployed I'll be
+                After your website is deployed I'll be
                 <Em> sticking around </Em>
-                for an extra month to make sure
-                <Em>
-                  {' '}
-                  you and your team know how to use every single feature{' '}
-                </Em>
+                for an additional month to ensure that you and your team
+                <Em> understand how to use every single feature </Em>
                 of your website.
               </p>
             </FadeInFromLeft>
 
             <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
-                I'll also be<Em> patching any bugs </Em>
-                and making sure<Em> everything runs smoothly</Em>.
+                I'll also <Em> fix any bugs </Em>and ensure that
+                <Em> everything runs smoothly</Em>.
               </p>
             </FadeInFromLeft>
           </article>

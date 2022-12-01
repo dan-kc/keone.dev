@@ -17,13 +17,12 @@ const InProgress = () => {
           </p>
           <article>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              An elegant, eCommerce department store selling modern art
-              and luxury fashion.
+              An elegant, eCommerce department store selling modern art and
+              luxury fashion.
               <br />
               <br />
-
-              This project is in progress, so more information is{' '}
-              <Em>coming soon.</Em>
+              This project is still in the works, so more information will be{' '}
+              <Em> available soon</Em>
             </div>
           </article>
 

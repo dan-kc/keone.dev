@@ -55,7 +55,7 @@ const ReportSection = () => {
                     These numbers are
                     <Em color={Color.rose} bold={false} delay={0.2}>
                       {' '}
-                      scary!
+                      scary
                     </Em>{' '}
                   </p>
                 </FadeInFromLeft>

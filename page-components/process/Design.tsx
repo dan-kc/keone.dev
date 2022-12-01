@@ -25,39 +25,38 @@ const Design = () => {
               your website.
               <br />
               <br />
-              I'll create a Moodboard for us where we'll be able to{' '}
-              <Em>easily share design inspiration with each other.</Em>
+              I'll make a moodboard for us so that we can{' '}
+              <Em>easily share design inspiration with one another</Em>.
               <br />
               <br />
               This will instantly give you a space where you can show me any
-              existing design material you may have, for example{' '}
+              existing design material you may have, such as{' '}
               <Em>
                 logos, colours, typography, photography, other websites that you
-                really like, or even whole other moodboards.
+                really like, or even entire other moodboards.
               </Em>{' '}
-              Feel free to add
-              <Em> anything!</Em>
+              Feel free to add <Em> anything!</Em>
               <br />
               <br />
-              I'll be steadily populating the moodboard with complimentary
-              material, mainly in the form of other website designs. Just let me
-              know what you like and dislike, and{' '}
-              <Em>I'll reflect your preferences in the future designs.</Em>
+              I'll be steadily populating the moodboard with complementary
+              material, mainly in the form of other website designs. Simply let
+              me know what you like and dislike, and{' '}
+              <Em>I'll reflect your feedback in the future designs.</Em>
               <br />
               <br />
-              Moodboards will often{' '}
+              Moodboards often{' '}
               <Em>
-                capture ideas that would otherwise be lost in translation{' '}
-              </Em>
-              when only describing things verbally-
+                capture ideas that would otherwise be lost in translation
+              </Em>{' '}
+              when only describing things verbally,
               <Em> saving you time and money </Em>
-              by avoiding any additional revision requests later down the line.
+              by avoiding additional revision requests later down the line.
             </p>
           </article>
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className='relative'>
+          <article>
             <p className='font-display text-base lg:text-lg text-violet-400'>
               Step 4/9
             </p>
@@ -65,20 +64,20 @@ const Design = () => {
               Sitemap
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              Shortly after receiving the Moodboard you'll also be given a
-              sitemap diagram which will outline your{' '}
-              <Em>website’s structure</Em> and give you a bird's-eye view of the{' '}
+              Shortly after receiving the moodboard you'll also be given a
+              sitemap diagram which will outline the <Em> structure </Em> of
+              your website and give you a bird's-eye view of the{' '}
               <Em>user journey.</Em>
               <br />
               <br />
-              Better yet, you'll receive this diagram, the moodboard and all
-              other design work via{' '}
+              Even better, you'll receive this diagram, the moodboard, and all
+              other design work on{' '}
               <AnimatedLink newTab={true} href='https://www.figma.com/figjam/'>
                 FigJam
-              </AnimatedLink>{' '}
-              which makes providing <Em>live feedback</Em> an absolute breeze.
-              This keeps me <Em>constantly informed</Em> on your style
-              preferences and what you envision the project to look like.
+              </AnimatedLink>
+              , making live feedback an <Em>absolute breeze</Em>. This keeps me{' '}
+              <Em>continually informed</Em> on your style preferences and what
+              you envision the end product to look like.
             </div>
           </article>
 
@@ -92,12 +91,12 @@ const Design = () => {
               Wireframe
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              Next, I'll give you a detailed wireframe for every page on your
+              Next, I'll give you a detailed wireframe for each page of your
               website.
               <br />
               <br />
               Wireframes are skeletal illustrations of a page’s interface. They
-              communicate what content is being prioritised, and, most
+              communicate what content is being prioritised and, most
               importantly, the <Em>intended user behaviours.</Em>
               <br />
               <br />
@@ -119,8 +118,8 @@ const Design = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               For the final designs I'll populate the wireframes with your
-              content, like product images or text. I’ll also adapt the
-              wireframes to <Em>reflect your style preferences </Em>
+              content, such as product images or text, and modify the wireframes
+              to <Em>reflect your style preferences </Em>
               from the moodboard.
               <br />
               <br />

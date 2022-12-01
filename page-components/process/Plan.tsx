@@ -21,23 +21,20 @@ const Plan = () => {
             </h3>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Here's an <AnimatedLink mail> email template </AnimatedLink> to
-              help get things going.
+              help get things started.
               <br />
               <br />I know how businesses work and how frustrating it can be
               when all you want is a quote but instead{' '}
-              <Em>
-                you’re having to endure a drawn out email back and forth
-              </Em>{' '}
-              that feels like it’s going <Em>nowhere</Em> - made{' '}
-              <Em>even worse</Em> when the quoted terms in the end don’t even
-              work for you!
+              <Em>you’re having to endure a drawn out email exchange</Em> that
+              feels like it’s going <Em>nowhere</Em> - made <Em>even worse</Em>{' '}
+              when quoted terms in the end don’t even work for you!
               <br />
               <br />
-              So, to save you from that ordeal, I've constructed the{' '}
-              <AnimatedLink mail> email template </AnimatedLink> such that it
-              clearly outlines everything that I need to know in order to
-              accurately gauge the scope of your project, so I can give you an{' '}
-              <Em> instant quote on timescale and pricing</Em>.
+              So, to spare you from going through that ordeal, I've constructed
+              the <AnimatedLink mail> email template </AnimatedLink> to clearly
+              outline everything that I need to know in order to accurately gauge the
+              scope of your project and give you an{' '}
+              <Em> instant quote on timescale and cost</Em>.
               <br />
               <br />
               In fact, if the email is detailed enough, I’m confident I can give

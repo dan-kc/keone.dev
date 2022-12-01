@@ -40,15 +40,14 @@ const Develop = () => {
               By this point, I’m itching to begin coding and{' '}
               <Em>making your website a reality</Em>.<br />
               <br />
-              This is the most time consuming step of the process, but it’s the
-              most enjoyable for me as it reminds me of my time at university
-              reading maths.
+              This is the most time consuming step of the process, but it’s also
+              the most enjoyable for me as it reminds me of my time at
+              university reading maths.
               <br />
               <br />I use <Em>fast, modern</Em> and <Em>industry proven </Em>
-              web frameworks like <Em> React </Em>
+              web frameworks such as <Em> React </Em>
               and <Em>NextJs </Em>which are relied upon heavily by giants like{' '}
-              <Em>TikTok, Redbull </Em>
-              and<Em> Nike.</Em>
+              <Em>TikTok, Redbull </Em> and<Em> Nike.</Em>
             </div>
           </article>
 
