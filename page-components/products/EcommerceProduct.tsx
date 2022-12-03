@@ -139,8 +139,8 @@ const EcommerceProduct = () => {
               My best estimate is that for the{' '}
               <Em>design, development, deployment, and maintenance</Em> of a{' '}
               <Em>mid-featured, blazingly fast eCommerce store</Em>, it will
-              cost between <Em>£9,500 and £18,500</Em> and will take between{' '}
-              <Em>9 and 14 weeks</Em>.
+              cost between <Em>£9,500 and £18,500</Em> and take between{' '}
+              <Em>9 and 14 weeks</Em> to complete.
             </p>
           </article>
         </div>

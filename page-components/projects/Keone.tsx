@@ -18,7 +18,7 @@ export default () => {
           <article>
             <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               A <Em>sleek, modern and interactive personal website</Em> that
-              informs users about <Em> me and my services</Em>.
+              informs users about <Em> myself and my services</Em>.
               <br />
               <br />
               The homepage is designed to entice the user to scroll through an

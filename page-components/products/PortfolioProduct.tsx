@@ -49,8 +49,8 @@ const PortfolioProduct = () => {
             </h3>
             <p className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
               Your portfolio will be designed to{' '}
-              <Em>generate more qualified leads</Em> from potential clients who
-              are <Em>likely to do business with you.</Em>
+              <Em>generate qualified leads</Em> from potential clients who are{' '}
+              <Em>likely to do business with you.</Em>
               <br />
               <br />A portfolio is <Em>just as scientific</Em> as an eCommerce
               store in its design, and just as important to its owner's
@@ -101,7 +101,10 @@ const PortfolioProduct = () => {
                 update your website with your latest works to keep your website
                 looking fresh
               </Em>
-              . It has a generous free tier too!
+              .
+              <br />
+              <br />
+              It has a generous free tier too!
             </div>
           </article>
 

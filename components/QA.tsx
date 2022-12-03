@@ -44,7 +44,7 @@ const items: AccordionItem[] = [
     header: 'I’d rather not pay in chunks, can we consolidate the payments?',
     paragraphs: [
       'Of course!',
-      'Let me know what works best for you; I offer these gradual payments as a benefit to you, but I’m happy to do things your way.',
+      'Let me know what works best for you; I offer these gradual payments as a benefit to you, but we can certainly do things your way.',
     ],
   },
   {
@@ -60,7 +60,7 @@ const items: AccordionItem[] = [
       'First, let me say that most agencies provide excellent services that might be ideal for you and your business. Who you should go to really depends on your business’ needs and budget.',
       'I offer services in web design and development, but agencies typically offer additional services such as copywriting, content strategy, product design, and social media marketing.',
       'Since agencies frequently have several projects running at the same time, they’re typically no faster than me in completing a project. However some agencies offer clients the expensive option to expedite the project, which results in a turnaround time that simply cannot be beaten by a single person.',
-      'Having said that, agencies and I both produce a polished final product. And for that final product, I offer strikingly cheaper prices. Seriously, a fraction of their price.',
+      'Having said that, agencies and I both produce a polished end product. And for that end product, I offer strikingly cheaper prices. Seriously, a fraction of their price.',
       'And, unlike agencies, I don’t demand half of the total project cost upfront. All payments are spread out over the course of the project, giving you the leverage to drop out at any time without penalty.',
       'You’ll also get a much more personal business relationship with me. I’m not ‘ABC Web Design Agency’. I’m Daniel. I’m easygoing and approachable, and I’ll be with you all the way through the project. There’s no need to worry about speaking to a new person on each video call.',
       'In short, if your business has additional needs outside of web design and development, or if you have a tight deadline, hire an agency; otherwise, hire me. You’ll get the same high-quality product while also benefiting from a much more personal business relationship, all at a hugely discounted rate.',
@@ -72,7 +72,7 @@ const numberOfItems = items.length
 
 export default function QA() {
   return (
-    <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
+    <section className='pt-16 md:pt-20 bg-anthracite-3'>
       <Container size={Options.md}>
         <Accordion allowMultiple>
           <div className='bg-anthracite-4 px-5 pt-9 md:px-8 md:pt-8 lg:px-12 lg:pt-12 rounded-lg shadow-2xl'>
@@ -113,7 +113,7 @@ export default function QA() {
                         </h2>
                         <AccordionPanel
                           className={classNames(
-                            'pt-3 lg:pt-0 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16',
+                            'pt-3 lg:pt-0 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16 text-anthracite-11',
                             isLastItem ? 'mb-2 md:mb-4 lg:mb-6' : ''
                           )}
                         >

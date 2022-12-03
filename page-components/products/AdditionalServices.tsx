@@ -30,7 +30,7 @@ const services = [
   {
     heading: 'Custom email domiain setup',
     subHeading:
-      "A personalised business email for all of your business' employees",
+      "A personalised business email for you and all of your business' employees",
   },
 ]
 

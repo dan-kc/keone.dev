@@ -17,7 +17,7 @@ export default function Bio() {
             </h2>
             <article>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
-                My name is Daniel.
+                I’m Daniel.
                 <br />
                 <br />
                 I'm a mathematician from London providing services in{' '}
@@ -32,7 +32,7 @@ export default function Bio() {
                 from finance and toward
                 <Em> designing and developing engaging web experiences</Em>,
                 inspiring me to spend three years learning the web and all of
-                it’s intricacies
+                it’s intricacies.
                 <br /> <br /> And I <Em>haven't looked back!</Em>
               </p>
             </article>
@@ -45,7 +45,7 @@ export default function Bio() {
               </h3>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
                 I love doing weekly, monthly and yearly challenges. In 2021 my
-                challenge was no meat. In 2022 it was no chocolate. In 2023 it’s
+                challenge was no meat. 2022 was no chocolate. In 2023 it’s
                 no deep fried food and no United Kingdom- both very bad for you.
                 <br />
                 <br />

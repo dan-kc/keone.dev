@@ -29,7 +29,7 @@ const Develop = () => {
 
           <Separator className='my-10 lg:my-14' />
 
-          <article className='mb-14 relative'>
+          <article className='mb-14 '>
             <p className='font-display text-base lg:text-lg text-emerald-400'>
               Step 7/9
             </p>

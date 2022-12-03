@@ -11,7 +11,7 @@ const ProcessSection = () => {
       <Container size={Options.md}>
         <div className='px-2 md:px-0'>
           <FadeInFromLeft>
-            <h2 className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-6xl md:text-7xl lg:text-8xl text-anthracite-12'>
+            <h2 className='font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-6xl md:text-7xl lg:text-8xl text-anthracite-12'>
               My process is{' '}
               <Em color={Color.violet} bold={false} delay={0.2}>
                 designed around you
@@ -29,7 +29,7 @@ const ProcessSection = () => {
             <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
                 All payments are taken at <Em>milestones</Em> over the course of
-                :wa the project so that <Em>you have the freedom</Em> to, at any
+                the project so that <Em>you have the freedom</Em> to, at any
                 point, <Em>change your mind</Em> on future services or even drop
                 out entirely.
               </p>
@@ -59,8 +59,8 @@ const ProcessSection = () => {
             <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
                 This is where I'll be able to{' '}
-                <Em> take your suggestions onboard </Em> in order to keep myself
-                informed on your style preferences so that you can be
+                <Em> take your suggestions onboard </Em> to keep myself informed
+                on your style preferences so that you can be
                 <Em>
                   {' '}
                   100% certain you're getting the website design you envisioned

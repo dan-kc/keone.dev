@@ -30,11 +30,10 @@ const Plan = () => {
               when quoted terms in the end don’t even work for you!
               <br />
               <br />
-              So, to spare you from going through that ordeal, I've constructed
-              the <AnimatedLink mail> email template </AnimatedLink> to clearly
-              outline everything that I need to know in order to accurately gauge the
-              scope of your project and give you an{' '}
-              <Em> instant quote on timescale and cost</Em>.
+              So, to spare you from that ordeal, I've structured the email
+              template to clearly outline everything that I need to know in
+              order to accurately gauge the scope of your project and give you
+              an <Em> instant quote on timescale and cost</Em>.
               <br />
               <br />
               In fact, if the email is detailed enough, I’m confident I can give
