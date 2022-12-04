@@ -23,7 +23,7 @@ const WhyMeSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <div className='flex gap-3 justify-between mt-5 md:mt-10'>
+          <div className='flex gap-3 justify-between mt-10 md:mt-20'>
             <ProgressCircle percentage={97} caption='Performance' />
             <ProgressCircle
               percentage={100}
@@ -38,7 +38,7 @@ const WhyMeSection = () => {
             <ProgressCircle percentage={91} caption='SEO' delay={0.6} />
           </div>
 
-          <FadeInFromLeft className='relative inline-block mt-8 lg:mt-9 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
+          <FadeInFromLeft className='relative inline-block mt-10 lg:mt-20 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
             <AnimatedLink
               href='https://developer.chrome.com/docs/lighthouse/overview/'
               linkClassName='font-semibold'
@@ -56,7 +56,7 @@ const WhyMeSection = () => {
             </h3>
           </FadeInFromLeft>
 
-          <div className='flex flex-col mt-5 md:mt-10'>
+          <div className='flex flex-col mt-10 md:mt-20'>
             <ProgressBar
               percentage={85}
               title='Largest Contentful Paint (LCP)'
@@ -76,7 +76,7 @@ const WhyMeSection = () => {
             />
           </div>
 
-          <FadeInFromLeft className='mt-8 lg:mt-9 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
+          <FadeInFromLeft className='mt-10 lg:mt-20 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
             <AnimatedLink href='https://web.dev/vitals/' newTab>
               Core Web Vitals
             </AnimatedLink>{' '}
