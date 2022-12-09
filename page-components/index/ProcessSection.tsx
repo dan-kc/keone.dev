@@ -91,7 +91,7 @@ const ProcessSection = () => {
 
             <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25vw+10px)] md:pr-[calc(12.5vw+20px)]'>
               <p>
-                This is especially useful for minor revisions made outside of
+                This is useful for minor revisions made outside of
                 formal revision rounds.
               </p>
             </FadeInFromLeft>

@@ -11,7 +11,7 @@ export default () => {
     <>
       <section className='pt-16 md:pt-20 relative bg-anthracite-3'>
         <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
+          <div className='bg-slate-1 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
             <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-violet-500 to-violet-300 lg:pb-1 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Scheduled
             </h2>

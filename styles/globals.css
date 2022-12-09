@@ -7,7 +7,6 @@ svg {
     transform: unset !important;
 }
 
-
 @font-face {
   font-family: 'Hermit';
   src: url('/fonts/Hermit-Bold.woff2') format('woff2'),

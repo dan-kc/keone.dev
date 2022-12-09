@@ -8,19 +8,12 @@ import AnimatedLink from '@components/AnimatedLink'
 const ReportSection = () => {
   return (
     <>
-      <section className='py-20 md:py-40 bg-anthracite-4'>
+      <section className='py-20 md:py-40 bg-anthracite-5 relative overflow-hidden'>
         <Container size={Options.md}>
-          <div className='px-2 md:px-0'>
+          <div className='px-2 md:px-0 '>
             <div className='pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
               <FadeInFromLeft className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-anthracite-12'>
-                According to{' '}
-                <AnimatedLink
-                  thick
-                  newTab
-                  href='https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf'
-                >
-                  this
-                </AnimatedLink>{' '}
+                According to a{' '}
                 <Em delay={0.2} color={Color.emerald} bold={false}>
                   Google
                 </Em>{' '}
@@ -28,23 +21,30 @@ const ReportSection = () => {
                 <Em delay={0.2} color={Color.emerald} bold={false}>
                   Deloitte
                 </Em>{' '}
-                report...
+                <AnimatedLink
+                  thick
+                  newTab
+                  href='https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf'
+                >
+                  study
+                </AnimatedLink>
+                ...
               </FadeInFromLeft>
             </div>
 
             <div className='px-10 mt-20 lg:mt-40 mx-auto max-w-sm md:max-w-lg lg:max-w-2xl text-anthracite-9'>
               <FadeInFromLeft className='relative'>
                 <QuoteLine color={Color.emerald} />
-                <p>
+                <blockquote>
                   A <Em color={Color.grey}>0.1 second</Em> improvement of mobile
                   site speed{' '}
                   <Em color={Color.grey}>
                     increased retail site conversion rates
                   </Em>{' '}
                   by <Em color={Color.grey}>8.4%</Em> and{' '}
-                  <Em color={Color.grey}>increased average order value</Em> by{' '}
+                  <Em color={Color.grey}>average order value</Em> by{' '}
                   <Em color={Color.grey}>9.2%</Em>.
-                </p>
+                </blockquote>
               </FadeInFromLeft>
             </div>
 
@@ -90,7 +90,7 @@ const ReportSection = () => {
 
                 <FadeInFromLeft className='mt-5'>
                   <p className=''>
-                    The report also found that for{' '}
+                    The same report found that for{' '}
                     <Em>lead generating websites </Em>
                     with a form...
                   </p>
@@ -101,11 +101,11 @@ const ReportSection = () => {
             <div className='px-10 mt-20 lg:mt-40 mx-auto max-w-sm md:max-w-lg lg:max-w-2xl text-anthracite-9'>
               <FadeInFromLeft className='relative'>
                 <QuoteLine color={Color.yellow} />
-                <p>
+                <blockquote>
                   "A site speed improvement of <Em color={Color.grey}>0.1s</Em>{' '}
                   observed an <Em color={Color.grey}>uplift of 21.6%</Em> from
                   the first step of the form to the form submission"
-                </p>
+                </blockquote>
               </FadeInFromLeft>
             </div>
 

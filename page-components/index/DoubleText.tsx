@@ -1,22 +1,40 @@
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 const DoubleText = () => {
-  const scrollRef = useRef(null)
-  const isInView = useInView(scrollRef, { margin: '400% 0px -70% 0px' })
+  const [isDesign, setIsDesign] = useState<boolean>(false)
+  const [isMounted, setIsMounted] = useState<boolean>(false)
+
+  useEffect(() => {
+    console.log('run')
+    if (isMounted === false) {
+      setIsMounted(true)
+      return
+    }
+
+    const interval = setInterval(() => {
+      setIsDesign((prevState) => !prevState)
+      console.log(isDesign)
+    }, 4500)
+
+    return () => clearInterval(interval)
+  }, [isDesign, isMounted])
+
   return (
-    <div className='relative font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-anthracite-12 leading-tight md:leading-tight lg:leading-tight'>
-      <div className='relative' ref={scrollRef}>
+    <div className='relative font-heading font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] text-anthracite-12 leading-tight sm:leading-tight md:leading-tight lg:leading-tight'>
+      <div className='relative'>
         <div className='absolute top-0 left-0'>
           <p className='whitespace-nowrap'>
             <span className=''>A</span>
-            <span className='text-violet-500'> performance </span>
+            <span className='text-skyDark-11'> performance </span>
             <br />
             focused developer
             <br />
             specialising in
             <br />
-            <span className='text-sky-500'> eCommerce </span>
+            <span className='text-violetDark-10'> eCommerce </span>
+            <br />
+            <span className='text-violetDark-10'> storefronts </span>
           </p>
         </div>
 
@@ -26,9 +44,9 @@ const DoubleText = () => {
             <div className=''>
               <motion.div
                 initial={{ maxWidth: 0 }}
-                animate={{ maxWidth: isInView ? '100%' : '0%' }}
-                className='text-emerald-500 whitespace-nowrap overflow-hidden bg-anthracite-3'
-                transition={{ duration: 0.8, delay: isInView ? 0 : 0.6 }}
+                animate={{ maxWidth: isDesign ? '100%' : '0%' }}
+                className='text-grassDark-11 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                transition={{ duration: 0.8, delay: isDesign ? 0 : 0.6 }}
               >
                 &nbsp;user behaviour
               </motion.div>
@@ -40,9 +58,9 @@ const DoubleText = () => {
             <div className=''>
               <motion.div
                 initial={{ maxWidth: 0 }}
-                animate={{ maxWidth: isInView ? '100%' : '0%' }}
-                className='text-yellow-300 whitespace-nowrap overflow-hidden bg-anthracite-3'
-                transition={{ duration: 0.8, delay: isInView ? 0.3 : 0.3 }}
+                animate={{ maxWidth: isDesign ? '100%' : '0%' }}
+                className='text-yellowDark-9 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                transition={{ duration: 0.8, delay: isDesign ? 0.3 : 0.3 }}
               >
                 &nbsp;designer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </motion.div>
@@ -55,11 +73,11 @@ const DoubleText = () => {
             <div className=''>
               <motion.div
                 initial={{ maxWidth: 0 }}
-                animate={{ maxWidth: isInView ? '100%' : '0%' }}
-                className='text-fuchsia-500 whitespace-nowrap overflow-hidden bg-anthracite-3'
-                transition={{ duration: 0.8, delay: isInView ? 0.4 : 0.2 }}
+                animate={{ maxWidth: isDesign ? '100%' : '0%' }}
+                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                transition={{ duration: 0.8, delay: isDesign ? 0.4 : 0.2 }}
               >
-                conversion rate
+                conversion rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </motion.div>
             </div>
           </div>
@@ -68,9 +86,9 @@ const DoubleText = () => {
             <div className=''>
               <motion.div
                 initial={{ maxWidth: 0 }}
-                animate={{ maxWidth: isInView ? '100%' : '0%' }}
-                className='text-fuchsia-500 whitespace-nowrap overflow-hidden bg-anthracite-3'
-                transition={{ duration: 0.8, delay: isInView ? 0.6 : 0 }}
+                animate={{ maxWidth: isDesign ? '100%' : '0%' }}
+                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                transition={{ duration: 0.8, delay: isDesign ? 0.6 : 0 }}
               >
                 optimisation
               </motion.div>

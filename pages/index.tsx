@@ -12,7 +12,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
 
-      <main className='text-lg lg:text-2xl pt-60'>
+      <main>
         <ProfileSection />
         <ReportSection />
         <WhyMeSection />

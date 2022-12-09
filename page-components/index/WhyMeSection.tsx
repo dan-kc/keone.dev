@@ -65,7 +65,7 @@ const WhyMeSection = () => {
             />
             <ProgressBar
               percentage={90}
-              title='First Input Delay (FIP)'
+              title='First Input Delay (FID)'
               value={17}
               suffix='ms'
             />

@@ -18,8 +18,8 @@ export const generateClassName = (
     textColorClassName = 'text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-cyan-300'
     bgColorClassName = 'bg-cyan-500'
   } else if (color === Color.emerald) {
-    textColorClassName = 'text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300'
-    bgColorClassName = 'bg-emerald-500'
+    textColorClassName = 'text-transparent bg-clip-text bg-gradient-to-br from-grassDark-9 to-grassDark-11'
+    bgColorClassName = 'bg-gradient-to-br from-grassDark-9 to-grassDark-11'
   } else if (color === Color.violet) {
     textColorClassName = 'text-transparent bg-clip-text bg-gradient-to-br from-violet-600 to-violet-300'
     bgColorClassName = 'bg-violet-500'

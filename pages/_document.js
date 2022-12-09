@@ -16,14 +16,14 @@ export default function Document() {
           content='contract web developer, website designer, freelance, digital marketing'
         />
         <meta name='author' content='Daniel Keone Cox' />
-        <meta name='theme-color' content='#0D0D0F' />
+        <meta name='theme-color' content='#151718' />
         <link rel='icon' href='/images/icons/code.svg' />
       </Head>
       <body
         className={classNames(
           outfit.variable,
           poppins.variable,
-          'font-body bg-anthracite-3 text-anthracite-10 text-lg lg:text-xl'
+          'font-body bg-mauveDark-1 text-grayDark-12 text-lg lg:text-xl'
         )}
       >
         <div className='relative overflow-hidden'>
