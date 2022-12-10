@@ -14,7 +14,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 const Em: React.FC<Props> = ({
   children,
   className,
-  inViewClassName="text-white",
+  inViewClassName = 'text-white',
   outViewClassName,
   delay = 0,
   bold = true,
@@ -24,7 +24,7 @@ const Em: React.FC<Props> = ({
   const inView = useInView(scrollRef)
 
   return (
-    <motion.em
+    <em
       ref={scrollRef}
       style={{ transitionDelay: delayString }}
       className={classNames(
@@ -35,7 +35,7 @@ const Em: React.FC<Props> = ({
       )}
     >
       {children}
-    </motion.em>
+    </em>
   )
 }
 export default Em

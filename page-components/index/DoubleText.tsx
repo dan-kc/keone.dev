@@ -24,7 +24,7 @@ const DoubleText = () => {
     <div className='relative font-heading font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] text-anthracite-12 leading-tight sm:leading-tight md:leading-tight lg:leading-tight'>
       <div className='relative'>
         <div className='absolute top-0 left-0'>
-          <p className='whitespace-nowrap'>
+          <h1 className='whitespace-nowrap'>
             <span className=''>A</span>
             <span className='text-skyDark-11'> performance </span>
             <br />
@@ -35,7 +35,7 @@ const DoubleText = () => {
             <span className='text-violetDark-10'> eCommerce </span>
             <br />
             <span className='text-violetDark-10'> storefronts </span>
-          </p>
+          </h1>
         </div>
 
         <div className='relative'>

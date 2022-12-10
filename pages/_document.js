@@ -16,7 +16,7 @@ export default function Document() {
           content='contract web developer, website designer, freelance, digital marketing'
         />
         <meta name='author' content='Daniel Keone Cox' />
-        <meta name='theme-color' content='#151718' />
+        <meta name='theme-color' content='#161618' />
         <link rel='icon' href='/images/icons/code.svg' />
       </Head>
       <body
