@@ -1,26 +1,22 @@
-import Container, { Options } from '@components/Container'
 import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
-import FadeInFromLeft from '@components/FadeInFromLeft'
 import ProgressCircle from '@components/ProgressCircle'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import ProgressBar from '@components/ProgressBar'
-import FadeIn from '@components/FadeIn'
+import Link from 'next/link'
 
 const WhyMeSection = () => {
   return (
     <section className='relative overflow-hidden bg-oliveDark-1 text-oliveDark-12'>
-      <div className='pt-20 md:pt-40 max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-5'>
-        <div className='pr-10'>
-          <FadeInFromLeft className='relative inline-block font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-grassDark-11'>
-            That's why you should work with me
-          </FadeInFromLeft>
-        </div>
-        <div className='grid gap-5 mt-10'>
-          <article className='bg-grassDark-3/50 border border-grassDark-6 rounded-2xl shadow-xl p-4 text-grassDark-12'>
-            <h2 className='font-heading font-bold text-3xl'>
+      <div className='max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-5'>
+        <h2 className='px-4 max-w-xs sm:max-w-md font-heading leading-tight md:leading-tight lg:leading-tight font-extrabold text-4xl md:text-5xl lg:text-6xl text-grassDark-11'>
+          That's why you should work with me
+        </h2>
+        <div className='grid gap-5 md:grid-cols-2 mt-10'>
+          <article className='bg-grassDark-3/30 border border-grassDark-6 rounded-2xl shadow-xl p-4 lg:p-5 text-grassDark-12 md:h-fit'>
+            <h3 className='font-heading font-bold text-3xl xl:text-4xl leading-tight xl:leading-tight'>
               Lighthouse scores
-            </h2>
+            </h3>
 
             <div className='flex gap-3 justify-between mt-5 px-2'>
               <ProgressCircle percentage={97} caption='Performance' />
@@ -37,7 +33,7 @@ const WhyMeSection = () => {
               <ProgressCircle percentage={91} caption='SEO' delay={0.6} />
             </div>
 
-            <div className='relative inline-block mt-5 text-base'>
+            <div className='relative inline-block mt-5 text-base xl:text-lg'>
               <AnimatedLink
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
                 linkClassName='text-oliveDark-12'
@@ -46,16 +42,17 @@ const WhyMeSection = () => {
               >
                 Google Lighthouse
               </AnimatedLink>{' '}
-              is a tool for measuring the{' '}
-              <Em inViewClassName='text-oliveDark-12'>quality</Em> of web pages,
-              and I think they like{' '}
-              <Em inViewClassName='text-oliveDark-12'>keone.io</Em>.
+              is a tool for measuring the quality of web pages, and I think they
+              like <Em inViewClassName='text-oliveDark-12'>keone.io</Em>.
             </div>
           </article>
-          <article className='bg-grassDark-3/50 border border-grassDark-6 rounded-2xl shadow-xl p-4 text-grassDark-12'>
-            <h2 className='font-heading font-bold text-3xl'>Core web vitals</h2>
 
-            <div className='flex flex-col mt-10'>
+          <article className='bg-grassDark-3/30 border md:row-span-2 border-grassDark-6 rounded-2xl shadow-xl p-4 lg:p-5 text-grassDark-12'>
+            <h3 className='font-heading font-bold text-3xl xl:text-4xl leading-tight xl:leading-tight'>
+              Core web vitals
+            </h3>
+
+            <div className='flex flex-col mt-3'>
               <ProgressBar
                 percentage={85}
                 title='Largest Contentful Paint (LCP)'
@@ -75,7 +72,7 @@ const WhyMeSection = () => {
               />
             </div>
 
-            <div className='relative inline-block mt-5 text-base'>
+            <div className='relative inline-block mt-3 text-base xl:text-lg'>
               <AnimatedLink
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
                 linkClassName='text-oliveDark-12'
@@ -95,16 +92,13 @@ const WhyMeSection = () => {
               <Em inViewClassName='text-oliveDark-12'>fastest </Em>
               web frameworks available and I'm always searching for{' '}
               <Em inViewClassName='text-oliveDark-12'>
-                bleeding-edge solutions{' '}
+                bleeding-edge solutions to improve performance.
               </Em>
-              to{' '}
-              <Em inViewClassName='text-oliveDark-12'>improve performance</Em>.
               <br />
               <br />
               Many web development agencies, including some of the world's
               largest, continue to use{' '}
-              <Em inViewClassName='text-oliveDark-12'> slow </Em> and
-              <Em inViewClassName='text-oliveDark-12'> dated </Em> web
+              <Em inViewClassName='text-oliveDark-12'> slow and dated</Em> web
               frameworks because they're 'proven', despite only being 'proven' 5
               years ago and{' '}
               <Em inViewClassName='text-oliveDark-12'> sluggish </Em>today.
@@ -113,55 +107,29 @@ const WhyMeSection = () => {
               <Em inViewClassName='text-oliveDark-12'>I'm faster.</Em>
             </div>
           </article>
-          <article>{/* Info */}</article>
+
+          <article className='p-4 md:pt-0 lg:p-5 lg:pt-0 '>
+            <p className='font-heading font-medium text-2xl md:text-3xl xl:text-3xl leading-tight md:leading-tight xl:leading-tight'>
+              Hire me and you'll get a lightning fast website and a huge
+              edge over your competitors
+            </p>
+            <p className='text-base md:text-lg xl:text-lg mt-2 md:mt-4'>
+              Did I mention that I'm drastically cheaper than agencies too?
+            </p>
+            <div className='flex justify-end mt-10'>
+              <Link
+                href='/products'
+                className='flex items-center gap-2 bg-grassDark-1 border border-grassDark-7 py-2 lg:py-3 px-5 lg:px-6 rounded-lg hover:border-grassDark-8 hover:bg-grassDark-2 font-heading font-bold shadow-lg text-base sm:text-xl'
+              >
+                View Products & Prices
+                <ArrowRightIcon className='w-5 h-5 sm:w-7 sm:h-7' />
+              </Link>
+            </div>
+          </article>
         </div>
       </div>
-      <div className='h-20 md:h-40 bg-gradient-to-b from-slateDark-1 to-mauveDark-1' />
+      <div className='h-20 md:h-40 bg-gradient-to-b from-oliveDark-1 to-mauveDark-1' />
     </section>
   )
 }
 export default WhyMeSection
-//
-//       <FadeInFromLeft className='mt-10 lg:mt-20 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)] inline-block relative'>
-//       </FadeInFromLeft>
-//
-//       <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-//         <p>
-//         </p>
-//       </FadeInFromLeft>
-//
-//       <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-//         <p>
-//
-//       <div className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-//         <p className='relative inline-block font-heading font-extrabold text-7xl md:text-8xl lg:text-9xl leading-tight md:leading-tight lg:leading-tight text-transparent bg-clip-text bg-gradient-to-br from-violet-600 to-violet-300'>
-//           I'm faster.
-//         </p>
-//       </div>
-//
-//       <FadeInFromLeft className='mt-20 lg:mt-40 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-//         <p>
-//           Work with me and you'll get a<Em> lightning fast website</Em> and
-//           a <Em>huge edge over your competitors</Em>.
-//         </p>
-//       </FadeInFromLeft>
-//
-//       <FadeInFromLeft className='mt-8 lg:mt-10 pr-[calc(6.25%+5px)] md:pr-[calc(12.5%+20px)]'>
-//         <p>
-//           Did I mention that I'm <Em>drastically cheaper</Em> than agencies
-//           too?
-//         </p>
-//       </FadeInFromLeft>
-//
-//       <div className='flex justify-end pt-20 md:pt-40 '>
-//         <AnimatedLink
-//           href='/products'
-//           linkClassName='font-heading font-extrabold text-2xl md:text-3xl lg:text-4xl flex gap-1 items-center'
-//         >
-//           View products
-//           <ArrowRightIcon className='w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8' />
-//         </AnimatedLink>
-//       </div>
-//     </Container>
-//   </div>
-// </section>

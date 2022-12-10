@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { motion, useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

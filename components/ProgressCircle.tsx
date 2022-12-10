@@ -62,21 +62,21 @@ const ProgressCircle: React.FC<Props> = ({
             cy='50'
             r='40'
             fill='transparent'
-            stroke='#63c174'
+            stroke='#46a758'
             strokeWidth={6}
             variants={draw}
           />
         </motion.svg>
         {isInView ? (
           <CountUp
-            className='absolute text-grassDark-11 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading font-bold text-[13px] min-[350px]:text-[14px] min-[380px]:text-[15px]'
+            className='absolute text-grassDark-9 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading font-bold text-[13px] min-[350px]:text-[14px] min-[380px]:text-[15px] sm:text-[20px] md:text-[14px] lg:text-[17px] xl:text-[21px] leading-tight min-[350px]:leading-tight min-[380px]:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight'
             end={percentage}
             duration={2.35}
             delay={delay}
           />
         ) : null}
       </motion.div>
-      <h4 className='text-center font-heading font-medium text-[10px] min-[350px]:text-[11px] min-[380px]:text-[13px]'>
+      <h4 className='text-center font-heading font-medium text-[10px] min-[350px]:text-[11px] min-[380px]:text-[12px] sm:text-[15px] md:text-[13px] lg:text-[15px] xl:text-[16px] leading-tight min-[350px]:leading-tight min-[380px]:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight'>
         {caption}
       </h4>
     </div>

@@ -26,19 +26,18 @@ const ProgressBar: React.FC<Props> = ({
   // const total = largeGreenSize + pinSize + smallGreenSize + smallRedSize + smallYellowSize
 
   return (
-    <motion.div
-      ref={scrollRef}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: isInView ? 1 : 0 }}
-      transition={{ duration: isInView ? 1.5 : 0 }}
-      className='flex flex-col gap-2'
-    >
-      <div className='flex md:items-center gap-2 md:gap-4 text-xl md:text-2xl lg:text-3xl font-bold text-anthracite-12'>
-        <span className='h-2 w-2 md:h-3 md:w-3 shrink-0 mt-[11px] md:mt-[1px] bg-emerald-500 rounded-full ' />
+    <div ref={scrollRef} className='flex flex-col gap-2'>
+      <div className='flex gap-2 font-heading font-medium text-grassDark-12 text-xl xl:text-xl '>
+        <span className='h-2 w-2 shrink-0 mt-[12px] bg-grassDark-9 rounded-full' />
         <div className='sm:whitespace-nowrap'>{title}</div>
       </div>
 
-      <div className='flex justify-start'>
+      <motion.div
+        className='flex justify-start'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isInView ? 1 : 0 }}
+        transition={{ duration: isInView ? 1.5 : 0 }}
+      >
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: isInView ? `${largeGreenSize}%` : '0%' }}
@@ -47,7 +46,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pr-1'
         >
-          <div className='bg-emerald-500 h-[6px] md:h-2' />
+          <div className='bg-grassDark-9 h-[6px]' />
         </motion.div>
 
         <div
@@ -61,11 +60,11 @@ const ProgressBar: React.FC<Props> = ({
               duration: isInView ? 1.5 : 0,
               delay: isInView ? 0.5 : 0,
             }}
-            className='bg-white h-5 md:h-6 w-full origin-top'
+            className='bg-white h-5 w-full origin-top'
           />
-          <div className='text-emerald-500'>
+          <div>
             <CountUp
-              className='text-emerald-500 font-heading font-bold text-lg sm:text-xl lg:text-2xl'
+              className='text-grassDark-11 font-heading font-bold text-base'
               end={isInView ? value : 50}
               duration={2}
               start={50}
@@ -83,7 +82,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] md:h-2 bg-emerald-500' />
+          <div className='h-[6px] bg-grassDark-9' />
         </motion.div>
 
         <motion.div
@@ -95,7 +94,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] md:h-2 bg-yellow-300' />
+          <div className='h-[6px]  bg-yellowDark-9' />
         </motion.div>
 
         <motion.div
@@ -107,10 +106,10 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] md:h-2 bg-rose-700' />
+          <div className='h-[6px] bg-redDark-9' />
         </motion.div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }
 
