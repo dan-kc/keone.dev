@@ -26,7 +26,7 @@ export default function Document() {
           'font-body bg-mauveDark-1 text-grayDark-12 text-lg lg:text-xl'
         )}
       >
-        <div className='relative overflow-hidden'>
+        <div className='relative'>
           <Main />
           <NextScript />
         </div>

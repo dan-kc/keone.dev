@@ -8,7 +8,7 @@ import MorphGraphic from '@components/MorphGraphic'
 const ProfileSection = () => {
   return (
     <section>
-      <div className='px-3 pt-20 md:pt-40'>
+      <div className='px-3 pt-20 md:pt-40 overflow-hidden'>
         <article className='relative max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto rounded-2xl border border-grayDark-6 flex flex-col sm:flex-row-reverse overflow-hidden shadow bg-grayDark-3'>
           <div className='w-fit sm:w-[360px] md:w-[395px] lg:w-[450px] xl:w-[480px] flex-none border-b sm:border-none border-grayDark-6 z-10'>
             <Image
@@ -23,9 +23,9 @@ const ProfileSection = () => {
             <div className='md:pl-2'>
               <DoubleText />
               <p className='pt-3 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
-                I'll renovate your online business with a brand new website that{' '}
-                <Em>exceeds the conversion rates</Em> of your competitors, so
-                you can <Em> finally focus on your business</Em>.
+                Let me renovate your online business with a brand new website
+                that <Em>exceeds the conversion rates</Em> of your competitors,
+                so you can <Em> finally focus on your business</Em>.
               </p>
             </div>
             <div className='flex justify-end mt-8 sm:mt-0 md:pr-2'>
@@ -41,7 +41,7 @@ const ProfileSection = () => {
           <MorphGraphic className='absolute -bottom-[20px] -left-[230px] sm:-left-[330px] sm:w-[900px] md:-left-[280px] lg:-left-[250px] h-[270px] w-[800px] pointer-events-none' />
         </article>
       </div>
-      <div className='h-20 md:h-40 bg-gradient-to-b from-mauveDark-1 to-slateDark-1' />
+      <div className='h-20 md:h-40 bg-gradient-to-b from-mauveDark-1 to-mauveDark-2' />
     </section>
   )
 }

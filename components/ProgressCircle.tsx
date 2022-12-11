@@ -52,7 +52,7 @@ const ProgressCircle: React.FC<Props> = ({
             cx='50'
             cy='50'
             r='40'
-            stroke='#132819'
+            stroke='#0f291e'
             fill='#0d1912'
             strokeWidth={6}
           />
@@ -62,14 +62,14 @@ const ProgressCircle: React.FC<Props> = ({
             cy='50'
             r='40'
             fill='transparent'
-            stroke='#46a758'
+            stroke='#30a46c'
             strokeWidth={6}
             variants={draw}
           />
         </motion.svg>
         {isInView ? (
           <CountUp
-            className='absolute text-grassDark-9 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading font-bold text-[13px] min-[350px]:text-[14px] min-[380px]:text-[15px] sm:text-[20px] md:text-[14px] lg:text-[17px] xl:text-[21px] leading-tight min-[350px]:leading-tight min-[380px]:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight'
+            className='absolute text-greenDark-9 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading font-bold text-[13px] min-[350px]:text-[14px] min-[380px]:text-[15px] sm:text-[20px] md:text-[14px] lg:text-[17px] xl:text-[21px] leading-tight min-[350px]:leading-tight min-[380px]:leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight'
             end={percentage}
             duration={2.35}
             delay={delay}

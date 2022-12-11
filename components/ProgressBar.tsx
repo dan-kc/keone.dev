@@ -27,8 +27,8 @@ const ProgressBar: React.FC<Props> = ({
 
   return (
     <div ref={scrollRef} className='flex flex-col gap-2'>
-      <div className='flex gap-2 font-heading font-medium text-grassDark-12 text-xl xl:text-xl '>
-        <span className='h-2 w-2 shrink-0 mt-[12px] bg-grassDark-9 rounded-full' />
+      <div className='flex gap-2 font-heading font-medium text-greenDark-12 text-xl xl:text-xl '>
+        <span className='h-2 w-2 shrink-0 mt-[12px] bg-greenDark-9 rounded-full' />
         <div className='sm:whitespace-nowrap'>{title}</div>
       </div>
 
@@ -46,7 +46,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pr-1'
         >
-          <div className='bg-grassDark-9 h-[6px]' />
+          <div className='bg-greenDark-9 h-[6px]' />
         </motion.div>
 
         <div
@@ -64,7 +64,7 @@ const ProgressBar: React.FC<Props> = ({
           />
           <div>
             <CountUp
-              className='text-grassDark-11 font-heading font-bold text-base'
+              className='text-greenDark-11 font-heading font-bold text-base'
               end={isInView ? value : 50}
               duration={2}
               start={50}
@@ -82,7 +82,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] bg-grassDark-9' />
+          <div className='h-[6px] bg-greenDark-9' />
         </motion.div>
 
         <motion.div
