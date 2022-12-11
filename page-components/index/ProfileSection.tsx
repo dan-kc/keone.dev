@@ -17,6 +17,7 @@ const ProfileSection = () => {
               height={520.126}
               width={480}
               quality={100}
+              priority
             />
           </div>
           <div className='pt-6 pb-6 px-4 sm:pb-4 md:pb-6 flex flex-col justify-between z-10'>

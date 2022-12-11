@@ -1,5 +1,4 @@
 import Em from '@components/Em'
-import Container, { Options } from '@components/Container'
 import List from '@components/List'
 import AnimatedLink from '@components/AnimatedLink'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
@@ -9,10 +8,10 @@ import { Color } from 'styles/color-config'
 export default function Bio() {
   return (
     <>
-      <section>
-        <Container size={Options.md}>
-          <div className='bg-anthracite-4 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
-            <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-emerald-600 to-emerald-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
+      <section className='bg-mauveDark-1'>
+        <div className='relative sm:mx-auto max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl px-3 md:px-10'>
+          <div className='bg-slateDark-2 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow'>
+            <h2 className='w-fit pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Hello,
             </h2>
             <article>
@@ -45,8 +44,8 @@ export default function Bio() {
               </h3>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
                 I love doing weekly, monthly and yearly challenges. In 2021 my
-                challenge was no meat. 2022 was no chocolate. In 2023 it’s
-                no deep fried food and no United Kingdom- both very bad for you.
+                challenge was no meat. 2022 was no chocolate. In 2023 it’s no
+                deep fried food and no United Kingdom- both very bad for you.
                 <br />
                 <br />
                 I'm also a junglist, a coffee snob, and Super Smash Bros Melee
@@ -157,7 +156,7 @@ export default function Bio() {
               <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7' />
             </AnimatedLink>
           </div>
-        </Container>
+        </div>
       </section>
     </>
   )

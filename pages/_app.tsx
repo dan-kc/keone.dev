@@ -8,6 +8,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { Outfit, Poppins } from '@next/font/google'
 import Flyout from '@components/Flyout'
+import { useRouter } from 'next/router'
+import classNames from 'classnames'
 
 export const outfit = Outfit({
   subsets: ['latin'],
@@ -23,13 +25,19 @@ export const poppins = Poppins({
 function MyApp({ Component, pageProps }: AppProps) {
   useUpdateDeviceMode()
   useUpdateWindowDimensions()
+  const router = useRouter()
+
   return (
     <ToastProvider swipeDirection='right'>
-      <Flyout />
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-      <Toast />
+      <div
+        className={classNames(router.asPath === '/' ? '' : 'overflow-hidden')}
+      >
+        <Flyout />
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+        <Toast />
+      </div>
     </ToastProvider>
   )
 }

@@ -7,7 +7,7 @@ interface Props {}
 const Footer: React.FC<Props> = () => {
   return (
     <>
-      <footer className='relative pt-20 lg:pt-40 pb-4'>
+      <footer className='bg-mauveDark-1 relative pt-20 lg:pt-40 pb-4'>
         <div className='relative flex w-full flex-col items-center px-3 md:px-8 lg:px-12'>
           <h2 className='text-5xl md:text-6xl lg:text-8xl font-heading font-extrabold mb-4 md:mb-10 text-center w-fit text-transparent bg-clip-text bg-gradient-to-br from-redDark-9 to-redDark-11 leading-tight md:leading-tight lg:leading-tight'>
             Get in touch!

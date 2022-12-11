@@ -39,7 +39,7 @@ export default function Navbar() {
         <button
           aria-label='Menu'
           onClick={() => setOpen(true)}
-          className='md:hidden hover:scale-110 text-anthracite-12 transform duration-100 outline-none'
+          className='md:hidden hover:scale-110 transform duration-100 outline-none'
         >
           <Bars3Icon className='h-9 w-9' aria-hidden='true' />
         </button>
@@ -59,8 +59,8 @@ export default function Navbar() {
                       className={classNames(
                         isActive
                           ? ''
-                          : 'border-transparent hover:border-b-anthracite-6',
-                        'border-b-2 text-anthracite-12 transition duration-200 p-2'
+                          : 'border-transparent hover:border-b-grayDark-5',
+                        'border-b-2 text-white transition duration-200 p-2'
                       )}
                     >
                       {item.name}
@@ -72,7 +72,7 @@ export default function Navbar() {
             <li className='flex flex-col justify-center mt-1'>
               <Link
                 mail={true}
-                className='font-heading font-extrabold ml-1 border py-2 px-4 bg-rose-900/20 border-rose-900 hover:border-rose-600 text-rose-600 hover:text-rose-500 rounded-md shadow-2xl duration-100'
+                className='font-heading font-extrabold ml-1 border py-2 px-4 bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9 rounded-md shadow-lg duration-100'
               >
                 Contact
               </Link>

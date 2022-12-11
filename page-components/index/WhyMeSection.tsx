@@ -79,9 +79,7 @@ const WhyMeSection = () => {
                 Core web vitals
               </AnimatedLink>{' '}
               are official{' '}
-              <Em inViewClassName='text-sageDark-12'>
-                Google ranking factors
-              </Em>
+              <Em inViewClassName='text-sageDark-12'>Google ranking factors</Em>
               , but rest assured you don't have to worry about any of that when
               working with me.
               <br />
@@ -107,8 +105,8 @@ const WhyMeSection = () => {
 
           <div className='p-4 pb-0 md:pt-0 lg:p-5 lg:pt-0 '>
             <p className='font-heading font-medium text-2xl md:text-3xl xl:text-3xl leading-tight md:leading-tight xl:leading-tight'>
-              Hire me and you'll get a lightning fast website and a huge
-              edge over your competitors
+              Hire me and you'll get a lightning fast website and a huge edge
+              over your competitors
             </p>
             <p className='text-base md:text-lg xl:text-lg mt-2 md:mt-4'>
               Did I mention that I'm drastically cheaper than agencies too?
