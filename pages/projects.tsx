@@ -3,8 +3,7 @@ import Keone from '@page-components/projects/Keone'
 import InProgress from '@page-components/projects/InProgress'
 import Scheduled from '@page-components/projects/Scheduled'
 import Title from '@components/Title'
-import Highlight from '@components/Hightlight'
-import { Color } from 'styles/color-config'
+import Highlight, { Color } from '@components/Hightlight'
 
 const Projects = () => {
   return (

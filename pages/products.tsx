@@ -4,8 +4,7 @@ import PortfolioProduct from '@page-components/products/PortfolioProduct'
 import LandingPageProduct from '@page-components/products/LandingPageProduct'
 import AdditionalServices from '@page-components/products/AdditionalServices'
 import Title from '@components/Title'
-import Highlight from '@components/Hightlight'
-import { Color } from 'styles/color-config'
+import Highlight, { Color } from '@components/Hightlight'
 
 export default function Products() {
   return (
