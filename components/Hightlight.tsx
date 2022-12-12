@@ -60,13 +60,13 @@ const Highlight: React.FC<Props> = ({ children, color }) => {
 
         {/* left */}
         <div
-          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute top-0 left-0 origin-top-left bg-anthracite-4/70'
+          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute top-0 left-0 origin-top-left bg-grayDark-3/70'
           style={{
             transform: 'translate(0.51em) rotate(-45deg) translate(-50%,-50%)',
           }}
         />
         <div
-          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute bottom-0 left-0 origin-bottom-left bg-anthracite-4/70'
+          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute bottom-0 left-0 origin-bottom-left bg-grayDark-3/70'
           style={{
             transform: 'translate(0.23em) rotate(45deg) translate(-50%,-50%)',
           }}
@@ -74,14 +74,14 @@ const Highlight: React.FC<Props> = ({ children, color }) => {
 
         {/* {/* right */}
         <div
-          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute top-0 right-0 origin-top-right bg-anthracite-4/70'
+          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute top-0 right-0 origin-top-right bg-grayDark-3/70'
           style={{
             transform: 'translate(-0.475em) rotate(45deg) translate(50%,50%)',
           }}
         />
 
         <div
-          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute bottom-0 right-0 origin-bottom-right bg-anthracite-4/70'
+          className='-z-20 h-0.5 w-[calc(200vw+200vh)] absolute bottom-0 right-0 origin-bottom-right bg-grayDark-3/70'
           style={{
             transform: 'translate(-0.25em) rotate(-45deg) translate(50%,50%)',
           }}

@@ -32,9 +32,8 @@ const ReportSection = () => {
             <FadeInFromLeft className='relative'>
               <QuoteLine className='bg-redDark-11' />
               <blockquote>
-                A <Em>0.1 second</Em> improvement of mobile site speed{' '}
-                <Em>increased retail site conversion rates</Em> by <Em>8.4%</Em>{' '}
-                and <Em>average order value</Em> by <Em>9.2%</Em>.
+                A 0.1 second improvement of mobile site speed increased retail
+                site conversion rates by 8.4% and average order value by 9.2%.
               </blockquote>
             </FadeInFromLeft>
           </div>
@@ -72,8 +71,7 @@ const ReportSection = () => {
 
           <FadeInFromLeft className='mt-6'>
             <p className='text-xl lg:text-2xl'>
-              The same report found that for <Em>lead generating websites </Em>
-              with a form...
+              The same report found that for websites with a form...
             </p>
           </FadeInFromLeft>
 
@@ -81,9 +79,9 @@ const ReportSection = () => {
             <FadeInFromLeft className='relative'>
               <QuoteLine className='bg-redDark-11' />
               <blockquote>
-                "A site speed improvement of <Em>0.1s</Em> observed an{' '}
-                <Em>uplift of 21.6%</Em> from the first step of the form to the
-                form submission"
+                "A site speed improvement of 0.1s observed an uplift of{' '}
+                <Em>21.6%</Em> from the first step of the form to the form
+                submission"
               </blockquote>
             </FadeInFromLeft>
           </div>

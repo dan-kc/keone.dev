@@ -23,12 +23,11 @@ const ProgressBar: React.FC<Props> = ({
   const smallGreenSize = percentage - largeGreenSize - pinSize
   const smallYellowSize = (100 - percentage) / 2
   const smallRedSize = smallYellowSize
-  // const total = largeGreenSize + pinSize + smallGreenSize + smallRedSize + smallYellowSize
 
   return (
-    <div ref={scrollRef} className='flex flex-col gap-2'>
-      <div className='flex gap-2 font-heading font-medium text-greenDark-12 text-xl xl:text-xl '>
-        <span className='h-2 w-2 shrink-0 mt-[12px] bg-greenDark-9 rounded-full' />
+    <div ref={scrollRef} className='flex flex-col gap-1'>
+      <div className='flex gap-2 text-greenDark-12 text-base lg:text-lg '>
+        <span className='h-1.5 w-1.5 lg:h-2 lg:w-2 shrink-0 mt-[9px] lg:mt-[10px] bg-greenDark-9 rounded-full' />
         <div className='sm:whitespace-nowrap'>{title}</div>
       </div>
 
@@ -46,7 +45,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pr-1'
         >
-          <div className='bg-greenDark-9 h-[6px]' />
+          <div className='bg-greenDark-9 h-[5px]' />
         </motion.div>
 
         <div
@@ -67,7 +66,7 @@ const ProgressBar: React.FC<Props> = ({
               className='text-greenDark-11 font-heading font-bold text-base'
               end={isInView ? value : 50}
               duration={2}
-              start={50}
+              start={70}
               suffix={suffix}
             />
           </div>
@@ -82,7 +81,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] bg-greenDark-9' />
+          <div className='h-[5px] bg-greenDark-9' />
         </motion.div>
 
         <motion.div
@@ -94,7 +93,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px]  bg-yellowDark-9' />
+          <div className='h-[5px]  bg-yellowDark-9' />
         </motion.div>
 
         <motion.div
@@ -106,7 +105,7 @@ const ProgressBar: React.FC<Props> = ({
           }}
           className='pl-1'
         >
-          <div className='h-[6px] bg-redDark-9' />
+          <div className='h-[5px] bg-redDark-9' />
         </motion.div>
       </motion.div>
     </div>

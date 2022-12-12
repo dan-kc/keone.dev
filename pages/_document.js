@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { outfit, poppins } from '@pages/_app'
+import { outfit, montserrat } from '@pages/_app'
 import classNames from 'classnames'
 
 export default function Document() {
@@ -22,7 +22,7 @@ export default function Document() {
       <body
         className={classNames(
           outfit.variable,
-          poppins.variable,
+          montserrat.variable,
           'font-body bg-mauveDark-1 text-grayDark-12 text-lg lg:text-xl'
         )}
       >

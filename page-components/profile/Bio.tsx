@@ -8,12 +8,13 @@ import { Color } from 'styles/color-config'
 export default function Bio() {
   return (
     <>
-      <section className='bg-mauveDark-1'>
+      <section>
         <div className='relative sm:mx-auto max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl px-3 md:px-10'>
           <div className='bg-slateDark-2 px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow'>
-            <h2 className='w-fit pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
+            <h2 className='text-skyDark-11 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
               Hello,
             </h2>
+
             <article>
               <p className='sm:pr-8 md:pr-12 lg:pr-16 xl:pr-20'>
                 I’m Daniel.
@@ -48,7 +49,7 @@ export default function Bio() {
                 deep fried food and no United Kingdom- both very bad for you.
                 <br />
                 <br />
-                I'm also a junglist, a coffee snob, and Super Smash Bros Melee
+                I'm also a junglist, a coffee snob, and a Super Smash Bros Melee
                 enthusiast.
               </p>
             </article>
@@ -147,7 +148,8 @@ export default function Bio() {
               </div>
             </article>
           </div>
-          <div className='flex justify-end pt-16 md:pt-20 bg-anthracite-3'>
+
+          <div className='flex justify-end pt-16 md:pt-20 bg-mauveDark-1'>
             <AnimatedLink
               href='/products'
               linkClassName='font-heading font-extrabold text-xl md:text-2xl lg:text-3xl flex gap-1 items-center'

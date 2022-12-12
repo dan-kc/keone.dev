@@ -872,7 +872,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ['var(--font-outfit)', ...fontFamily.sans],
-      body: ['var(--font-poppins)', ...fontFamily.sans],
+      body: ['var(--font-montserrat)', ...fontFamily.sans],
       display: ['Hermit', 'Monospace', ...fontFamily.mono],
     },
   },

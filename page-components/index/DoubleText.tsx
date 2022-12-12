@@ -6,7 +6,6 @@ const DoubleText = () => {
   const [isMounted, setIsMounted] = useState<boolean>(false)
 
   useEffect(() => {
-    console.log('run')
     if (isMounted === false) {
       setIsMounted(true)
       return
@@ -14,7 +13,6 @@ const DoubleText = () => {
 
     const interval = setInterval(() => {
       setIsDesign((prevState) => !prevState)
-      console.log(isDesign)
     }, 4500)
 
     return () => clearInterval(interval)

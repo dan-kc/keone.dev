@@ -1,7 +1,6 @@
 import DoubleText from '@page-components/index/DoubleText'
 import Link from 'next/link'
 import Image from 'next/image'
-import Em from '@components/Em'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import MorphGraphic from '@components/MorphGraphic'
 
@@ -10,7 +9,7 @@ const ProfileSection = () => {
     <section>
       <div className='px-3 pt-20 md:pt-40 overflow-hidden'>
         <article className='relative max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto rounded-2xl border border-grayDark-6 flex flex-col sm:flex-row-reverse overflow-hidden shadow bg-grayDark-3'>
-          <div className='w-fit sm:w-[360px] md:w-[395px] lg:w-[450px] xl:w-[480px] flex-none border-b sm:border-none border-grayDark-6 z-10'>
+          <div className='w-fit sm:w-[345px] md:w-[365px] lg:w-[390px] xl:w-[450px] flex-none border-b sm:border-none border-grayDark-6 z-10'>
             <Image
               src='/images/self-portrait-1.webp'
               alt='portrait'
@@ -20,19 +19,19 @@ const ProfileSection = () => {
               priority
             />
           </div>
-          <div className='pt-6 pb-6 px-4 sm:pb-4 md:pb-6 flex flex-col justify-between z-10'>
-            <div className='md:pl-2'>
+          <div className='p-6 flex flex-col justify-between z-10'>
+            <div>
               <DoubleText />
-              <p className='pt-3 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
-                Let me renovate your online business with a brand new website
-                that <Em>exceeds the conversion rates</Em> of your competitors,
-                so you can <Em> finally focus on your business</Em>.
+              <p className='mt-4 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
+                Hire me to renovate your online business with a brand new
+                website that exceeds the conversion rates of your
+                competitors, so you can finally focus on your business.
               </p>
             </div>
-            <div className='flex justify-end mt-8 sm:mt-0 md:pr-2'>
+            <div className='flex justify-end mt-6 md:mt-0 '>
               <Link
                 href='/profile'
-                className='flex items-center gap-2 bg-grayDark-1 border border-grayDark-7 py-2 px-5 rounded-lg hover:border-grayDark-8 hover:bg-grayDark-2 font-heading font-bold shadow-lg text-xl sm:text-base md:text-xl'
+                className='text-xl sm:text-base md:text-xl flex items-center gap-2 bg-grayDark-1 border border-grayDark-7 py-2 px-5 xl:py-3 xl:px-6 rounded-lg hover:border-grayDark-8 hover:bg-grayDark-2 font-heading font-semibold shadow-lg duration-100'
               >
                 View Profile
                 <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6' />

@@ -1,7 +1,6 @@
 import useUpdateDeviceMode from '@hooks/useUpdateDeviceMode'
 import useUpdateWindowDimensions from '@hooks/useUpdateWindowDimensions'
 import Link from '@components/Link'
-import Container, { Options } from '@components/Container'
 import Lottie from 'lottie-react'
 import lottie from '@lib/lottie.json'
 import { useRouter } from 'next/router'
@@ -26,7 +25,7 @@ export default function Navbar() {
   const router = useRouter()
 
   return (
-    <Container size={Options.lg}>
+    <div className='max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto'>
       <NavigationMenu.Root className='flex justify-between items-center py-1 text-sm text-base z-20 font-display'>
         <Link
           aria-label='Home'
@@ -80,6 +79,6 @@ export default function Navbar() {
           </NavigationMenu.List>
         </div>
       </NavigationMenu.Root>
-    </Container>
+    </div>
   )
 }

@@ -6,7 +6,7 @@ import { ToastProvider } from '@radix-ui/react-toast'
 import Toast from '@components/Toast'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import { Outfit, Poppins } from '@next/font/google'
+import { Outfit, Montserrat } from '@next/font/google'
 import Flyout from '@components/Flyout'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
@@ -16,10 +16,9 @@ export const outfit = Outfit({
   variable: '--font-outfit',
 })
 
-export const poppins = Poppins({
-  weight: '400',
+export const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-montserrat',
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
