@@ -5,6 +5,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   mail?: boolean
   href?: string
   passHref?: boolean
+  newTab?: boolean
   legacyBehavior?: boolean
   children: React.ReactNode
 }
@@ -15,6 +16,7 @@ const mailTo =
 const NewLink: React.FC<Props> = ({
   mail = false,
   href,
+  newTab = false,
   legacyBehavior = false,
   children,
   passHref = false,
@@ -26,6 +28,8 @@ const NewLink: React.FC<Props> = ({
       href={mail ? mailTo : href}
       passHref={passHref}
       legacyBehavior={legacyBehavior}
+      target={newTab ? '_blank' : '_self'}
+      rel={newTab ? 'noopener' : null}
       onClick={
         mail
           ? () => {

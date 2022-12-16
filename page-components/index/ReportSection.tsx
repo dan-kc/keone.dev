@@ -20,6 +20,7 @@ const ReportSection = () => {
             <AnimatedLink
               thick
               newTab
+              linkClassName='text-mauveDark-12'
               underlineClassName='bg-mauveDark-12'
               href='https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf'
             >

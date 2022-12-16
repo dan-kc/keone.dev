@@ -11,7 +11,7 @@ const separator = ({ className }: Props) => {
       decorative
       className={classNames(
         className,
-        'h-[1.6px] bg-gradient-to-r from-transparent to-transparent via-anthracite-7'
+        'h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6/50'
       )}
     />
   )

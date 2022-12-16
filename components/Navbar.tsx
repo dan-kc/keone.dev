@@ -16,13 +16,41 @@ export const navigation = [
   { name: 'Process', href: '/process' },
 ]
 
+const colorClassNames = {
+  red: 'bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9',
+  violet:
+    'bg-violetDark-3/20 hover:bg-violetDark-4/20 border-violetDark-6 hover:border-violetDark-8 text-violetDark-9',
+  crimson:
+    'bg-crimsonDark-3/20 hover:bg-crimsonDark-4/20 border-crimsonDark-6 hover:border-crimsonDark-8 text-crimsonDark-9',
+  tomato: 'bg-tomatoDark-3/20 hover:bg-tomatoDark-4/20 border-tomatoDark-6 hover:border-tomatoDark-8 text-tomatoDark-9',
+  purple: 'bg-purpleDark-3/20 hover:bg-purpleDark-4/20 border-purpleDark-6 hover:border-purpleDark-8 text-purpleDark-9',
+}
+
+const generateClassName = (path: string) => {
+  let headerClass: string, buttonClass: string
+
+  if (path === '/') {
+    headerClass = colorClassNames.red
+  } else if (path === '/profile') {
+    headerClass = colorClassNames.violet
+  } else if (path === '/products') {
+    headerClass = colorClassNames.tomato
+  } else if (path === '/projects') {
+    headerClass = colorClassNames.crimson
+  } else if (path === '/process') {
+    headerClass = colorClassNames.purple
+  }
+  return { headerClass, buttonClass }
+}
+
 export default function Navbar() {
   // Initialization Stuff
   useUpdateDeviceMode()
   useUpdateWindowDimensions()
 
   const setOpen = useFlyoutStore((state) => state.setOpen)
-  const router = useRouter()
+  const { asPath } = useRouter()
+  const { headerClass } = generateClassName(asPath)
 
   return (
     <div className='max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto'>
@@ -46,7 +74,7 @@ export default function Navbar() {
         <div className='hidden md:block'>
           <NavigationMenu.List className='flex gap-2'>
             {navigation.map((item, index) => {
-              const isActive = router.asPath === item.href
+              const isActive = asPath === item.href
               return (
                 <NavigationMenu.Item
                   className='flex flex-col justify-center mt-1'
@@ -71,7 +99,10 @@ export default function Navbar() {
             <li className='flex flex-col justify-center mt-1'>
               <Link
                 mail={true}
-                className='font-heading font-extrabold ml-1 border py-2 px-4 bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9 rounded-md shadow-lg duration-100'
+                className={classNames(
+                  'font-heading font-extrabold ml-1 border py-2 px-4 rounded-md shadow-lg duration-200',
+                  headerClass
+                )}
               >
                 Contact
               </Link>

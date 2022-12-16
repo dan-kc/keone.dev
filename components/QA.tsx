@@ -1,6 +1,5 @@
 import * as Separator from '@radix-ui/react-separator'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
-import Container, { Options } from '@components/Container'
 import classNames from 'classnames'
 import { Fragment } from 'react'
 import {
@@ -72,13 +71,13 @@ const numberOfItems = items.length
 
 export default function QA() {
   return (
-    <section className='pt-16 md:pt-20 bg-anthracite-3'>
-      <Container size={Options.md}>
+    <section id='qa' className='relative mb-14'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
+        Some questions and answers
+      </h2>
+      <div className='mt-8 text-lg'>
         <Accordion allowMultiple>
-          <div className='bg-anthracite-4 px-5 pt-9 md:px-8 md:pt-8 lg:px-12 lg:pt-12 rounded-lg shadow-2xl'>
-            <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-cyan-300 pb-8 lg:pb-14 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
-              Some questions and answers
-            </h2>
+          <div className=''>
             {items.map((item, itemsIndex) => {
               const isFirstItem = itemsIndex === 0
               const isLastItem = itemsIndex === numberOfItems - 1
@@ -91,11 +90,12 @@ export default function QA() {
                           <AccordionButton>
                             <div
                               className={classNames(
-                                isFirstItem ? 'pb-4 md:pb-8' : 'py-4 md:py-8',
-                                'flex w-full justify-between'
+                                isExpanded ? "text-mauveDark-12" : "text-mauveDark-11",
+                                isFirstItem ? 'pb-3' : 'py-3',
+                                'flex w-full justify-between duration-300'
                               )}
                             >
-                              <span className='text-xl md:text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-12 text-left'>
+                              <span className='text-xl font-heading font-medium text-left '>
                                 {item.header}
                               </span>
 
@@ -106,15 +106,15 @@ export default function QA() {
                                   'transform duration-300 w-fit h-fit'
                                 )}
                               >
-                                <ChevronDownIcon className='w-6 h-6 lg:w-8 lg:h-8' />
+                                <ChevronDownIcon className='w-7 h-7' />
                               </div>
                             </div>
                           </AccordionButton>
                         </h2>
                         <AccordionPanel
                           className={classNames(
-                            'pt-3 lg:pt-0 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16 text-anthracite-11',
-                            isLastItem ? 'mb-2 md:mb-4 lg:mb-6' : ''
+                            'pt-3 text-base text-mauveDark-12',
+                            isLastItem ? 'mb-2' : ''
                           )}
                         >
                           {item.paragraphs.map((para, paraIndex) => {
@@ -133,7 +133,7 @@ export default function QA() {
                   {isLastItem ? null : (
                     <Separator.Root
                       decorative
-                      className='h-[1.6px] bg-gradient-to-r from-anthracite-6'
+                      className='h-[1px] bg-gradient-to-r from-transparent via-grayDark-6'
                     />
                   )}
                 </Fragment>
@@ -141,7 +141,7 @@ export default function QA() {
             })}
           </div>
         </Accordion>
-      </Container>
+      </div>
     </section>
   )
 }

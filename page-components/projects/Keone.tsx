@@ -1,85 +1,61 @@
-import Em from '@components/Em'
-import Container, { Options } from '@components/Container'
 import List from '@components/List'
-import Separator from '@components/Separator'
-import { Color } from 'styles/color-config'
 
 export default () => {
   return (
-    <section>
-      <Container size={Options.md}>
-        <div className='bg-sand-1  px-5 py-9 md:p-8 lg:p-12 rounded-lg shadow-2xl'>
-          <h2 className='w-fit text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-yellow-200 lg:pb-1 font-heading font-extrabold max-[350px]:text-[42px] text-5xl md:text-6xl lg:text-7xl leading-tight max-[350px]:leading-tight md:text-6xl lg:leading-tight'>
-            keone.io
-          </h2>
-          <p className='font-display text-sand-11 text-anthracite-9 pb-8 lg:pb-14'>
-            Main objective: Generate leads
-          </p>
-          <article>
-            <div className='sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-              A <Em>sleek, modern and interactive personal website</Em> that
-              informs users about <Em> myself and my services</Em>.
-              <br />
-              <br />
-              The homepage is designed to entice the user to scroll through an
-              animated showcase of information so that they are adequately
-              advised on <Em>how I can help them,</Em> before{' '}
-              <Em>inviting the user to get in touch</Em>.
-              <br />
-              <br />
-              To satiate the more curious user, there are links to supporting
-              pages where I elaborate on some relevant topics, then once again{' '}
-              <Em>provide the user with a contact option.</Em> <br />
-              <br />
-              The website is developed using <Em>
-                performance best practices
-              </Em>{' '}
-              and <Em>lightweight technologies</Em>, which results in a{' '}
-              <Em>lag-free user experience</Em> with{' '}
-              <Em>stellar Lighthouse scores </Em>and <Em>Core Web Vitals</Em>.
-            </div>
-          </article>
+    <section id='keone' className='relative mb-14'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-crimsonDark-11 border-b border-crimsonDark-6 font-heading font-extrabold bg-mauveDark-2'>
+        keone.io
+      </h2>
+      <div className='mt-8 py-2 px-4  w-fit text-sm border border-grayDark-6 bg-grayDark-3/30 text-grayDark-11 rounded-lg'>
+        Main objective: generate leads
+      </div>
+      <p className='mt-6 text-lg'>
+        A sleek, modern and interactive personal website that informs users
+        about myself and my services.
+        <br />
+        <br />
+        The homepage is designed to entice the user to scroll through an
+        animated showcase of information so that they are adequately advised on
+        how I can help them, before inviting the user to get in touch.
+        <br />
+        <br />
+        To satiate the more curious user, there are links to supporting pages
+        where I elaborate on some relevant topics, then once again provide the
+        user with a contact option.
+        <br />
+        <br />
+        The website is developed using performance best practices and
+        lightweight technologies, which results in a lag-free user experience
+        with stellar Lighthouse scores and Core Web Vitals.
+      </p>
 
-          <Separator className='my-10 lg:my-14' />
-
-          <article>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10'>
-              <div className=''>
-                <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
-                  Design Tooling
-                </h3>
-                <List
-                  dashColor={Color.yellow}
-                  className='text-sand-11 text-base lg:text-lg'
-                  items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
-                />
-              </div>
-              <div className=''>
-                <h3 className='text-2xl lg:text-3xl font-heading font-extrabold text-anthracite-11 mb-1 lg:mb-2 leading-tight lg:leading-tight'>
-                  Development Tooling
-                </h3>
-                <List
-                  dashColor={Color.yellow}
-                  className='text-sand-11 text-base lg:text-lg'
-                  items={[
-                    'Next.js',
-                    'React',
-                    'Typescript',
-                    'Tailwind CSS',
-                    'Lottie',
-                  ]}
-                />
-              </div>
-            </div>
-
-            <Separator className='my-10 lg:my-14' />
-
-            <p className=''>
-              Deployed on <Em>Vercel</Em>.
-            </p>
-          </article>
+      <div className='mt-20 grid gap-7 lg:grid-cols-2'>
+        <div>
+          <h3 className='mb-1 text-3xl font-heading font-extrabold'>
+            Design Tooling
+          </h3>
+          <List
+            items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
+            className='text-lg text-mauveDark-11'
+            dashClassName='text-redDark-11'
+          />
         </div>
-      </Container>
+        <div>
+          <h3 className='mb-1 text-3xl font-heading font-extrabold'>
+            Development Tooling
+          </h3>
+          <List
+            items={[
+              'Behavioural web design',
+              'Checkout funnels',
+              'Landing pages',
+            ]}
+            className='text-lg text-mauveDark-11'
+            dashClassName='text-redDark-11'
+          />
+        </div>
+      </div>
+      <p className='mt-20 text-lg'>Deployed on Vercel.</p>
     </section>
   )
 }

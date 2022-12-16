@@ -19,8 +19,8 @@ const AnimatedLink: React.FC<Props> = ({
   mail = false,
   thick = false,
   newTab = false,
-  linkClassName,
-  underlineClassName,
+  linkClassName = "text-white",
+  underlineClassName = "bg-white",
   children,
   ...rest
 }) => {

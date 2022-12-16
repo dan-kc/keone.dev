@@ -76,7 +76,7 @@ const ProcessSection = () => {
                 href='https://www.figma.com/figjam/'
                 newTab
                 underlineClassName='bg-slateDark-12'
-                linkClassName='text-slateDark-12 font-bold'
+                linkClassName='text-slateDark-12'
               >
                 FigJam
               </AnimatedLink>
@@ -125,7 +125,7 @@ const ProcessSection = () => {
           </div>
         </div>
       </div>
-      <div className='mt-10 lg:mt-20 h-10 lg:h-20 bg-gradient-to-b from-slateDark-1 to-slateDark-1 border-b border-slateDark-6' />
+      <div className='mt-10 lg:mt-20 h-10 lg:h-20 bg-gradient-to-b from-slateDark-1 to-slateDark-1' />
     </section>
   )
 }

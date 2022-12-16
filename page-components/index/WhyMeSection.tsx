@@ -3,6 +3,7 @@ import ProgressCircle from '@components/ProgressCircle'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import ProgressBar from '@components/ProgressBar'
 import Link from 'next/link'
+import Em from '@components/Em'
 
 const WhyMeSection = () => {
   return (
@@ -52,7 +53,7 @@ const WhyMeSection = () => {
             <div className='relative inline-block mt-6 text-base lg:text-lg'>
               <AnimatedLink
                 href='https://developer.chrome.com/docs/lighthouse/overview/'
-                linkClassName='text-sageDark-12 font-bold'
+                linkClassName='text-sageDark-12 '
                 underlineClassName='bg-sageDark-12'
                 newTab
               >
@@ -88,8 +89,8 @@ const WhyMeSection = () => {
             </div>
             <div className='relative inline-block mt-3 text-base lg:text-lg'>
               <AnimatedLink
-                href='https://developer.chrome.com/docs/lighthouse/overview/'
-                linkClassName='text-sageDark-12 font-bold'
+                href='https://web.dev/vitals/'
+                linkClassName='text-sageDark-12 '
                 underlineClassName='bg-sageDark-12'
                 newTab
               >
@@ -108,7 +109,7 @@ const WhyMeSection = () => {
               today.
               <br />
               <br />
-              I'm faster.
+              <Em inViewClassName='text-sageDark-12'>I'm faster</Em>.
             </div>
           </article>
         </div>

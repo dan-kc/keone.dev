@@ -24,8 +24,8 @@ const ProfileSection = () => {
               <DoubleText />
               <p className='mt-4 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                 Hire me to renovate your online business with a brand new
-                website that exceeds the conversion rates of your
-                competitors, so you can finally focus on your business.
+                website that exceeds the conversion rates of your competitors,
+                so you can finally focus on your business.
               </p>
             </div>
             <div className='flex justify-end mt-6 md:mt-0 '>

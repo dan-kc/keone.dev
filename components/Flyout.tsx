@@ -40,7 +40,7 @@ export default function Flyout() {
       {open ? (
         <>
           <motion.div
-            className='fixed inset-0 bg-anthracite-3/90 z-40'
+            className='fixed inset-0 bg-grayDark-3/90 z-40'
             onClick={() => setOpen(false)}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,14 +50,14 @@ export default function Flyout() {
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-extrabold px-10 py-8 bg-anthracite-4 rounded-md'
+              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-extrabold px-10 py-8 bg-mauveDark-3 rounded-lg border border-mauveDark-6'
               initial={{ opacity: 0, left: '140%' }}
               animate={{ opacity: 1, left: '50%' }}
               exit={{ opacity: 0, left: '140%' }}
               layoutId='menu'
             >
               <button className='outline-none' onClick={() => setOpen(false)}>
-                <Cross2Icon className='absolute top-4 right-4 h-8 w-8 text-anthracite-12' />
+                <Cross2Icon className='absolute top-4 right-4 h-8 w-8 ' />
               </button>
               <NavigationMenu.List className='flex flex-col gap-2'>
                 <NavigationMenu.Item className='p-1'>
@@ -76,7 +76,7 @@ export default function Flyout() {
                       legacyBehavior
                       aria-label='Home'
                     >
-                      <NavigationMenu.Link className='underline text-anthracite-12 p-2'>
+                      <NavigationMenu.Link className='underline p-2'>
                         Home
                       </NavigationMenu.Link>
                     </Link>
@@ -101,7 +101,7 @@ export default function Flyout() {
                           passHref
                           aria-label={item.name}
                         >
-                          <NavigationMenu.Link className='underline text-anthracite-12 p-2'>
+                          <NavigationMenu.Link className='underline p-2'>
                             {item.name}
                           </NavigationMenu.Link>
                         </Link>
@@ -113,7 +113,7 @@ export default function Flyout() {
                   <Link
                     mail={true}
                     aria-label='Contact'
-                    className='ml-1 border py-2 px-4 bg-rose-900/20 border-rose-900 hover:border-rose-600 text-rose-600 hover:text-rose-500 rounded-md shadow-2xl duration-100'
+                    className='ml-1 border py-2 px-4 bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9 rounded-md shadow-2xl duration-100'
                   >
                     Contact
                   </Link>
