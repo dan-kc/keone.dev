@@ -55,7 +55,7 @@ const AdditionalServices = () => {
           )
         })}
       </ul>
-      <div className='mt-10 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
+      <div className='mt-20 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
         Of course, each website has unique requirements and considerations, so
         take my price and timeframe estimates with a Grain of salt.
         <br />

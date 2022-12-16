@@ -73,7 +73,7 @@ export default function QA() {
   return (
     <section id='qa' className='relative mb-14'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Some questions and answers
+        Some Questions & Answers
       </h2>
       <div className='mt-8 text-lg'>
         <Accordion allowMultiple>

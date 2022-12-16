@@ -23,7 +23,7 @@ const LandingPage = () => {
         many businesses, neither is necessary.
       </p>
 
-      <h3 className='mt-10 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
         Price & Timeframe
       </h3>
       <p className='mt-3 text-lg '>
