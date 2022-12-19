@@ -1,10 +1,13 @@
 import create from 'zustand'
 
-export enum DeviceOptions {
-  Small = 'Small',
-  Medium = 'Medium',
-  Large = 'Large',
-}
+const DEVICE = {
+  Small: 'Small',
+  Medium: 'Medium',
+  Large: 'Large',
+} as const
+
+type ObjectValue<T> = T[keyof T]
+export type DeviceOptions = ObjectValue<typeof DEVICE>
 
 interface Store {
   device: DeviceOptions
@@ -14,10 +17,10 @@ interface Store {
 }
 
 const useDeviceModeStore = create<Store>((set) => ({
-  device: DeviceOptions.Small,
-  setSmall: () => set({ device: DeviceOptions.Small }),
-  setMedium: () => set({ device: DeviceOptions.Medium }),
-  setLarge: () => set({ device: DeviceOptions.Large }),
+  device: 'Small',
+  setSmall: () => set({ device: 'Small' }),
+  setMedium: () => set({ device: 'Medium' }),
+  setLarge: () => set({ device: 'Large' }),
 }))
 
 export default useDeviceModeStore

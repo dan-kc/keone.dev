@@ -1,10 +1,10 @@
 import List from '@components/List'
 
-const DevelopmentCompetencies = () => {
+const DevelopmentSkills = () => {
   return (
-    <section id='DevelopmentCompetencies' className='relative'>
+    <section id='DevelopmentSkills' className='relative'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-violetDark-11 border-b border-violetDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Development Competencies
+        Development skills
       </h2>
       <div className='mt-8 grid gap-7 lg:grid-cols-2'>
         <div>
@@ -38,6 +38,7 @@ const DevelopmentCompetencies = () => {
               'Super fast eCommerce storefronts',
               'Web animations (GSAP, Lottie, Framer Motion)',
               'Edge deployment',
+              'API servers',
             ]}
             className='text-lg text-mauveDark-11'
             dashClassName='text-violetDark-11'
@@ -47,4 +48,4 @@ const DevelopmentCompetencies = () => {
     </section>
   )
 }
-export default DevelopmentCompetencies
+export default DevelopmentSkills

@@ -1,13 +1,13 @@
 import AnimatedLink from '@components/AnimatedLink'
 import * as AspectRatio from '@radix-ui/react-aspect-ratio'
 import Image from 'next/image'
-import FadeInFromLeft from '@components/FadeInFromLeft'
+import FadeIn from '@components/FadeIn'
 
 const Deploy = () => {
   return (
     <section id='deploy' className='relative mb-14'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Deploy & Maintain
+        Deploy & maintain
       </h2>
       <div className='mt-8 max-w-md'>
         <AspectRatio.Root ratio={874 / 812} className='relative'>
@@ -24,7 +24,9 @@ const Deploy = () => {
         </AspectRatio.Root>
       </div>
       <p className='mt-8 font-display text-base text-purpleDark-11'>Step 8/9</p>
-      <h3 className='text-4xl font-heading font-extrabold'>Deployment</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        Deployment
+      </h3>
       <div className='mt-3 text-lg'>
         We’re now ready to launch your website!
         <br />
@@ -52,8 +54,10 @@ const Deploy = () => {
         which are metrics used by Google to index search results.
       </div>
 
-      <p className='mt-20 font-display text-base text-purpleDark-11'>Step 9/9</p>
-      <h3 className='text-4xl font-heading font-extrabold'>
+      <p className='mt-20 font-display text-base text-purpleDark-11'>
+        Step 9/9
+      </p>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Deploy & Maintain
       </h3>
       <p className='mt-3 text-lg'>
@@ -66,17 +70,17 @@ const Deploy = () => {
         arrangement for me to implement changes for you on demand.
       </p>
 
-      <FadeInFromLeft className='mt-20'>
+      <FadeIn className='mt-20'>
         <p className='text-2xl font-heading font-extrabold'>
           - Payment following deployment and maintenance
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
 
-      <FadeInFromLeft className='mt-6'>
+      <FadeIn className='mt-6'>
         <p className='text-2xl font-heading font-extrabold'>
           ... and that's that!
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
     </section>
   )
 }

@@ -10,10 +10,10 @@ const Ecommerce = () => {
       <p className='mt-8 text-lg'>
         Reinvent your online business with a brand new eCommerce store that’s
         designed from the ground up to drive sales, and is developed using the
-        fastest, most reliable web frameworks around!
+        fastest, most reliable web frameworks available!
       </p>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>Design</h3>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>Design</h3>
       <div className='mt-3 text-lg '>
         Your new storefront will be designed to:
         <br />
@@ -21,7 +21,8 @@ const Ecommerce = () => {
         <List
           dashClassName='text-tomatoDark-11'
           items={[
-            'Attract new users, Convert users into customers',
+            'Attract new users',
+            'Convert users into customers',
             'Maximise sales from each customer',
             'Achieve any unique business requirements',
           ]}
@@ -36,7 +37,7 @@ const Ecommerce = () => {
         And don’t worry about your website being responsive, I design mobile
         first!
       </div>
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Development
       </h3>
       <div className='mt-3 text-lg '>
@@ -45,16 +46,13 @@ const Ecommerce = () => {
           Next.js
         </AnimatedLink>
         , which is used by huge corporations such as Target and Nike, and{' '}
-        <AnimatedLink
-          href='https://remix.run/'
-          newTab
-        >
+        <AnimatedLink href='https://remix.run/' newTab>
           Remix
         </AnimatedLink>
-        , which is a newer technology that boasts even faster speeds in many
+        , which is a newer technology that boasts better performance in many
         cases.
       </div>
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Content Management
       </h3>
       <div className='mt-3 text-lg '>
@@ -75,10 +73,7 @@ const Ecommerce = () => {
         <br />
         <br />
         Crystallise also boast{' '}
-        <AnimatedLink
-          href='https://crystallize.com/pricing'
-          newTab
-        >
+        <AnimatedLink href='https://crystallize.com/pricing' newTab>
           incredible value
         </AnimatedLink>{' '}
         in a market where other solutions can mean yearly bills of $24,000
@@ -102,11 +97,11 @@ const Ecommerce = () => {
         use on one of their basic plans.
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Price & Timeframe
       </h3>
       <p className='mt-3 text-lg '>
-        Ecommerce stores vary massively in scope and feature set, and as a
+        Ecommerce stores vary hugely in scope and feature set, and as a
         result, they also vary hugely in cost and turnaround time.
         <br />
         <br />

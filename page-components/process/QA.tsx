@@ -71,13 +71,13 @@ const numberOfItems = items.length
 
 export default function QA() {
   return (
-    <section id='qa' className='relative mb-14'>
+    <section id='qa' className='relative'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Some Questions & Answers
+        Some questions & answers
       </h2>
       <div className='mt-8 text-lg'>
-        <Accordion allowMultiple>
-          <div className=''>
+        <Accordion allowToggle>
+          <div>
             {items.map((item, itemsIndex) => {
               const isFirstItem = itemsIndex === 0
               const isLastItem = itemsIndex === numberOfItems - 1
@@ -90,7 +90,9 @@ export default function QA() {
                           <AccordionButton>
                             <div
                               className={classNames(
-                                isExpanded ? "text-mauveDark-12" : "text-mauveDark-11",
+                                isExpanded
+                                  ? 'text-mauveDark-12'
+                                  : 'text-mauveDark-11',
                                 isFirstItem ? 'pb-3' : 'py-3',
                                 'flex w-full justify-between duration-300'
                               )}

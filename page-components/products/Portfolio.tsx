@@ -24,7 +24,6 @@ const Portfolio = () => {
           items={[
             'Introduce yourself to potential clients',
             'Show off your latest works',
-            'Convey your personality',
             'Display your skills and expertise',
             'Express your artistic style',
             'Provide ways to contact you',
@@ -34,7 +33,7 @@ const Portfolio = () => {
         ...and so on.
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>Design</h3>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>Design</h3>
       <div className='mt-3 text-lg '>
         Your portfolio will be designed to generate qualified leads from
         potential clients who are likely to do business with you.
@@ -43,7 +42,7 @@ const Portfolio = () => {
         design, and just as important to its owner's business.
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Development
       </h3>
       <div className='mt-3 text-lg '>
@@ -59,7 +58,7 @@ const Portfolio = () => {
         enabling a beautifully animated showcase of your work if needs be!
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Content Management
       </h3>
       <div className='mt-3 text-lg '>
@@ -73,7 +72,7 @@ const Portfolio = () => {
         It has a generous free tier too!
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Price & Timeframe
       </h3>
       <p className='mt-3 text-lg '>
@@ -83,8 +82,8 @@ const Portfolio = () => {
         <br />
         <br />
         Beautiful animations are time consuming to make performant across all
-        browsers, devices, and screen sizes, so they are the primary factor here
-        in evaluating price and timeframe.
+        browsers, devices, and screen sizes, so they are a big factor in
+        evaluating price and timeframe.
       </p>
     </section>
   )

@@ -14,7 +14,7 @@ const Projects = () => {
       <PageContainer
         color='crimson'
         heading={`Things I'm working on`}
-        subHeading={`Hello, I'm Daniel - a mathematician from London providing services in web design and development.`}
+        subHeading={`I'll be be updating this page whenever I finish, start or schedule a new project, so feel free to revisit in the future to see more works!`}
       >
         <Keone />
         <InProgress />

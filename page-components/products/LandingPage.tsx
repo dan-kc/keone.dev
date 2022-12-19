@@ -2,7 +2,7 @@ const LandingPage = () => {
   return (
     <section id='landing' className='relative mb-14'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-tomatoDark-11 border-b border-tomatoDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Landing Page
+        Landing page
       </h2>
 
       <p className='mt-8 text-lg'>
@@ -19,11 +19,11 @@ const LandingPage = () => {
         Single landing pages are very similar to portfolios in their design and
         development, but they may differ in terms of scope and content
         management. Portfolios may require multiple pages or integration with a
-        CMS so that the owner can update their website with new works, but for
+        CMS so that the owner can regularly update their website with new works, but for
         many businesses, neither is necessary.
       </p>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold '>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Price & Timeframe
       </h3>
       <p className='mt-3 text-lg '>

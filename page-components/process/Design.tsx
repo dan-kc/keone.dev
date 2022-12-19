@@ -1,5 +1,5 @@
 import AnimatedLink from '@components/AnimatedLink'
-import FadeInFromLeft from '@components/FadeInFromLeft'
+import FadeIn from '@components/FadeIn'
 
 const Design = () => {
   return (
@@ -9,7 +9,9 @@ const Design = () => {
       </h2>
 
       <p className='mt-8 font-display text-base text-purpleDark-11'>Step 3/9</p>
-      <h3 className='text-4xl font-heading font-extrabold'>Moodboard</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        Moodboard
+      </h3>
       <p className='mt-3 text-lg'>
         First thing's first, let's define a design direction for your website.
         <br />
@@ -37,7 +39,9 @@ const Design = () => {
       <p className='mt-20 font-display text-base text-purpleDark-11'>
         Step 4/9
       </p>
-      <h3 className='text-4xl font-heading font-extrabold'>Sitemap</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        Sitemap
+      </h3>
       <div className='mt-3 text-lg'>
         Shortly after receiving the moodboard you'll also be given a sitemap
         diagram which will outline the structure of your website and give you a
@@ -57,7 +61,9 @@ const Design = () => {
       <p className='mt-20 font-display text-base text-purpleDark-11'>
         Step 5/9
       </p>
-      <h3 className='text-4xl font-heading font-extrabold'>Wireframe</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        Wireframe
+      </h3>
       <p className='mt-3 text-lg'>
         Next, I'll give you a detailed wireframe for each page of your website.
         <br />
@@ -75,7 +81,9 @@ const Design = () => {
       <p className='mt-20 font-display text-base text-purpleDark-11'>
         Step 6/9
       </p>
-      <h3 className='text-4xl font-heading font-extrabold'>Final Designs</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        Final Designs
+      </h3>
       <p className='mt-3 text-lg'>
         For the final designs I'll populate the wireframes with your content,
         such as product images or text, and modify the wireframes to reflect
@@ -91,23 +99,23 @@ const Design = () => {
         because I finally get to fully hone in on your vision.
       </p>
 
-      <FadeInFromLeft className='mt-20'>
+      <FadeIn className='mt-20'>
         <p className='text-2xl font-heading font-extrabold'>
           - 3 Review rounds
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
 
-      <FadeInFromLeft className='mt-6'>
+      <FadeIn className='mt-6'>
         <p className='text-2xl font-heading font-extrabold'>
           - Payment following design completion
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
 
-      <FadeInFromLeft className='mt-6'>
+      <FadeIn className='mt-6'>
         <p className='text-2xl font-heading font-extrabold'>
           - 3 Development deposit
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
     </section>
   )
 }

@@ -1,10 +1,10 @@
 import List from '@components/List'
 
-const DesignCompetencies = () => {
+const DesignSkills = () => {
   return (
-    <section id='designCompetencies' className='relative mb-14'>
+    <section id='designSkills' className='relative mb-14'>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-violetDark-11 border-b border-violetDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Design Competencies
+        Design skills
       </h2>
       <div className='mt-8 grid gap-7 lg:grid-cols-2'>
         <div>
@@ -31,4 +31,4 @@ const DesignCompetencies = () => {
     </section>
   )
 }
-export default DesignCompetencies
+export default DesignSkills

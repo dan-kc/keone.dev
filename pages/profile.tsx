@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Why from '@page-components/profile/Why'
 import Challenges from '@page-components/profile/Challenges'
-import DesignCompetencies from '@page-components/profile/DesignCompetencies'
-import DevelopmentCompetencies from '@page-components/profile/DevelopmentCompetencies'
+import DesignSkills from '@page-components/profile/DesignSkills'
+import DevelopmentSkills from '@page-components/profile/DevelopmentSkills'
 import PageContainer from '@components/PageContainer'
 
 export default function Profile() {
@@ -19,8 +19,8 @@ export default function Profile() {
       >
         <Why />
         <Challenges />
-        <DesignCompetencies />
-        <DevelopmentCompetencies />
+        <DesignSkills />
+        <DevelopmentSkills />
       </PageContainer>
     </>
   )

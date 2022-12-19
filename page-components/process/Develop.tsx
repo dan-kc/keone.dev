@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import * as AspectRatio from '@radix-ui/react-aspect-ratio'
-import FadeInFromLeft from '@components/FadeInFromLeft'
+import FadeIn from '@components/FadeIn'
 import AnimatedLink from '@components/AnimatedLink'
 
 const Develop = () => {
@@ -25,7 +25,7 @@ const Develop = () => {
       </div>
 
       <p className='mt-8 font-display text-base text-purpleDark-11'>Step 7/9</p>
-      <h3 className='text-4xl font-heading font-extrabold'>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Let's write some code
       </h3>
       <div className='mt-3 text-lg'>
@@ -48,23 +48,23 @@ const Develop = () => {
         which are relied upon heavily by giants like TikTok, Redbull and Nike.
       </div>
 
-      <FadeInFromLeft className='mt-20'>
+      <FadeIn className='mt-20'>
         <p className='text-2xl font-heading font-extrabold'>
           - 3 Review rounds
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
 
-      <FadeInFromLeft className='mt-6'>
+      <FadeIn className='mt-6'>
         <p className='text-2xl font-heading font-extrabold'>
           - Payment following development completion
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
 
-      <FadeInFromLeft className='mt-6'>
+      <FadeIn className='mt-6'>
         <p className='text-2xl font-heading font-extrabold'>
           - Deployment & maintenance deposit
         </p>
-      </FadeInFromLeft>
+      </FadeIn>
     </section>
   )
 }

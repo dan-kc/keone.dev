@@ -14,7 +14,7 @@ const QuoteLine: React.FC<Props> = ({ className, delay = 0 }) => {
       transition={{ delay: delay, duration: 1, ease: [0.4, 0, 0.2, 1] }}
       className={classNames(
         className,
-        'origin-top absolute w-1 top-0 -left-6 lg:-left-8 lg:w-1.5 h-full'
+        'origin-top w-1'
       )}
     />
   )

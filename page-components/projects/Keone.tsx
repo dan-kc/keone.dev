@@ -6,12 +6,12 @@ export default () => {
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-crimsonDark-11 border-b border-crimsonDark-6 font-heading font-extrabold bg-mauveDark-2'>
         keone.io
       </h2>
-      <div className='mt-8 py-2 px-4  w-fit text-sm border border-grayDark-6 bg-grayDark-3/30 text-grayDark-11 rounded-lg'>
+      <div className='mt-8 py-2 px-4 w-fit text-base border border-grayDark-6 bg-grayDark-3/30 text-grayDark-11 rounded-lg'>
         Main objective: generate leads
       </div>
       <p className='mt-6 text-lg'>
-        A sleek, modern and interactive personal website that informs users
-        about myself and my services.
+        A sleek, modern, and interactive personal website that informs users
+        about me and my services.
         <br />
         <br />
         The homepage is designed to entice the user to scroll through an
@@ -21,7 +21,7 @@ export default () => {
         <br />
         To satiate the more curious user, there are links to supporting pages
         where I elaborate on some relevant topics, then once again provide the
-        user with a contact option.
+        user with contact options.
         <br />
         <br />
         The website is developed using performance best practices and
@@ -45,11 +45,7 @@ export default () => {
             Development Tooling
           </h3>
           <List
-            items={[
-              'Behavioural web design',
-              'Checkout funnels',
-              'Landing pages',
-            ]}
+            items={['Typescript', 'React', 'Next.js', 'Tailwind CSS']}
             className='text-lg text-mauveDark-11'
             dashClassName='text-redDark-11'
           />

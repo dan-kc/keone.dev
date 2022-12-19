@@ -6,31 +6,25 @@ const colorClassNames = {
   tomato: {
     background: 'to-tomatoDark-3/50',
     border: 'border-tomatoDark-6',
-    heading: 'text-tomatoDark-11',
+    heading: 'from-tomatoDark-9 to-tomatoDark-11',
     subHeading: 'text-tomatoDark-12',
   },
   crimson: {
     background: 'to-crimsonDark-3/50',
     border: 'border-crimsonDark-6',
-    heading: 'text-crimsonDark-11',
+    heading: 'from-crimsonDark-9 to-crimsonDark-11',
     subHeading: 'text-crimsonDark-12',
   },
   violet: {
     background: 'to-violetDark-3/50',
     border: 'border-violetDark-6',
-    heading: 'text-violetDark-11',
+    heading: 'from-violetDark-9 to-violetDark-11',
     subHeading: 'text-violetDark-12',
-  },
-  plum: {
-    background: 'to-plumDark-3/50',
-    border: 'border-plumDark-6',
-    heading: 'text-plumDark-11',
-    subHeading: 'text-plumDark-12',
   },
   purple: {
     background: 'to-purpleDark-3/50',
     border: 'border-purpleDark-6',
-    heading: 'text-purpleDark-11',
+    heading: 'from-purpleDark-9 to-purpleDark-11',
     subHeading: 'text-purpleDark-12',
   },
 }
@@ -56,7 +50,7 @@ const Title: React.FC<Props> = ({ heading, subHeading, color }) => {
           <BreadCrumb />
           <h2
             className={cn(
-              'mt-8 font-heading font-extrabold text-5xl md:text-6xl leading-tight',
+              'mt-8 font-heading font-extrabold text-5xl md:text-6xl leading-tight md:leading-tight w-fit text-transparent bg-clip-text bg-gradient-to-bl',
               classNames.heading
             )}
           >

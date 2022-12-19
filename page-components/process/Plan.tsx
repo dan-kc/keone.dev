@@ -1,5 +1,5 @@
 import AnimatedLink from '@components/AnimatedLink'
-import FadeInFromLeft from '@components/FadeInFromLeft'
+import FadeIn from '@components/FadeIn'
 
 const Plan = () => {
   return (
@@ -9,7 +9,7 @@ const Plan = () => {
       </h2>
 
       <p className='mt-8 font-display text-base text-purpleDark-11'>Step 1/9</p>
-      <h3 className='text-4xl font-heading font-extrabold'>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Shoot me an email
       </h3>
       <div className='mt-3 text-lg'>
@@ -40,14 +40,16 @@ const Plan = () => {
       <p className='mt-20 font-display text-base text-purpleDark-11'>
         Step 2/9
       </p>
-      <h3 className='text-4xl font-heading font-extrabold'>Development</h3>
+      <h3 className='text-4xl font-heading font-extrabold leading-tight'>
+        We discuss & agree terms
+      </h3>
       <p className='mt-3 text-lg'>
         Yep... That’s really all it takes to get started!
       </p>
 
-      <FadeInFromLeft className='mt-20'>
+      <FadeIn className='mt-20'>
         <p className='text-2xl font-heading font-extrabold'>- Design Deposit</p>
-      </FadeInFromLeft>
+      </FadeIn>
     </section>
   )
 }

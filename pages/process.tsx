@@ -4,7 +4,7 @@ import Plan from '@page-components/process/Plan'
 import Design from '@page-components/process/Design'
 import Develop from '@page-components/process/Develop'
 import Deploy from '@page-components/process/Deploy'
-import QA from '@components/QA'
+import QA from '@page-components/process/QA'
 
 const Process = () => {
   return (
@@ -16,7 +16,7 @@ const Process = () => {
       <PageContainer
         color='purple'
         heading={`Wanna see how I work?`}
-        subHeading={`Hello, I'm Daniel - a mathematician from London providing services in web design and development.`}
+        subHeading={`Have a scroll through my 9-step process to learn how my workflow suits you and your business.`}
       >
         <Plan />
         <Design />

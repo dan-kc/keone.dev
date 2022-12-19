@@ -1,11 +1,15 @@
 import AnimatedLink from '@components/AnimatedLink'
-import FadeInFromLeft from '@components/FadeInFromLeft'
+import FadeIn from '@components/FadeIn'
 import classNames from 'classnames'
 
 const services = [
   {
     heading: 'User logins',
     subHeading: 'Log in via email/password or Google, Facebook etc…',
+  },
+  {
+    heading: 'REST / GraphQL API servers',
+    subHeading: 'written in Typescript, or Go - deployed on traditional or edge servers',
   },
   {
     heading: 'Email Marketing Service Integration',
@@ -34,7 +38,7 @@ const AdditionalServices = () => {
   return (
     <section id='additionalServices' className='relative '>
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-tomatoDark-11 border-b border-tomatoDark-6 font-heading font-extrabold bg-mauveDark-2'>
-        Additional Services
+        Additional services
       </h2>
 
       <ul className='mt-8 text-lg'>
@@ -42,7 +46,7 @@ const AdditionalServices = () => {
           const isLast = index === services.length - 1 ? true : false
           return (
             <li className={classNames(isLast ? '' : 'pb-4')} key={index}>
-              <FadeInFromLeft className='text-2xl font-heading font-extrabold leading-tight lg:leading-tight flex gap-1'>
+              <FadeIn from={-5} className='text-2xl font-heading font-extrabold leading-tight lg:leading-tight flex gap-1'>
                 <span className='text-tomatoDark-11'>-</span>
                 <div className='ml-2'>
                   <h3 className='mb-1 lg:mb-2'>{service.heading}</h3>
@@ -50,14 +54,14 @@ const AdditionalServices = () => {
                     {service.subHeading}
                   </p>
                 </div>
-              </FadeInFromLeft>
+              </FadeIn>
             </li>
           )
         })}
       </ul>
       <div className='mt-20 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
         Of course, each website has unique requirements and considerations, so
-        take my price and timeframe estimates with a Grain of salt.
+        take my price and timeframe estimates with a grain of salt.
         <br />
         <br />
         The only way to know for sure is to{' '}

@@ -1,9 +1,7 @@
 import { useEffect } from 'react'
 import Link from '@components/Link'
 import { navigation } from '@components/Navbar'
-import useDeviceModeStore, {
-  DeviceOptions,
-} from '@hooks/stores/useDeviceModeStore'
+import useDeviceModeStore from '@hooks/stores/useDeviceModeStore'
 import { useRouter } from 'next/router'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Cross2Icon } from '@radix-ui/react-icons'
@@ -22,7 +20,7 @@ export default function Flyout() {
   }, [router.asPath])
 
   useEffect(() => {
-    if (device !== DeviceOptions.Small) {
+    if (device !== 'Small') {
       setOpen(false)
     }
   }, [device])
@@ -50,20 +48,20 @@ export default function Flyout() {
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-extrabold px-10 py-8 bg-mauveDark-3 rounded-lg border border-mauveDark-6'
+              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-bold px-10 py-8 bg-mauveDark-3 rounded-lg border border-mauveDark-6'
               initial={{ opacity: 0, left: '140%' }}
               animate={{ opacity: 1, left: '50%' }}
               exit={{ opacity: 0, left: '140%' }}
               layoutId='menu'
             >
               <button className='outline-none' onClick={() => setOpen(false)}>
-                <Cross2Icon className='absolute top-4 right-4 h-8 w-8 ' />
+                <Cross2Icon className='absolute top-6 left-5 h-9 w-9 ' />
               </button>
               <NavigationMenu.List className='flex flex-col gap-2'>
                 <NavigationMenu.Item className='p-1'>
                   {router.asPath === '/' ? (
                     <button
-                      className='text-anthracite-12 px-2 underline'
+                      className='text-anthracite-12 px-2 '
                       onClick={() => setOpen(false)}
                     >
                       Home
@@ -76,7 +74,7 @@ export default function Flyout() {
                       legacyBehavior
                       aria-label='Home'
                     >
-                      <NavigationMenu.Link className='underline p-2'>
+                      <NavigationMenu.Link className='p-2'>
                         Home
                       </NavigationMenu.Link>
                     </Link>
@@ -88,7 +86,7 @@ export default function Flyout() {
                     <NavigationMenu.Item className='p-1' key={index}>
                       {isActive ? (
                         <button
-                          className='text-anthracite-12 px-2 underline'
+                          className='text-anthracite-12 px-2 '
                           onClick={() => setOpen(false)}
                         >
                           {item.name}
@@ -101,7 +99,7 @@ export default function Flyout() {
                           passHref
                           aria-label={item.name}
                         >
-                          <NavigationMenu.Link className='underline p-2'>
+                          <NavigationMenu.Link className='p-2'>
                             {item.name}
                           </NavigationMenu.Link>
                         </Link>
@@ -109,7 +107,7 @@ export default function Flyout() {
                     </NavigationMenu.Item>
                   )
                 })}
-                <li className='p-1 mt-10 flex justify-center'>
+                <li className='p-1 mt-6 flex justify-center'>
                   <Link
                     mail={true}
                     aria-label='Contact'

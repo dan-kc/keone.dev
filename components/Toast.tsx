@@ -50,7 +50,6 @@ Does your website need to integrate with any existing systems, such as a databas
 Do you already have a preferred Content Management System?`
 
 export const Toast = () => {
-
   const open = useToastStore((state) => state.open)
   const emailOpen = useToastStore((state) => state.emailOpen)
   const setOpen = useToastStore((state) => state.setOpen)
@@ -74,19 +73,17 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute bottom-0 right-0 rounded-md shadow-black shadow-2xl p-4 bg-anthracite-5 shadow-2xl '
+              className='absolute bottom-0 right-0 rounded-md p-4 bg-mauveDark-3 shadow-lg outline-none border border-mauveDark-6'
             >
               <div className='flex justify-between items-start mb-3 mr-2 min-[356px]:mr-0'>
-                <T.Title className='font-body text-anthracite-11'>
-                  If your mail app didn’t open...
-                </T.Title>
+                <T.Title className=''>If your mail app didn’t open...</T.Title>
                 <T.Close>
-                  <Cross2Icon className='h-7 w-7 text-anthracite-11' />
+                  <Cross2Icon className='h-7 w-7' />
                 </T.Close>
               </div>
               <div className='flex gap-3 text-base justify-between flex-col min-[356px]:flex-row'>
                 <T.Action
-                  className='bg-cyan-900/20 border-cyan-900 hover:border-cyan-600 text-cyan-500 hover:text-cyan-400 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl'
+                  className='bg-skyDark-3/20 hover:bg-skyDark-4/20 border-skyDark-6 hover:border-skyDark-8 text-skyDark-9 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl'
                   altText='Copy Email'
                   onClick={() => {
                     copy('daniel@keone.io')
@@ -96,7 +93,7 @@ export const Toast = () => {
                   Copy Email
                 </T.Action>
                 <T.Action
-                  className='bg-emerald-900/20 border-emerald-900 hover:border-emerald-600 text-emerald-500 hover:text-emerald-400 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl '
+                  className='bg-greenDark-3/20 hover:bg-greenDark-4/20 border-greenDark-6 hover:border-greenDark-8 text-greenDark-9 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl '
                   altText='Copy Template'
                   onClick={() => {
                     copy(emailTemplate)
@@ -127,8 +124,8 @@ export const Toast = () => {
               exit={{ x: 400 }}
               className='absolute right-0 bottom-0 -z-10 flex justify-end'
             >
-              <div className='w-fit font-heading font-extrabold border border-cyan-900 py-2 px-4 bg-cyan-900/90 text-cyan-200 rounded-md shadow-2xl gap-2 flex items-center '>
-                <span className='text-cyan-200'>Email Copied</span>
+              <div className='w-fit font-heading font-extrabold border bg-skyDark-3/40 border-skyDark-6 text-skyDark-9 py-2 px-4 rounded-md shadow-2xl gap-2 flex items-center'>
+                <span>Email Copied</span>
                 <CopyIcon className='h-5 w-5' />
               </div>
             </motion.div>
@@ -152,8 +149,8 @@ export const Toast = () => {
               exit={{ x: 400 }}
               className='absolute right-0 bottom-0 -z-10 flex justify-end'
             >
-              <div className='w-fit font-heading font-extrabold border border-emerald-900 py-2 px-4 bg-emerald-900/90 text-emerald-200 rounded-md shadow-2xl gap-2 flex items-center '>
-                <span className='text-emerald-200'>Template Copied</span>
+              <div className='w-fit font-heading font-extrabold border bg-greenDark-3/40 hover:bg-greenDark-4/20 border-greenDark-6 hover:border-greenDark-8 text-greenDark-9 py-2 px-4 rounded-md shadow-2xl gap-2 flex items-center '>
+                <span>Template Copied</span>
                 <CopyIcon className='h-5 w-5' />
               </div>
             </motion.div>

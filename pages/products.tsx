@@ -13,9 +13,9 @@ export default function Products() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <PageContainer
-        color="tomato"
+        color='tomato'
         heading='Products, services and prices'
-        subHeading={`Hello, I'm Daniel - a mathematician from London providing services in web design and development.`}
+        subHeading={`I've packaged some of my services into products for your convenience and to help you get a general idea of my workflow, pricing and timeframe.`}
       >
         <Ecommerce />
         <Portfolio />

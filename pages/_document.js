@@ -17,7 +17,23 @@ export default function Document() {
         />
         <meta name='author' content='Daniel Keone Cox' />
         <meta name='theme-color' content='#161618' />
-        <link rel='icon' href='/images/icons/code.svg' />
+        <link rel='icon' href='/images/icons/favicon.png' />
+        <link rel='apple-touch-icon' href='/images/icons/favicon.png' />
+        <link
+          rel='apple-touch-icon'
+          sizes='76x76'
+          href='/images/icons/favicon.png'
+        />
+        <link
+          rel='apple-touch-icon'
+          sizes='120x120'
+          href='/images/icons/favicon.png'
+        />
+        <link
+          rel='apple-touch-icon'
+          sizes='152x152'
+          href='/images/icons/favicon.png'
+        />
       </Head>
       <body
         className={classNames(
