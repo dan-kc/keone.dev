@@ -3,10 +3,8 @@ import FadeIn from '@components/FadeIn'
 import QuoteLine from '@components/QuoteLine'
 import AnimatedLink from '@components/AnimatedLink'
 import { CameraIcon, LapTimerIcon } from '@radix-ui/react-icons'
-import useDeviceModeStore from '@components/hooks/stores/useDeviceModeStore'
 
 const ReportSection = () => {
-  const device = useDeviceModeStore((state) => state.device)
   return (
     <>
       <section className='relative overflow-hidden bg-mauveDark-2 text-mauveDark-12 pb-20 lg:pb-40 border-b border-grayDark-6'>
@@ -43,11 +41,11 @@ const ReportSection = () => {
           </div>
 
           <div className='flex flex-col md:flex-row-reverse items-center gap-3 md:gap-10'>
-            <FadeIn from={device === 'Small' ? 0 : 20}>
+            <FadeIn from={20}>
               <LapTimerIcon className='w-20 h-20 md:w-28 md:h-28' />
             </FadeIn>
             <FadeIn
-              from={device === 'Small' ? 0 : -20}
+              from={-20}
               className='text-center md:text-left flex flex-col gap-3 items-center md:items-start'
             >
               <p className='text-3xl md:text-4xl font-heading font-extrabold leading-tight md:leading-tight'>
@@ -68,11 +66,11 @@ const ReportSection = () => {
           </div>
 
           <div className='flex flex-col md:flex-row items-center gap-3 md:gap-10'>
-            <FadeIn from={device === 'Small' ? 0 : -20}>
+            <FadeIn from={-20}>
               <CameraIcon className='w-20 h-20 md:w-28 md:h-28' />
             </FadeIn>
             <FadeIn
-              from={device === 'Small' ? 0 : 20}
+              from={20}
               className='text-center md:text-left flex flex-col gap-3 items-center md:items-start'
             >
               <p className='text-3xl md:text-4xl font-heading font-extrabold leading-tight md:leading-tight'>
