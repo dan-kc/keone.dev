@@ -9,7 +9,7 @@ const ReportSection = () => {
     <>
       <section className='relative overflow-hidden bg-mauveDark-2 text-mauveDark-12 pb-20 lg:pb-40 border-b border-grayDark-6'>
         <div className='max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto px-5 sm:px-10 flex flex-col gap-20 md:gap-40'>
-          <FadeIn className='relative inline-block text-center font-heading font-extrabold text-4xl md:text-5xl leading-tight md:leading-tight mx-auto'>
+          <FadeIn className='relative inline-block text-center font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-tight lg:leading-tight mx-auto'>
             According to a{' '}
             <Em delay={0.2} inViewClassName='text-redDark-11' bold={false}>
               Google
@@ -42,7 +42,7 @@ const ReportSection = () => {
 
           <div className='flex flex-col md:flex-row-reverse items-center gap-3 md:gap-10'>
             <FadeIn from={20}>
-              <LapTimerIcon className='w-20 h-20 md:w-28 md:h-28' />
+              <LapTimerIcon className='w-20 h-20 md:w-32 md:h-32' />
             </FadeIn>
             <FadeIn
               from={-20}
@@ -65,13 +65,13 @@ const ReportSection = () => {
             </FadeIn>
           </div>
 
-          <div className='flex flex-col md:flex-row items-center gap-3 md:gap-10'>
+          <div className='flex flex-col md:flex-row items-center gap-3 md:gap-12'>
             <FadeIn from={-20}>
-              <CameraIcon className='w-20 h-20 md:w-28 md:h-28' />
+              <CameraIcon className='w-20 h-20 md:w-32 md:h-32' />
             </FadeIn>
             <FadeIn
               from={20}
-              className='text-center md:text-left flex flex-col gap-3 items-center md:items-start'
+              className='text-center md:text-left flex flex-col gap-3 items-center md:items-start '
             >
               <p className='text-3xl md:text-4xl font-heading font-extrabold leading-tight md:leading-tight'>
                 I'ts{' '}

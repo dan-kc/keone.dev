@@ -9,8 +9,8 @@ const Deploy = () => {
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
         Deploy & maintain
       </h2>
-      <div className='mt-8 max-w-md'>
-        <AspectRatio.Root ratio={874 / 812} className='relative'>
+      <div className='mt-8'>
+        <AspectRatio.Root ratio={940 / 386} className='relative'>
           <Image
             src='/images/graphics/package-json.png'
             alt='Code snippet'
@@ -23,7 +23,9 @@ const Deploy = () => {
           />
         </AspectRatio.Root>
       </div>
-      <p className='mt-8 font-display text-base text-purpleDark-11'>Step 8/9</p>
+      <p className='mt-8 md:mt-20 font-display text-base text-purpleDark-11'>
+        Step 8/9
+      </p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Deployment
       </h3>
@@ -42,7 +44,7 @@ const Deploy = () => {
           newTab
         >
           Google Lighthouse
-        </AnimatedLink>{' '}
+        </AnimatedLink>
         . This is a service that audits your website for performance,
         accessibility, and SEO.
         <br />
@@ -68,17 +70,15 @@ const Deploy = () => {
         When your business grows and you require more features, or if you just
         want keep me around for a bit longer, I’m open to set up a monthly
         arrangement for me to implement changes for you on demand.
+        <br />
+        <br />
+        ...and that's that!
       </p>
 
-      <FadeIn className='mt-20'>
-        <p className='text-2xl font-heading font-extrabold'>
-          - Payment following deployment and maintenance
-        </p>
-      </FadeIn>
-
-      <FadeIn className='mt-6'>
-        <p className='text-2xl font-heading font-extrabold'>
-          ... and that's that!
+      <FadeIn className='mt-20' from={-10}>
+        <p className='text-2xl font-heading font-extrabold flex gap-2'>
+          <span>-</span>
+          <span>Payment following deployment and maintenance</span>
         </p>
       </FadeIn>
     </section>

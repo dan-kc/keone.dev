@@ -11,7 +11,7 @@ export default () => {
       </div>
       <p className='mt-6 text-lg'>
         A sleek, modern, and interactive personal website that informs users
-        about me and my services.
+        about myself and my services.
         <br />
         <br />
         The homepage is designed to entice the user to scroll through an

@@ -16,7 +16,7 @@ const Process = () => {
       <PageContainer
         color='purple'
         heading={`Wanna see how I work?`}
-        subHeading={`Have a scroll through my 9-step process to learn how my workflow suits you and your business.`}
+        subHeading={`Have a scroll through my 9-step process to learn how my workflow suits your business.`}
       >
         <Plan />
         <Design />

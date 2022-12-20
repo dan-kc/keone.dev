@@ -9,12 +9,7 @@ import {
   AccordionPanel,
 } from '@chakra-ui/accordion'
 
-interface AccordionItem {
-  header: string
-  paragraphs: string[]
-}
-
-const items: AccordionItem[] = [
+const items = [
   {
     header: 'How often are we going to speak?',
     paragraphs: [
@@ -76,7 +71,7 @@ export default function QA() {
         Some questions & answers
       </h2>
       <div className='mt-8 text-lg'>
-        <Accordion allowToggle>
+        <Accordion allowMultiple>
           <div>
             {items.map((item, itemsIndex) => {
               const isFirstItem = itemsIndex === 0

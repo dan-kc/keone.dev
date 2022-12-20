@@ -6,8 +6,8 @@ import lottie from '@lib/lottie.json'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import { Bars3Icon } from '@heroicons/react/24/outline'
 import useFlyoutStore from './hooks/stores/useFlyoutStore'
+import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
 export const navigation = [
   { name: 'Profile', href: '/profile' },
@@ -22,8 +22,10 @@ const colorClassNames = {
     'bg-violetDark-3/20 hover:bg-violetDark-4/20 border-violetDark-6 hover:border-violetDark-8 text-violetDark-9',
   crimson:
     'bg-crimsonDark-3/20 hover:bg-crimsonDark-4/20 border-crimsonDark-6 hover:border-crimsonDark-8 text-crimsonDark-9',
-  tomato: 'bg-tomatoDark-3/20 hover:bg-tomatoDark-4/20 border-tomatoDark-6 hover:border-tomatoDark-8 text-tomatoDark-9',
-  purple: 'bg-purpleDark-3/20 hover:bg-purpleDark-4/20 border-purpleDark-6 hover:border-purpleDark-8 text-purpleDark-9',
+  tomato:
+    'bg-tomatoDark-3/20 hover:bg-tomatoDark-4/20 border-tomatoDark-6 hover:border-tomatoDark-8 text-tomatoDark-9',
+  purple:
+    'bg-purpleDark-3/20 hover:bg-purpleDark-4/20 border-purpleDark-6 hover:border-purpleDark-8 text-purpleDark-9',
 }
 
 const generateClassName = (path: string) => {
@@ -68,7 +70,7 @@ export default function Navbar() {
           onClick={() => setOpen(true)}
           className='md:hidden hover:scale-110 transform duration-100 outline-none'
         >
-          <Bars3Icon className='h-9 w-9' aria-hidden='true' />
+          <HamburgerMenuIcon className='h-8 w-8' aria-hidden='true' />
         </button>
 
         <div className='hidden md:block'>

@@ -30,7 +30,7 @@ const services = [
   {
     heading: 'Custom email domiain setup',
     subHeading:
-      "A personalised business email for you and all of your business' employees",
+      "A personalised business email for you and your business' employees",
   },
 ]
 
@@ -60,8 +60,8 @@ const AdditionalServices = () => {
         })}
       </ul>
       <div className='mt-20 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
-        Of course, each website has unique requirements and considerations, so
-        take my price and timeframe estimates with a grain of salt.
+        Of course, every website has unique requirements and considerations, so
+        take my price and time frame estimates with a grain of salt.
         <br />
         <br />
         The only way to know for sure is to{' '}

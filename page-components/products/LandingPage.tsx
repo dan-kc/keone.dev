@@ -24,12 +24,12 @@ const LandingPage = () => {
       </p>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
-        Price & Timeframe
+        Price & Time Frame
       </h3>
       <p className='mt-3 text-lg '>
         A landing page should cost between £4,800 and £7,700 and take about 5
-        weeks to complete; however, as with the portfolio website, price and
-        timeframe may vary depending on the scope of the animations implemented.
+        weeks to complete; however, as with portfolio websites, price and
+        time frame may vary depending on the scope of the animations implemented.
       </p>
     </section>
   )

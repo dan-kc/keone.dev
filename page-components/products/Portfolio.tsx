@@ -33,7 +33,9 @@ const Portfolio = () => {
         ...and so on.
       </div>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>Design</h3>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
+        Design
+      </h3>
       <div className='mt-3 text-lg '>
         Your portfolio will be designed to generate qualified leads from
         potential clients who are likely to do business with you.
@@ -54,14 +56,21 @@ const Portfolio = () => {
         and the performance high!
         <br />
         <br />
-        I’m also an expert in the animation libraries GSAP and Framer Motion,
-        enabling a beautifully animated showcase of your work if needs be!
+        I’m also an expert in the animation libraries{' '}
+        <AnimatedLink href='https://greensock.com/' newTab>
+          GSAP
+        </AnimatedLink>{' '}
+        and{' '}
+        <AnimatedLink href='https://www.framer.com/motion/' newTab>
+          Framer Motion
+        </AnimatedLink>
+        , enabling a beautifully animated showcase of your work if needs be!
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Content Management
       </h3>
-      <div className='mt-3 text-lg '>
+      <div className='mt-3 text-lg'>
         <AnimatedLink href='https://prismic.io/marketers' newTab>
           Prismic
         </AnimatedLink>{' '}
@@ -73,17 +82,17 @@ const Portfolio = () => {
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
-        Price & Timeframe
+        Price & Time Frame
       </h3>
-      <p className='mt-3 text-lg '>
+      <p className='mt-3 text-lg'>
         I estimate that a portfolio will cost between £7,500 and £13,500 and
         will take 6-8 weeks to complete, depending on the scope of the
         animations implemented.
         <br />
         <br />
-        Beautiful animations are time consuming to make performant across all
+        Beautiful animations are time-consuming to make performant across all
         browsers, devices, and screen sizes, so they are a big factor in
-        evaluating price and timeframe.
+        evaluating price and time frame.
       </p>
     </section>
   )

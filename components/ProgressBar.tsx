@@ -65,7 +65,7 @@ const ProgressBar: React.FC<Props> = ({
             <CountUp
               className='text-greenDark-11 font-heading font-bold text-base'
               end={isInView ? value : 50}
-              duration={2}
+              duration={2.5}
               start={70}
               suffix={suffix}
             />

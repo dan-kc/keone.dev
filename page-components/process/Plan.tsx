@@ -7,12 +7,11 @@ const Plan = () => {
       <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
         Plan
       </h2>
-
       <p className='mt-8 font-display text-base text-purpleDark-11'>Step 1/9</p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Shoot me an email
       </h3>
-      <div className='mt-3 text-lg'>
+      <p className='mt-3 text-lg'>
         Here's an <AnimatedLink mail> email template </AnimatedLink> to help get
         things started.
         <br />
@@ -35,7 +34,7 @@ const Plan = () => {
         <br />
         <br />
         Get in touch - I can't wait to learn all about your business!
-      </div>
+      </p>
 
       <p className='mt-20 font-display text-base text-purpleDark-11'>
         Step 2/9
@@ -47,8 +46,11 @@ const Plan = () => {
         Yep... That’s really all it takes to get started!
       </p>
 
-      <FadeIn className='mt-20'>
-        <p className='text-2xl font-heading font-extrabold'>- Design Deposit</p>
+      <FadeIn className='mt-20' from={-10}>
+        <p className='text-2xl font-heading font-extrabold flex gap-2'>
+          <span>-</span>
+          <span>Design deposit</span>
+        </p>
       </FadeIn>
     </section>
   )

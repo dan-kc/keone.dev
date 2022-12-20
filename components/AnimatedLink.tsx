@@ -37,7 +37,7 @@ const AnimatedLink: React.FC<Props> = ({
         'relative inline-block'
       )}
     >
-      <motion.div
+      <motion.span
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ delay: delay, duration: 1 }}

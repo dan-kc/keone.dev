@@ -12,7 +12,7 @@ export default () => {
         </div>
         <p className='mt-6 text-lg'>
           An eCommerce project selling made-to-order, ethically sourced fashion
-          jewelry. More info soon. I'm very excited about this one!
+          jewelry. More info soon - I'm very excited about this one!
         </p>
 
         <div className='mt-20 grid gap-7 lg:grid-cols-2'>

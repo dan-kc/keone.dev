@@ -99,21 +99,24 @@ const Design = () => {
         because I finally get to fully hone in on your vision.
       </p>
 
-      <FadeIn className='mt-20'>
-        <p className='text-2xl font-heading font-extrabold'>
-          - 3 Review rounds
+      <FadeIn className='mt-20' from={-10}>
+        <p className='text-2xl font-heading font-extrabold flex gap-2'>
+          <span>-</span>
+          <span>Three review rounds</span>
         </p>
       </FadeIn>
 
-      <FadeIn className='mt-6'>
-        <p className='text-2xl font-heading font-extrabold'>
-          - Payment following design completion
+      <FadeIn className='mt-6' from={-10}>
+        <p className='text-2xl font-heading font-extrabold flex gap-2'>
+          <span>-</span>
+          <span>Payment following design completion</span>
         </p>
       </FadeIn>
 
-      <FadeIn className='mt-6'>
-        <p className='text-2xl font-heading font-extrabold'>
-          - 3 Development deposit
+      <FadeIn className='mt-6' from={-10}>
+        <p className='text-2xl font-heading font-extrabold flex gap-2'>
+          <span>-</span>
+          <span>Development deposit</span>
         </p>
       </FadeIn>
     </section>

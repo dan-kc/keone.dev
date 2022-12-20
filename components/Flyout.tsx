@@ -48,7 +48,7 @@ export default function Flyout() {
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-bold px-10 py-8 bg-mauveDark-3 rounded-lg border border-mauveDark-6'
+              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-bold px-10 py-8 bg-mauveDark-2 rounded-lg border border-mauveDark-6'
               initial={{ opacity: 0, left: '140%' }}
               animate={{ opacity: 1, left: '50%' }}
               exit={{ opacity: 0, left: '140%' }}

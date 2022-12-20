@@ -30,7 +30,7 @@ const Ecommerce = () => {
         <br />
         CRO (Conversion Rate Optimisation) is a crucial aspect of my design
         process for every page, especially the checkout, where I’ll apply my
-        expertise on behavioural design to create a funnel that’s bespoke to
+        expertise in behavioural design to create a funnel that’s bespoke to
         your business’ needs.
         <br />
         <br />
@@ -98,7 +98,7 @@ const Ecommerce = () => {
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
-        Price & Timeframe
+        Price & Time Frame
       </h3>
       <p className='mt-3 text-lg '>
         Ecommerce stores vary hugely in scope and feature set, and as a
