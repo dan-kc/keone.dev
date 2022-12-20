@@ -23,7 +23,7 @@ const Deploy = () => {
           />
         </AspectRatio.Root>
       </div>
-      <p className='mt-8 md:mt-20 font-display text-base text-purpleDark-11'>
+      <p className='mt-8 font-display text-base text-purpleDark-11'>
         Step 8/9
       </p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
