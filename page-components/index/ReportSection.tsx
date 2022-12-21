@@ -96,10 +96,6 @@ const ReportSection = () => {
               </blockquote>
             </FadeIn>
           </div>
-
-          <FadeIn className='text-center font-heading font-extrabold text-7xl md:text-8xl text-redDark-11 leading-tight md:leading-tight'>
-            21.6%
-          </FadeIn>
         </div>
       </section>
     </>

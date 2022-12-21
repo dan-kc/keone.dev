@@ -76,7 +76,7 @@ export const Toast = () => {
               className='absolute bottom-0 right-0 rounded-md p-4 bg-mauveDark-3 shadow-lg outline-none border border-mauveDark-6'
             >
               <div className='flex justify-between items-start mb-3 mr-2 min-[356px]:mr-0'>
-                <T.Title className=''>If your mail app didn’t open...</T.Title>
+                <T.Title >If your mail app didn’t open...</T.Title>
                 <T.Close>
                   <Cross2Icon className='h-7 w-7' />
                 </T.Close>

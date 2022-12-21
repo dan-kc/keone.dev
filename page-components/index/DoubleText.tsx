@@ -23,7 +23,7 @@ const DoubleText = () => {
       <div className='relative'>
         <div className='absolute top-0 left-0'>
           <h1 className='whitespace-nowrap'>
-            <span className=''>A</span>
+            <span >A</span>
             <span className='text-skyDark-11'> performance </span>
             <br />
             focused developer
@@ -39,7 +39,7 @@ const DoubleText = () => {
         <div className='relative'>
           <div className='flex align-baseline whitespace-nowrap'>
             <div className='whitespace-nowrap'>A</div>
-            <div className=''>
+            <div >
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
@@ -53,7 +53,7 @@ const DoubleText = () => {
 
           <div className='flex align-baseline'>
             <div>focused</div>
-            <div className=''>
+            <div >
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
@@ -68,7 +68,7 @@ const DoubleText = () => {
           <div className='whitespace-nowrap'>specialising in</div>
 
           <div className='flex align-baseline whitespace-nowrap'>
-            <div className=''>
+            <div >
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
@@ -81,7 +81,7 @@ const DoubleText = () => {
           </div>
 
           <div className='flex align-baseline whitespace-nowrap'>
-            <div className=''>
+            <div >
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
