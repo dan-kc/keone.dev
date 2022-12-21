@@ -2,7 +2,6 @@ import DoubleText from '@page-components/index/DoubleText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
-import MorphGraphic from '@components/MorphGraphic'
 
 const ProfileSection = () => {
   return (
@@ -28,7 +27,7 @@ const ProfileSection = () => {
                 so you can finally focus on your business.
               </p>
             </div>
-            <div className='flex justify-end mt-6 md:mt-0 '>
+            <div className='flex justify-end mt-6 md:mt-0'>
               <Link
                 href='/profile'
                 className='text-xl sm:text-base md:text-xl flex items-center gap-2 bg-grayDark-1 border border-grayDark-7 py-2 px-5 xl:py-3 xl:px-6 rounded-lg hover:border-grayDark-8 hover:bg-grayDark-2 font-heading font-semibold shadow-lg duration-100'
@@ -38,7 +37,6 @@ const ProfileSection = () => {
               </Link>
             </div>
           </div>
-          <MorphGraphic className='absolute -bottom-[20px] -left-[230px] sm:-left-[330px] sm:w-[900px] md:-left-[280px] lg:-left-[250px] h-[270px] w-[800px] pointer-events-none' />
         </article>
       </div>
       <div className='h-20 md:h-40 bg-gradient-to-b from-mauveDark-1 to-mauveDark-2' />

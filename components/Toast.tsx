@@ -5,11 +5,11 @@ import { Cross2Icon, CopyIcon } from '@radix-ui/react-icons'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const emailTemplate = `
-——— READ ME ———
+——— READ ———
 
-My email is open to all inquiries, but I'm sure most of you would just like a quote right away!
+My email is open to queries of all kinds, but I'm sure that most of you would just like a quote ASAP.
 
-So I've created this email template to show you everything I'll need to give you an instant quote on timescale and pricing.
+So I've created this email template to show you everything that I need to know in order to give you an instant quote on timescale and pricing!
 
 
 ——— TEMPLATE ———
@@ -47,7 +47,8 @@ Do you already have examples of websites that you’d like me to draw heavy insp
 
 Do you require any particular features?
 Does your website need to integrate with any existing systems, such as a database or an email marketing service like Mailchimp?
-Do you already have a preferred Content Management System?`
+Do you already have a preferred Content Management System?
+`
 
 export const Toast = () => {
   const open = useToastStore((state) => state.open)
@@ -76,7 +77,7 @@ export const Toast = () => {
               className='absolute bottom-0 right-0 rounded-md p-4 bg-mauveDark-3 shadow-lg outline-none border border-mauveDark-6'
             >
               <div className='flex justify-between items-start mb-3 mr-2 min-[356px]:mr-0'>
-                <T.Title >If your mail app didn’t open...</T.Title>
+                <T.Title>If your mail app didn’t open...</T.Title>
                 <T.Close>
                   <Cross2Icon className='h-7 w-7' />
                 </T.Close>
