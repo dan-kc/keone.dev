@@ -60,7 +60,7 @@ const WhyMeSection = () => {
                 Google Lighthouse
               </AnimatedLink>{' '}
               is a tool for measuring the quality of web pages, and I think they
-              like keone.io.
+              like keone.dev.
             </div>
           </article>
 

@@ -10,7 +10,7 @@ const BreadCrumb = () => {
 
   return (
     <div className='flex items-center gap-1'>
-      <Link  href='/'>
+      <Link href='/'>
         <HomeIcon className='w-5 h-5' />
       </Link>
       <ChevronRightIcon className='w-4 h-4' />

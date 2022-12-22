@@ -87,7 +87,7 @@ export const Toast = () => {
                   className='bg-skyDark-3/20 hover:bg-skyDark-4/20 border-skyDark-6 hover:border-skyDark-8 text-skyDark-9 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl'
                   altText='Copy Email'
                   onClick={() => {
-                    copy('daniel@keone.io')
+                    copy('daniel@keone.dev')
                     setEmailOpen(true)
                   }}
                 >
