@@ -43,7 +43,7 @@ const Develop = () => {
         </AnimatedLink>{' '}
         and{' '}
         <AnimatedLink href='https://nextjs.org/' newTab>
-          NextJs
+          Next.js
         </AnimatedLink>{' '}
         which are relied upon heavily by giants like TikTok, Redbull and Nike.
       </p>
