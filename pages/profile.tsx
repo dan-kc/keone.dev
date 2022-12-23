@@ -14,7 +14,7 @@ export default function Profile() {
       </Head>
       <PageContainer
         color='violet'
-        heading={'Who does this guy even think he is?'}
+        heading={'Who does this guy think he is?'}
         subHeading={`Hello, I'm Daniel - a mathematician from London providing services in web design and development.`}
       >
         <Why />

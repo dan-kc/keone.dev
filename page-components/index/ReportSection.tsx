@@ -74,7 +74,7 @@ const ReportSection = () => {
               className='text-center md:text-left flex flex-col gap-3 items-center md:items-start '
             >
               <p className='text-3xl md:text-4xl font-heading font-extrabold leading-tight md:leading-tight'>
-                I'ts{' '}
+                It's{' '}
                 <Em delay={0.2} inViewClassName='text-redDark-11' bold={false}>
                   even worse
                 </Em>{' '}

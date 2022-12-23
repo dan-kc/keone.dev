@@ -61,7 +61,7 @@ const AdditionalServices = () => {
       </ul>
       <div className='mt-20 sm:pr-4 md:pr-8 lg:pr-12 xl:pr-16'>
         Of course, every website has unique requirements and considerations, so
-        take my price and time frame estimates with a grain of salt.
+        take my price and timescale estimates with a grain of salt.
         <br />
         <br />
         The only way to know for sure is to{' '}

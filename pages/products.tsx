@@ -15,7 +15,7 @@ export default function Products() {
       <PageContainer
         color='tomato'
         heading='Products, services and prices'
-        subHeading={`I've packaged some of my services into products for your convenience and to help you get a general idea of my workflow, pricing and time frame.`}
+        subHeading={`I've packaged some of my services into products for your convenience and to help you get a general idea of my workflow, pricing and timescale.`}
       >
         <Ecommerce />
         <Portfolio />

@@ -98,7 +98,7 @@ const Ecommerce = () => {
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
-        Price & Time Frame
+        Price & Timescale
       </h3>
       <p className='mt-3 text-lg '>
         Ecommerce stores vary hugely in scope and feature set, and as a

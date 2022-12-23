@@ -82,7 +82,7 @@ const Portfolio = () => {
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
-        Price & Time Frame
+        Price & Timescale
       </h3>
       <p className='mt-3 text-lg'>
         I estimate that a portfolio will cost between £7,500 and £13,500 and
@@ -92,7 +92,7 @@ const Portfolio = () => {
         <br />
         Beautiful animations are time-consuming to make performant across all
         browsers, devices, and screen sizes, so they are a big factor in
-        evaluating price and time frame.
+        evaluating price and timescale.
       </p>
     </section>
   )

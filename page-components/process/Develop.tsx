@@ -24,7 +24,7 @@ const Develop = () => {
         </AspectRatio.Root>
       </div>
 
-      <p className='mt-8  font-display text-base text-purpleDark-11'>Step 7/9</p>
+      <p className='mt-8 font-display text-base text-purpleDark-11'>Step 7/9</p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Let's write some code
       </h3>
