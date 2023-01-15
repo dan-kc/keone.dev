@@ -39,7 +39,7 @@ const ProfileSection = () => {
           </div>
         </article>
       </div>
-      <div className='h-20 md:h-40 bg-gradient-to-b from-mauveDark-1 to-mauveDark-2' />
+      <div className='h-24 lg:h-40 bg-gradient-to-b from-mauveDark-1 to-mauveDark-2 border-b border-mauveDark-6' />
     </section>
   )
 }
