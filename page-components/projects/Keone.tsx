@@ -25,7 +25,7 @@ export default () => {
         <br />
         <br />
         The website is developed using performance best practices and
-        lightweight technologies, which results in a lag-free user experience
+        super lightweight technologies, which results in a lag-free user experience
         with stellar Lighthouse scores and Core Web Vitals.
       </p>
 

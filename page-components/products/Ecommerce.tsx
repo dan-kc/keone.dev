@@ -8,12 +8,14 @@ const Ecommerce = () => {
         eCommerce Store
       </h2>
       <p className='mt-8 text-lg'>
-        Reinvent your online business with a brand new eCommerce store that’s
-        designed from the ground up to drive sales, and is developed using the
-        fastest, most reliable web frameworks available!
+        Reinvent your online business with a brand new, bespoke eCommerce
+        storefront that’s designed from the ground up to drive sales, and is
+        developed using the fastest, most reliable web frameworks available!
       </p>
 
-      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>Design</h3>
+      <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
+        Design
+      </h3>
       <div className='mt-3 text-lg '>
         Your new storefront will be designed to:
         <br />
@@ -41,7 +43,7 @@ const Ecommerce = () => {
         Development
       </h3>
       <div className='mt-3 text-lg '>
-        My favourite web frameworks for eCommerce are{' '}
+        My favourite web frameworks for eCommerce storefronts are{' '}
         <AnimatedLink href='https://nextjs.org/' newTab>
           Next.js
         </AnimatedLink>
@@ -49,36 +51,33 @@ const Ecommerce = () => {
         <AnimatedLink href='https://remix.run/' newTab>
           Remix
         </AnimatedLink>
-        , which is a newer technology that boasts better performance in many
-        cases.
+        , which is a newer technology that boasts even better performance in
+        many cases.
       </div>
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Content Management
       </h3>
       <div className='mt-3 text-lg '>
         My go-to headless eCommerce solution is{' '}
-        <AnimatedLink
-          href='https://crystallize.com/#this-is-crystallize'
-          newTab
-        >
+        <AnimatedLink href='https://www.shopify.com' newTab>
           {' '}
-          Crystallise
+          Shopify
         </AnimatedLink>
         .
         <br />
         <br />
-        Along with being secure, versatile, and future proof, it also has a
-        simple, intuitive user interface that makes updating your website with
-        new content or adding new products a breeze for you and your team.
+        Along with being secure, versatile, and future proof, Shopify is also
+        equipped with a simple, intuitive user interface that makes updating
+        your website with new content or adding new products a breeze for you
+        and your team.
         <br />
         <br />
-        Crystallise also boast{' '}
-        <AnimatedLink href='https://crystallize.com/pricing' newTab>
+        Shopify also boast{' '}
+        <AnimatedLink href='https://www.shopify.com/id/pricing' newTab>
           incredible value
         </AnimatedLink>{' '}
-        in a market where other solutions can mean yearly bills of $24,000
-        (Shopify Plus), $50,000 (Elastic Path), up to as much as $300,000
-        (CommerceTools).
+        in a market where other solutions can mean yearly bills of $50,000
+        (Elastic Path) up to as much as $300,000 (CommerceTools).
         <br />
         <br />
         These other solutions often come with a slew of bells and whistles, but
@@ -87,22 +86,35 @@ const Ecommerce = () => {
         <br />
         <br />
         But keep in mind that I'm platform agnostic. If you already have a
-        headless eCommerce solution and you want to stick with it, that's fine
+        headless eCommerce solution that you want to stick with, that's fine
         with me!
         <br />
         <br />
         What’s more, if you have a fast approaching deadline or a limited
-        budget, such that I’m not afforded enough time to develop on
-        Crystallise, I'll gladly adapt my designs to fit a Shopify template for
-        use on one of their basic plans.
+        budget, such that I’m not afforded enough time to design and develop a
+        fully custom storefront, I'll gladly adapt my designs to fit one of
+        Shopify's templates.
+        <br />
+        <br />
+        On the other end of the spectrum, if you require not only a custom
+        storefront, but also a custom backend system, I'll build a solution that
+        meets your exact business needs on top of a Product Information
+        Management (PIM) system like{' '}
+        <AnimatedLink
+          href='https://crystallize.com/#this-is-crystallize'
+          newTab
+        >
+          Crystalize
+        </AnimatedLink>
+        .
       </div>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Price & Timescale
       </h3>
       <p className='mt-3 text-lg '>
-        Ecommerce stores vary hugely in scope and feature set, and as a
-        result, they also vary hugely in cost and turnaround time.
+        Ecommerce stores vary hugely in scope and feature set, and as a result,
+        they also vary hugely in cost and turnaround time.
         <br />
         <br />
         My best estimate is that for the design, development and deployment of a

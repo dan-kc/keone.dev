@@ -36,18 +36,18 @@ const Portfolio = () => {
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Design
       </h3>
-      <div className='mt-3 text-lg '>
+      <p className='mt-3 text-lg '>
         Your portfolio will be designed to generate qualified leads from
         potential clients who are likely to do business with you.
         <br />
         <br />A portfolio is just as scientific as an eCommerce store in its
         design, and just as important to its owner's business.
-      </div>
+      </p>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Development
       </h3>
-      <div className='mt-3 text-lg '>
+      <p className='mt-3 text-lg '>
         Static site generators like{' '}
         <AnimatedLink href='https://astro.build/' newTab>
           Astro
@@ -65,12 +65,12 @@ const Portfolio = () => {
           Framer Motion
         </AnimatedLink>
         , enabling a beautifully animated showcase of your work if needs be!
-      </div>
+      </p>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Content Management
       </h3>
-      <div className='mt-3 text-lg'>
+      <p className='mt-3 text-lg'>
         <AnimatedLink href='https://prismic.io/marketers' newTab>
           Prismic
         </AnimatedLink>{' '}
@@ -79,7 +79,7 @@ const Portfolio = () => {
         <br />
         <br />
         It has a generous free tier too!
-      </div>
+      </p>
 
       <h3 className='mt-20 text-4xl font-heading font-extrabold leading-tight'>
         Price & Timescale

@@ -18,7 +18,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className='text-xl mb-1'>Frameworks</h3>
           <List
-            items={['React', 'Next.js', 'Remix', 'Astro']}
+            items={['React', 'Next.js', 'Remix', 'Astro', 'Node.js']}
             className='text-lg text-mauveDark-11'
             dashClassName='text-violetDark-11'
           />
@@ -26,7 +26,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className='text-xl mb-1'>Deployment / CMS Solutions</h3>
           <List
-            items={['Vercel', 'Fly.io', 'Crystalise', 'Shopify', 'Prismic']}
+            items={['Vercel', 'Shopify', 'Crystalise', 'Fly.io', 'Prismic']}
             className='text-lg text-mauveDark-11'
             dashClassName='text-violetDark-11'
           />
