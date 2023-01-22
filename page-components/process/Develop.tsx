@@ -6,7 +6,7 @@ import AnimatedLink from '@components/AnimatedLink'
 const Develop = () => {
   return (
     <section id='develop' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-skyDark-11 border-b border-skyDark-6 font-heading font-extrabold bg-slateDark-1'>
         Develop
       </h2>
       <div className='mt-8'>
@@ -24,7 +24,7 @@ const Develop = () => {
         </AspectRatio.Root>
       </div>
 
-      <p className='mt-8 font-display text-base text-purpleDark-11'>Step 7/9</p>
+      <p className='mt-8 font-display text-base text-skyDark-11'>Step 7/9</p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Let's write some code
       </h3>

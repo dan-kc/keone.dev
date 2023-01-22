@@ -1,7 +1,7 @@
 const Why = () => {
   return (
     <section id='why' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-violetDark-11 border-b border-violetDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-violetDark-11 border-b border-violetDark-6 font-heading font-extrabold bg-grayDark-1'>
         Why the web?
       </h2>
       <p className='mt-8 text-lg '>

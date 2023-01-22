@@ -4,11 +4,11 @@ import FadeIn from '@components/FadeIn'
 const Design = () => {
   return (
     <section id='design' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-purpleDark-11 border-b border-purpleDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-skyDark-11 border-b border-skyDark-6 font-heading font-extrabold bg-slateDark-1'>
         Design
       </h2>
 
-      <p className='mt-8 font-display text-base text-purpleDark-11'>Step 3/9</p>
+      <p className='mt-8 font-display text-base text-skyDark-11'>Step 3/9</p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
         Moodboard
       </h3>
@@ -36,7 +36,7 @@ const Design = () => {
         money by avoiding additional revision requests later down the line.
       </p>
 
-      <p className='mt-20 font-display text-base text-purpleDark-11'>
+      <p className='mt-20 font-display text-base text-skyDark-11'>
         Step 4/9
       </p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
@@ -58,7 +58,7 @@ const Design = () => {
         to look like.
       </div>
 
-      <p className='mt-20 font-display text-base text-purpleDark-11'>
+      <p className='mt-20 font-display text-base text-skyDark-11'>
         Step 5/9
       </p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>
@@ -78,7 +78,7 @@ const Design = () => {
         business’ key objectives.
       </p>
 
-      <p className='mt-20 font-display text-base text-purpleDark-11'>
+      <p className='mt-20 font-display text-base text-skyDark-11'>
         Step 6/9
       </p>
       <h3 className='text-4xl font-heading font-extrabold leading-tight'>

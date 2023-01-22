@@ -14,7 +14,7 @@ const Process = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <PageContainer
-        color='purple'
+        color='sky'
         heading={`Wanna see how I work?`}
         subHeading={`Have a scroll through my 9-step process to learn how my workflow suits your business.`}
       >

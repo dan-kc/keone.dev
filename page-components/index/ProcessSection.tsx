@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const ProcessSection = () => {
   return (
-    <section className='bg-slateDark-1 text-slateDark-12 pt-20 lg:pt-36'>
+    <section className='bg-slateDark-1 text-slateDark-12 pt-20 lg:pt-36 border-b border-slateDark-6'>
       <div className='md:grid grid-cols-2 gap-10 lg:gap-20 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-5'>
         <div className='md:sticky md:top-20 px-6 order-2 md:px-0'>
           <h2 className='max-w-xs sm:max-w-md font-heading leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl sm:text-6xl md:text-5xl lg:text-6xl'>

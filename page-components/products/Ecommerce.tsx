@@ -4,7 +4,7 @@ import AnimatedLink from '@components/AnimatedLink'
 const Ecommerce = () => {
   return (
     <section id='ecommerce' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-tomatoDark-11 border-b border-tomatoDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-greenDark-11 border-b border-greenDark-6 font-heading font-extrabold bg-sageDark-1'>
         eCommerce Store
       </h2>
       <p className='mt-8 text-lg'>
@@ -21,7 +21,7 @@ const Ecommerce = () => {
         <br />
         <br />
         <List
-          dashClassName='text-tomatoDark-11'
+          dashClassName='text-greenDark-11'
           items={[
             'Attract new users',
             'Convert users into customers',

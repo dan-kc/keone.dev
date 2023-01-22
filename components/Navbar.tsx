@@ -10,39 +10,47 @@ import useFlyoutStore from './hooks/stores/useFlyoutStore'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
 export const navigation = [
-  { name: 'Profile', href: '/profile' },
-  { name: 'Products', href: '/products' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Process', href: '/process' },
+  {
+    name: 'Home',
+    href: '/',
+    colorClassName:
+      'bg-redDark-3/20  border-redDark-6  text-redDark-9',
+  },
+  {
+    name: 'Profile',
+    href: '/profile',
+    colorClassName:
+      'bg-violetDark-3/20 border-violetDark-6 text-violetDark-9',
+
+  },
+  {
+    name: 'Products',
+    href: '/products',
+    colorClassName:
+      'bg-greenDark-3/20  border-greenDark-6  text-greenDark-9',
+  },
+  {
+    name: 'Projects',
+    href: '/projects',
+    colorClassName:
+      'bg-orangeDark-3/20  border-orangeDark-6 text-orangeDark-9',
+  },
+  {
+    name: 'Process',
+    href: '/process',
+    colorClassName:
+      'bg-skyDark-3/20  border-skyDark-6 text-skyDark-9',
+  },
 ]
 
-const colorClassNames = {
-  red: 'bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9',
-  violet:
-    'bg-violetDark-3/20 hover:bg-violetDark-4/20 border-violetDark-6 hover:border-violetDark-8 text-violetDark-9',
-  crimson:
-    'bg-crimsonDark-3/20 hover:bg-crimsonDark-4/20 border-crimsonDark-6 hover:border-crimsonDark-8 text-crimsonDark-9',
-  tomato:
-    'bg-tomatoDark-3/20 hover:bg-tomatoDark-4/20 border-tomatoDark-6 hover:border-tomatoDark-8 text-tomatoDark-9',
-  purple:
-    'bg-purpleDark-3/20 hover:bg-purpleDark-4/20 border-purpleDark-6 hover:border-purpleDark-8 text-purpleDark-9',
-}
-
-const generateClassName = (path: string) => {
-  let headerClass: string, buttonClass: string
-
-  if (path === '/') {
-    headerClass = colorClassNames.red
-  } else if (path === '/profile') {
-    headerClass = colorClassNames.violet
-  } else if (path === '/products') {
-    headerClass = colorClassNames.tomato
-  } else if (path === '/projects') {
-    headerClass = colorClassNames.crimson
-  } else if (path === '/process') {
-    headerClass = colorClassNames.purple
-  }
-  return { headerClass, buttonClass }
+export const generateClassName = (path: string) => {
+  let colorClassName: string
+  navigation.forEach((item) => {
+    if (item.href === path) {
+      colorClassName = item.colorClassName
+    }
+  })
+  return { colorClassName }
 }
 
 export default function Navbar() {
@@ -52,7 +60,7 @@ export default function Navbar() {
 
   const setOpen = useFlyoutStore((state) => state.setOpen)
   const { asPath } = useRouter()
-  const { headerClass } = generateClassName(asPath)
+  const { colorClassName } = generateClassName(asPath)
 
   return (
     <div className='max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto'>
@@ -76,6 +84,9 @@ export default function Navbar() {
         <div className='hidden md:block'>
           <NavigationMenu.List className='flex gap-2'>
             {navigation.map((item, index) => {
+              if (item.href === '/') {
+                return
+              }
               const isActive = asPath === item.href
               return (
                 <NavigationMenu.Item
@@ -103,7 +114,7 @@ export default function Navbar() {
                 mail={true}
                 className={classNames(
                   'font-heading font-extrabold ml-1 border py-2 px-4 rounded-md shadow-lg duration-200',
-                  headerClass
+                  colorClassName
                 )}
               >
                 Contact

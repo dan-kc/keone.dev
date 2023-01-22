@@ -7,25 +7,25 @@ import classNames from 'classnames'
 interface Props {}
 
 const colorClassNames = {
-  tomato: {
-    heading: 'from-tomatoDark-9 to-tomatoDark-11',
+  green: {
+    heading: 'from-greenDark-9 to-greenDark-11',
     button:
-      'bg-tomatoDark-3/20 hover:bg-tomatoDark-4/20 border-tomatoDark-6 hover:border-tomatoDark-8 text-tomatoDark-9',
+      'bg-greenDark-3/20 hover:bg-greenDark-4/20 border-greenDark-6 hover:border-greenDark-8 text-greenDark-9',
   },
   violet: {
     heading: 'from-violetDark-9 to-violetDark-11',
     button:
       'bg-violetDark-3/20 hover:bg-violetDark-4/20 border-violetDark-6 hover:border-violetDark-8 text-violetDark-9',
   },
-  crimson: {
-    heading: 'from-crimsonDark-9 to-crimsonDark-11',
+  orange: {
+    heading: 'from-orangeDark-9 to-orangeDark-10',
     button:
-      'bg-crimsonDark-3/20 hover:bg-crimsonDark-4/20 border-crimsonDark-6 hover:border-crimsonDark-8 text-crimsonDark-9',
+      'bg-orangeDark-3/20 hover:bg-orangeDark-4/20 border-orangeDark-6 hover:border-orangeDark-8 text-orangeDark-9',
   },
-  purple: {
-    heading: 'from-purpleDark-9 to-purpleDark-11',
+  sky: {
+    heading: 'from-skyDark-9 to-skyDark-11',
     button:
-      'bg-purpleDark-3/20 hover:bg-purpleDark-4/20 border-purpleDark-6 hover:border-purpleDark-8 text-purpleDark-9',
+      'bg-skyDark-3/20 hover:bg-skyDark-4/20 border-skyDark-6 hover:border-skyDark-8 text-skyDark-9',
   },
   red: {
     heading: 'from-redDark-9 to-redDark-11',
@@ -44,14 +44,14 @@ const generateClassName = (path: string) => {
     headingClass = colorClassNames.violet.heading
     buttonClass = colorClassNames.violet.button
   } else if (path === '/products') {
-    headingClass = colorClassNames.tomato.heading
-    buttonClass = colorClassNames.tomato.button
+    headingClass = colorClassNames.green.heading
+    buttonClass = colorClassNames.green.button
   } else if (path === '/projects') {
-    headingClass = colorClassNames.crimson.heading
-    buttonClass = colorClassNames.crimson.button
+    headingClass = colorClassNames.orange.heading
+    buttonClass = colorClassNames.orange.button
   } else if (path === '/process') {
-    headingClass = colorClassNames.purple.heading
-    buttonClass = colorClassNames.purple.button
+    headingClass = colorClassNames.sky.heading
+    buttonClass = colorClassNames.sky.button
   }
   return { headingClass, buttonClass }
 }
@@ -62,7 +62,7 @@ const Footer: React.FC<Props> = () => {
 
   return (
     <>
-      <footer className='bg-mauveDark-1 relative pt-20 lg:pt-36 pb-4 md:pb-2 border-grayDark-6 border-t'>
+      <footer className='bg-grayDark-1 relative pt-20 lg:pt-36 pb-4 md:pb-2'>
         <div className='relative flex w-full flex-col items-center px-3 md:px-8 '>
           <h2
             className={classNames(

@@ -12,7 +12,7 @@ const Projects = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <PageContainer
-        color='crimson'
+        color='orange'
         heading={`Things I'm working on`}
         subHeading={`I'll be be updating this page whenever I finish, start or schedule a new project, so feel free to revisit in the future to see more works!`}
       >

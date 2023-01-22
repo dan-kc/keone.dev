@@ -3,29 +3,29 @@ import cn from 'classnames'
 import { Color } from 'types'
 
 const colorClassNames = {
-  tomato: {
-    background: 'to-tomatoDark-3/50',
-    border: 'border-tomatoDark-6',
-    heading: 'from-tomatoDark-9 to-tomatoDark-11',
-    subHeading: 'text-tomatoDark-12',
+  green: {
+    background: 'to-greenDark-3/30',
+    border: 'border-greenDark-6',
+    heading: 'from-greenDark-9 to-greenDark-11',
+    subHeading: 'text-greenDark-12',
   },
-  crimson: {
-    background: 'to-crimsonDark-3/50',
-    border: 'border-crimsonDark-6',
-    heading: 'from-crimsonDark-9 to-crimsonDark-11',
-    subHeading: 'text-crimsonDark-12',
+  orange: {
+    background: 'to-orangeDark-3/30',
+    border: 'border-orangeDark-6',
+    heading: 'from-orangeDark-9 to-orangeDark-10',
+    subHeading: 'text-orangeDark-12',
   },
   violet: {
-    background: 'to-violetDark-3/50',
+    background: 'to-violetDark-3/30',
     border: 'border-violetDark-6',
     heading: 'from-violetDark-9 to-violetDark-11',
     subHeading: 'text-violetDark-12',
   },
-  purple: {
-    background: 'to-purpleDark-3/50',
-    border: 'border-purpleDark-6',
-    heading: 'from-purpleDark-9 to-purpleDark-11',
-    subHeading: 'text-purpleDark-12',
+  sky: {
+    background: 'to-skyDark-3/30',
+    border: 'border-skyDark-6',
+    heading: 'from-skyDark-9 to-skyDark-11',
+    subHeading: 'text-skyDark-12',
   },
 }
 
@@ -40,7 +40,7 @@ const Title: React.FC<Props> = ({ heading, subHeading, color }) => {
   return (
     <div
       className={cn(
-        'bg-gradient-to-b from-mauveDark-1 via-mauveDark-1 pt-16 pb-20 border-b',
+        'bg-gradient-to-b from-grayDark-1 via-grayDark-1 pt-16 pb-16 md:pb-20 border-b',
         classNames.background,
         classNames.border
       )}

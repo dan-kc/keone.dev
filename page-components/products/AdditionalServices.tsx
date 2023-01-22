@@ -37,7 +37,7 @@ const services = [
 const AdditionalServices = () => {
   return (
     <section id='additionalServices' className='relative '>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-tomatoDark-11 border-b border-tomatoDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-greenDark-11 border-b border-greenDark-6 font-heading font-extrabold bg-sageDark-1'>
         Additional services
       </h2>
 
@@ -47,10 +47,10 @@ const AdditionalServices = () => {
           return (
             <li className={classNames(isLast ? '' : 'pb-4')} key={index}>
               <FadeIn from={-5} className='text-2xl font-heading font-extrabold leading-tight lg:leading-tight flex gap-1'>
-                <span className='text-tomatoDark-11'>-</span>
+                <span className='text-greenDark-11'>-</span>
                 <div className='ml-2'>
                   <h3 className='mb-1 lg:mb-2'>{service.heading}</h3>
-                  <p className='font-body font-normal text-mauveDark-11 text-base lg:text-lg leading-tight lg:leading-tight'>
+                  <p className='font-body font-normal text-grayDark-11 text-base lg:text-lg leading-tight lg:leading-tight'>
                     {service.subHeading}
                   </p>
                 </div>

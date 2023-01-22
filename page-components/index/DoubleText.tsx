@@ -19,7 +19,7 @@ const DoubleText = () => {
   }, [isDesign, isMounted])
 
   return (
-    <div className='relative font-heading font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] text-anthracite-12 leading-tight sm:leading-tight md:leading-tight lg:leading-tight'>
+    <div className='relative font-heading font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight'>
       <div className='relative'>
         <div className='absolute top-0 left-0'>
           <h1 className='whitespace-nowrap'>

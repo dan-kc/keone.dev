@@ -3,7 +3,7 @@ import List from '@components/List'
 export default () => {
   return (
     <section id='keone' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-crimsonDark-11 border-b border-crimsonDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-orangeDark-10 border-b border-orangeDark-6 font-heading font-extrabold bg-sandDark-1'>
         keone.dev
       </h2>
       <div className='mt-8 py-2 px-4 w-fit text-base border border-grayDark-6 bg-grayDark-3/30 text-grayDark-11 rounded-lg'>
@@ -36,7 +36,7 @@ export default () => {
           </h3>
           <List
             items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
-            className='text-lg text-mauveDark-11'
+            className='text-lg text-grayDark-11'
             dashClassName='text-redDark-11'
           />
         </div>
@@ -46,7 +46,7 @@ export default () => {
           </h3>
           <List
             items={['Typescript', 'React', 'Next.js', 'Tailwind CSS']}
-            className='text-lg text-mauveDark-11'
+            className='text-lg text-grayDark-11'
             dashClassName='text-redDark-11'
           />
         </div>

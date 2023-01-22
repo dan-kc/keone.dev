@@ -30,7 +30,7 @@ const ProfileSection = () => {
             <div className='flex justify-end mt-6 md:mt-0'>
               <Link
                 href='/profile'
-                className='text-xl sm:text-base md:text-xl flex items-center gap-2 bg-grayDark-1 border border-grayDark-7 py-2 px-5 xl:py-3 xl:px-6 rounded-lg hover:border-grayDark-8 hover:bg-grayDark-2 font-heading font-semibold shadow-lg duration-100'
+                className='text-xl sm:text-base md:text-xl flex items-center gap-2 bg-grayDark-1 border border-grayDark-7 py-2 px-5 xl:py-3 xl:px-6 rounded-lg hover:border-grayDark-8 hover:bg-grayDark-1 font-heading font-semibold shadow-lg duration-100'
               >
                 View Profile
                 <ArrowRightIcon className='w-5 h-5 md:w-6 md:h-6' />
@@ -39,7 +39,7 @@ const ProfileSection = () => {
           </div>
         </article>
       </div>
-      <div className='h-24 lg:h-40 bg-gradient-to-b from-mauveDark-1 to-mauveDark-2 border-b border-mauveDark-6' />
+      <div className='h-24 lg:h-40 bg-gradient-to-b from-grayDark-1 to-grayDark-1 border-b border-grayDark-6' />
     </section>
   )
 }

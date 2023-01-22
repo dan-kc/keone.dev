@@ -1,8 +1,8 @@
 const COLOR = {
-  tomato: 'tomato',
-  crimson: 'crimson',
+  green: 'green',
+  orange: 'orange',
   violet: 'violet',
-  purple: 'purple',
+  sky: 'sky',
 } as const
 type ObjectValue<T> = T[keyof T]
 export type Color = ObjectValue<typeof COLOR>

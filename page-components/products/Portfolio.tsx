@@ -5,7 +5,7 @@ import List from '@components/List'
 const Portfolio = () => {
   return (
     <section id='portfolio' className='relative mb-14'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-tomatoDark-11 border-b border-tomatoDark-6 font-heading font-extrabold bg-mauveDark-2'>
+      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-greenDark-11 border-b border-greenDark-6 font-heading font-extrabold bg-sageDark-1'>
         Portfolio
       </h2>
 
@@ -20,7 +20,7 @@ const Portfolio = () => {
         <br />
         <br />
         <List
-          dashClassName='text-tomatoDark-11'
+          dashClassName='text-greenDark-11'
           items={[
             'Introduce yourself to potential clients',
             'Show off your latest works',

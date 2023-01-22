@@ -1,23 +1,34 @@
 import { useEffect } from 'react'
 import Link from '@components/Link'
-import { navigation } from '@components/Navbar'
 import useDeviceModeStore from '@hooks/stores/useDeviceModeStore'
+import { navigation, generateClassName } from '@components/Navbar'
 import { useRouter } from 'next/router'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Cross2Icon } from '@radix-ui/react-icons'
 import useFlyoutStore from './hooks/stores/useFlyoutStore'
 import disableScroll from 'disable-scroll'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import { EnvelopeOpenIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
+import * as Separator from '@radix-ui/react-separator'
+import Image from 'next/image'
+import classNames from 'classnames'
+import {
+  HomeIcon,
+  PersonIcon,
+  ArchiveIcon,
+  CopyIcon,
+  Pencil2Icon,
+} from '@radix-ui/react-icons'
 
 export default function Flyout() {
   const device = useDeviceModeStore((state) => state.device)
   const setOpen = useFlyoutStore((state) => state.setOpen)
   const open = useFlyoutStore((state) => state.open)
-  const router = useRouter()
+  const { asPath } = useRouter()
+  const { colorClassName } = generateClassName(asPath)
 
   useEffect(() => {
     setOpen(false)
-  }, [router.asPath])
+  }, [asPath])
 
   useEffect(() => {
     if (device !== 'Small') {
@@ -33,62 +44,81 @@ export default function Flyout() {
     }
   }, [open])
 
+  const icons = [HomeIcon, PersonIcon, ArchiveIcon, CopyIcon, Pencil2Icon]
+
   return (
     <AnimatePresence>
-      {open ? (
+      {open && (
         <>
           <motion.div
-            className='fixed inset-0 bg-grayDark-3/90 z-40'
+            className='fixed inset-0 bg-grayDark-1/90 z-40'
             onClick={() => setOpen(false)}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{
+              opacity: { duration: 0.8, delay: 0.2 },
+              default: { duration: 0 },
+            }}
             layoutId='background'
+            key='background'
           ></motion.div>
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-3xl font-heading font-bold px-10 py-8 bg-mauveDark-2 rounded-lg border border-mauveDark-6'
-              initial={{ opacity: 0, left: '140%' }}
-              animate={{ opacity: 1, left: '50%' }}
-              exit={{ opacity: 0, left: '140%' }}
+              className='fixed top-0 h-full z-50 p-9 bg-grayDark-1 border-l border-grayDark-6/30 font-light font-body text-base'
+              initial={{ right: '-100%' }}
+              animate={{ right: '0%' }}
+              exit={{ right: '-100%' }}
+              transition={{
+                right: { duration: 0.8 },
+                default: { duration: 0 },
+              }}
               layoutId='menu'
+              key='menu'
             >
-              <button className='outline-none' onClick={() => setOpen(false)}>
-                <Cross2Icon className='absolute top-6 left-5 h-9 w-9 ' />
-              </button>
-              <NavigationMenu.List className='flex flex-col gap-2'>
-                <NavigationMenu.Item className='p-1'>
-                  {router.asPath === '/' ? (
-                    <button
-                      className='text-anthracite-12 px-2 '
-                      onClick={() => setOpen(false)}
-                    >
-                      Home
-                    </button>
-                  ) : (
-                    <Link
-                      mail={false}
-                      href='/'
-                      passHref
-                      legacyBehavior
-                      aria-label='Home'
-                    >
-                      <NavigationMenu.Link className='p-2'>
-                        Home
-                      </NavigationMenu.Link>
+              <div className='flex gap-5 items-center'>
+                <div className='overflow-hidden rounded-full'>
+                  <Image
+                    src='/images/profile-photo.webp'
+                    alt='Code snippet'
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div>
+                  <p className='text-base mb-1 '>Daniel Keone Cox</p>
+                  <div className='flex gap-2'>
+                    <Link href='https://github.com/dan-kc' newTab>
+                      <GitHubLogoIcon className='h-5 w-5' />
                     </Link>
-                  )}
-                </NavigationMenu.Item>
+                    <Link mail>
+                      <EnvelopeOpenIcon className='h-5 w-5' />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <Separator.Root
+                decorative
+                className='mb-5 mt-7 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
+              />
+
+              <NavigationMenu.List className='flex flex-col gap-1'>
                 {navigation.map((item, index) => {
-                  const isActive = router.asPath === item.href
+                  const Icon = icons[index]
+                  const isActive = asPath === item.href
                   return (
-                    <NavigationMenu.Item className='p-1' key={index}>
+                    <NavigationMenu.Item key={index}>
                       {isActive ? (
                         <button
-                          className='text-anthracite-12 px-2 '
+                          className={classNames(
+                            'w-full text-left rounded-md flex items-center gap-3 pl-3 py-1.5 border shadow',
+                            colorClassName
+                          )}
                           onClick={() => setOpen(false)}
                         >
+                          <Icon />
                           {item.name}
                         </button>
                       ) : (
@@ -99,7 +129,8 @@ export default function Flyout() {
                           passHref
                           aria-label={item.name}
                         >
-                          <NavigationMenu.Link className='p-2'>
+                          <NavigationMenu.Link className='w-full text-left rounded-md flex items-center gap-3 pl-3 py-1.5 border border-transparent'>
+                            <Icon />
                             {item.name}
                           </NavigationMenu.Link>
                         </Link>
@@ -107,20 +138,34 @@ export default function Flyout() {
                     </NavigationMenu.Item>
                   )
                 })}
-                <li className='p-1 mt-6 flex justify-center'>
-                  <Link
-                    mail={true}
-                    aria-label='Contact'
-                    className='ml-1 border py-2 px-4 bg-redDark-3/20 hover:bg-redDark-4/20 border-redDark-6 hover:border-redDark-8 text-redDark-9 rounded-md shadow-2xl duration-100'
-                  >
-                    Contact
-                  </Link>
-                </li>
               </NavigationMenu.List>
+              <Separator.Root
+                decorative
+                className='mt-6 mb-6 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
+              />
+              <li className='flex gap-3'>
+                <Link
+                  mail={true}
+                  aria-label='Contact'
+                  className={classNames(
+                    'w-28  text-center rounded-md py-1.5 border shadow duration-50',
+                    colorClassName
+                  )}
+                >
+                  Contact
+                </Link>
+                <button
+                  onClick={() => setOpen(false)}
+                  aria-label='Close'
+                  className='w-28 text-center rounded-md py-1.5 border shadow bg-grayDark-3/20 border-grayDark-6 text-grayDark-11 duration-100'
+                >
+                  Close
+                </button>
+              </li>
             </motion.div>
           </NavigationMenu.Root>
         </>
-      ) : null}
+      )}
     </AnimatePresence>
   )
 }

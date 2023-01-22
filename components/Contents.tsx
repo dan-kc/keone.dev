@@ -19,12 +19,18 @@ interface Props {
   color: Color
 }
 
-const colorClassNames = {
-  red: 'text-redDark-11',
+const textColorClassNames = {
   violet: 'text-violetDark-11',
-  crimson: 'text-crimsonDark-11',
-  tomato: 'text-tomatoDark-11',
-  purple: 'text-purpleDark-11',
+  orange: 'text-orangeDark-10',
+  green: 'text-greenDark-11',
+  sky: 'text-skyDark-11',
+}
+
+const backgroundColorClassNames = {
+  violet: 'border-mauveDark-6 bg-mauveDark-3/30',
+  orange: 'border-sandDark-6 bg-sandDark-3/30',
+  green: 'border-sageDark-6 bg-sageDark-3/30',
+  sky: 'border-slateDark-6 bg-slateDark-3/30',
 }
 
 const Contents: React.FC<Props> = ({ color }) => {
@@ -43,8 +49,13 @@ const Contents: React.FC<Props> = ({ color }) => {
   }, [])
 
   return (
-    <nav className='hidden md:block md:sticky top-20 h-fit'>
-      <div className='flex flex-col justify-between border border-mauveDark-6 bg-mauveDark-3/40 rounded-lg w-60 pt-5 px-5 min-h-[300px] shadow'>
+    <nav className='hidden md:block md:sticky top-16 h-fit md:mt-16'>
+      <div
+        className={classNames(
+          'flex flex-col justify-between border rounded-lg w-60 pt-5 px-5 min-h-[300px] shadow',
+          backgroundColorClassNames[color]
+        )}
+      >
         <div>
           <div className='flex gap-4 items-center mb-5'>
             <div className='overflow-hidden rounded-full'>
@@ -75,7 +86,10 @@ const Contents: React.FC<Props> = ({ color }) => {
                 return (
                   <a
                     key={index}
-                    className={classNames(colorClassNames[color], 'text-sm')}
+                    className={classNames(
+                      textColorClassNames[color],
+                      'text-sm'
+                    )}
                     href={`#${section.id}`}
                     onClick={(e) => {
                       e.preventDefault()
@@ -94,7 +108,7 @@ const Contents: React.FC<Props> = ({ color }) => {
         <div>
           <Separator.Root
             decorative
-            className='mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent via-mauveDark-6'
+            className='mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
           />
           <a
             className='flex gap-1 items-center justify-center p-4'
