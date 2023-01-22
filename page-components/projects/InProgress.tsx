@@ -34,7 +34,7 @@ const InProgress = () => {
             Development Tooling
           </h3>
           <List
-            items={['Typescript', 'React', 'Remix', 'Tailwind CSS']}
+            items={['Typescript', 'React', 'Next.js', 'Tailwind CSS']}
             className='text-lg text-grayDark-11'
             dashClassName='text-redDark-11'
           />
