@@ -876,4 +876,4 @@ module.exports = {
       display: ['Hermit', 'Monospace', ...fontFamily.mono],
     },
   },
-
+}
