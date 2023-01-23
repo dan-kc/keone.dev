@@ -24,7 +24,7 @@ const InProgress = () => {
             Design Tooling
           </h3>
           <List
-            items={['Figma']}
+            items={['Figma', 'FigJam']}
             className='text-grayDark-11'
             dashClassName='text-redDark-11'
           />

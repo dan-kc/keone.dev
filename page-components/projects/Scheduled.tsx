@@ -21,7 +21,7 @@ export default () => {
               Design Tooling
             </h3>
             <List
-              items={['Figma']}
+              items={['Figma', 'FigJam']}
               className='text-lg text-grayDark-11'
               dashClassName='text-redDark-11'
             />
