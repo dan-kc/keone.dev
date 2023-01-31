@@ -26,7 +26,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className='text-xl mb-1'>Deployment / CMS Solutions</h3>
           <List
-            items={['Vercel', 'Shopify', 'Crystalise', 'Fly.io', 'Prismic']}
+            items={['Vercel', 'Shopify', 'Crystallize', 'Fly.io', 'Prismic']}
             className='text-lg text-grayDark-11'
             dashClassName='text-violetDark-11'
           />
