@@ -2,6 +2,7 @@ import AnimatedLink from '@components/AnimatedLink'
 import Em from '@components/Em'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
+import Card from './Card'
 
 const ProcessSection = () => {
   return (
@@ -23,91 +24,68 @@ const ProcessSection = () => {
                 className='flex items-center gap-2 bg-skyDark-1 border border-skyDark-7 py-3 px-6 rounded-lg hover:border-skyDark-8 hover:bg-skyDark-2 font-heading font-semibold shadow-lg text-xl duration-100'
               >
                 View Process
-                <ArrowRightIcon className='w-7 h-7'/>
+                <ArrowRightIcon className='w-7 h-7' />
               </Link>
             </div>
           </div>
         </div>
         <div className='flex flex-col gap-10 mt-10 md:mt-3 md:row-span-2'>
-          <article className='bg-skyDark-3/20 border border-skyDark-6 rounded-xl shadow p-6'>
-            <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-skyDark-11'>
-              No large upfront deposits
-            </h3>
-            <p className='mt-5 text-base lg:text-lg text-skyDark-12'>
-              All payments are taken at milestones over the course of the
-              project so that you have the freedom to, at any point, change your
-              mind on future services or even drop out entirely.
-              <br />
-              <br />
-              You will{' '}
-              <Em inViewClassName='text-slateDark-12'>
-                {' '}
-                never feel locked in.
-              </Em>
-            </p>
-          </article>
+          <Card heading='No large upfront deposits'>
+            All payments are taken at milestones over the course of the project
+            so that you have the freedom to, at any point, change your mind on
+            future services or even drop out entirely.
+            <br />
+            <br />
+            You will{' '}
+            <Em inViewClassName='text-slateDark-12'> never feel locked in.</Em>
+          </Card>
 
-          <article className='bg-skyDark-3/20 border border-skyDark-6 rounded-xl shadow p-6'>
-            <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-skyDark-11'>
-              Multiple review rounds
-            </h3>
-            <p className='mt-5 text-base lg:text-lg text-skyDark-12'>
-              We'll conduct multiple detailed reviews of my work for the final
-              designs.
-              <br />
-              <br />
-              This is where I'll be able to take your suggestions onboard to
-              keep myself informed on your style preferences so that you can be
-              <Em className='text-slateDark-12'>
-                {' '}
-                100% certain you're getting the website design you envisioned
-              </Em>
-              .
-            </p>
-          </article>
+          <Card heading='Multiple review rounds'>
+            We'll conduct multiple detailed reviews of my work for the final
+            designs.
+            <br />
+            <br />
+            This is where I'll be able to take your suggestions onboard to keep
+            myself informed on your style preferences so that you can be
+            <Em className='text-slateDark-12'>
+              {' '}
+              100% certain you're getting the website design you envisioned
+            </Em>
+            .
+          </Card>
 
-          <article className='bg-skyDark-3/20 border border-skyDark-6 rounded-xl shadow p-6'>
-            <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-skyDark-11'>
-              Live feedback
-            </h3>
-            <div className='relative inline-block mt-5 text-base lg:text-lg text-skyDark-12'>
-              All designs will be made available to you via{' '}
-              <AnimatedLink
-                href='https://www.figma.com/figjam/'
-                newTab
-                underlineClassName='bg-slateDark-12'
-                linkClassName='text-slateDark-12'
-              >
-                FigJam
-              </AnimatedLink>
-              . This means that you can easily add comments, voice notes, likes,
-              or dislikes to my designs at any time.
-              <br />
-              <br />
-              This is perfect for requesting any minor changes outside of the
-              formal review rounds.
-            </div>
-          </article>
+          <Card heading='Live feedback'>
+            All designs will be made available to you via{' '}
+            <AnimatedLink
+              href='https://www.figma.com/figjam/'
+              newTab
+              underlineClassName='bg-slateDark-12'
+              linkClassName='text-slateDark-12'
+            >
+              FigJam
+            </AnimatedLink>
+            . This means that you can easily add comments, voice notes, likes,
+            or dislikes to my designs at any time.
+            <br />
+            <br />
+            This is perfect for requesting any minor changes outside of the
+            formal review rounds.
+          </Card>
 
-          <article className='bg-skyDark-3/20 border border-skyDark-6 rounded-xl shadow p-6'>
-            <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-skyDark-11'>
-              Free maintenance
-            </h3>
-            <p className='mt-5 text-base lg:text-lg text-skyDark-12'>
-              After your website is deployed I'll be sticking around for an
-              additional month to ensure that you and your team understand how
-              to use
-              <Em className='text-slateDark-12'>
-                {' '}
-                every single feature of your website
-              </Em>
-              .
-              <br />
-              <br />
-              I'll also fix any bugs and ensure that{' '}
-              <Em className='text-slateDark-12'>everything runs smoothly</Em>.
-            </p>
-          </article>
+          <Card heading='Free maintenance'>
+            After your website is deployed I'll be sticking around for an
+            additional month to ensure that you and your team understand how to
+            use
+            <Em className='text-slateDark-12'>
+              {' '}
+              every single feature of your website
+            </Em>
+            .
+            <br />
+            <br />
+            I'll also fix any bugs and ensure that{' '}
+            <Em className='text-slateDark-12'>everything runs smoothly</Em>.
+          </Card>
         </div>
         <div className='md:hidden px-6 pt-10'>
           <p className='text-lg'>
