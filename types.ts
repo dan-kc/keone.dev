@@ -1,7 +1,7 @@
 const COLOR = {
+  violet: 'violet',
   green: 'green',
   orange: 'orange',
-  violet: 'violet',
   sky: 'sky',
 } as const
 type ObjectValue<T> = T[keyof T]

@@ -8,6 +8,7 @@ import {
   AccordionButton,
   AccordionPanel,
 } from '@chakra-ui/accordion'
+import Section from '@components/Section'
 
 const items = [
   {
@@ -66,11 +67,8 @@ const numberOfItems = items.length
 
 export default function QA() {
   return (
-    <section id='qa' className='relative'>
-      <h2 className='sticky z-10 -ml-[1px] top-0 pt-6 text-3xl text-skyDark-11 border-b border-skyDark-6 font-heading font-extrabold bg-slateDark-1'>
-        Some questions & answers
-      </h2>
-      <div className='mt-8 text-lg'>
+    <Section heading='Some questions & answers' color='sky'>
+      <div>
         <Accordion allowMultiple>
           <div>
             {items.map((item, itemsIndex) => {
@@ -139,6 +137,6 @@ export default function QA() {
           </div>
         </Accordion>
       </div>
-    </section>
+    </Section>
   )
 }
