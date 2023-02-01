@@ -44,7 +44,7 @@ const Section = ({ heading, color, last = false, children }: Props) => {
       >
         {heading}
       </h2>
-      <div className='flex flex-col gap-10 mt-8'>{children}</div>
+      <div className='flex flex-col gap-12 mt-8'>{children}</div>
     </section>
   )
 }
