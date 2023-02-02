@@ -67,7 +67,7 @@ const numberOfItems = items.length
 
 export default function QA() {
   return (
-    <Section heading='Some questions & answers' color='sky'>
+    <Section heading='Some questions & answers' color='sky' last>
       <div>
         <Accordion allowMultiple>
           <div>
