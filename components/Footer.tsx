@@ -4,7 +4,7 @@ import Navbar from '@components/Navbar'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'
 
-interface Props {}
+interface Props { }
 
 const colorClassNames = {
   green: {
@@ -62,8 +62,8 @@ const Footer: React.FC<Props> = () => {
 
   return (
     <>
-      <footer className='bg-grayDark-1 relative pt-20 lg:pt-36 pb-4 md:pb-2'>
-        <div className='relative flex w-full flex-col items-center px-3 md:px-8 '>
+      <footer className='bg-grayDark-1 relative pt-36 lg:pt-52'>
+        <div className='relative flex w-full flex-col items-center px-3 md:px-8 pb-32 lg:pb-48'>
           <h2
             className={classNames(
               headingClass,
@@ -80,7 +80,7 @@ const Footer: React.FC<Props> = () => {
             mail
             className={classNames(
               buttonClass,
-              'mb-20 lg:mb-36 mt-12 font-heading font-bold border border-2 py-2 px-7 md:py-3 md:px-10 rounded-lg shadow text-3xl md:text-4xl duration-200'
+              'mt-12 font-heading font-bold border-2 py-2 px-7 md:py-3 md:px-10 rounded-lg shadow text-3xl md:text-4xl duration-200'
             )}
           >
             Say Hello

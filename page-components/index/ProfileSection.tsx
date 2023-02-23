@@ -6,7 +6,7 @@ import { ArrowRightIcon } from '@radix-ui/react-icons'
 const ProfileSection = () => {
   return (
     <section>
-      <div className='px-3 pt-20 md:pt-40 overflow-hidden'>
+      <div className='px-3 overflow-hidden'>
         <article className='relative max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto rounded-2xl border border-grayDark-6 flex flex-col sm:flex-row-reverse overflow-hidden shadow bg-grayDark-3'>
           <div className='w-fit sm:w-[345px] md:w-[365px] lg:w-[390px] xl:w-[450px] flex-none border-b sm:border-none border-grayDark-6 z-10'>
             <Image
@@ -39,7 +39,6 @@ const ProfileSection = () => {
           </div>
         </article>
       </div>
-      <div className='h-24 lg:h-40 bg-gradient-to-b from-grayDark-1 to-grayDark-1 border-b border-grayDark-6' />
     </section>
   )
 }

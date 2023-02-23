@@ -63,8 +63,8 @@ export default function Navbar() {
   const { colorClassName } = generateClassName(asPath)
 
   return (
-    <div className='max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto'>
-      <NavigationMenu.Root className='flex justify-between items-center py-1 text-sm text-base z-20 font-display'>
+    <div className='max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto py-4'>
+      <NavigationMenu.Root className='flex justify-between items-center py-1 text-base z-20 font-display'>
         <Link
           aria-label='Home'
           href='/'

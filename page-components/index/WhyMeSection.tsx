@@ -7,7 +7,7 @@ import Em from '@components/Em'
 
 const WhyMeSection = () => {
   return (
-    <section className='bg-sageDark-1 text-sageDark-12 pt-20 lg:pt-36'>
+    <section className='text-sageDark-12'>
       <div className='md:grid grid-cols-2 gap-10 lg:gap-20 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-5'>
         <div className='md:sticky md:top-20 px-6 md:px-0'>
           <h2 className='max-w-xs sm:max-w-md font-heading leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl sm:text-6xl md:text-5xl lg:text-6xl'>
@@ -132,7 +132,6 @@ const WhyMeSection = () => {
           </div>
         </div>
       </div>
-      <div className='h-24 lg:h-40 bg-gradient-to-b from-sageDark-1 to-sageDark-2 border-b border-sageDark-6' />
     </section>
   )
 }
