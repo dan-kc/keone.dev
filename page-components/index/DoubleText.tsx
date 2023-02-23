@@ -43,7 +43,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
-                className='text-greenDark-11 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                className='text-greenDark-11 whitespace-nowrap overflow-hidden bg-slateDark-2'
                 transition={{ duration: 0.8, delay: isDesign ? 0 : 0.6 }}
               >
                 &nbsp;user behaviour
@@ -57,7 +57,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
-                className='text-yellowDark-10 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                className='text-yellowDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2'
                 transition={{ duration: 0.8, delay: isDesign ? 0.3 : 0.3 }}
               >
                 &nbsp;designer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,7 +72,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
-                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2'
                 transition={{ duration: 0.8, delay: isDesign ? 0.4 : 0.2 }}
               >
                 conversion rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,7 +85,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? '100%' : '0%' }}
-                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-grayDark-3'
+                className='text-redDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2'
                 transition={{ duration: 0.8, delay: isDesign ? 0.6 : 0 }}
               >
                 optimisation

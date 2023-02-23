@@ -62,7 +62,7 @@ const Footer: React.FC<Props> = () => {
 
   return (
     <>
-      <footer className='bg-grayDark-1 relative pt-36 lg:pt-52'>
+      <footer className='relative pt-36 lg:pt-52'>
         <div className='relative flex w-full flex-col items-center px-3 md:px-8 pb-32 lg:pb-48'>
           <h2
             className={classNames(

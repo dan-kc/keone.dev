@@ -5,7 +5,7 @@ interface Props {
 
 const Card = ({ heading, children }: Props) => {
   return (
-    <article className='bg-skyDark-3/20 border border-skyDark-6 rounded-xl shadow p-6'>
+    <article className='bg-skyDark-3/30 border border-skyDark-6 rounded-xl shadow p-6'>
       <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-skyDark-11'>
         {heading}
       </h3>

@@ -14,7 +14,7 @@ export const navigation = [
     name: 'Home',
     href: '/',
     colorClassName:
-      'bg-redDark-3/20  border-redDark-6  text-redDark-9',
+      'bg-redDark-3/20 border-redDark-6 text-redDark-9',
   },
   {
     name: 'Profile',
@@ -27,19 +27,19 @@ export const navigation = [
     name: 'Products',
     href: '/products',
     colorClassName:
-      'bg-greenDark-3/20  border-greenDark-6  text-greenDark-9',
+      'bg-greenDark-3/20 border-greenDark-6 text-greenDark-9',
   },
   {
     name: 'Projects',
     href: '/projects',
     colorClassName:
-      'bg-orangeDark-3/20  border-orangeDark-6 text-orangeDark-9',
+      'bg-orangeDark-3/20 border-orangeDark-6 text-orangeDark-9',
   },
   {
     name: 'Process',
     href: '/process',
     colorClassName:
-      'bg-skyDark-3/20  border-skyDark-6 text-skyDark-9',
+      'bg-skyDark-3/20 border-skyDark-6 text-skyDark-9',
   },
 ]
 
@@ -99,7 +99,7 @@ export default function Navbar() {
                       className={classNames(
                         isActive
                           ? ''
-                          : 'border-transparent hover:border-b-grayDark-5',
+                          : 'border-transparent hover:border-b-slateDark-6',
                         'border-b-2 text-white transition duration-200 p-2'
                       )}
                     >

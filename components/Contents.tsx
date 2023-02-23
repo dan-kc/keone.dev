@@ -21,16 +21,16 @@ interface Props {
 
 const textColorClassNames = {
   violet: 'text-violetDark-11',
-  orange: 'text-orangeDark-10',
   green: 'text-greenDark-11',
+  orange: 'text-orangeDark-11',
   sky: 'text-skyDark-11',
 }
 
 const backgroundColorClassNames = {
-  violet: 'border-mauveDark-6 bg-mauveDark-3/30',
-  orange: 'border-sandDark-6 bg-sandDark-3/30',
-  green: 'border-sageDark-6 bg-sageDark-3/30',
-  sky: 'border-slateDark-6 bg-slateDark-3/30',
+  violet: 'border-violetDark-6 bg-violetDark-3/20',
+  green: 'border-greenDark-6 bg-greenDark-3/20',
+  orange: 'border-orangeDark-6 bg-orangeDark-3/20',
+  sky: 'border-skyDark-6 bg-skyDark-3/20',
 }
 
 const Contents: React.FC<Props> = ({ color }) => {

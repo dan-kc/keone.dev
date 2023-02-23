@@ -16,14 +16,14 @@ const WhyMeSection = () => {
           </h2>
           <div className='hidden md:block pt-5'>
             <p className='text-lg lg:text-xl'>
-              Hire me and you'll get a lightning fast website and a huge edge
+              With me you'll get a lightning fast website and a huge edge
               over your competitors. Did I mention that I'm drastically cheaper
               than agencies too?
             </p>
             <div className='flex justify-start mt-10'>
               <Link
                 href='/products'
-                className='flex items-center gap-2 bg-greenDark-1 border border-greenDark-7 py-3 px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-xl duration-100'
+                className='flex items-center gap-2 bg-greenDark-3/30 border border-greenDark-6 py-3 px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-xl duration-100'
               >
                 View Products & Prices
                 <ArrowRightIcon className='w-7 h-7' />
@@ -32,7 +32,7 @@ const WhyMeSection = () => {
           </div>
         </div>
         <div className='flex flex-col gap-10 mt-10 md:mt-3 md:row-span-2'>
-          <article className='bg-greenDark-3/20 border border-greenDark-6 rounded-xl shadow p-6 text-greenDark-12'>
+          <article className='bg-greenDark-3/30 border border-greenDark-6 rounded-xl shadow p-6 text-greenDark-12'>
             <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-greenDark-11'>
               Lighthouse scores
             </h3>
@@ -64,7 +64,7 @@ const WhyMeSection = () => {
             </div>
           </article>
 
-          <article className='bg-greenDark-3/20 border border-greenDark-6 rounded-xl shadow p-6 text-greenDark-12'>
+          <article className='bg-greenDark-3/30 border border-greenDark-6 rounded-xl shadow p-6 text-greenDark-12'>
             <h3 className='font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight text-greenDark-11'>
               Core web vitals
             </h3>
@@ -115,7 +115,7 @@ const WhyMeSection = () => {
         </div>
         <div className='md:hidden pt-10'>
           <p className='text-lg px-6'>
-            Hire me and you'll get a lightning fast website and a huge edge over
+            With me you'll get a lightning fast website and a huge edge over
             your competitors.
             <br />
             <br />
@@ -124,7 +124,7 @@ const WhyMeSection = () => {
           <div className='flex justify-end mt-10 pr-6'>
             <Link
               href='/products'
-              className='flex items-center gap-2 bg-greenDark-1 border border-greenDark-7 py-2 px-5 sm:py-3 sm:px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-base sm:text-xl duration-100'
+              className='flex items-center gap-2 bg-greenDark-3/30 border border-greenDark-6 py-2 px-5 sm:py-3 sm:px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-base sm:text-xl duration-100'
             >
               View Products & Prices
               <ArrowRightIcon className='w-5 h-5 sm:w-7 sm:h-7' />

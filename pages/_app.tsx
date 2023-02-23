@@ -22,7 +22,6 @@ export const montserrat = Montserrat({
 function MyApp({ Component, pageProps }: AppProps) {
   useUpdateDeviceMode()
   useUpdateWindowDimensions()
-
   return (
     <ToastProvider swipeDirection='right'>
       <Flyout />
