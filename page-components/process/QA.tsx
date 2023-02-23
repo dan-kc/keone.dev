@@ -84,8 +84,8 @@ export default function QA() {
                             <div
                               className={classNames(
                                 isExpanded
-                                  ? 'text-grayDark-12'
-                                  : 'text-grayDark-11',
+                                  ? 'text-slateDark-12'
+                                  : 'text-slateDark-11',
                                 isFirstItem ? 'pb-3' : 'py-3',
                                 'flex w-full justify-between duration-300'
                               )}
@@ -108,7 +108,7 @@ export default function QA() {
                         </h2>
                         <AccordionPanel
                           className={classNames(
-                            'pt-3 text-base text-grayDark-12',
+                            'pt-3 text-base text-slateDark-12',
                             isLastItem ? 'mb-2' : ''
                           )}
                         >
@@ -128,7 +128,7 @@ export default function QA() {
                   {isLastItem ? null : (
                     <Separator.Root
                       decorative
-                      className='h-[1px] bg-gradient-to-r from-transparent via-grayDark-6'
+                      className='h-[1px] bg-gradient-to-r from-transparent via-slateDark-6'
                     />
                   )}
                 </Fragment>

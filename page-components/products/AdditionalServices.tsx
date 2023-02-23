@@ -53,7 +53,7 @@ const AdditionalServices = () => {
                   <span className='text-greenDark-11'>-</span>
                   <div className='ml-2'>
                     <h3 className='mb-1 lg:mb-2'>{service.heading}</h3>
-                    <p className='font-body font-normal text-grayDark-11 text-base lg:text-lg leading-tight lg:leading-tight'>
+                    <p className='font-body font-normal text-slateDark-11 text-base lg:text-lg leading-tight lg:leading-tight'>
                       {service.subHeading}
                     </p>
                   </div>

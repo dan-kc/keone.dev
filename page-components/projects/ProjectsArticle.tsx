@@ -9,7 +9,7 @@ const ProjectsArticle = ({ mainObjective, children }: Props) => {
   return (
     <article className='text-lg'>
       {mainObjective ? (
-        <p className='py-2 px-4 w-fit text-base border border-grayDark-6 bg-grayDark-3/30 text-grayDark-11 rounded-lg'>
+        <p className='py-2 px-4 w-fit text-base border border-slateDark-6 bg-slateDark-3/30 text-slateDark-11 rounded-lg'>
           Main objective: {mainObjective}
         </p>
       ) : null}

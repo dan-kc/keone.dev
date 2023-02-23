@@ -24,7 +24,7 @@ const InProgress = () => {
             </h3>
             <List
               items={['Figma', 'FigJam']}
-              className='text-grayDark-11'
+              className='text-slateDark-11'
               dashClassName='text-redDark-11'
             />
           </div>
@@ -34,7 +34,7 @@ const InProgress = () => {
             </h3>
             <List
               items={['Typescript', 'React', 'Next.js', 'Tailwind CSS']}
-              className='text-lg text-grayDark-11'
+              className='text-lg text-slateDark-11'
               dashClassName='text-redDark-11'
             />
           </div>

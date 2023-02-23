@@ -9,7 +9,7 @@ const DesignSkills = () => {
           <h3 className='text-xl mb-1'>Software</h3>
           <List
             items={['Figma', 'Adobe Illustrator', 'Adobe After Effects']}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>
@@ -21,7 +21,7 @@ const DesignSkills = () => {
               'Checkout funnels',
               'Landing pages',
             ]}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>

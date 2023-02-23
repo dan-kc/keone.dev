@@ -74,7 +74,7 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute bottom-0 right-0 rounded-md p-4 bg-grayDark-2 shadow-lg outline-none border border-grayDark-6'
+              className='absolute bottom-0 right-0 rounded-md p-4 bg-slateDark-2 shadow-lg outline-none border border-slateDark-6'
             >
               <div className='flex justify-between items-start mb-3 mr-2 min-[356px]:mr-0'>
                 <T.Title>If your mail app didn’t open...</T.Title>

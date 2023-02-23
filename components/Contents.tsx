@@ -108,7 +108,7 @@ const Contents: React.FC<Props> = ({ color }) => {
         <div>
           <Separator.Root
             decorative
-            className='mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
+            className='mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent via-slateDark-6'
           />
           <a
             className='flex gap-1 items-center justify-center p-4'

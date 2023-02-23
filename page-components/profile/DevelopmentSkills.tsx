@@ -9,7 +9,7 @@ const DevelopmentSkills = () => {
           <h3 className='text-xl mb-1'>Languages</h3>
           <List
             items={['Typescript / Javascript', 'HTML / CSS', 'Go']}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>
@@ -17,7 +17,7 @@ const DevelopmentSkills = () => {
           <h3 className='text-xl mb-1'>Frameworks</h3>
           <List
             items={['React', 'Next.js', 'Remix', 'Astro', 'Node.js']}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>
@@ -25,7 +25,7 @@ const DevelopmentSkills = () => {
           <h3 className='text-xl mb-1'>Deployment / CMS Solutions</h3>
           <List
             items={['Vercel', 'Shopify', 'Crystallize', 'Fly.io', 'Prismic']}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>
@@ -38,7 +38,7 @@ const DevelopmentSkills = () => {
               'Edge deployment',
               'API servers',
             ]}
-            className='text-lg text-grayDark-11'
+            className='text-lg text-slateDark-11'
             dashClassName='text-violetDark-11'
           />
         </div>

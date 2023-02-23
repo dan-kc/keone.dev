@@ -51,7 +51,7 @@ export default function Flyout() {
       {open && (
         <>
           <motion.div
-            className='fixed inset-0 bg-grayDark-1/90 z-40'
+            className='fixed inset-0 bg-slateDark-1/90 z-40'
             onClick={() => setOpen(false)}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -66,7 +66,7 @@ export default function Flyout() {
 
           <NavigationMenu.Root asChild>
             <motion.div
-              className='fixed top-0 h-full z-50 p-9 bg-grayDark-1 border-l border-grayDark-6/30 font-light font-body text-base'
+              className='fixed top-0 h-full z-50 p-9 bg-slateDark-1 border-l border-slateDark-6/30 font-light font-body text-base'
               initial={{ right: '-100%' }}
               animate={{ right: '0%' }}
               exit={{ right: '-100%' }}
@@ -101,7 +101,7 @@ export default function Flyout() {
 
               <Separator.Root
                 decorative
-                className='mb-5 mt-7 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
+                className='mb-5 mt-7 h-[1px] bg-gradient-to-r from-transparent to-transparent via-slateDark-6'
               />
 
               <NavigationMenu.List className='flex flex-col gap-1'>
@@ -141,7 +141,7 @@ export default function Flyout() {
               </NavigationMenu.List>
               <Separator.Root
                 decorative
-                className='mt-6 mb-6 h-[1px] bg-gradient-to-r from-transparent to-transparent via-grayDark-6'
+                className='mt-6 mb-6 h-[1px] bg-gradient-to-r from-transparent to-transparent via-slateDark-6'
               />
               <li className='flex gap-3'>
                 <Link
@@ -157,7 +157,7 @@ export default function Flyout() {
                 <button
                   onClick={() => setOpen(false)}
                   aria-label='Close'
-                  className='w-28 text-center rounded-md py-1.5 border shadow bg-grayDark-3/20 border-grayDark-6 text-grayDark-11 duration-100'
+                  className='w-28 text-center rounded-md py-1.5 border shadow bg-slateDark-3/20 border-slateDark-6 text-slateDark-11 duration-100'
                 >
                   Close
                 </button>
