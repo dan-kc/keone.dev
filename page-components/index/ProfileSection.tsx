@@ -22,7 +22,7 @@ const ProfileSection = () => {
             <div>
               <DoubleText />
               <p className='mt-4 sm:text-sm md:text-base lg:text-lg xl:text-xl'>
-                Hire me to renovate your online business with a brand new
+                Renovate your online business with a brand new
                 website that exceeds the conversion rates of your competitors,
                 so you can finally focus on your business.
               </p>
