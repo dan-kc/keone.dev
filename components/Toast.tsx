@@ -59,7 +59,7 @@ export const Toast = () => {
   const setTemplateOpen = useToastStore((state) => state.setTemplateOpen)
 
   return (
-    <>
+    <T.Provider swipeDirection='right'>
       <AnimatePresence>
         {open ? (
           <T.Root
@@ -160,7 +160,7 @@ export const Toast = () => {
       </AnimatePresence>
 
       <T.Viewport className='fixed bottom-0 right-0 z-50 w-[260px] min-[356px]:w-[314px] mr-10 mb-10 outline-none' />
-    </>
+    </T.Provider >
   )
 }
 export default Toast
