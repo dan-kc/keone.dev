@@ -11,9 +11,9 @@ const ProfileSection = () => {
           <div className='w-fit sm:w-[345px] md:w-[365px] lg:w-[390px] xl:w-[450px] flex-none border-b sm:border-none border-slateDark-6 z-10'>
             <Image
               src='/images/self-portrait-1.webp'
-              alt='portrait'
-              height={520.126}
-              width={480}
+              alt='self portrait'
+              height={532.967}
+              width={450}
               quality={100}
               priority
             />
