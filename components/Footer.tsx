@@ -1,5 +1,5 @@
-import Em from './Em'
-import Link from './Link'
+import Em from '@components/Em'
+import Link from '@components/Link'
 import Navbar from '@components/Navbar'
 import { useRouter } from 'next/router'
 import classNames from 'classnames'

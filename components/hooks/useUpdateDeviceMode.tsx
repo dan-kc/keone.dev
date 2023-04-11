@@ -12,7 +12,6 @@ export default function useUpdateDeviceMode() {
 
   useEffect(() => {
     const width = windowDimensions.width
-    const height = windowDimensions.height
 
     const handleResize = () => {
       if (width < 768) {
@@ -21,8 +20,6 @@ export default function useUpdateDeviceMode() {
         setMedium()
       } else if (width >= 1024) {
         setLarge()
-      }
-      if (height < 500) {
       }
     }
     handleResize()

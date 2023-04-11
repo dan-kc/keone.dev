@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import useWindowDimensionsStore from '@stores/useWindowDimensionsStore'
 
 export default function useUpdateWindowDimensions() {
