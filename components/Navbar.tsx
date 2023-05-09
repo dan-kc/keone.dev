@@ -29,12 +29,12 @@ export const navigation = [
     colorClassName:
       'bg-greenDark-3/20 border-greenDark-6 text-greenDark-9',
   },
-  {
-    name: 'Projects',
-    href: '/projects',
-    colorClassName:
-      'bg-orangeDark-3/20 border-orangeDark-6 text-orangeDark-9',
-  },
+  // {
+  //   name: 'Projects',
+  //   href: '/projects',
+  //   colorClassName:
+  //     'bg-orangeDark-3/20 border-orangeDark-6 text-orangeDark-9',
+  // },
   {
     name: 'Process',
     href: '/process',
