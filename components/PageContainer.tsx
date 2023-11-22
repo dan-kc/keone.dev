@@ -1,12 +1,12 @@
-import Contents from '@components/Contents'
-import Title from '@components/Title'
-import { Color } from 'types'
+import Contents from "@components/Contents";
+import Title from "@components/Title";
+import { Color } from "types";
 
 interface Props {
-  children: React.ReactNode
-  color: Color
-  heading: string
-  subHeading: string
+  children: React.ReactNode;
+  color: Color;
+  heading: string;
+  subHeading: string;
 }
 
 const PageContainer: React.FC<Props> = ({
@@ -18,13 +18,13 @@ const PageContainer: React.FC<Props> = ({
   return (
     <main>
       <Title color={color} heading={heading} subHeading={subHeading} />
-      <div className='px-5 sm:px-10 max-w-6xl mx-auto'>
-        <div className='flex gap-10 lg:gap-20 xl:gap-28'>
+      <div className="mx-auto max-w-6xl px-5 sm:px-10">
+        <div className="flex gap-10 lg:gap-20 xl:gap-28">
           <div>{children}</div>
           <Contents color={color} />
         </div>
       </div>
     </main>
-  )
-}
-export default PageContainer
+  );
+};
+export default PageContainer;

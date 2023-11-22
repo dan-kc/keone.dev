@@ -314,7 +314,7 @@ function QA() {
                                 "flex w-full justify-between duration-300",
                               )}
                             >
-                              <span className="text-xl font-heading font-medium text-left ">
+                              <span className="text-left font-heading text-xl font-medium ">
                                 {item.header}
                               </span>
 
@@ -322,10 +322,10 @@ function QA() {
                                 aria-hidden
                                 className={classNames(
                                   isExpanded ? "rotate-180" : "",
-                                  "transform duration-300 w-fit h-fit",
+                                  "h-fit w-fit transform duration-300",
                                 )}
                               >
-                                <ChevronDownIcon className="w-7 h-7" />
+                                <ChevronDownIcon className="h-7 w-7" />
                               </div>
                             </div>
                           </AccordionButton>
@@ -379,7 +379,7 @@ function Article({
       <p className={classNames("font-display text-base text-skyDark-11")}>
         Step {stepNumber}/9
       </p>
-      <h3 className="text-4xl font-heading font-extrabold leading-tight mb-3">
+      <h3 className="mb-3 font-heading text-4xl font-extrabold leading-tight">
         {heading}
       </h3>
       {children}
@@ -393,7 +393,7 @@ const ExtraInfo = ({ bulletPoints }: { bulletPoints: string[] }) => {
       {bulletPoints.map((bulletPoint, index) => {
         return (
           <FadeIn from={-10} key={index}>
-            <p className="text-2xl font-heading font-extrabold flex gap-2">
+            <p className="flex gap-2 font-heading text-2xl font-extrabold">
               <span>-</span>
               <span>{bulletPoint}</span>
             </p>

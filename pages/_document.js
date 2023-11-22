@@ -39,7 +39,7 @@ export default function Document() {
         className={classNames(
           outfit.variable,
           montserrat.variable,
-          "font-body bg-slateDark-1 text-slateDark-12 text-lg lg:text-xl"
+          "bg-slateDark-1 font-body text-lg text-slateDark-12 lg:text-xl",
         )}
       >
         <Main />

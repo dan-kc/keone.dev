@@ -1,29 +1,29 @@
-import List from '@components/List'
-import AnimatedLink from '@components/AnimatedLink'
-import Section from '@components/Section'
-import Article from '@page-components/products/ProductsArticle'
+import List from "@components/List";
+import AnimatedLink from "@components/AnimatedLink";
+import Section from "@components/Section";
+import Article from "@page-components/products/ProductsArticle";
 
 const Ecommerce = () => {
   return (
-    <Section heading='Ecommerce Store' color='green'>
+    <Section heading="Ecommerce Store" color="green">
       <Article>
         Reinvent your online business with a brand new, bespoke eCommerce
         storefront that’s designed from the ground up to drive sales, and is
         developed using the fastest, most reliable web frameworks available!
       </Article>
 
-      <Article heading='Design'>
+      <Article heading="Design">
         <div>
           Your new storefront will be designed to:
           <br />
           <br />
           <List
-            dashClassName='text-greenDark-11'
+            dashClassName="text-greenDark-11"
             items={[
-              'Attract new users',
-              'Convert users into customers',
-              'Maximise sales from each customer',
-              'Achieve any unique business requirements',
+              "Attract new users",
+              "Convert users into customers",
+              "Maximise sales from each customer",
+              "Achieve any unique business requirements",
             ]}
           />
           <br />
@@ -38,14 +38,14 @@ const Ecommerce = () => {
         </div>
       </Article>
 
-      <Article heading='Development'>
-        <p className='mt-3'>
-          My favourite web frameworks for eCommerce storefronts are{' '}
-          <AnimatedLink href='https://nextjs.org/' newTab>
+      <Article heading="Development">
+        <p className="mt-3">
+          My favourite web frameworks for eCommerce storefronts are{" "}
+          <AnimatedLink href="https://nextjs.org/" newTab>
             Next.js
           </AnimatedLink>
-          , which is used by huge corporations such as Target and Nike, and{' '}
-          <AnimatedLink href='https://remix.run/' newTab>
+          , which is used by huge corporations such as Target and Nike, and{" "}
+          <AnimatedLink href="https://remix.run/" newTab>
             Remix
           </AnimatedLink>
           , which is a newer technology that boasts even better performance in
@@ -53,11 +53,11 @@ const Ecommerce = () => {
         </p>
       </Article>
 
-      <Article heading='Content management'>
+      <Article heading="Content management">
         <p>
-          My go-to headless eCommerce solution is{' '}
-          <AnimatedLink href='https://www.shopify.com' newTab>
-            {' '}
+          My go-to headless eCommerce solution is{" "}
+          <AnimatedLink href="https://www.shopify.com" newTab>
+            {" "}
             Shopify
           </AnimatedLink>
           .
@@ -69,10 +69,10 @@ const Ecommerce = () => {
           and your team.
           <br />
           <br />
-          Shopify also boast{' '}
-          <AnimatedLink href='https://www.shopify.com/id/pricing' newTab>
+          Shopify also boast{" "}
+          <AnimatedLink href="https://www.shopify.com/id/pricing" newTab>
             incredible value
-          </AnimatedLink>{' '}
+          </AnimatedLink>{" "}
           in a market where other solutions can mean yearly bills of $50,000
           (Elastic Path) up to as much as $300,000 (CommerceTools).
           <br />
@@ -96,9 +96,9 @@ const Ecommerce = () => {
           On the other end of the spectrum, if you require not only a custom
           storefront, but also a custom backend system, I'll build a solution
           that meets your exact business needs on top of a Product Information
-          Management (PIM) system like{' '}
+          Management (PIM) system like{" "}
           <AnimatedLink
-            href='https://crystallize.com/#this-is-crystallize'
+            href="https://crystallize.com/#this-is-crystallize"
             newTab
           >
             Crystalize
@@ -107,7 +107,7 @@ const Ecommerce = () => {
         </p>
       </Article>
 
-      <Article heading='Price & timeframe'>
+      <Article heading="Price & timeframe">
         <p>
           Ecommerce stores vary hugely in scope and feature set, and as a
           result, they also vary hugely in cost and turnaround time.
@@ -119,6 +119,6 @@ const Ecommerce = () => {
         </p>
       </Article>
     </Section>
-  )
-}
-export default Ecommerce
+  );
+};
+export default Ecommerce;

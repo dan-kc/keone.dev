@@ -1,8 +1,8 @@
-import * as T from '@radix-ui/react-toast'
-import useToastStore from '@hooks/stores/useToastStore'
-import copy from 'copy-to-clipboard'
-import { Cross2Icon, CopyIcon } from '@radix-ui/react-icons'
-import { AnimatePresence, motion } from 'framer-motion'
+import * as T from "@radix-ui/react-toast";
+import useToastStore from "@hooks/stores/useToastStore";
+import copy from "copy-to-clipboard";
+import { Cross2Icon, CopyIcon } from "@radix-ui/react-icons";
+import { AnimatePresence, motion } from "framer-motion";
 
 const emailTemplate = `
 ——— READ ———
@@ -48,18 +48,18 @@ Do you already have examples of websites that you’d like me to draw heavy insp
 Do you require any particular features?
 Does your website need to integrate with any existing systems, such as a database or an email marketing service like Mailchimp?
 Do you already have a preferred Content Management System?
-`
+`;
 
 export const Toast = () => {
-  const open = useToastStore((state) => state.open)
-  const emailOpen = useToastStore((state) => state.emailOpen)
-  const setOpen = useToastStore((state) => state.setOpen)
-  const setEmailOpen = useToastStore((state) => state.setEmailOpen)
-  const templateOpen = useToastStore((state) => state.templateOpen)
-  const setTemplateOpen = useToastStore((state) => state.setTemplateOpen)
+  const open = useToastStore((state) => state.open);
+  const emailOpen = useToastStore((state) => state.emailOpen);
+  const setOpen = useToastStore((state) => state.setOpen);
+  const setEmailOpen = useToastStore((state) => state.setEmailOpen);
+  const templateOpen = useToastStore((state) => state.templateOpen);
+  const setTemplateOpen = useToastStore((state) => state.setTemplateOpen);
 
   return (
-    <T.Provider swipeDirection='right'>
+    <T.Provider swipeDirection="right">
       <AnimatePresence>
         {open ? (
           <T.Root
@@ -74,31 +74,31 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute bottom-0 right-0 rounded-md p-4 bg-slateDark-2 shadow-lg outline-none border border-slateDark-6'
+              className="absolute bottom-0 right-0 rounded-md border border-slateDark-6 bg-slateDark-2 p-4 shadow-lg outline-none"
             >
-              <div className='flex justify-between items-start mb-3 mr-2 min-[356px]:mr-0'>
+              <div className="mb-3 mr-2 flex items-start justify-between min-[356px]:mr-0">
                 <T.Title>If your mail app didn’t open...</T.Title>
                 <T.Close>
-                  <Cross2Icon className='h-7 w-7' />
+                  <Cross2Icon className="h-7 w-7" />
                 </T.Close>
               </div>
-              <div className='flex gap-3 text-base justify-between flex-col min-[356px]:flex-row'>
+              <div className="flex flex-col justify-between gap-3 text-base min-[356px]:flex-row">
                 <T.Action
-                  className='bg-skyDark-3/20 hover:bg-skyDark-4/20 border-skyDark-6 hover:border-skyDark-8 text-skyDark-9 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl'
-                  altText='Copy Email'
+                  className="rounded-md border border-skyDark-6 bg-skyDark-3/20 py-2 px-4 font-heading font-extrabold text-skyDark-9 shadow-2xl hover:border-skyDark-8 hover:bg-skyDark-4/20"
+                  altText="Copy Email"
                   onClick={() => {
-                    copy('daniel@keone.dev')
-                    setEmailOpen(true)
+                    copy("daniel@keone.dev");
+                    setEmailOpen(true);
                   }}
                 >
                   Copy Email
                 </T.Action>
                 <T.Action
-                  className='bg-greenDark-3/20 hover:bg-greenDark-4/20 border-greenDark-6 hover:border-greenDark-8 text-greenDark-9 font-heading font-extrabold border py-2 px-4 rounded-md shadow-2xl '
-                  altText='Copy Template'
+                  className="rounded-md border border-greenDark-6 bg-greenDark-3/20 py-2 px-4 font-heading font-extrabold text-greenDark-9 shadow-2xl hover:border-greenDark-8 hover:bg-greenDark-4/20 "
+                  altText="Copy Template"
                   onClick={() => {
-                    copy(emailTemplate)
-                    setTemplateOpen(true)
+                    copy(emailTemplate);
+                    setTemplateOpen(true);
                   }}
                 >
                   Copy Template
@@ -123,11 +123,11 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute right-0 bottom-0 -z-10 flex justify-end'
+              className="absolute right-0 bottom-0 -z-10 flex justify-end"
             >
-              <div className='w-fit font-heading font-extrabold border bg-skyDark-3/40 border-skyDark-6 text-skyDark-9 py-2 px-4 rounded-md shadow-2xl gap-2 flex items-center'>
+              <div className="flex w-fit items-center gap-2 rounded-md border border-skyDark-6 bg-skyDark-3/40 py-2 px-4 font-heading font-extrabold text-skyDark-9 shadow-2xl">
                 <span>Email Copied</span>
-                <CopyIcon className='h-5 w-5' />
+                <CopyIcon className="h-5 w-5" />
               </div>
             </motion.div>
           </T.Root>
@@ -148,19 +148,19 @@ export const Toast = () => {
               initial={{ x: 400 }}
               animate={{ x: 0 }}
               exit={{ x: 400 }}
-              className='absolute right-0 bottom-0 -z-10 flex justify-end'
+              className="absolute right-0 bottom-0 -z-10 flex justify-end"
             >
-              <div className='w-fit font-heading font-extrabold border bg-greenDark-3/40 hover:bg-greenDark-4/20 border-greenDark-6 hover:border-greenDark-8 text-greenDark-9 py-2 px-4 rounded-md shadow-2xl gap-2 flex items-center '>
+              <div className="flex w-fit items-center gap-2 rounded-md border border-greenDark-6 bg-greenDark-3/40 py-2 px-4 font-heading font-extrabold text-greenDark-9 shadow-2xl hover:border-greenDark-8 hover:bg-greenDark-4/20 ">
                 <span>Template Copied</span>
-                <CopyIcon className='h-5 w-5' />
+                <CopyIcon className="h-5 w-5" />
               </div>
             </motion.div>
           </T.Root>
         ) : null}
       </AnimatePresence>
 
-      <T.Viewport className='fixed bottom-0 right-0 z-50 w-[260px] min-[356px]:w-[314px] mr-10 mb-10 outline-none' />
-    </T.Provider >
-  )
-}
-export default Toast
+      <T.Viewport className="fixed bottom-0 right-0 z-50 mr-10 mb-10 w-[260px] outline-none min-[356px]:w-[314px]" />
+    </T.Provider>
+  );
+};
+export default Toast;

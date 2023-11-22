@@ -45,19 +45,19 @@ export default function Navbar() {
   const setOpen = useFlyoutStore((state) => state.setOpen);
 
   return (
-    <div className="max-w-3xl lg:max-w-5xl xl:max-w-7xl px-5 md:px-10 relative sm:mx-auto py-4">
-      <NavigationMenu.Root className="flex justify-between items-center py-1 text-base z-20 font-display">
+    <div className="relative max-w-3xl px-5 py-4 sm:mx-auto md:px-10 lg:max-w-5xl xl:max-w-7xl">
+      <NavigationMenu.Root className="z-20 flex items-center justify-between py-1 font-display text-base">
         <Link
           aria-label="Home"
           href="/"
-          className="mt-[6.4px] md:mt-[5.76px] w-44 lg:w-48 pointer-events-auto"
+          className="pointer-events-auto mt-[6.4px] w-44 md:mt-[5.76px] lg:w-48"
         >
           <Lottie animationData={lottie} loop={true} />
         </Link>
         <button
           aria-label="Menu"
           onClick={() => setOpen(true)}
-          className="md:hidden hover:scale-110 transform duration-100 outline-none"
+          className="transform outline-none duration-100 hover:scale-110 md:hidden"
         >
           <HamburgerMenuIcon className="h-8 w-8" aria-hidden="true" />
         </button>
@@ -79,12 +79,12 @@ function Nav() {
           }
           return <NavItem key={name} href={href} name={name} />;
         })}
-        <li className="flex flex-col justify-center mt-1">
+        <li className="mt-1 flex flex-col justify-center">
           <Link
             mail={true}
             className={classNames(
-              "font-heading font-extrabold ml-1 border py-2 px-4 rounded-md shadow-lg duration-200",
-              colorClassName
+              "ml-1 rounded-md border py-2 px-4 font-heading font-extrabold shadow-lg duration-200",
+              colorClassName,
             )}
           >
             Contact
@@ -99,13 +99,13 @@ function NavItem({ href, name }) {
   const { asPath } = useRouter();
   const isActive = asPath === href;
   return (
-    <NavigationMenu.Item className="flex flex-col justify-center mt-1">
+    <NavigationMenu.Item className="mt-1 flex flex-col justify-center">
       <Link href={href} passHref legacyBehavior>
         <NavigationMenu.Link
           active={isActive}
           className={classNames(
             isActive ? "" : "border-transparent hover:border-b-slateDark-6",
-            "border-b-2 text-white transition duration-200 p-2"
+            "border-b-2 p-2 text-white transition duration-200",
           )}
         >
           {name}

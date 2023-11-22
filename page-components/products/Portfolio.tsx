@@ -1,12 +1,12 @@
-import AnimatedLink from '@components/AnimatedLink'
-import Em from '@components/Em'
-import List from '@components/List'
-import Section from '@components/Section'
-import Article from '@page-components/products/ProductsArticle'
+import AnimatedLink from "@components/AnimatedLink";
+import Em from "@components/Em";
+import List from "@components/List";
+import Section from "@components/Section";
+import Article from "@page-components/products/ProductsArticle";
 
 const Portfolio = () => {
   return (
-    <Section heading='Portfolio' color='green'>
+    <Section heading="Portfolio" color="green">
       <Article>
         <div>
           Impress your potential clients with a stunning new Portfolio site
@@ -19,13 +19,13 @@ const Portfolio = () => {
           <br />
           <br />
           <List
-            dashClassName='text-greenDark-11'
+            dashClassName="text-greenDark-11"
             items={[
-              'Introduce yourself to potential clients',
-              'Show off your latest works',
-              'Display your skills and expertise',
-              'Express your artistic style',
-              'Provide ways to contact you',
+              "Introduce yourself to potential clients",
+              "Show off your latest works",
+              "Display your skills and expertise",
+              "Express your artistic style",
+              "Provide ways to contact you",
             ]}
           />
           <br />
@@ -33,7 +33,7 @@ const Portfolio = () => {
         </div>
       </Article>
 
-      <Article heading='Design'>
+      <Article heading="Design">
         <p>
           Your portfolio will be designed to generate qualified leads from
           potential clients who are likely to do business with you.
@@ -43,33 +43,33 @@ const Portfolio = () => {
         </p>
       </Article>
 
-      <Article heading='Development'>
+      <Article heading="Development">
         <p>
-          Static site generators like{' '}
-          <AnimatedLink href='https://astro.build/' newTab>
+          Static site generators like{" "}
+          <AnimatedLink href="https://astro.build/" newTab>
             Astro
-          </AnimatedLink>{' '}
+          </AnimatedLink>{" "}
           are often perfect for projects like these, to keep the file size down
           and the performance high!
           <br />
           <br />
-          I’m also an expert in the animation libraries{' '}
-          <AnimatedLink href='https://greensock.com/' newTab>
+          I’m also an expert in the animation libraries{" "}
+          <AnimatedLink href="https://greensock.com/" newTab>
             GSAP
-          </AnimatedLink>{' '}
-          and{' '}
-          <AnimatedLink href='https://www.framer.com/motion/' newTab>
+          </AnimatedLink>{" "}
+          and{" "}
+          <AnimatedLink href="https://www.framer.com/motion/" newTab>
             Framer Motion
           </AnimatedLink>
           , enabling a beautifully animated showcase of your work if needs be!
         </p>
       </Article>
 
-      <Article heading='Content management'>
+      <Article heading="Content management">
         <p>
-          <AnimatedLink href='https://prismic.io/marketers' newTab>
+          <AnimatedLink href="https://prismic.io/marketers" newTab>
             Prismic
-          </AnimatedLink>{' '}
+          </AnimatedLink>{" "}
           is my go-to CMS solution. You'll use this to update your website with
           your latest works to keep your website looking fresh.
           <br />
@@ -78,7 +78,7 @@ const Portfolio = () => {
         </p>
       </Article>
 
-      <Article heading='Price & timeframe'>
+      <Article heading="Price & timeframe">
         <p>
           I estimate that a portfolio will cost between £7,500 and £13,500 and
           will take 6-8 weeks to complete, depending on the scope of the
@@ -91,6 +91,6 @@ const Portfolio = () => {
         </p>
       </Article>
     </Section>
-  )
-}
-export default Portfolio
+  );
+};
+export default Portfolio;

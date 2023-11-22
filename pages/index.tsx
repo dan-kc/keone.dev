@@ -18,7 +18,7 @@ export default function Home() {
         <title>Daniel Keone Cox | Web Designer \ Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="flex flex-col gap-36 lg:gap-52 pt-12 lg:pt-32 ">
+      <main className="flex flex-col gap-36 pt-12 lg:gap-52 lg:pt-32 ">
         <ProfileSection />
         <MetricsSection />
         <ProcessSection />
@@ -30,9 +30,9 @@ export default function Home() {
 const ProfileSection = () => {
   return (
     <section>
-      <div className="px-3 overflow-hidden">
-        <article className="relative max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto rounded-2xl border border-slateDark-6 flex flex-col sm:flex-row-reverse overflow-hidden shadow bg-slateDark-2">
-          <div className="w-fit sm:w-[345px] md:w-[365px] lg:w-[390px] xl:w-[450px] flex-none border-b sm:border-none border-slateDark-6 z-10">
+      <div className="overflow-hidden px-3">
+        <article className="relative mx-auto flex max-w-md flex-col overflow-hidden rounded-2xl border border-slateDark-6 bg-slateDark-2 shadow sm:max-w-2xl sm:flex-row-reverse md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+          <div className="z-10 w-fit flex-none border-b border-slateDark-6 sm:w-[345px] sm:border-none md:w-[365px] lg:w-[390px] xl:w-[450px]">
             <Image
               src="/images/self-portrait-1.webp"
               alt="self portrait"
@@ -42,7 +42,7 @@ const ProfileSection = () => {
               priority
             />
           </div>
-          <div className="p-6 flex flex-col justify-between z-10">
+          <div className="z-10 flex flex-col justify-between p-6">
             <div>
               <DoubleText />
               <p className="mt-4 sm:text-sm md:text-base lg:text-lg xl:text-xl">
@@ -51,13 +51,13 @@ const ProfileSection = () => {
                 finally focus on your business.
               </p>
             </div>
-            <div className="flex justify-end mt-6 md:mt-0">
+            <div className="mt-6 flex justify-end md:mt-0">
               <Link
                 href="/profile"
-                className="bg-slateDark-1/80 hover:bg-slateDark-3/60 hover:border-slateDark-8 border-slateDark-7 text-xl sm:text-base md:text-xl flex items-center gap-2 border py-2 px-5 xl:py-3 xl:px-6 rounded-lg  font-heading font-semibold shadow duration-100"
+                className="flex items-center gap-2 rounded-lg border border-slateDark-7 bg-slateDark-1/80 py-2 px-5 font-heading text-xl font-semibold shadow duration-100 hover:border-slateDark-8 hover:bg-slateDark-3/60  sm:text-base md:text-xl xl:py-3 xl:px-6"
               >
                 View Profile
-                <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6" />
+                <ArrowRightIcon className="h-5 w-5 md:h-6 md:w-6" />
               </Link>
             </div>
           </div>
@@ -69,31 +69,31 @@ const ProfileSection = () => {
 
 const MetricsSection = () => (
   <GridSection color="sage">
-    <div className="md:sticky md:top-20 px-6 md:px-0">
-      <h2 className="max-w-xs sm:max-w-md font-heading leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl sm:text-6xl md:text-5xl lg:text-6xl">
+    <div className="px-6 md:sticky md:top-20 md:px-0">
+      <h2 className="max-w-xs font-heading text-5xl font-extrabold leading-tight sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
         Worried about{" "}
         <span className="text-greenDark-11">your website&apos;s metrics?</span>
       </h2>
-      <div className="hidden md:block pt-5">
+      <div className="hidden pt-5 md:block">
         <p className="text-lg lg:text-xl">
           With me you&apos;ll get a lightning fast website and a huge edge over
           your competitors. Did I mention that I&apos;m drastically cheaper than
           agencies too?
         </p>
-        <div className="flex justify-start mt-10">
+        <div className="mt-10 flex justify-start">
           <Link
             href="/products"
-            className="flex items-center gap-2 bg-greenDark-3/30 border border-greenDark-6 py-3 px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-xl duration-100"
+            className="flex items-center gap-2 rounded-lg border border-greenDark-6 bg-greenDark-3/30 py-3 px-6 font-heading text-xl font-semibold shadow-lg duration-100 hover:border-greenDark-8 hover:bg-greenDark-2"
           >
             View Products & Prices
-            <ArrowRightIcon className="w-7 h-7" />
+            <ArrowRightIcon className="h-7 w-7" />
           </Link>
         </div>
       </div>
     </div>
-    <div className="flex flex-col gap-10 mt-10 md:mt-3 md:row-span-2">
+    <div className="mt-10 flex flex-col gap-10 md:row-span-2 md:mt-3">
       <Card heading="Lighthouse scores">
-        <div className="flex gap-3 justify-between mt-7 px-2">
+        <div className="mt-7 flex justify-between gap-3 px-2">
           <ProgressCircle percentage={98} caption="Performance" />
           <ProgressCircle percentage={98} caption="Accessibility" delay={0.2} />
           <ProgressCircle
@@ -103,7 +103,7 @@ const MetricsSection = () => (
           />
           <ProgressCircle percentage={100} caption="SEO" delay={0.6} />
         </div>
-        <div className="relative inline-block mt-6 text-base lg:text-lg">
+        <div className="relative mt-6 inline-block text-base lg:text-lg">
           <AnimatedLink
             href="https://developer.chrome.com/docs/lighthouse/overview/"
             linkClassName="text-sageDark-12 "
@@ -118,7 +118,7 @@ const MetricsSection = () => (
       </Card>
 
       <Card heading="Core web vitals">
-        <div className="flex flex-col mt-6">
+        <div className="mt-6 flex flex-col">
           <ProgressBar
             percentage={85}
             title="Largest Contentful Paint (LCP)"
@@ -137,7 +137,7 @@ const MetricsSection = () => (
             value={0}
           />
         </div>
-        <div className="relative inline-block mt-3 text-base lg:text-lg">
+        <div className="relative mt-3 inline-block text-base lg:text-lg">
           <AnimatedLink
             href="https://web.dev/vitals/"
             linkClassName="text-sageDark-12 "
@@ -163,21 +163,21 @@ const MetricsSection = () => (
         </div>
       </Card>
     </div>
-    <div className="md:hidden pt-10">
-      <p className="text-lg px-6">
+    <div className="pt-10 md:hidden">
+      <p className="px-6 text-lg">
         With me you&apos;ll get a lightning fast website and a huge edge over
         your competitors.
         <br />
         <br />
         Did I mention that I&apos;m drastically cheaper than agencies too?
       </p>
-      <div className="flex justify-end mt-10 pr-6">
+      <div className="mt-10 flex justify-end pr-6">
         <Link
           href="/products"
-          className="flex items-center gap-2 bg-greenDark-3/30 border border-greenDark-6 py-2 px-5 sm:py-3 sm:px-6 rounded-lg hover:border-greenDark-8 hover:bg-greenDark-2 font-heading font-semibold shadow-lg text-base sm:text-xl duration-100"
+          className="flex items-center gap-2 rounded-lg border border-greenDark-6 bg-greenDark-3/30 py-2 px-5 font-heading text-base font-semibold shadow-lg duration-100 hover:border-greenDark-8 hover:bg-greenDark-2 sm:py-3 sm:px-6 sm:text-xl"
         >
           View Products & Prices
-          <ArrowRightIcon className="w-5 h-5 sm:w-7 sm:h-7" />
+          <ArrowRightIcon className="h-5 w-5 sm:h-7 sm:w-7" />
         </Link>
       </div>
     </div>
@@ -187,30 +187,30 @@ const MetricsSection = () => (
 function ProcessSection() {
   return (
     <GridSection color="slate">
-      <div className="md:sticky md:top-20 px-6 order-2 md:px-0">
-        <h2 className="max-w-xs sm:max-w-md font-heading leading-tight sm:leading-tight md:leading-tight lg:leading-tight font-extrabold text-5xl sm:text-6xl md:text-5xl lg:text-6xl">
+      <div className="order-2 px-6 md:sticky md:top-20 md:px-0">
+        <h2 className="max-w-xs font-heading text-5xl font-extrabold leading-tight sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
           My process is{" "}
           <span className="text-skyDark-11">designed around you</span>
         </h2>
-        <div className="hidden md:block pt-5">
+        <div className="hidden pt-5 md:block">
           <p className="text-lg lg:text-xl">
             Sound perfect for you and your business? Take a look at my detailed
             9-step process to find out more.
           </p>
-          <div className="flex justify-start mt-10">
+          <div className="mt-10 flex justify-start">
             <Link
               href="/process"
-              className="flex items-center gap-2 bg-skyDark-3/30 border border-skyDark-6 py-3 px-6 rounded-lg hover:border-skyDark-8 hover:bg-skyDark-2 font-heading font-semibold shadow-lg text-xl duration-100"
+              className="flex items-center gap-2 rounded-lg border border-skyDark-6 bg-skyDark-3/30 py-3 px-6 font-heading text-xl font-semibold shadow-lg duration-100 hover:border-skyDark-8 hover:bg-skyDark-2"
             >
               View Process
-              <ArrowRightIcon className="w-7 h-7" />
+              <ArrowRightIcon className="h-7 w-7" />
             </Link>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-10 mt-10 md:mt-3 md:row-span-2">
+      <div className="mt-10 flex flex-col gap-10 md:row-span-2 md:mt-3">
         <Card heading="No large upfront deposits" color="sky">
-          <p className="mt-5 text-base lg:text-lg text-skyDark-12">
+          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
             All payments are taken at milestones over the course of the project
             so that you have the freedom to, at any point, change your mind on
             future services or even drop out entirely.
@@ -222,7 +222,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Multiple review rounds" color="sky">
-          <p className="mt-5 text-base lg:text-lg text-skyDark-12">
+          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
             We&apos;ll conduct multiple detailed reviews of my work for the
             final designs.
             <br />
@@ -238,7 +238,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Live feedback" color="sky">
-          <p className="mt-5 text-base lg:text-lg text-skyDark-12">
+          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
             All designs will be made available to you via{" "}
             <AnimatedLink
               href="https://www.figma.com/figjam/"
@@ -258,7 +258,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Free maintenance" color="sky">
-          <p className="mt-5 text-base lg:text-lg text-skyDark-12">
+          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
             After your website is deployed I&apos;ll be sticking around for an
             additional month to ensure that you and your team understand how to
             use
@@ -274,18 +274,18 @@ function ProcessSection() {
           </p>
         </Card>
       </div>
-      <div className="md:hidden px-6 pt-10">
+      <div className="px-6 pt-10 md:hidden">
         <p className="text-lg">
           Sound perfect for you and your business? Take a look at my detailed
           9-step process to find out more.
         </p>
-        <div className="flex justify-end mt-10">
+        <div className="mt-10 flex justify-end">
           <Link
             href="/process"
-            className="flex items-center gap-2 bg-skyDark-3/30 border border-skyDark-7 py-2 px-5 sm:py-3 sm:px-6 rounded-lg hover:border-skyDark-8 hover:bg-skyDark-2 font-heading font-semibold shadow-lg text-base sm:text-xl duration-100"
+            className="flex items-center gap-2 rounded-lg border border-skyDark-7 bg-skyDark-3/30 py-2 px-5 font-heading text-base font-semibold shadow-lg duration-100 hover:border-skyDark-8 hover:bg-skyDark-2 sm:py-3 sm:px-6 sm:text-xl"
           >
             View Process
-            <ArrowRightIcon className="w-5 h-5 sm:w-7 sm:h-7" />
+            <ArrowRightIcon className="h-5 w-5 sm:h-7 sm:w-7" />
           </Link>
         </div>
       </div>
@@ -304,12 +304,12 @@ export function GridSection({
     color === "slate"
       ? "text-slateDark-12"
       : color === "sage"
-      ? "text-sageDark-12"
-      : "";
+        ? "text-sageDark-12"
+        : "";
 
   return (
     <section className={className}>
-      <div className="md:grid grid-cols-2 gap-10 lg:gap-20 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-5">
+      <div className="mx-auto max-w-md grid-cols-2 gap-10 px-5 sm:max-w-lg md:grid md:max-w-3xl lg:max-w-4xl lg:gap-20 xl:max-w-5xl">
         {children}
       </div>
     </section>
@@ -328,16 +328,16 @@ const Card = ({
   return (
     <article
       className={classNames(
-        "border rounded-xl shadow p-6",
+        "rounded-xl border p-6 shadow",
         color === "sky"
-          ? "bg-skyDark-3/30 border-skyDark-6"
-          : "bg-greenDark-3/30 border-greenDark-6"
+          ? "border-skyDark-6 bg-skyDark-3/30"
+          : "border-greenDark-6 bg-greenDark-3/30",
       )}
     >
       <h3
         className={classNames(
-          "font-heading font-bold text-3xl lg:text-4xl leading-tight lg:leading-tight",
-          color === "sky" ? "text-skyDark-11" : "text-greenDark-11"
+          "font-heading text-3xl font-bold leading-tight lg:text-4xl lg:leading-tight",
+          color === "sky" ? "text-skyDark-11" : "text-greenDark-11",
         )}
       >
         {heading}
@@ -365,7 +365,7 @@ const DoubleText = () => {
   }, [isDesign, isMounted]);
 
   return (
-    <div className="relative font-heading font-extrabold text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight">
+    <div className="relative font-heading text-3xl font-extrabold leading-tight sm:text-2xl sm:leading-tight md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight xl:text-[40px]">
       <div className="relative">
         <div className="absolute top-0 left-0">
           <h1 className="whitespace-nowrap">
@@ -383,13 +383,13 @@ const DoubleText = () => {
         </div>
 
         <div className="relative">
-          <div className="flex align-baseline whitespace-nowrap">
+          <div className="flex whitespace-nowrap align-baseline">
             <div className="whitespace-nowrap">A</div>
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="text-greenDark-11 whitespace-nowrap overflow-hidden bg-slateDark-2"
+                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-greenDark-11"
                 transition={{ duration: 0.8, delay: isDesign ? 0 : 0.6 }}
               >
                 &nbsp;user behaviour
@@ -403,7 +403,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="text-yellowDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2"
+                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-yellowDark-10"
                 transition={{ duration: 0.8, delay: isDesign ? 0.3 : 0.3 }}
               >
                 &nbsp;designer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -413,12 +413,12 @@ const DoubleText = () => {
 
           <div className="whitespace-nowrap">specialising in</div>
 
-          <div className="flex align-baseline whitespace-nowrap">
+          <div className="flex whitespace-nowrap align-baseline">
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="text-redDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2"
+                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-redDark-10"
                 transition={{ duration: 0.8, delay: isDesign ? 0.4 : 0.2 }}
               >
                 conversion rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -426,12 +426,12 @@ const DoubleText = () => {
             </div>
           </div>
 
-          <div className="flex align-baseline whitespace-nowrap">
+          <div className="flex whitespace-nowrap align-baseline">
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="text-redDark-10 whitespace-nowrap overflow-hidden bg-slateDark-2"
+                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-redDark-10"
                 transition={{ duration: 0.8, delay: isDesign ? 0.6 : 0 }}
               >
                 optimisation

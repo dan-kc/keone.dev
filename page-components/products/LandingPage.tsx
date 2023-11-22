@@ -1,9 +1,9 @@
-import Section from '@components/Section'
-import Article from '@page-components/products/ProductsArticle'
+import Section from "@components/Section";
+import Article from "@page-components/products/ProductsArticle";
 
 const LandingPage = () => {
   return (
-    <Section heading='Landing Page' color='green' >
+    <Section heading="Landing Page" color="green">
       <Article>
         <p>
           For businesses that operate primarily outside of the web, one page is
@@ -24,7 +24,7 @@ const LandingPage = () => {
         </p>
       </Article>
 
-      <Article heading='Price & timeframe'>
+      <Article heading="Price & timeframe">
         <p>
           A landing page should cost between £4,800 and £7,700 and take about 5
           weeks to complete; however, as with portfolio websites, price and
@@ -33,6 +33,6 @@ const LandingPage = () => {
         </p>
       </Article>
     </Section>
-  )
-}
-export default LandingPage
+  );
+};
+export default LandingPage;

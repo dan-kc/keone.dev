@@ -1,24 +1,24 @@
-import classNames from 'classnames'
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import classNames from "classnames";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface Props {
-  items: string[]
-  className?: string
-  dashClassName?: string
+  items: string[];
+  className?: string;
+  dashClassName?: string;
 }
 
 const List = ({ items, className, dashClassName }: Props) => {
-  const scrollRef = useRef(null)
-  const isInView = useInView(scrollRef, { margin: '-5% 0px -5% 0px' })
-  const length = items.length
+  const scrollRef = useRef(null);
+  const isInView = useInView(scrollRef, { margin: "-5% 0px -5% 0px" });
+  const length = items.length;
 
   return (
     <ul ref={scrollRef} className={className}>
       {items.map((item, index) => {
-        const delayTime = (index / length) * 0.4
+        const delayTime = (index / length) * 0.4;
         return (
-          <li className='flex' key={index}>
+          <li className="flex" key={index}>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: isInView ? 1 : 0 }}
@@ -26,15 +26,15 @@ const List = ({ items, className, dashClassName }: Props) => {
                 duration: 1,
                 delay: delayTime,
               }}
-              className={classNames(dashClassName, 'mr-2')}
+              className={classNames(dashClassName, "mr-2")}
             >
               -
             </motion.span>
             {item}
           </li>
-        )
+        );
       })}
     </ul>
-  )
-}
-export default List
+  );
+};
+export default List;

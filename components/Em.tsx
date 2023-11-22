@@ -1,27 +1,27 @@
-import classNames from 'classnames'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import classNames from "classnames";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  children: React.ReactNode
-  className?: string
-  inViewClassName?: string
-  outViewClassName?: string
-  delay?: number
-  bold?: boolean
+  children: React.ReactNode;
+  className?: string;
+  inViewClassName?: string;
+  outViewClassName?: string;
+  delay?: number;
+  bold?: boolean;
 }
 
 const Em: React.FC<Props> = ({
   children,
   className,
-  inViewClassName = 'text-white',
+  inViewClassName = "text-white",
   outViewClassName,
   delay = 0,
   bold = true,
 }) => {
-  const delayString = String(delay) + 's'
-  const scrollRef = useRef(null)
-  const inView = useInView(scrollRef)
+  const delayString = String(delay) + "s";
+  const scrollRef = useRef(null);
+  const inView = useInView(scrollRef);
 
   return (
     <em
@@ -29,13 +29,13 @@ const Em: React.FC<Props> = ({
       style={{ transitionDelay: delayString }}
       className={classNames(
         inView ? inViewClassName : outViewClassName,
-        bold ? 'font-semibold' : null,
+        bold ? "font-semibold" : null,
         className,
-        'duration-1000 not-italic'
+        "not-italic duration-1000",
       )}
     >
       {children}
     </em>
-  )
-}
-export default Em
+  );
+};
+export default Em;

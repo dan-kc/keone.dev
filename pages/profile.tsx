@@ -46,7 +46,7 @@ const DesignSkills = () => {
     <Section heading="Design Skills" color="violet">
       <div className="grid gap-7 lg:grid-cols-2">
         <div>
-          <h3 className="text-xl mb-1">Software</h3>
+          <h3 className="mb-1 text-xl">Software</h3>
           <List
             items={["Figma", "Adobe Illustrator", "Adobe After Effects"]}
             className="text-lg text-slateDark-11"
@@ -54,7 +54,7 @@ const DesignSkills = () => {
           />
         </div>
         <div>
-          <h3 className="text-xl mb-1">Expertise</h3>
+          <h3 className="mb-1 text-xl">Expertise</h3>
           <List
             items={[
               "Behavioural web design",
@@ -74,7 +74,7 @@ const DevelopmentSkills = () => {
     <Section heading="Development Skills" color="violet" last>
       <div className="grid gap-7 lg:grid-cols-2">
         <div>
-          <h3 className="text-xl mb-1">Languages</h3>
+          <h3 className="mb-1 text-xl">Languages</h3>
           <List
             items={["Typescript / Javascript", "HTML / CSS", "Go"]}
             className="text-lg text-slateDark-11"
@@ -82,7 +82,7 @@ const DevelopmentSkills = () => {
           />
         </div>
         <div>
-          <h3 className="text-xl mb-1">Frameworks</h3>
+          <h3 className="mb-1 text-xl">Frameworks</h3>
           <List
             items={["React", "Next.js", "Remix", "Astro", "Node.js"]}
             className="text-lg text-slateDark-11"
@@ -90,7 +90,7 @@ const DevelopmentSkills = () => {
           />
         </div>
         <div>
-          <h3 className="text-xl mb-1">Deployment / CMS Solutions</h3>
+          <h3 className="mb-1 text-xl">Deployment / CMS Solutions</h3>
           <List
             items={["Vercel", "Shopify", "Crystallize", "Fly.io", "Prismic"]}
             className="text-lg text-slateDark-11"
@@ -98,7 +98,7 @@ const DevelopmentSkills = () => {
           />
         </div>
         <div>
-          <h3 className="text-xl mb-1">Expertise</h3>
+          <h3 className="mb-1 text-xl">Expertise</h3>
           <List
             items={[
               "Super fast eCommerce storefronts",

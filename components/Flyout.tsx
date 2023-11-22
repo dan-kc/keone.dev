@@ -52,7 +52,7 @@ export default function Flyout() {
         <>
           <BackgroundOverlay />
           <NavRoot>
-            <div className="flex gap-5 items-center">
+            <div className="flex items-center gap-5">
               <div className="overflow-hidden rounded-full">
                 <Image
                   src="/images/profile-photo.webp"
@@ -62,7 +62,7 @@ export default function Flyout() {
                 />
               </div>
               <div>
-                <p className="text-base mb-1 ">Daniel Keone Cox</p>
+                <p className="mb-1 text-base ">Daniel Keone Cox</p>
                 <div className="flex gap-2">
                   <Link href="https://github.com/dan-kc" newTab>
                     <GitHubLogoIcon className="h-5 w-5" />
@@ -81,8 +81,8 @@ export default function Flyout() {
                 mail={true}
                 aria-label="Contact"
                 className={classNames(
-                  "w-28 text-center rounded-md py-1.5 border shadow duration-50",
-                  colorClassName
+                  "duration-50 w-28 rounded-md border py-1.5 text-center shadow",
+                  colorClassName,
                 )}
               >
                 Contact
@@ -90,7 +90,7 @@ export default function Flyout() {
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close"
-                className="w-28 text-center rounded-md py-1.5 border shadow bg-slateDark-3/20 border-slateDark-6 text-slateDark-11 duration-100"
+                className="w-28 rounded-md border border-slateDark-6 bg-slateDark-3/20 py-1.5 text-center text-slateDark-11 shadow duration-100"
               >
                 Close
               </button>
@@ -106,7 +106,7 @@ function BackgroundOverlay() {
   const setOpen = useFlyoutStore((state) => state.setOpen);
   return (
     <motion.div
-      className="fixed inset-0 bg-slateDark-1/90 z-40"
+      className="fixed inset-0 z-40 bg-slateDark-1/90"
       onClick={() => setOpen(false)}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -129,7 +129,7 @@ function NavRoot({ children }: RootProps) {
   return (
     <NavigationMenu.Root asChild>
       <motion.div
-        className="fixed top-0 h-full z-50 p-9 bg-slateDark-1 border-l border-slateDark-6/30 font-light font-body text-base"
+        className="fixed top-0 z-50 h-full border-l border-slateDark-6/30 bg-slateDark-1 p-9 font-body text-base font-light"
         initial={{ right: "-100%" }}
         animate={{ right: "0%" }}
         exit={{ right: "-100%" }}
@@ -151,8 +151,8 @@ function Separator({ className }: { className?: string }) {
     <RadixSeparator.Root
       decorative
       className={classNames(
-        "mt-7 mb-5 h-[1px] bg-gradient-to-r from-transparent to-transparent via-slateDark-6",
-        className
+        "mt-7 mb-5 h-[1px] bg-gradient-to-r from-transparent via-slateDark-6 to-transparent",
+        className,
       )}
     />
   );
@@ -173,8 +173,8 @@ function PageLinks() {
             {isActive ? (
               <button
                 className={classNames(
-                  "w-full text-left rounded-md flex items-center gap-3 pl-3 py-1.5 border shadow",
-                  colorClassName
+                  "flex w-full items-center gap-3 rounded-md border py-1.5 pl-3 text-left shadow",
+                  colorClassName,
                 )}
                 onClick={() => setOpen(false)}
               >
@@ -189,7 +189,7 @@ function PageLinks() {
                 passHref
                 aria-label={item.name}
               >
-                <NavigationMenu.Link className="w-full text-left rounded-md flex items-center gap-3 pl-3 py-1.5 border border-transparent">
+                <NavigationMenu.Link className="flex w-full items-center gap-3 rounded-md border border-transparent py-1.5 pl-3 text-left">
                   <Icon />
                   {item.name}
                 </NavigationMenu.Link>

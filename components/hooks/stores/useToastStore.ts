@@ -1,12 +1,12 @@
-import create from 'zustand'
+import create from "zustand";
 
 interface Store {
-  open: boolean
-  setOpen: (open: boolean) => void
-  emailOpen: boolean
-  setEmailOpen: (open: boolean) => void
-  templateOpen: boolean
-  setTemplateOpen: (open: boolean) => void
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  emailOpen: boolean;
+  setEmailOpen: (open: boolean) => void;
+  templateOpen: boolean;
+  setTemplateOpen: (open: boolean) => void;
 }
 
 const useToastStore = create<Store>((set) => ({
@@ -16,6 +16,6 @@ const useToastStore = create<Store>((set) => ({
   setEmailOpen: (emailOpen: boolean) => set({ emailOpen }),
   templateOpen: false,
   setTemplateOpen: (templateOpen: boolean) => set({ templateOpen }),
-}))
+}));
 
-export default useToastStore
+export default useToastStore;

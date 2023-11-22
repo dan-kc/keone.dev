@@ -43,21 +43,21 @@ const Contents: React.FC<Props> = ({ color }) => {
           id: element.id,
           heading: element.childNodes[0].textContent,
         };
-      }
+      },
     );
     setSections(elementsArr);
   }, []);
 
   return (
-    <nav className="hidden md:block md:sticky top-16 h-fit md:mt-16">
+    <nav className="top-16 hidden h-fit md:sticky md:mt-16 md:block">
       <div
         className={classNames(
-          "flex flex-col justify-between border rounded-lg w-60 pt-5 px-5 min-h-[300px] shadow",
-          backgroundColorClassNames[color]
+          "flex min-h-[300px] w-60 flex-col justify-between rounded-lg border px-5 pt-5 shadow",
+          backgroundColorClassNames[color],
         )}
       >
         <div>
-          <div className="flex gap-4 items-center mb-5">
+          <div className="mb-5 flex items-center gap-4">
             <div className="overflow-hidden rounded-full">
               <Image
                 src="/images/profile-photo.webp"
@@ -67,7 +67,7 @@ const Contents: React.FC<Props> = ({ color }) => {
               />
             </div>
             <div>
-              <p className="text-sm mb-1">Daniel Keone Cox</p>
+              <p className="mb-1 text-sm">Daniel Keone Cox</p>
               <address className="flex gap-2">
                 <Link href="https://github.com/dan-kc" newTab>
                   <GitHubLogoIcon className="h-5 w-5" />
@@ -81,14 +81,14 @@ const Contents: React.FC<Props> = ({ color }) => {
 
           <div>
             <p className="font-heading font-extrabold">Contents</p>
-            <div className="flex flex-col items-start gap-3 my-5">
+            <div className="my-5 flex flex-col items-start gap-3">
               {sections.map((section, index) => {
                 return (
                   <a
                     key={index}
                     className={classNames(
                       textColorClassNames[color],
-                      "text-sm"
+                      "text-sm",
                     )}
                     href={`#${section.id}`}
                     onClick={(e) => {
@@ -108,10 +108,10 @@ const Contents: React.FC<Props> = ({ color }) => {
         <div>
           <Separator.Root
             decorative
-            className="mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent via-slateDark-6"
+            className="mt-8 h-[1px] bg-gradient-to-r from-transparent via-slateDark-6 to-transparent"
           />
           <a
-            className="flex gap-1 items-center justify-center p-4"
+            className="flex items-center justify-center gap-1 p-4"
             href="header"
             onClick={(e) => {
               e.preventDefault();

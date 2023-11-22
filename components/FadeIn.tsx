@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 interface Props {
-  className?: string
-  from?: number
-  children: React.ReactNode
+  className?: string;
+  from?: number;
+  children: React.ReactNode;
 }
 
 const FadeIn: React.FC<Props> = ({ className, children, from = 0 }) => {
@@ -16,7 +16,7 @@ const FadeIn: React.FC<Props> = ({ className, children, from = 0 }) => {
     >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default FadeIn
+export default FadeIn;
