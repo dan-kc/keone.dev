@@ -76,7 +76,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className="mb-1 text-xl">Languages</h3>
           <List
-            items={["Typescript / Javascript", "HTML / CSS", "Go"]}
+            items={["Go","Rust","Typescript / Javascript", "HTML / CSS" ]}
             className="text-lg text-slateDark-11"
             dashClassName="text-violetDark-11"
           />
@@ -92,7 +92,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className="mb-1 text-xl">Deployment / CMS Solutions</h3>
           <List
-            items={["Vercel", "Shopify", "Crystallize", "Fly.io", "Prismic"]}
+            items={["Vercel", "Shopify", "Crystallize", "Fly.io", "Cloudflare"]}
             className="text-lg text-slateDark-11"
             dashClassName="text-violetDark-11"
           />
@@ -104,7 +104,7 @@ const DevelopmentSkills = () => {
               "Super fast eCommerce storefronts",
               "Web animations (GSAP, Lottie, Framer Motion)",
               "Edge deployment",
-              "API servers",
+              "Web servers",
             ]}
             className="text-lg text-slateDark-11"
             dashClassName="text-violetDark-11"
