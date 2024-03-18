@@ -76,7 +76,7 @@ const DevelopmentSkills = () => {
         <div>
           <h3 className="mb-1 text-xl">Languages</h3>
           <List
-            items={["Go","Rust","Typescript / Javascript", "HTML / CSS" ]}
+            items={["Go", "Rust", "Typescript / Javascript", "HTML / CSS" ]}
             className="text-lg text-slateDark-11"
             dashClassName="text-violetDark-11"
           />
