@@ -157,7 +157,7 @@ resource "aws_iam_role" "keone_dev_site_deployer_role" {
         Principal = {
           Federated = aws_iam_openid_connect_provider.github_actions.arn
         }
-        Action = "sts:AssumeRole"
+        Action = "sts:AssumeRoleWithWebIdentity"
         Condition = {
           StringEquals = {
             # This verifies the audience of the JWT token is AWS STS
