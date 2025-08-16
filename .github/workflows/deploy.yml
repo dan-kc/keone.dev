@@ -35,7 +35,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Install modules
-        run: pnpm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build application
         run: pnpm run build
