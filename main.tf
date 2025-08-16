@@ -160,8 +160,9 @@ resource "aws_iam_role" "keone_dev_site_deployer_role" {
         Action = "sts:AssumeRoleWithWebIdentity"
         Condition = {
           StringEquals = {
-            # This verifies the audience of the JWT token is AWS STS
             "token.actions.githubusercontent.com:aud" : "sts.amazonaws.com",
+          }
+          StringLike = {
             "token.actions.githubusercontent.com:sub" : "repo:dan-kc/keone.dev:*"
           }
         }
