@@ -15,6 +15,12 @@ provider "aws" {
   region = "eu-west-2"
 }
 
+# For us-east-1 where ACM certificates for CloudFront must be.
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+}
+
 resource "aws_s3_bucket" "keone_dev_bucket" {
   bucket = "keone-dev-1zaab0wzecqr4cub"
 }
@@ -101,8 +107,14 @@ resource "aws_cloudfront_distribution" "keone_dev_cloudfront_distribution" {
     }
   }
 
+
+  aliases = ["keone.dev", "www.keone.dev"]
+
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = false
+    acm_certificate_arn            = aws_acm_certificate.keone_dev_cert.arn
+    ssl_support_method             = "sni-only" # Most common and recommended
+    minimum_protocol_version       = "TLSv1.2_2021"
   }
 }
 
@@ -174,4 +186,28 @@ resource "aws_iam_role" "keone_dev_site_deployer_role" {
 resource "aws_iam_role_policy_attachment" "attach_deploy_policy_to_role" {
   role       = aws_iam_role.keone_dev_site_deployer_role.name
   policy_arn = aws_iam_policy.keone_dev_cloudfront_s3_invalidation_policy.arn
+}
+
+# SSL
+# Request an SSL certificate for your domain(s) in us-east-1
+resource "aws_acm_certificate" "keone_dev_cert" {
+  provider                  = aws.us_east_1
+  domain_name               = "keone.dev"
+  subject_alternative_names = ["www.keone.dev"]
+  validation_method         = "DNS"
+  lifecycle {
+    create_before_destroy = true # Good practice for certificates
+  }
+}
+
+# Output the CNAME validation records you'll need to add to Namecheap
+output "acm_validation_cnames" {
+  description = "CNAME records to add to the DNS provider for ACM validation."
+  value = {
+    for dvo in aws_acm_certificate.keone_dev_cert.domain_validation_options : dvo.domain_name => {
+      name  = dvo.resource_record_name
+      type  = dvo.resource_record_type
+      value = dvo.resource_record_value
+    }
+  }
 }
