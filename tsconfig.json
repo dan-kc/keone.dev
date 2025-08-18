@@ -14,7 +14,7 @@
     "baseUrl": ".",
     "paths": {
       "@hooks/*": ["src/components/hooks/*"],
-      "@stores/*": ["src/components/hooks/stores/*"],
+      "@stores/*": ["src/components/hooks/stores/*"]
     }
   }
 }
