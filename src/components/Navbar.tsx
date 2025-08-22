@@ -25,12 +25,6 @@ export const navigation = [
     href: "/products",
     colorClassName: "bg-greenDark-3/20 border-greenDark-6 text-greenDark-9",
   },
-  // {
-  //   name: 'Projects',
-  //   href: '/projects',
-  //   colorClassName:
-  //     'bg-orangeDark-3/20 border-orangeDark-6 text-orangeDark-9',
-  // },
   {
     name: "Process",
     href: "/process",
@@ -116,11 +110,9 @@ function NavItem({ href, name }) {
 }
 
 export function generateClassName(path: string) {
-  let colorClassName: string;
   navigation.forEach((item) => {
     if (item.href === path) {
-      colorClassName = item.colorClassName;
+      return item.colorClassName;
     }
   });
-  return { colorClassName };
 }

@@ -1,5 +1,4 @@
-import { ReactNode, useEffect } from "react";
-import Link from "@components/Link";
+import { type ReactNode, useEffect } from "react";
 import useDeviceModeStore from "@hooks/stores/useDeviceModeStore";
 import { navigation, generateClassName } from "@components/Navbar";
 import { useRouter } from "next/router";
@@ -18,6 +17,7 @@ import {
   CopyIcon,
   Pencil2Icon,
 } from "@radix-ui/react-icons";
+import Link from "./Link";
 
 const icons = [HomeIcon, PersonIcon, ArchiveIcon, CopyIcon, Pencil2Icon];
 
