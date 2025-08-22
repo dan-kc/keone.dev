@@ -4,16 +4,17 @@ import Navbar from "src/components/Navbar";
 
 interface Props {
   children: React.ReactNode;
+  path: string;
 }
 
-const App: React.FC<Props> = ({ children }) => {
+const App: React.FC<Props> = ({ children, path }) => {
   useUpdateDeviceMode();
   useUpdateWindowDimensions();
   return (
     <>
       {/* <Flyout /> */}
       <header>
-        <Navbar />
+        <Navbar path={path} />
       </header>
       {children}
       {/* <Component {...pageProps} /> */}
