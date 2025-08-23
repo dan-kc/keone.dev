@@ -1,9 +1,9 @@
 import useUpdateDeviceMode from "@hooks/useUpdateDeviceMode";
 import useUpdateWindowDimensions from "@hooks/useUpdateWindowDimensions";
-import Toast from "old/components/Toast";
 import Flyout from "src/components/Flyout";
 import Footer from "src/components/Footer";
 import Navbar from "src/components/Navbar";
+import Toast from "src/components/Toast";
 
 interface Props {
   children: React.ReactNode;
