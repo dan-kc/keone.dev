@@ -25,6 +25,6 @@
       "@lib/*": ["lib/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../src/types.ts", "../src/react-pages/index.tsx", "../src/react-pages/products.tsx", "../src/react-pages/process.tsx", "../src/react-pages/profile.tsx"],
   "exclude": ["node_modules"]
 }

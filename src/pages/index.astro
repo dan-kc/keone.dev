@@ -1,11 +1,12 @@
 ---
 import App from "src/layouts/App";
 import Document from "src/layouts/Document.astro";
+import Home from "src/react-pages/index";
 const path = Astro.url.pathname;
 ---
 
 <Document>
   <App path={path} client:load>
-    <h1 class="flex">Currently migrating to AWS bare with me...</h1>
+    <Home />
   </App>
 </Document>

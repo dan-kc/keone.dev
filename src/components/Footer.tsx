@@ -1,10 +1,11 @@
-import Em from "@components/Em";
-import Link from "@components/Link";
-import Navbar from "@components/Navbar";
-import { useRouter } from "next/router";
-import classNames from "classnames";
+import clsx from "clsx";
+import Em from "./Em";
+import Link from "./Link";
+import Navbar from "./Navbar";
 
-interface Props {}
+interface Props {
+  path: string;
+}
 
 const colorClassNames = {
   green: {
@@ -34,59 +35,69 @@ const colorClassNames = {
   },
 };
 
-const generateClassName = (path: string) => {
+interface ClassNameTuple {
+  headingClass: string;
+  buttonClass: string;
+}
+
+const generateClassName = (path: string): ClassNameTuple => {
   let headingClass: string, buttonClass: string;
 
   if (path === "/") {
     headingClass = colorClassNames.red.heading;
     buttonClass = colorClassNames.red.button;
+    return { headingClass, buttonClass };
   } else if (path === "/profile") {
     headingClass = colorClassNames.violet.heading;
     buttonClass = colorClassNames.violet.button;
+    return { headingClass, buttonClass };
   } else if (path === "/products") {
     headingClass = colorClassNames.green.heading;
     buttonClass = colorClassNames.green.button;
+    return { headingClass, buttonClass };
   } else if (path === "/projects") {
     headingClass = colorClassNames.orange.heading;
     buttonClass = colorClassNames.orange.button;
+    return { headingClass, buttonClass };
   } else if (path === "/process") {
     headingClass = colorClassNames.sky.heading;
     buttonClass = colorClassNames.sky.button;
+    return { headingClass, buttonClass };
   }
-  return { headingClass, buttonClass };
+
+  throw "Invalid path";
 };
 
-const Footer: React.FC<Props> = () => {
-  const { asPath } = useRouter();
-  const { headingClass, buttonClass } = generateClassName(asPath);
+const Footer: React.FC<Props> = ({ path }) => {
+  const { headingClass, buttonClass } = generateClassName(path);
 
   return (
     <>
       <footer className="relative pt-36 lg:pt-52">
         <div className="relative flex w-full flex-col items-center px-3 pb-32 md:px-8 lg:pb-48">
           <h2
-            className={classNames(
+            className={clsx(
               headingClass,
-              "w-fit bg-gradient-to-br bg-clip-text text-center font-heading text-5xl font-extrabold leading-tight text-transparent md:text-7xl md:leading-tight ",
+              "font-heading w-fit bg-gradient-to-br bg-clip-text text-center text-5xl leading-tight font-extrabold text-transparent md:text-7xl md:leading-tight",
             )}
           >
             Get in touch!
           </h2>
-          <p className="mx-auto mt-5 max-w-lg px-4 text-center text-xl leading-tight md:mt-6 md:max-w-xl  md:text-2xl md:leading-tight ">
+          <p className="mx-auto mt-5 max-w-lg px-4 text-center text-xl leading-tight md:mt-6 md:max-w-xl md:text-2xl md:leading-tight">
             My inbox is <Em>always open</Em>. Feel free to shoot me a message
             and I&apos;ll get back to you as soon as possible!
           </p>
           <Link
             mail
-            className={classNames(
+            className={clsx(
               buttonClass,
-              "mt-12 rounded-lg border-2 py-2 px-7 font-heading text-3xl font-bold shadow duration-200 md:py-3 md:px-10 md:text-4xl",
+              "font-heading mt-12 rounded-lg border-2 px-7 py-2 text-3xl font-bold shadow duration-200 md:px-10 md:py-3 md:text-4xl",
             )}
           >
             Say Hello
           </Link>
         </div>
-        <Navbar />
+        <Navbar path = {path} />
       </footer>
     </>
   );

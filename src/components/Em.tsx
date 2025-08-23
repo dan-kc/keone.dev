@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -27,7 +27,7 @@ const Em: React.FC<Props> = ({
     <em
       ref={scrollRef}
       style={{ transitionDelay: delayString }}
-      className={classNames(
+      className={clsx(
         inView ? inViewClassName : outViewClassName,
         bold ? "font-semibold" : null,
         className,

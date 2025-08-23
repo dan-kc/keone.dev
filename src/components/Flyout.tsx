@@ -1,15 +1,11 @@
 import { type ReactNode, useEffect } from "react";
 import useDeviceModeStore from "@hooks/stores/useDeviceModeStore";
-import { navigation, generateClassName } from "@components/Navbar";
-import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
 import useFlyoutStore from "./hooks/stores/useFlyoutStore";
 import disableScroll from "disable-scroll";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { EnvelopeOpenIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import * as RadixSeparator from "@radix-ui/react-separator";
-import Image from "next/image";
-import classNames from "classnames";
 import {
   HomeIcon,
   PersonIcon,
@@ -18,25 +14,30 @@ import {
   Pencil2Icon,
 } from "@radix-ui/react-icons";
 import Link from "./Link";
+import { generateClassName, navigation } from "./Navbar";
+import clsx from "clsx";
 
 const icons = [HomeIcon, PersonIcon, ArchiveIcon, CopyIcon, Pencil2Icon];
 
-export default function Flyout() {
+interface Props {
+  path: string;
+}
+
+const Flyout: React.FC<Props> = ({ path }) => {
   const device = useDeviceModeStore((state) => state.device);
   const setOpen = useFlyoutStore((state) => state.setOpen);
   const open = useFlyoutStore((state) => state.open);
-  const { asPath } = useRouter();
-  const { colorClassName } = generateClassName(asPath);
+  const colorClassName = generateClassName(path);
 
   useEffect(() => {
     setOpen(false);
-  }, [asPath, setOpen]);
+  }, [path, setOpen]);
 
   useEffect(() => {
     if (device !== "Small") {
       setOpen(false);
     }
-  }, [device, asPath, setOpen]);
+  }, [device, path, setOpen]);
 
   useEffect(() => {
     if (open === true) {
@@ -54,7 +55,7 @@ export default function Flyout() {
           <NavRoot>
             <div className="flex items-center gap-5">
               <div className="overflow-hidden rounded-full">
-                <Image
+                <img
                   src="/images/profile-photo.webp"
                   alt="Code snippet"
                   width={50}
@@ -62,7 +63,7 @@ export default function Flyout() {
                 />
               </div>
               <div>
-                <p className="mb-1 text-base ">Daniel Keone Cox</p>
+                <p className="mb-1 text-base">Daniel Keone Cox</p>
                 <div className="flex gap-2">
                   <Link href="https://github.com/dan-kc" newTab>
                     <GitHubLogoIcon className="h-5 w-5" />
@@ -74,14 +75,14 @@ export default function Flyout() {
               </div>
             </div>
             <Separator />
-            <PageLinks />
+            <PageLinks path={path} />
             <Separator className="mt-6 mb-6" />
             <div className="flex gap-3">
               <Link
                 mail={true}
                 aria-label="Contact"
-                className={classNames(
-                  "duration-50 w-28 rounded-md border py-1.5 text-center shadow",
+                className={clsx(
+                  "w-28 rounded-md border py-1.5 text-center shadow duration-50",
                   colorClassName,
                 )}
               >
@@ -90,7 +91,7 @@ export default function Flyout() {
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close"
-                className="w-28 rounded-md border border-slateDark-6 bg-slateDark-3/20 py-1.5 text-center text-slateDark-11 shadow duration-100"
+                className="border-slateDark-6 bg-slateDark-3/20 text-slateDark-11 w-28 rounded-md border py-1.5 text-center shadow duration-100"
               >
                 Close
               </button>
@@ -100,13 +101,13 @@ export default function Flyout() {
       )}
     </AnimatePresence>
   );
-}
+};
 
 function BackgroundOverlay() {
   const setOpen = useFlyoutStore((state) => state.setOpen);
   return (
     <motion.div
-      className="fixed inset-0 z-40 bg-slateDark-1/90"
+      className="bg-slateDark-1/90 fixed inset-0 z-40"
       onClick={() => setOpen(false)}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -129,7 +130,7 @@ function NavRoot({ children }: RootProps) {
   return (
     <NavigationMenu.Root asChild>
       <motion.div
-        className="fixed top-0 z-50 h-full border-l border-slateDark-6/30 bg-slateDark-1 p-9 font-body text-base font-light"
+        className="border-slateDark-6/30 bg-slateDark-1 font-body fixed top-0 z-50 h-full border-l p-9 text-base font-light"
         initial={{ right: "-100%" }}
         animate={{ right: "0%" }}
         exit={{ right: "-100%" }}
@@ -150,29 +151,28 @@ function Separator({ className }: { className?: string }) {
   return (
     <RadixSeparator.Root
       decorative
-      className={classNames(
-        "mt-7 mb-5 h-[1px] bg-gradient-to-r from-transparent via-slateDark-6 to-transparent",
+      className={clsx(
+        "via-slateDark-6 mt-7 mb-5 h-[1px] bg-gradient-to-r from-transparent to-transparent",
         className,
       )}
     />
   );
 }
 
-function PageLinks() {
+const PageLinks: React.FC<Props> = ({ path }) => {
   const setOpen = useFlyoutStore((state) => state.setOpen);
-  const { asPath } = useRouter();
-  const { colorClassName } = generateClassName(asPath);
+  const colorClassName = generateClassName(path);
 
   return (
     <NavigationMenu.List className="flex flex-col gap-1">
       {navigation.map((item, index) => {
         const Icon = icons[index];
-        const isActive = asPath === item.href;
+        const isActive = path === item.href;
         return (
           <NavigationMenu.Item key={index}>
             {isActive ? (
               <button
-                className={classNames(
+                className={clsx(
                   "flex w-full items-center gap-3 rounded-md border py-1.5 pl-3 text-left shadow",
                   colorClassName,
                 )}
@@ -182,22 +182,19 @@ function PageLinks() {
                 {item.name}
               </button>
             ) : (
-              <Link
-                mail={false}
+              <NavigationMenu.Link
                 href={item.href}
-                legacyBehavior
-                passHref
                 aria-label={item.name}
+                className="flex w-full items-center gap-3 rounded-md border border-transparent py-1.5 pl-3 text-left"
               >
-                <NavigationMenu.Link className="flex w-full items-center gap-3 rounded-md border border-transparent py-1.5 pl-3 text-left">
-                  <Icon />
-                  {item.name}
-                </NavigationMenu.Link>
-              </Link>
+                <Icon />
+                {item.name}
+              </NavigationMenu.Link>
             )}
           </NavigationMenu.Item>
         );
       })}
     </NavigationMenu.List>
   );
-}
+};
+export default Flyout;

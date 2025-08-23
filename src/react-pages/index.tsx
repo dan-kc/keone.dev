@@ -1,19 +1,17 @@
-import AnimatedLink from "@components/AnimatedLink";
-import Em from "@components/Em";
-import ProgressBar from "@components/ProgressBar";
-import ProgressCircle from "@components/ProgressCircle";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import classNames from "classnames";
+import clsx from "clsx";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { ReactNode, useEffect, useState } from "react";
-import { Color } from "types";
+import { useEffect, useState, type ReactNode } from "react";
+import AnimatedLink from "src/components/AnimatedLink";
+import Em from "src/components/Em";
+import ProgressBar from "src/components/ProgressBar";
+import ProgressCircle from "src/components/ProgressCircle";
+import type { Color } from "src/types";
 
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-36 pt-12 lg:gap-52 lg:pt-32 ">
+      <main className="flex flex-col gap-36 pt-12 lg:gap-52 lg:pt-32">
         <ProfileSection />
         <MetricsSection />
         <ProcessSection />
@@ -26,15 +24,13 @@ const ProfileSection = () => {
   return (
     <section>
       <div className="overflow-hidden px-3">
-        <article className="relative mx-auto flex max-w-md flex-col overflow-hidden rounded-2xl border border-slateDark-6 bg-slateDark-2 shadow sm:max-w-2xl sm:flex-row-reverse md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
-          <div className="z-10 w-fit flex-none border-b border-slateDark-6 sm:w-[345px] sm:border-none md:w-[365px] lg:w-[390px] xl:w-[450px]">
-            <Image
+        <article className="border-slateDark-6 bg-slateDark-2 relative mx-auto flex max-w-md flex-col overflow-hidden rounded-2xl border shadow sm:max-w-2xl sm:flex-row-reverse md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+          <div className="border-slateDark-6 z-10 w-fit flex-none border-b sm:w-[345px] sm:border-none md:w-[365px] lg:w-[390px] xl:w-[450px]">
+            <img
               src="/images/self-portrait-1.webp"
               alt="self portrait"
               height={532.967}
               width={450}
-              quality={100}
-              priority
             />
           </div>
           <div className="z-10 flex flex-col justify-between p-6">
@@ -47,13 +43,13 @@ const ProfileSection = () => {
               </p>
             </div>
             <div className="mt-6 flex justify-end md:mt-0">
-              <Link
+              <a
                 href="/profile"
-                className="flex items-center gap-2 rounded-lg border border-slateDark-7 bg-slateDark-1/80 py-2 px-5 font-heading text-xl font-semibold shadow duration-100 hover:border-slateDark-8 hover:bg-slateDark-3/60  sm:text-base md:text-xl xl:py-3 xl:px-6"
+                className="border-slateDark-7 bg-slateDark-1/80 font-heading hover:border-slateDark-8 hover:bg-slateDark-3/60 flex items-center gap-2 rounded-lg border px-5 py-2 text-xl font-semibold shadow duration-100 sm:text-base md:text-xl xl:px-6 xl:py-3"
               >
                 View Profile
                 <ArrowRightIcon className="h-5 w-5 md:h-6 md:w-6" />
-              </Link>
+              </a>
             </div>
           </div>
         </article>
@@ -65,7 +61,7 @@ const ProfileSection = () => {
 const MetricsSection = () => (
   <GridSection color="sage">
     <div className="px-6 md:sticky md:top-20 md:px-0">
-      <h2 className="max-w-xs font-heading text-5xl font-extrabold leading-tight sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+      <h2 className="font-heading max-w-xs text-5xl leading-tight font-extrabold sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
         Worried about{" "}
         <span className="text-greenDark-11">your website&apos;s metrics?</span>
       </h2>
@@ -76,16 +72,17 @@ const MetricsSection = () => (
           agencies too?
         </p>
         <div className="mt-10 flex justify-start">
-          <Link
+          <a
             href="/products"
-            className="flex items-center gap-2 rounded-lg border border-greenDark-6 bg-greenDark-3/30 py-3 px-6 font-heading text-xl font-semibold shadow-lg duration-100 hover:border-greenDark-8 hover:bg-greenDark-2"
+            className="border-greenDark-6 bg-greenDark-3/30 font-heading hover:border-greenDark-8 hover:bg-greenDark-2 flex items-center gap-2 rounded-lg border px-6 py-3 text-xl font-semibold shadow-lg duration-100"
           >
             View Products & Prices
             <ArrowRightIcon className="h-7 w-7" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
+
     <div className="mt-10 flex flex-col gap-10 md:row-span-2 md:mt-3">
       <Card heading="Lighthouse scores">
         <div className="mt-7 flex justify-between gap-3 px-2">
@@ -158,6 +155,7 @@ const MetricsSection = () => (
         </div>
       </Card>
     </div>
+
     <div className="pt-10 md:hidden">
       <p className="px-6 text-lg">
         With me you&apos;ll get a lightning fast website and a huge edge over
@@ -167,15 +165,16 @@ const MetricsSection = () => (
         Did I mention that I&apos;m drastically cheaper than agencies too?
       </p>
       <div className="mt-10 flex justify-end pr-6">
-        <Link
+        <a
           href="/products"
-          className="flex items-center gap-2 rounded-lg border border-greenDark-6 bg-greenDark-3/30 py-2 px-5 font-heading text-base font-semibold shadow-lg duration-100 hover:border-greenDark-8 hover:bg-greenDark-2 sm:py-3 sm:px-6 sm:text-xl"
+          className="border-greenDark-6 bg-greenDark-3/30 font-heading hover:border-greenDark-8 hover:bg-greenDark-2 flex items-center gap-2 rounded-lg border px-5 py-2 text-base font-semibold shadow-lg duration-100 sm:px-6 sm:py-3 sm:text-xl"
         >
           View Products & Prices
           <ArrowRightIcon className="h-5 w-5 sm:h-7 sm:w-7" />
-        </Link>
+        </a>
       </div>
     </div>
+
   </GridSection>
 );
 
@@ -183,7 +182,7 @@ function ProcessSection() {
   return (
     <GridSection color="slate">
       <div className="order-2 px-6 md:sticky md:top-20 md:px-0">
-        <h2 className="max-w-xs font-heading text-5xl font-extrabold leading-tight sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+        <h2 className="font-heading max-w-xs text-5xl leading-tight font-extrabold sm:max-w-md sm:text-6xl sm:leading-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
           My process is{" "}
           <span className="text-skyDark-11">designed around you</span>
         </h2>
@@ -193,19 +192,19 @@ function ProcessSection() {
             9-step process to find out more.
           </p>
           <div className="mt-10 flex justify-start">
-            <Link
+            <a
               href="/process"
-              className="flex items-center gap-2 rounded-lg border border-skyDark-6 bg-skyDark-3/30 py-3 px-6 font-heading text-xl font-semibold shadow-lg duration-100 hover:border-skyDark-8 hover:bg-skyDark-2"
+              className="border-skyDark-6 bg-skyDark-3/30 font-heading hover:border-skyDark-8 hover:bg-skyDark-2 flex items-center gap-2 rounded-lg border px-6 py-3 text-xl font-semibold shadow-lg duration-100"
             >
               View Process
               <ArrowRightIcon className="h-7 w-7" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
       <div className="mt-10 flex flex-col gap-10 md:row-span-2 md:mt-3">
         <Card heading="No large upfront deposits" color="sky">
-          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
+          <p className="text-skyDark-12 mt-5 text-base lg:text-lg">
             All payments are taken at milestones over the course of the project
             so that you have the freedom to, at any point, change your mind on
             future services or even drop out entirely.
@@ -217,7 +216,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Multiple review rounds" color="sky">
-          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
+          <p className="text-skyDark-12 mt-5 text-base lg:text-lg">
             We&apos;ll conduct multiple detailed reviews of my work for the
             final designs.
             <br />
@@ -233,7 +232,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Live feedback" color="sky">
-          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
+          <p className="text-skyDark-12 mt-5 text-base lg:text-lg">
             All designs will be made available to you via{" "}
             <AnimatedLink
               href="https://www.figma.com/figjam/"
@@ -253,7 +252,7 @@ function ProcessSection() {
         </Card>
 
         <Card heading="Free maintenance" color="sky">
-          <p className="mt-5 text-base text-skyDark-12 lg:text-lg">
+          <p className="text-skyDark-12 mt-5 text-base lg:text-lg">
             After your website is deployed I&apos;ll be sticking around for an
             additional month to ensure that you and your team understand how to
             use
@@ -275,13 +274,13 @@ function ProcessSection() {
           9-step process to find out more.
         </p>
         <div className="mt-10 flex justify-end">
-          <Link
+          <a
             href="/process"
-            className="flex items-center gap-2 rounded-lg border border-skyDark-7 bg-skyDark-3/30 py-2 px-5 font-heading text-base font-semibold shadow-lg duration-100 hover:border-skyDark-8 hover:bg-skyDark-2 sm:py-3 sm:px-6 sm:text-xl"
+            className="border-skyDark-7 bg-skyDark-3/30 font-heading hover:border-skyDark-8 hover:bg-skyDark-2 flex items-center gap-2 rounded-lg border px-5 py-2 text-base font-semibold shadow-lg duration-100 sm:px-6 sm:py-3 sm:text-xl"
           >
             View Process
             <ArrowRightIcon className="h-5 w-5 sm:h-7 sm:w-7" />
-          </Link>
+          </a>
         </div>
       </div>
     </GridSection>
@@ -322,7 +321,7 @@ const Card = ({
 }) => {
   return (
     <article
-      className={classNames(
+      className={clsx(
         "rounded-xl border p-6 shadow",
         color === "sky"
           ? "border-skyDark-6 bg-skyDark-3/30"
@@ -330,8 +329,8 @@ const Card = ({
       )}
     >
       <h3
-        className={classNames(
-          "font-heading text-3xl font-bold leading-tight lg:text-4xl lg:leading-tight",
+        className={clsx(
+          "font-heading text-3xl leading-tight font-bold lg:text-4xl lg:leading-tight",
           color === "sky" ? "text-skyDark-11" : "text-greenDark-11",
         )}
       >
@@ -360,7 +359,7 @@ const DoubleText = () => {
   }, [isDesign, isMounted]);
 
   return (
-    <div className="relative font-heading text-3xl font-extrabold leading-tight sm:text-2xl sm:leading-tight md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight xl:text-[40px]">
+    <div className="font-heading relative text-3xl leading-tight font-extrabold sm:text-2xl sm:leading-tight md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight xl:text-[40px]">
       <div className="relative">
         <div className="absolute top-0 left-0">
           <h1 className="whitespace-nowrap">
@@ -378,13 +377,13 @@ const DoubleText = () => {
         </div>
 
         <div className="relative">
-          <div className="flex whitespace-nowrap align-baseline">
+          <div className="flex align-baseline whitespace-nowrap">
             <div className="whitespace-nowrap">A</div>
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-greenDark-11"
+                className="bg-slateDark-2 text-greenDark-11 overflow-hidden whitespace-nowrap"
                 transition={{ duration: 0.8, delay: isDesign ? 0 : 0.6 }}
               >
                 &nbsp;user behaviour
@@ -398,7 +397,7 @@ const DoubleText = () => {
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-yellowDark-10"
+                className="bg-slateDark-2 text-yellowDark-10 overflow-hidden whitespace-nowrap"
                 transition={{ duration: 0.8, delay: isDesign ? 0.3 : 0.3 }}
               >
                 &nbsp;designer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -408,12 +407,12 @@ const DoubleText = () => {
 
           <div className="whitespace-nowrap">specialising in</div>
 
-          <div className="flex whitespace-nowrap align-baseline">
+          <div className="flex align-baseline whitespace-nowrap">
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-redDark-10"
+                className="bg-slateDark-2 text-redDark-10 overflow-hidden whitespace-nowrap"
                 transition={{ duration: 0.8, delay: isDesign ? 0.4 : 0.2 }}
               >
                 conversion rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -421,12 +420,12 @@ const DoubleText = () => {
             </div>
           </div>
 
-          <div className="flex whitespace-nowrap align-baseline">
+          <div className="flex align-baseline whitespace-nowrap">
             <div>
               <motion.div
                 initial={{ maxWidth: 0 }}
                 animate={{ maxWidth: isDesign ? "100%" : "0%" }}
-                className="overflow-hidden whitespace-nowrap bg-slateDark-2 text-redDark-10"
+                className="bg-slateDark-2 text-redDark-10 overflow-hidden whitespace-nowrap"
                 transition={{ duration: 0.8, delay: isDesign ? 0.6 : 0 }}
               >
                 optimisation

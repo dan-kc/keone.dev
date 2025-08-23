@@ -1,5 +1,8 @@
 import useUpdateDeviceMode from "@hooks/useUpdateDeviceMode";
 import useUpdateWindowDimensions from "@hooks/useUpdateWindowDimensions";
+import Toast from "old/components/Toast";
+import Flyout from "src/components/Flyout";
+import Footer from "src/components/Footer";
 import Navbar from "src/components/Navbar";
 
 interface Props {
@@ -12,14 +15,13 @@ const App: React.FC<Props> = ({ children, path }) => {
   useUpdateWindowDimensions();
   return (
     <>
-      {/* <Flyout /> */}
+      <Flyout path={path} />
       <header>
         <Navbar path={path} />
       </header>
       {children}
-      {/* <Component {...pageProps} /> */}
-      {/* <Footer /> */}
-      {/* <Toast /> */}
+      <Footer path={path} />
+      <Toast />
     </>
   );
 };
