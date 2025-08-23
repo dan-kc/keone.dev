@@ -71,17 +71,16 @@ const NavItem: React.FC<NavItemProps> = ({ href, name, path }) => {
   const isActive = path === href;
   return (
     <NavigationMenu.Item className="mt-1 flex flex-col justify-center">
-      <Link href={href}>
-        <NavigationMenu.Link
-          active={isActive}
-          className={clsx(
-            isActive ? "" : "hover:border-b-slateDark-6 border-transparent",
-            "border-b-2 p-2 text-white transition duration-200",
-          )}
-        >
-          {name}
-        </NavigationMenu.Link>
-      </Link>
+      <NavigationMenu.Link
+        active={isActive}
+        href={href}
+        className={clsx(
+          isActive ? "" : "hover:border-b-slateDark-6 border-transparent",
+          "border-b-2 p-2 text-white transition duration-200",
+        )}
+      >
+        {name}
+      </NavigationMenu.Link>
     </NavigationMenu.Item>
   );
 };
