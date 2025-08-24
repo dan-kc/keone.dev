@@ -47,25 +47,25 @@ const generateClassName = (path: string): ClassNameTuple => {
     headingClass = colorClassNames.red.heading;
     buttonClass = colorClassNames.red.button;
     return { headingClass, buttonClass };
-  } else if (path === "/profile") {
+  } else if (path.includes("profile")) {
     headingClass = colorClassNames.violet.heading;
     buttonClass = colorClassNames.violet.button;
     return { headingClass, buttonClass };
-  } else if (path === "/products") {
+  } else if (path.includes("products")) {
     headingClass = colorClassNames.green.heading;
     buttonClass = colorClassNames.green.button;
     return { headingClass, buttonClass };
-  } else if (path === "/projects") {
+  } else if (path.includes("projects")) {
     headingClass = colorClassNames.orange.heading;
     buttonClass = colorClassNames.orange.button;
     return { headingClass, buttonClass };
-  } else if (path === "/process") {
+  } else if (path.includes("process")) {
     headingClass = colorClassNames.sky.heading;
     buttonClass = colorClassNames.sky.button;
     return { headingClass, buttonClass };
   }
 
-  throw "Invalid path";
+  throw "Invalid path in Footer gen classname";
 };
 
 const Footer: React.FC<Props> = ({ path }) => {
@@ -97,7 +97,7 @@ const Footer: React.FC<Props> = ({ path }) => {
             Say Hello
           </Link>
         </div>
-        <Navbar path = {path} />
+        <Navbar path={path} />
       </footer>
     </>
   );

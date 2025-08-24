@@ -86,13 +86,15 @@ const NavItem: React.FC<NavItemProps> = ({ href, name, path }) => {
 };
 
 export const generateClassName = (path: string): string => {
+  if (path === "/") {
+    return navigation[0].colorClassName;
+  }
   for (const item of navigation) {
-    if (item.href === path) {
+    if (path.includes(item.href) && path !== "/") {
       return item.colorClassName;
     }
   }
-
-  throw "Invalid path";
+  throw "Invalid path in gen classname" + path;
 };
 
 export default Navbar;

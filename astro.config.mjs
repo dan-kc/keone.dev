@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://www.keone.dev",
+  // trailingSlash: "always",
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
