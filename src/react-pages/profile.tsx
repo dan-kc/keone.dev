@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Section from "@components/Section";
-import PageContainer from "@components/PageContainer";
-import List from "@components/List";
+import List from "src/components/List";
+import PageContainer from "src/components/PageContainer";
+import Section from "src/components/Section";
 
-export default function Profile() {
+interface Props {
+  path: string;
+}
+
+const Profile: React.FC<Props> = ({ path }) => {
   return (
     <>
-      <Head>
-        <title>Profile | Daniel Keone Cox</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <PageContainer
         color="violet"
         heading={"Who does this guy think he is?"}
         subHeading={`Hello, I'm Daniel - a mathematician from London providing services in web design and development.`}
+        path={path}
       >
         <Why />
         <DesignSkills />
@@ -21,7 +21,7 @@ export default function Profile() {
       </PageContainer>
     </>
   );
-}
+};
 
 const Why = () => {
   return (
@@ -49,7 +49,7 @@ const DesignSkills = () => {
           <h3 className="mb-1 text-xl">Software</h3>
           <List
             items={["Figma", "Adobe Illustrator", "Adobe After Effects"]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -61,7 +61,7 @@ const DesignSkills = () => {
               "Checkout funnels",
               "Landing pages",
             ]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -77,7 +77,7 @@ const DevelopmentSkills = () => {
           <h3 className="mb-1 text-xl">Languages</h3>
           <List
             items={["Go", "Rust", "Typescript / Javascript", "HTML / CSS"]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -85,7 +85,7 @@ const DevelopmentSkills = () => {
           <h3 className="mb-1 text-xl">Frameworks</h3>
           <List
             items={["React", "Next.js", "Remix", "Astro", "Node.js"]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -93,7 +93,7 @@ const DevelopmentSkills = () => {
           <h3 className="mb-1 text-xl">Deployment / CMS Solutions</h3>
           <List
             items={["Vercel", "Shopify", "Crystallize", "Fly.io", "Cloudflare"]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -106,7 +106,7 @@ const DevelopmentSkills = () => {
               "Edge deployment",
               "Web servers",
             ]}
-            className="text-lg text-slateDark-11"
+            className="text-slateDark-11 text-lg"
             dashClassName="text-violetDark-11"
           />
         </div>
@@ -114,3 +114,4 @@ const DevelopmentSkills = () => {
     </Section>
   );
 };
+export default Profile;

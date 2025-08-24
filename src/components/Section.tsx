@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 
 interface Props {
   heading: string;
@@ -19,10 +19,10 @@ const Section = ({ heading, color, last = false, children }: Props) => {
     replaceAmpersand(removeQuestionmark(removeFullstop(heading))),
   );
   return (
-    <section className={classNames("relative", last ? null : "mb-20")} id={id}>
+    <section className={clsx("relative", last ? null : "mb-20")} id={id}>
       <h2
-        className={classNames(
-          "sticky top-0 z-10 -ml-[1px] border-b bg-slateDark-1 pt-6 font-heading text-3xl font-extrabold",
+        className={clsx(
+          "bg-slateDark-1 font-heading sticky top-0 z-10 -ml-[1px] border-b pt-6 text-3xl font-extrabold",
           headingClassNames[color],
         )}
       >

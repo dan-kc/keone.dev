@@ -2,10 +2,11 @@ import { ChevronRightIcon, HomeIcon } from "@radix-ui/react-icons";
 import Link from "./Link";
 
 interface Props {
-  text : string
+  path: string;
 }
 
-const BreadCrumb :React.FC<Props>= ({text}) => {
+const BreadCrumb: React.FC<Props> = ({ path }) => {
+  const text = path.slice(1, 2).toUpperCase() + path.slice(2);
   return (
     <div className="flex items-center gap-1">
       <Link href="/">

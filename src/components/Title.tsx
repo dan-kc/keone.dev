@@ -1,6 +1,6 @@
-import BreadCrumb from "@components/BreadCrumb";
-import cn from "classnames";
-import { Color } from "types";
+import type { Color } from "src/types";
+import BreadCrumb from "./BreadCrumb";
+import clsx from "clsx";
 
 const colorClassNames = {
   green: "from-greenDark-9 to-greenDark-11",
@@ -12,18 +12,19 @@ const colorClassNames = {
 interface Props {
   heading: string;
   subHeading: string;
+  path: string;
   color: Color;
 }
 
-const Title: React.FC<Props> = ({ heading, subHeading, color }) => {
+const Title: React.FC<Props> = ({ heading, subHeading, color, path }) => {
   return (
     <div className="py-16 md:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-10">
         <div className="md:max-w-xl">
-          <BreadCrumb />
+          <BreadCrumb path={path} />
           <h2
-            className={cn(
-              "mt-4 w-fit bg-gradient-to-bl bg-clip-text font-heading text-5xl font-extrabold leading-tight text-transparent md:text-6xl md:leading-tight",
+            className={clsx(
+              "font-heading mt-4 w-fit bg-gradient-to-bl bg-clip-text text-5xl leading-tight font-extrabold text-transparent md:text-6xl md:leading-tight",
               colorClassNames[color],
             )}
           >

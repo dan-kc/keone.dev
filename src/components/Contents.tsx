@@ -4,11 +4,10 @@ import {
   GitHubLogoIcon,
 } from "@radix-ui/react-icons";
 import * as Separator from "@radix-ui/react-separator";
-import Image from "next/image";
-import Link from "@components/Link";
+import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { Color } from "types";
-import classNames from "classnames";
+import type { Color } from "src/types";
+import Link from "./Link";
 
 interface Section {
   heading: string;
@@ -51,7 +50,7 @@ const Contents: React.FC<Props> = ({ color }) => {
   return (
     <nav className="top-16 hidden h-fit md:sticky md:mt-16 md:block">
       <div
-        className={classNames(
+        className={clsx(
           "flex min-h-[300px] w-60 flex-col justify-between rounded-lg border px-5 pt-5 shadow",
           backgroundColorClassNames[color],
         )}
@@ -59,7 +58,7 @@ const Contents: React.FC<Props> = ({ color }) => {
         <div>
           <div className="mb-5 flex items-center gap-4">
             <div className="overflow-hidden rounded-full">
-              <Image
+              <img
                 src="/images/profile-photo.webp"
                 alt="Code snippet"
                 width={50}
@@ -86,7 +85,7 @@ const Contents: React.FC<Props> = ({ color }) => {
                 return (
                   <a
                     key={index}
-                    className={classNames(
+                    className={clsx(
                       textColorClassNames[color],
                       "text-sm",
                     )}

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -17,24 +18,14 @@ import "../styles/global.css";
     <meta name="author" content="Daniel Keone Cox" />
     <meta name="theme-color" content="#151718" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/favicon.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/favicon.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/favicon.png"
-    />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>Daniel Keone Cox | Web Designer \ Developer</title>
+    <title>
+      {title}
+    </title>
   </head>
   <body class="bg-slateDark-1 font-body text-slateDark-12 text-lg lg:text-xl">
     <slot />

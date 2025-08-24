@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -26,7 +26,7 @@ const List = ({ items, className, dashClassName }: Props) => {
                 duration: 1,
                 delay: delayTime,
               }}
-              className={classNames(dashClassName, "mr-2")}
+              className={clsx(dashClassName, "mr-2")}
             >
               -
             </motion.span>
