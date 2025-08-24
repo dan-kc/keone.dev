@@ -1,11 +1,11 @@
 ---
 import App from "src/layouts/App";
 import Document from "src/layouts/Document.astro";
-import Page from "src/react-pages/profile";
+import Page from "src/react-pages/products";
 const path = Astro.url.pathname;
 ---
 
-<Document title="Profile | Daniel Keone Cox">
+<Document title="Products | Daniel Keone Cox">
   <App path={path} client:load>
     <Page path={path} client:load />
   </App>

@@ -114,4 +114,5 @@ const DevelopmentSkills = () => {
     </Section>
   );
 };
+
 export default Profile;
