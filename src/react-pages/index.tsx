@@ -103,9 +103,9 @@ const MetricsSection = () => (
             newTab
           >
             Google Lighthouse
-          </AnimatedLink>{" "}
-          is a tool for measuring the quality of web pages, and I think they
-          like keone.dev.
+          </AnimatedLink>
+          &nbsp; is a tool for measuring the quality of web pages, and I think
+          they like keone.dev.
         </div>
       </Card>
 
@@ -174,7 +174,6 @@ const MetricsSection = () => (
         </a>
       </div>
     </div>
-
   </GridSection>
 );
 

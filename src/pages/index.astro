@@ -7,6 +7,6 @@ const path = Astro.url.pathname;
 
 <Document>
   <App path={path} client:load>
-    <Home />
+    <Home client:load />
   </App>
 </Document>
