@@ -1,32 +1,30 @@
-import PageContainer from "@components/PageContainer";
-import * as AspectRatio from "@radix-ui/react-aspect-ratio";
-import Head from "next/head";
-import AnimatedLink from "@components/AnimatedLink";
-import * as Separator from "@radix-ui/react-separator";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
-import classNames from "classnames";
 import { Fragment } from "react";
+import * as Separator from "@radix-ui/react-separator";
+import * as AspectRatio from "@radix-ui/react-aspect-ratio";
 import {
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
 } from "@chakra-ui/accordion";
-import Section from "@components/Section";
-import Image from "next/image";
-import FadeIn from "@components/FadeIn";
+import PageContainer from "src/components/PageContainer";
+import Section from "src/components/Section";
+import AnimatedLink from "src/components/AnimatedLink";
+import clsx from "clsx";
+import FadeIn from "src/components/FadeIn";
 
-const Process = () => {
+interface Props {
+  path: string;
+}
+const Process: React.FC<Props> = ({ path }) => {
   return (
     <>
-      <Head>
-        <title>Process | Daniel Keone Cox</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <PageContainer
         color="sky"
         heading={`Wanna see how I work?`}
         subHeading={`Have a scroll through my 9-step process to learn how my workflow suits your business.`}
+        path={path}
       >
         <Plan />
         <Design />
@@ -177,15 +175,13 @@ const Develop = () => {
   return (
     <Section heading="Develop" color="sky">
       <AspectRatio.Root ratio={822 / 382} className="relative">
-        <Image
+        <img
           src="/images/graphics/process-snippet.png"
           alt="Code snippet"
-          fill
           className="object-fill"
           sizes="(max-width: 1024px) 100vw,
               (max-width: 1536px) 70vw,
               50vw"
-          quality={100}
         />
       </AspectRatio.Root>
 
@@ -225,15 +221,13 @@ const Deploy = () => {
   return (
     <Section heading="Deploy" color="sky">
       <AspectRatio.Root ratio={940 / 386} className="relative">
-        <Image
+        <img
           src="/images/graphics/package-json.png"
           alt="Code snippet"
-          fill
           className="object-fill"
           sizes="(max-width: 1024px) 100vw,
               (max-width: 1536px) 70vw,
               50vw"
-          quality={100}
         />
       </AspectRatio.Root>
 
@@ -306,7 +300,7 @@ function QA() {
                         <h2>
                           <AccordionButton>
                             <div
-                              className={classNames(
+                              className={clsx(
                                 isExpanded
                                   ? "text-slateDark-12"
                                   : "text-slateDark-11",
@@ -314,13 +308,13 @@ function QA() {
                                 "flex w-full justify-between duration-300",
                               )}
                             >
-                              <span className="text-left font-heading text-xl font-medium ">
+                              <span className="font-heading text-left text-xl font-medium">
                                 {item.header}
                               </span>
 
                               <div
                                 aria-hidden
-                                className={classNames(
+                                className={clsx(
                                   isExpanded ? "rotate-180" : "",
                                   "h-fit w-fit transform duration-300",
                                 )}
@@ -331,8 +325,8 @@ function QA() {
                           </AccordionButton>
                         </h2>
                         <AccordionPanel
-                          className={classNames(
-                            "pt-3 text-base text-slateDark-12",
+                          className={clsx(
+                            "text-slateDark-12 pt-3 text-base",
                             isLastItem ? "mb-2" : "",
                           )}
                         >
@@ -352,7 +346,7 @@ function QA() {
                   {isLastItem ? null : (
                     <Separator.Root
                       decorative
-                      className="h-[1px] bg-gradient-to-r from-transparent via-slateDark-6"
+                      className="via-slateDark-6 h-[1px] bg-gradient-to-r from-transparent"
                     />
                   )}
                 </Fragment>
@@ -376,10 +370,10 @@ function Article({
 }) {
   return (
     <article className="text-lg">
-      <p className={classNames("font-display text-base text-skyDark-11")}>
+      <p className={clsx("font-display text-skyDark-11 text-base")}>
         Step {stepNumber}/9
       </p>
-      <h3 className="mb-3 font-heading text-4xl font-extrabold leading-tight">
+      <h3 className="font-heading mb-3 text-4xl leading-tight font-extrabold">
         {heading}
       </h3>
       {children}
@@ -393,7 +387,7 @@ const ExtraInfo = ({ bulletPoints }: { bulletPoints: string[] }) => {
       {bulletPoints.map((bulletPoint, index) => {
         return (
           <FadeIn from={-10} key={index}>
-            <p className="flex gap-2 font-heading text-2xl font-extrabold">
+            <p className="font-heading flex gap-2 text-2xl font-extrabold">
               <span>-</span>
               <span>{bulletPoint}</span>
             </p>
