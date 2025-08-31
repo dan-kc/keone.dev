@@ -8,7 +8,13 @@ terraform {
     }
   }
 
-  backend "local" {}
+  backend "s3" {
+    bucket         = "keone-dev-terraform-state-z55mtundmhxp2ctauzautbgw"
+    key            = "terraform.tfstate"
+    region         = "eu-west-2"
+    encrypt        = true
+    dynamodb_table = "keone-dev-terraform-state-lock-hymnyxgxcjzuv4nueaga2ttg"
+  }
 }
 
 provider "aws" {
@@ -108,7 +114,7 @@ resource "aws_cloudfront_distribution" "keone_dev_cloudfront_distribution" {
   }
 
 
-  aliases = ["keone.dev", "www.keone.dev"]
+  aliases = ["keone.dev"]
 
   viewer_certificate {
     cloudfront_default_certificate = false
