@@ -18,8 +18,8 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
           tailwindcss-language-server
-          astro-language-server
           typescript-language-server
+          astro-language-server
           nodejs_24
           pnpm_9
           nil

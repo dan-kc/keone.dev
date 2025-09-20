@@ -152,6 +152,7 @@ resource "aws_iam_policy" "keone_dev_cloudfront_s3_invalidation_policy" {
 }
 
 # Define the AWS IAM OIDC Provider for GitHub Actions
+# THIS IS UNIQUE PER ACCOUNT.
 resource "aws_iam_openid_connect_provider" "github_actions" {
   url = "https://token.actions.githubusercontent.com" # The identity provider URL
   # List of audience claims, sts.amazonaws.com is required for AWS STS AssumeRole
