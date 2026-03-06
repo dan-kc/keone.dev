@@ -177,6 +177,7 @@ const Develop = () => {
       <AspectRatio.Root ratio={822 / 382} className="relative">
         <img
           src="/images/graphics/process-snippet.png"
+          srcSet="/images/graphics/process-snippet-400w.png 400w, /images/graphics/process-snippet-600w.png 600w, /images/graphics/process-snippet.png 822w"
           alt="Code snippet"
           className="object-fill"
           sizes="(max-width: 1024px) 100vw,
@@ -223,6 +224,7 @@ const Deploy = () => {
       <AspectRatio.Root ratio={940 / 386} className="relative">
         <img
           src="/images/graphics/package-json.png"
+          srcSet="/images/graphics/package-json-470w.png 470w, /images/graphics/package-json-700w.png 700w, /images/graphics/package-json.png 940w"
           alt="Code snippet"
           className="object-fill"
           sizes="(max-width: 1024px) 100vw,

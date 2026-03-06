@@ -27,7 +27,9 @@ const ProfileSection = () => {
         <article className="border-slateDark-6 bg-slateDark-2 relative mx-auto flex max-w-md flex-col overflow-hidden rounded-2xl border shadow sm:max-w-2xl sm:flex-row-reverse md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
           <div className="border-slateDark-6 z-10 w-fit flex-none border-b sm:w-[345px] sm:border-none md:w-[365px] lg:w-[390px] xl:w-[450px]">
             <img
-              src="/images/self-portrait-1.webp"
+              src="/images/self-portrait-1-900w.webp"
+              srcSet="/images/self-portrait-1-450w.webp 450w, /images/self-portrait-1-700w.webp 700w, /images/self-portrait-1-900w.webp 900w"
+              sizes="(min-width: 1280px) 450px, (min-width: 1024px) 390px, (min-width: 768px) 365px, (min-width: 640px) 345px, calc(100vw - 24px)"
               alt="self portrait"
               height={532.967}
               width={450}

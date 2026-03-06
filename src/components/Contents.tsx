@@ -59,8 +59,10 @@ const Contents: React.FC<Props> = ({ color }) => {
           <div className="mb-5 flex items-center gap-4">
             <div className="overflow-hidden rounded-full">
               <img
-                src="/images/profile-photo.webp"
-                alt="Code snippet"
+                src="/images/profile-photo-100w.webp"
+                srcSet="/images/profile-photo-50w.webp 50w, /images/profile-photo-100w.webp 100w, /images/profile-photo-150w.webp 150w"
+                sizes="50px"
+                alt="profile photo"
                 width={50}
                 height={50}
               />
