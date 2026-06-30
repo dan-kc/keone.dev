@@ -27,6 +27,21 @@ provider "aws" {
   region = "us-east-1"
 }
 
+resource "aws_s3_bucket" "terraform_state_bucket" {
+  bucket = "keone-dev-terraform-state-z55mtundmhxp2ctauzautbgw"
+}
+
+resource "aws_dynamodb_table" "terraform_state_lock" {
+  name         = "keone-dev-terraform-state-lock-hymnyxgxcjzuv4nueaga2ttg"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
+
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
+
 resource "aws_s3_bucket" "keone_dev_bucket" {
   bucket = "keone-dev-1zaab0wzecqr4cub"
 }
