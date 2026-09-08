@@ -1,4 +1,4 @@
-import type { Color } from "src/types";
+import type { PageColor } from "src/types";
 import BreadCrumb from "./BreadCrumb";
 import clsx from "clsx";
 
@@ -13,7 +13,7 @@ interface Props {
   heading: string;
   subHeading: string;
   path: string;
-  color: Color;
+  color: PageColor;
 }
 
 const Title: React.FC<Props> = ({ heading, subHeading, color, path }) => {

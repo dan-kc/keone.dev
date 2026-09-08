@@ -1,10 +1,10 @@
-import type { Color } from "src/types";
+import type { PageColor } from "src/types";
 import Contents from "./Contents";
 import Title from "./Title";
 
 interface Props {
   children: React.ReactNode;
-  color: Color;
+  color: PageColor;
   heading: string;
   path: string;
   subHeading: string;

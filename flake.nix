@@ -21,13 +21,13 @@
           typescript-language-server
           astro-language-server
           nodejs_24
-          pnpm_9
+          pnpm
           nil
-          nixfmt-rfc-style
+          nixfmt
           terraform-ls
           awscli2
           opentofu
-          nodePackages.prettier
+          prettier
         ];
       };
     };

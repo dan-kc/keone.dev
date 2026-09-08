@@ -8,3 +8,4 @@ const COLOR = {
 } as const;
 type ObjectValue<T> = T[keyof T];
 export type Color = ObjectValue<typeof COLOR>;
+export type PageColor = Extract<Color, "violet" | "green" | "orange" | "sky">;

@@ -1,0 +1,11 @@
+packages:
+  - .
+
+minimumReleaseAgeExclude:
+  - "@clack/core@1.5.0"
+  - "@clack/prompts@1.8.0"
+  - electron-to-chromium@1.5.423
+  - lottie-react@3.1.2
+
+allowBuilds:
+  esbuild: true

@@ -1,9 +1,13 @@
 import Navbar from "@components/Navbar";
 
-export default function Header() {
+interface Props {
+  path: string;
+}
+
+export default function Header({ path }: Props) {
   return (
     <header>
-      <Navbar />
+      <Navbar path={path} />
     </header>
   );
 }

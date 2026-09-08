@@ -1,8 +1,9 @@
 import clsx from "clsx";
+import type { PageColor } from "src/types";
 
 interface Props {
   heading: string;
-  color: string;
+  color: PageColor;
   children: React.ReactNode;
   last?: boolean;
 }

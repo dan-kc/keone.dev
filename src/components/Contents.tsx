@@ -6,7 +6,7 @@ import {
 import * as Separator from "@radix-ui/react-separator";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import type { Color } from "src/types";
+import type { PageColor } from "src/types";
 import Link from "./Link";
 
 interface Section {
@@ -15,7 +15,7 @@ interface Section {
 }
 
 interface Props {
-  color: Color;
+  color: PageColor;
 }
 
 const textColorClassNames = {
@@ -40,7 +40,7 @@ const Contents: React.FC<Props> = ({ color }) => {
       (element) => {
         return {
           id: element.id,
-          heading: element.childNodes[0].textContent,
+          heading: element.childNodes[0]?.textContent ?? "",
         };
       },
     );
@@ -87,16 +87,13 @@ const Contents: React.FC<Props> = ({ color }) => {
                 return (
                   <a
                     key={index}
-                    className={clsx(
-                      textColorClassNames[color],
-                      "text-sm",
-                    )}
+                    className={clsx(textColorClassNames[color], "text-sm")}
                     href={`#${section.id}`}
                     onClick={(e) => {
                       e.preventDefault();
                       document
                         .querySelector(`#${section.id}`)
-                        .scrollIntoView({ behavior: "smooth" });
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                   >
                     {section.heading}
@@ -109,7 +106,7 @@ const Contents: React.FC<Props> = ({ color }) => {
         <div>
           <Separator.Root
             decorative
-            className="mt-8 h-[1px] bg-gradient-to-r from-transparent via-slateDark-6 to-transparent"
+            className="via-slateDark-6 mt-8 h-[1px] bg-gradient-to-r from-transparent to-transparent"
           />
           <a
             className="flex items-center justify-center gap-1 p-4"
@@ -118,7 +115,7 @@ const Contents: React.FC<Props> = ({ color }) => {
               e.preventDefault();
               document
                 .querySelector("header")
-                .scrollIntoView({ behavior: "smooth" });
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             <ChevronUpIcon className="h-5 w-5" />

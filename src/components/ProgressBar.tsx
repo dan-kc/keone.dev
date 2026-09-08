@@ -25,19 +25,26 @@ const ProgressBar: React.FC<Props> = ({
   const smallYellowSize = (100 - percentage) / 2;
   const smallRedSize = smallYellowSize;
 
-  const countupRef = useRef(null);
-  let countUpAnim;
+  const countupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (countupRef.current) {
-      countUpAnim = new CountUp(countupRef.current, 1000);
+      const countUpAnim = new CountUp(
+        countupRef.current,
+        isInView ? value : 50,
+        {
+          duration: 2.5,
+          startVal: 70,
+          suffix,
+        },
+      );
       if (!countUpAnim.error) {
         countUpAnim.start();
       } else {
         console.error(countUpAnim.error);
       }
     }
-  }, []);
+  }, [isInView, suffix, value]);
 
   return (
     <div ref={scrollRef} className="flex flex-col gap-1">
@@ -78,11 +85,8 @@ const ProgressBar: React.FC<Props> = ({
           />
           <div>
             <div
+              ref={countupRef}
               className="font-heading text-greenDark-11 text-base font-bold"
-              end={isInView ? value : 50}
-              duration={2.5}
-              start={70}
-              suffix={suffix}
             />
           </div>
         </div>

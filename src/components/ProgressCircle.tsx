@@ -1,5 +1,6 @@
 import CountUp from "react-countup";
 import { motion, useInView } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { useRef } from "react";
 
 interface Props {
@@ -13,7 +14,7 @@ const ProgressCircle: React.FC<Props> = ({
   caption,
   delay = 0,
 }) => {
-  const draw = {
+  const draw: Variants = {
     hidden: {
       pathLength: 0,
       transition: {
@@ -69,7 +70,7 @@ const ProgressCircle: React.FC<Props> = ({
         </motion.svg>
         {isInView ? (
           <CountUp
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-heading text-[13px] font-bold leading-tight text-greenDark-9 min-[350px]:text-[14px] min-[350px]:leading-tight min-[380px]:text-[15px] min-[380px]:leading-tight sm:text-[20px] sm:leading-tight md:text-[14px] md:leading-tight lg:text-[17px] lg:leading-tight xl:text-[21px] xl:leading-tight"
+            className="font-heading text-greenDark-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[13px] leading-tight font-bold min-[350px]:text-[14px] min-[350px]:leading-tight min-[380px]:text-[15px] min-[380px]:leading-tight sm:text-[20px] sm:leading-tight md:text-[14px] md:leading-tight lg:text-[17px] lg:leading-tight xl:text-[21px] xl:leading-tight"
             end={percentage}
             duration={2.35}
             delay={delay}
