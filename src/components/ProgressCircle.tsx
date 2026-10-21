@@ -1,7 +1,7 @@
-import CountUp from "react-countup";
+import { CountUp } from "countup.js";
 import { motion, useInView } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 interface Props {
   percentage: number;
@@ -31,6 +31,23 @@ const ProgressCircle: React.FC<Props> = ({
 
   const scrollRef = useRef(null);
   const isInView = useInView(scrollRef);
+  const countRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (!isInView || !countRef.current) return;
+
+    // Use CountUp directly, as in ProgressBar, rather than the CommonJS React wrapper.
+    const counter = new CountUp(countRef.current, percentage, {
+      startVal: 0,
+      duration: 2.35,
+    });
+    const timeout = setTimeout(() => counter.start(), delay * 1000);
+
+    return () => {
+      clearTimeout(timeout);
+      counter.reset();
+    };
+  }, [isInView, percentage, delay]);
 
   return (
     <div className="relative flex w-1/5 flex-col items-center" ref={scrollRef}>
@@ -69,12 +86,12 @@ const ProgressCircle: React.FC<Props> = ({
           />
         </motion.svg>
         {isInView ? (
-          <CountUp
+          <span
+            ref={countRef}
             className="font-heading text-greenDark-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[13px] leading-tight font-bold min-[350px]:text-[14px] min-[350px]:leading-tight min-[380px]:text-[15px] min-[380px]:leading-tight sm:text-[20px] sm:leading-tight md:text-[14px] md:leading-tight lg:text-[17px] lg:leading-tight xl:text-[21px] xl:leading-tight"
-            end={percentage}
-            duration={2.35}
-            delay={delay}
-          />
+          >
+            {percentage}
+          </span>
         ) : null}
       </motion.div>
       <h4 className="text-center text-[8.5px] leading-tight min-[350px]:text-[10px] min-[350px]:leading-tight min-[380px]:text-[11px] min-[380px]:leading-tight sm:text-[15px] sm:leading-tight md:text-[11px] md:leading-tight lg:text-[13px] lg:leading-tight xl:text-[15px] xl:leading-tight">
