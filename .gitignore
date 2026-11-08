@@ -2,7 +2,6 @@
 .git
 .astro
 .DS_Store
-.direnv
 .terraform
 dist
 test-results

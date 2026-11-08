@@ -17,17 +17,10 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
-          tailwindcss-language-server
-          typescript-language-server
-          astro-language-server
           nodejs_24
           pnpm
-          nil
-          nixfmt
-          terraform-ls
           awscli2
           opentofu
-          prettier
         ];
       };
     };
